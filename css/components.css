@@ -13,7 +13,7 @@
         margin-bottom: 7.5rem;
     }
     .container .more button{
-        padding: 2rem 6rem;
+        padding: 1rem 2.5rem;
         border-radius: 1rem;
         border-width: 0;
         background-color: var(--info);
@@ -27,6 +27,9 @@
     }
 
     /* 輪播按鈕 */
+    .carousel{
+        position: relative;
+    }
     .carousel .arrow{
         width: 3rem;
         height: 3rem;
@@ -41,7 +44,7 @@
         color: var(--hover);
     }
         /* 調整 icon 大小    */
-        .carousel button i.fa-solid {
+        .carousel .arrow .fa-solid {
             transform: scale(1.6);
         }
 
@@ -63,14 +66,14 @@
         outline: 0;
     }
 
-    /* 主要按鈕 */
+    /* 搜尋欄主要按鈕 */
     .button{
         display: flex;
     }
     .button button{
         background-color: var(--primary);
         color: var(--white);
-        width: 64px;
+        width: 96px;
         border-width: 0;
         border-radius: 0 0.5rem 0.5rem 0;
     }
@@ -80,6 +83,10 @@
     .button button:active{
         background-color: var(--active);
     }
+        /* 調整 icon 大小 */
+        .button button i.fa-solid{
+            transform: scale(1.6);
+        }
 
     /* 人氣嚮導聯繫按鈕 */
     .item.item.rectangle {
@@ -115,6 +122,9 @@
             color: var(--text);
             transition: all 0.05s ease-in-out;
         }
+        .member_button .signup:hover{
+            color: var(--hover);
+        }
         /* 登入 */
         .member_button .login{
             margin-right: 30px;
@@ -123,7 +133,7 @@
             transition: all 0.05s ease-in-out;
         }
         .member_button .login:hover{
-            background-color: var(--active);
+            background-color: var(--hover);
             color: var(--white);
             transition: all 0.05s ease-in-out;
         }
@@ -163,17 +173,45 @@
             top: calc(50% - 1.5rem);
         }
         .carousel button.left{
-            left: -3rem;
+            left: -3.5rem;
         }
         .carousel button.right{
-            right: -3rem;
+            right: -3.5rem;
         }
         .carousel button i.fa-solid{
             transform: scale(1.6);
         }
 
 
+    /* 熱門影片 */
+        /* 熱門輪播影片時間長度顯示框 */
+        .hot .card .video_length {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }        
+        .hot .card .video_length span {
+            background-color: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            padding: 0.5rem 0.75rem;
+            color: #fff;
+            border-radius: 0.5rem;
+            margin-bottom: 15px;
+        }
+        /* 熱門影片時間長度顯示框 */
+        .hot .row .col .video .video_length {
+            background-color: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            padding: 0.375rem 0.5rem;
+            color: #fff;
+            border-radius: 0.5rem;
+            position: absolute;
+            bottom: 0.25rem;
+            right: 0.25rem;
+        }
 
+
+        
     /* 嚮導卡片 */
     .pop_guide .carousel .card{
         background-color: rgb(255, 255, 255);

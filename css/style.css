@@ -23,6 +23,9 @@ p{
         width: 100%;
         object-fit: contain;
 }
+.master_vision .container{
+    margin-bottom: 4rem;
+}
 /* 搜尋板塊 */
 .master_vision .search{
     display: flex;
@@ -36,7 +39,7 @@ p{
         text-shadow: 0 0.2rem 0.3rem rgba(0,0,0,0.8);
     }
     .master_vision .search .h4_r_ch{
-        padding: 2.5rem 0;
+        margin-bottom: 2rem;;
     }
 
 /* 熱門話題 */
@@ -54,26 +57,36 @@ p{
         border-radius: 1rem;
         vertical-align: top;
     }
-            /* 按鈕 */
-        .carousel button{
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            border-width: 0;
-            background-color: var(--white);
-            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.16);
-            position: absolute;
-            top: calc(50% - 1.5rem);
-        }
-        .carousel button.left{
-            left: -3rem;
-        }
-        .carousel button.right{
-            right: -3rem;
-        }
-        .carousel button i.fa-solid{
-            transform: scale(1.6);
-        }
+    /* 輪播影片介紹卡片 */
+   .hot .container .card{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        /* border-radius: 1rem; */
+    }
+    /* 影片內容欄 */
+    .hot .card .content{
+        display: flex;
+        background-image: linear-gradient(90deg, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.98),rgba(255, 255, 255, .96),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.5));
+        box-shadow: 0 0 2rem #fff;
+    }
+    .hot .card .content .info{
+        margin: 1.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 0;
+    }
+    .hot .card .content h3{
+        margin-bottom: 1.5rem;
+    }
+    .hot .card .content p{
+        margin-bottom: 2rem;
+        flex: 1 0 0;
+    }
+
     /* 熱門影片 */
     .hot .row{
         margin-bottom: 2rem;
@@ -81,20 +94,18 @@ p{
     .hot .row .col .video{
         overflow: hidden;
         border-radius: 0.5rem;
+        position: relative;
     }
     .hot .row .col .video iframe{
         vertical-align: top;
     }
     /* 文字 */
     .hot .container .row .col .content h3{
-        margin: 1rem 0;
+        margin: 0.5rem 0;
     }
     .hot .row .col .content p{
         margin-bottom: 0.5rem;
         letter-spacing: 1.2px;
-    }
-    .hot .row .col .content span{
-        font-size: 15px;
     }
 
 
@@ -163,6 +174,9 @@ p{
             .pop_guide .content .guide .name{
                 margin-right: 1rem;
             }
+            .pop_guide .container .guides .name{
+                margin-bottom: 0.5rem;
+            }
         /* 細節 */
         .pop_guide .detial{
             display: flex;
@@ -185,12 +199,11 @@ p{
             flex-direction: column;
         }
             .pop_guide .guides .card .score{
-                margin-bottom: 0.5rem;
+                margin-bottom: 1rem;
             }
             .pop_guide .guides .card .score i{
                 margin-right: 0.5rem;
-            }
-            
+            }            
             .pop_guide .guides .card h4{
                 margin-bottom: 0.5rem;
             }
@@ -327,7 +340,6 @@ p{
         }
 
 
-
 /* 熱門城市 */
 .popular_cities .carousel{
     position: relative;
@@ -347,9 +359,6 @@ p{
     margin: 0;
 }
 
-.carousel .arrow i.fa-solid{
-    transform: scale(1.6);
-}
     /* 卡片容器 */
     .popular_cities .row .card{
         position: relative;

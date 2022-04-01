@@ -54,11 +54,14 @@
     font-size: 0.88rem; font-weight: bold; line-height: 1.4;
 }
 .t3_r_ch{
-    font-size: 0.88rem; font-weight: normal; line-height: 1.4; letter-spacing: 1.2px;
+    font-size: 0.88rem; font-weight: normal; line-height: 1.4; letter-spacing: 0.5px;
 }
 .t4_b_ch{
     font-size: 0.75rem; font-weight: bold; line-height: 1.2;
 }
 .t4_r_ch{
-    font-size: 0.85rem; font-weight: normal; line-height: 1.2; letter-spacing: 1.2px;
+    font-size: 0.75rem; font-weight: normal; line-height: 1.2;
+}
+p{
+    line-height: 1.5;
 }
