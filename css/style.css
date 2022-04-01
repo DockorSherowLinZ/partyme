@@ -19,7 +19,7 @@ p{
 
 /* 主視覺版塊 */
 .master_vision{
-        background:url(../image/asian-blogger-couple-travel-bangkok-thailand.jpg) no-repeat top 0 center;
+        background:url(../image/asian_blogger_travel.jpg) no-repeat top 0 center;
         width: 100%;
         object-fit: contain;
 }
