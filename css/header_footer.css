@@ -37,35 +37,6 @@
     .main_nav ul li a:hover{
         color: var(--primary);
     }
-    /* member_button */
-    .main_nav .member_button{
-        display: flex;
-        align-items: center;
-    }
-    /* 註冊按鈕 */
-    .member_button button{
-        font-size: 1rem;
-        background-color: #fff;
-        outline: 0;
-        border-width: 0;
-        border-radius: 0.5rem;
-        padding: 0.5rem 1.5rem;
-    }
-    .member_button .signup{
-        color: var(--text);
-        transition: all 0.05s ease-in-out;
-    }
-    .member_button .login{
-        margin-right: 30px;
-        color: var(--white);
-        background-color: var(--primary);
-        transition: all 0.05s ease-in-out;
-    }
-    .member_button .login:hover{
-        background-color: var(--active);
-        color: var(--white);
-        transition: all 0.05s ease-in-out;
-    }
     /* 翻譯 */
     .member_button .translate{
         display: flex;

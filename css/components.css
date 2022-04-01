@@ -129,11 +129,11 @@
         .member_button .login{
             margin-right: 30px;
             color: var(--white);
-            background-color: var(--primary);
+            background: var(--primary);
             transition: all 0.05s ease-in-out;
         }
         .member_button .login:hover{
-            background-color: var(--hover);
+            background: var(--hover);
             color: var(--white);
             transition: all 0.05s ease-in-out;
         }

@@ -225,9 +225,6 @@ p{
         box-shadow: 0 2px 4px rgba(0,0,0,0.16);
         margin-bottom: 2rem;
     }
-    .pop_guide .guides .card .contact button:hover{
-        color: var(--hover);
-    }
     .pop_guide .guides .card .contact button .fa-solid{
         transform: scale(1.3);
     }
