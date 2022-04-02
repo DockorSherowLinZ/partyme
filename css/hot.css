@@ -1,0 +1,42 @@
+section{
+    margin: 0 auto;
+}
+section h2{
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+p{
+    letter-spacing: 1.2px;
+}
+
+
+
+
+/* media Mobile*/
+@media screen and (min-width:768px) {
+    .container{
+        max-width: 720px;
+    }
+    /* header  還不會寫 */
+
+}
+/* media Tablet*/
+@media screen and (min-width:992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+/* media */
+@media screen and (min-width:1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}

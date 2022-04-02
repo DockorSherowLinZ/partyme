@@ -50,8 +50,8 @@
                 <div class="col">
                     <h2 class="h2_b_ch">尋找最適合你的旅遊夥伴</h2>
                     <p class="h4_r_ch">一同探索有趣又獨特的旅遊體驗</p>
-                    <div class="button">
-                        <input class="search_bar" type="text" placeholder="輸入嚮導名字、景點、體驗行程、或活動名稱... ..." >
+                    <div class="search_bar">
+                        <input type="text" placeholder="輸入嚮導名字、景點、體驗行程、或活動名稱... ..." >
                         <button>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -227,10 +227,8 @@
             <div class="carousel">
                 <button class="arrow left"><i class="fa-solid fa-chevron-left"></i></button>
                 <button class="arrow right"><i class="fa-solid fa-chevron-right"></i></button>
-                <div class="row">                    
-                    <div class="card profile_left col-3">
-                    </div>
-                    <div class="card profile_middle col-6">
+                <div class="row">
+                    <div class="card profile_middle">
                         <div class="cover">
                             <img src="./image/pop_guide01.png" alt="">
                         </div>
@@ -251,14 +249,19 @@
                                     <span>4.5 / 5.0</span>
                                 </div>
                                 <div class="contact">
-                                    <div class="item rectangle"><i class="fa-solid fa-message"></i></div>
-                                    <div class="item rectangle"><i class="fa-solid fa-heart"></i></div>
-                                    <div class="item rectangle"><i class="fa-solid fa-user-plus"></i></div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card profile_right col-3"></div>
                 </div>
             </div>
             <div class="guides">
@@ -553,6 +556,11 @@
                     </div>
                 </div>
             </div>
+            <div class="more">
+                <button>
+                    <p class="t2_r_ch">MORE</p>
+                </button>
+            </div>
         </div>
     </section>
     <section class="popular_cities">
@@ -568,42 +576,46 @@
                 <div class="card col">
                     <div class="cover">
                         <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">台北</h3>
+                            <div class="tag">
+                                <h4>旅遊首選城市</h4>
+                                <h4>優質移居城市</h4>
+                            </div>
+                        </div>                    
                     </div>
-                    <div class="caption">
-                        <h3 class="h5_b_ch">台北</h3>
-                    </div>                    
                 </div>
                 <div class="card col">
                     <div class="cover">
                         <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">江蘇</h3>
+                        </div>                    
                     </div>
-                    <div class="caption">
-                        <h3 class="h5_b_ch">江蘇</h3>
-                    </div>                    
                 </div>
                 <div class="card col">
                     <div class="cover">
                         <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">馬爾地夫</h3>
+                        </div>                    
                     </div>
-                    <div class="caption">
-                        <h3 class="h5_b_ch">馬爾地夫</h3>
-                    </div>                    
                 </div>
                 <div class="card col">
                     <div class="cover">
                         <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">西安</h3>
+                        </div>                    
                     </div>
-                    <div class="caption">
-                        <h3 class="h5_b_ch">西安</h3>
-                    </div>                    
                 </div>
                 <div class="card col">
                     <div class="cover">
                         <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">曼哈頓</h3>
+                        </div>                    
                     </div>
-                    <div class="caption">
-                        <h3 class="h5_b_ch">曼哈頓</h3>
-                    </div>                    
                 </div>
             </div>
             <div class="map"></div>
@@ -638,7 +650,7 @@
                     </div>
                 </div>
                 <div class="subcribe col">
-                    <div class="button">
+                    <div class="search_bar">
                         <input type="text" placeholder="訂閱新資訊：example@email.com">
                         <button class="t2_r_ch">訂閱</button>
                         </input>

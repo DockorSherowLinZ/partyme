@@ -70,21 +70,35 @@ p{
     /* 影片內容欄 */
     .hot .card .content{
         display: flex;
-        background-image: linear-gradient(90deg, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.98),rgba(255, 255, 255, .96),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.5));
+        background-image: linear-gradient(90deg,rgba(255, 255, 255, 0.99),rgba(255, 255, 255, 0.88),rgba(255, 255, 255, .86),rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.76),rgba(255, 255, 255, 0.5));
         box-shadow: 0 0 2rem #fff;
+        /* filter: blur(1.5rem); */
     }
     .hot .card .content .info{
-        margin: 1.5rem 0.5rem;
+        margin: 1.5rem 0 0 4rem;
         display: flex;
         flex-direction: column;
         flex: 1 0 0;
     }
     .hot .card .content h3{
         margin-bottom: 1.5rem;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
     .hot .card .content p{
         margin-bottom: 2rem;
-        flex: 1 0 0;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .hot .card .content span{
+        margin-top: auto;
+        margin-bottom: 1rem;
     }
 
     /* 熱門影片 */
@@ -110,10 +124,18 @@ p{
 
 
 /* 人氣嚮導 */
-.pop_guide .guide{
+.pop_guide .guide {
     display: flex;
     align-items: center;
 }
+.pop_guide .carousel{
+    background: url(../image/pop_guides_bg.png) no-repeat center center;
+}
+    .pop_guide .card.profile_middle{
+        max-width: 50%;
+        overflow: hidden;
+        margin: auto;
+    }
     /* 分數 */
     .pop_guide .score{
         color: var(--secondary);
@@ -127,17 +149,8 @@ p{
         .pop_guide .carousel button{
             position: absolute;
             top: calc(50% - 1.5rem);
-            z-index: 20;
+            z-index: 2;
         }
-            .carousel button .left{
-                left: -3rem;
-            }
-            .carousel button .right{
-                right: -3rem;
-            }
-            .carousel button i.fa-solid{
-                transform: scale(1.6);
-            }
     /* 嚮導卡片 */
     .pop_guide .carousel .card{
         background-color: rgb(255, 255, 255);
@@ -232,10 +245,13 @@ p{
 
 /* 主題探索 */
 .topic_exploration{
-    padding-bottom: 7.5rem;
+    /* padding-bottom: 7.5rem; */
 }
 .topic_exploration .background{
     position: relative;
+}
+.topic_exploration .background .row:last-of-type{
+    margin-bottom: 2rem;
 }
 .topic_exploration .background .scoll_effect{    
     height: 100%;     
@@ -244,7 +260,7 @@ p{
     left: 26%;
 }
 .topic_exploration .background .scoll_effect img{
-    object-fit: contain;
+    object-fit: cover;
     vertical-align: top;
     height: 100%;
 }
@@ -341,6 +357,8 @@ p{
 .popular_cities .carousel{
     position: relative;
 }
+/* 使用 components 做國家卡片 */
+/* 地圖 */
 .popular_cities .container .map{
     background: url(../image/map.svg) no-repeat;
     background-size: cover;
@@ -352,10 +370,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-bottom: 2rem;
-    margin: 0;
+    margin-bottom: 2rem;
 }
-
     /* 卡片容器 */
     .popular_cities .row .card{
         position: relative;
@@ -380,55 +396,9 @@ p{
     .popular_cities .row .card:nth-of-type(5):hover{
         flex: 1 0 0px;
     }
-        /* 城市圖片 */
-        .popular_cities .row .card .cover{
-            height: 320px;
-            border-radius: 0.5rem;
-            vertical-align: top;        
-            background-position: 50%;
-            background-size: cover;        
-        }
-        /* 用 first-of-type 才能選到 card 的子層 */
-        .popular_cities .row .card:first-of-type .cover{
-            background: url(../image/Taipei.jpg);
-            background-size: cover;
-        }
-        .popular_cities .row .card:nth-of-type(2) .cover{
-            background: url(../image/Jiangsu.jpg);
-            background-size: cover;
-        }
-        .popular_cities .row .card:nth-of-type(3) .cover{
-            background: url(../image/Maldives.jpg);
-            background-size: cover;
-        }
-        .popular_cities .row .card:nth-of-type(4) .cover{
-            background: url(../image/Xian.jpg);
-            background-size: cover;
-        }
-        .popular_cities .row .card:nth-of-type(5) .cover{
-            background: url(../image/Manhattan.jpg);
-            background-size: cover;
-        }
-            /* 漸層覆蓋 */
-            .popular_cities .row .card .cover .overlap{
-                background: linear-gradient(transparent 60%,rgba(2, 32, 56, 0.85));
-                position: absolute;
-                width: calc( 100% - 30px);
-                height: 100%;
-                top: 0;
-                border-radius: 0.5rem;
-            }
-        /* 文字 */
-        .popular_cities .card h3{
-            color: var(--white);
-            text-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.8);
-            position: absolute;
-            bottom: 1rem;
-            left: 2rem;
-        }
     /* more */
     .popular_cities .more{
-        margin-bottom: 0;
+        margin-bottom: -2rem;
     }
 
 

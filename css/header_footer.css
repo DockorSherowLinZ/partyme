@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -37,13 +37,50 @@
     .main_nav ul li a:hover{
         color: var(--primary);
     }
-    /* 翻譯 */
+
+
+    /* 會員相關按鈕 */
+    .main_nav .member_button {
+        display: flex;
+        align-items: center;
+    }    
+    /* 註冊按鈕 */
+    .member_button button {
+        font-size: 1rem;
+        background-color: #fff;
+        outline: 0;
+        border-width: 0;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1.5rem;
+    }    
+    .member_button .signup {
+        color: var(--text);
+        transition: all 0.05s ease-in-out;
+    }    
+    .member_button .signup:hover {
+        color: var(--hover);
+    }    
+    /* 登入 */
+    .member_button .login {
+        margin-right: 30px;
+        color: var(--white);
+        background: var(--primary);
+        transition: all 0.05s ease-in-out;
+    }
+    
+    .member_button .login:hover {
+        background: var(--hover);
+        color: var(--white);
+        transition: all 0.05s ease-in-out;
+    }
+
+    /* 語言切換按鈕 */
     .member_button .translate{
         display: flex;
         align-items: center;
         padding: 0.5rem 1.5rem;
     }
-    /* 文字 */
+    /* 國旗圖案 */
     .translate .flag{
         width: 28px;
         height: 18px;
@@ -54,7 +91,7 @@
         vertical-align: top;
         object-fit: cover;
     }
-    /* icon */
+    /* 下拉選單 icon */
     .translate .fa-solid{
         color: #333;
         padding: 0 0.5rem;
@@ -118,7 +155,7 @@ footer .background{
         max-width: 720px;
     }
     /* header  還不會寫 */
-    header{}
+
 }
 /* media Tablet*/
 @media screen and (min-width:992px) {

@@ -3,6 +3,8 @@
     /* 按鈕 mouse-in */
     button{
         cursor: pointer;
+        border-width: 0;
+        background: transparent;
     }
 
     /* MORE按鈕 */
@@ -13,9 +15,8 @@
         margin-bottom: 7.5rem;
     }
     .container .more button{
-        padding: 1rem 2.5rem;
-        border-radius: 1rem;
-        border-width: 0;
+        padding: 1rem 5rem;
+        border-radius: 0.65rem;
         background-color: var(--info);
         color: var(--white);
         font-size: 1rem;
@@ -39,6 +40,8 @@
         box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.16);
         color: var(--primary);
         position: absolute;
+        top: calc( 50% - 1.5rem );
+        z-index: 2;
     }
     .carousel .arrow:hover{
         color: var(--hover);
@@ -48,8 +51,8 @@
             transform: scale(1.6);
         }
 
-    /* 搜尋欄 */
-    .button input{
+    /* 首頁搜尋欄 */
+    .search_bar input{
         width: calc(100% - 5rem);
         font-size: 1rem;
         padding: 1rem 1.5rem;
@@ -58,33 +61,33 @@
         background-color: var(--white);
         box-shadow: 0 0 0.5rem rgba(0,0,0,0.16);
     }
-    .button input::placeholder{
+    .search_bar input::placeholder{
         width: 100%;
         color: var(--muted);
     }
-    .button input:focus{
+    .search_bar input:focus{
         outline: 0;
     }
 
     /* 搜尋欄主要按鈕 */
-    .button{
+    .search_bar{
         display: flex;
     }
-    .button button{
+    .search_bar button{
         background-color: var(--primary);
         color: var(--white);
         width: 96px;
         border-width: 0;
         border-radius: 0 0.5rem 0.5rem 0;
     }
-    .button button:hover{
+    .search_bar button:hover{
         background-color: var(--hover);
     }
-    .button button:active{
+    .search_bar button:active{
         background-color: var(--active);
     }
         /* 調整 icon 大小 */
-        .button button i.fa-solid{
+        .search_bar button i.fa-solid{
             transform: scale(1.6);
         }
 
@@ -101,65 +104,7 @@
         /* icon調整大小 */
         .item.rectangle .fa-solid {
             transform: scale(1.3);
-        }
-
-    
-    /* 會員相關按鈕 */
-    .main_nav .member_button{
-        display: flex;
-        align-items: center;
-    }
-        /* 註冊按鈕 */
-        .member_button button{
-            font-size: 1rem;
-            background-color: #fff;
-            outline: 0;
-            border-width: 0;
-            border-radius: 0.5rem;
-            padding: 0.5rem 1.5rem;
-        }
-        .member_button .signup{
-            color: var(--text);
-            transition: all 0.05s ease-in-out;
-        }
-        .member_button .signup:hover{
-            color: var(--hover);
-        }
-        /* 登入 */
-        .member_button .login{
-            margin-right: 30px;
-            color: var(--white);
-            background: var(--primary);
-            transition: all 0.05s ease-in-out;
-        }
-        .member_button .login:hover{
-            background: var(--hover);
-            color: var(--white);
-            transition: all 0.05s ease-in-out;
-        }
-
-    /* 語言切換按鈕 */
-    .member_button .translate{
-        display: flex;
-        align-items: center;
-        padding: 0.5rem 1.5rem;
-    }
-        /* 國旗圖案 */
-        .translate .flag{
-            width: 28px;
-            height: 18px;
-            padding: 0.8rem 0.5rem;
-        }
-        .translate img{
-            width: 100%;
-            vertical-align: top;
-            object-fit: cover;
-        }
-        /* 下拉選單 icon */
-        .translate .fa-solid{
-            color: #333;
-            padding: 0 0.5rem;
-        }
+        }    
 
             /* 按鈕 */
         .carousel button{
@@ -173,10 +118,10 @@
             top: calc(50% - 1.5rem);
         }
         .carousel button.left{
-            left: -3.5rem;
+            left: -3rem;
         }
         .carousel button.right{
-            right: -3.5rem;
+            right: -3rem;
         }
         .carousel button i.fa-solid{
             transform: scale(1.6);
@@ -209,8 +154,10 @@
             bottom: 0.25rem;
             right: 0.25rem;
         }
-
-
+        /* slider arrow */
+        .slider button.arrow {
+            color: var(--info);
+        }
         
     /* 嚮導卡片 */
     .pop_guide .carousel .card{
@@ -305,13 +252,8 @@
     }
 
 
-/* 熱門城市 page 的相關 */
-
-    /* 卡片容器 */
-    .popular_cities .row .card{
-        position: relative;
-    }
-    /* 預設的卡片 */
+/* 熱門城市卡片容器 */
+    /* 預設選取到的卡片 */
     .popular_cities .row .card:first-of-type{
         width: 33.3333333%;
     }
@@ -334,15 +276,20 @@
         /* 城市圖片 */
         .popular_cities .row .card .cover{
             height: 320px;
-            border-radius: 0.5rem;
+            border-radius: 1.25rem;
             vertical-align: top;        
             background-position: 50%;
-            background-size: cover;        
-        }
+            background-size: cover; 
+            overflow: hidden;
+            position: relative;
+            
+        }        
         /* 用 first-of-type 才能選到 card 的子層 */
         .popular_cities .row .card:first-of-type .cover{
             background: url(../image/Taipei.jpg);
             background-size: cover;
+            /* 邊框線 */
+            outline: 0.25rem solid var(--info);
         }
         .popular_cities .row .card:nth-of-type(2) .cover{
             background: url(../image/Jiangsu.jpg);
@@ -362,23 +309,37 @@
         }
             /* 漸層覆蓋 */
             .popular_cities .row .card .cover .overlap{
-                background: linear-gradient(transparent 60%,rgba(2, 32, 56, 0.85));
+                background: linear-gradient(transparent 60%,rgba(2, 32, 56, 0.95));
                 position: absolute;
-                width: calc( 100% - 30px);
+                width: 100%;
                 height: 100%;
                 top: 0;
-                border-radius: 0.5rem;
             }
-        /* 文字 */
-        .popular_cities .card h3{
-            color: var(--white);
-            text-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.8);
-            position: absolute;
-            bottom: 1rem;
-            left: 2rem;
-        }
-
-
+            .popular_cities .row .card .cover .caption{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                height: 100%;
+                position: relative;
+            }
+                    /* 文字 */
+                    .popular_cities .card h3 {
+                        color: var(--white);
+                        text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
+                        margin: 0 0 0.75rem 0.6rem;
+                        z-index: 2;
+                    }
+                    /* 小tag */
+                    .popular_cities .card h4 {
+                        color: var(--white);
+                        display: inline-block;
+                        padding: 0.25rem 0.75rem;
+                        border: 1px solid #fff;
+                        border-radius: 1rem;
+                        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.16);
+                        margin: 0 0 0.75rem 0.6rem;
+                        z-index: 2;
+                    }
 /* footer */
 footer{
     background-image: 
