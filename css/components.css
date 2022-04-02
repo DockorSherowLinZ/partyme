@@ -255,7 +255,7 @@
 /* 熱門城市卡片容器 */
     /* 預設選取到的卡片 */
     .popular_cities .row .card:first-of-type{
-        width: 33.3333333%;
+        width: calc(100% / 3);
     }
     /* 點選到的卡片 */
     .popular_cities .row .card:first-of-type:hover{
@@ -309,7 +309,7 @@
         }
             /* 漸層覆蓋 */
             .popular_cities .row .card .cover .overlap{
-                background: linear-gradient(transparent 60%,rgba(2, 32, 56, 0.95));
+                background: linear-gradient(transparent 60%,rgba(2, 32, 56, 0.761) 80%, rgba(2, 32, 56, 0.98) 100%);
                 position: absolute;
                 width: 100%;
                 height: 100%;

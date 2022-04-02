@@ -47,6 +47,8 @@ p{
     .hot .carousel{
         margin-bottom: 2rem;
         position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
     }
     .hot .carousel .video{
         height: 376px;  
@@ -54,7 +56,6 @@ p{
     .hot .carousel iframe{
         width: 100%;
         height: 100%;
-        border-radius: 1rem;
         vertical-align: top;
     }
     /* 輪播影片介紹卡片 */
@@ -64,19 +65,22 @@ p{
         top: 0;
         left: 0;
         bottom: 0;
-        overflow: hidden;
     }
     /* 影片內容欄 */
     .hot .card .content{
         display: flex;
-        background-image: linear-gradient(90deg,rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.96),rgba(255, 255, 255, .94),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.86),rgba(255, 255, 255, 0.8));
-        box-shadow: 0 0 1rem #fff;
+        background-image: linear-gradient(90deg,rgba(2, 32, 56, 0.88) 80%, rgba(2, 32, 56, 0.76) 93%, rgba(2, 32, 56, 0.16) 99%,transparent );
+    }
+    /* 穿透col，選得到裡面的物件。 */
+    .hot .card{
+        pointer-events: none;
     }
     .hot .card .content .info{
-        margin: 1.5rem 1rem 0 4rem;
+        margin: 1.5rem 1.5rem 0 1rem;
         display: flex;
         flex-direction: column;
         flex: 1 0 0;
+        color: var(--white);
     }
     .hot .card .content h3{
         margin-bottom: 1.5rem;
@@ -363,7 +367,7 @@ p{
     }
     /* 預設的卡片 */
     .popular_cities .row .card:first-of-type{
-        width: 33.3333333%;
+        width: calc(100% / 3);
     }
     /* 點選到的卡片 */
     .popular_cities .row .card:first-of-type:hover{
