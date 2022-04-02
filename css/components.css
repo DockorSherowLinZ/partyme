@@ -12,7 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 7.5rem;
+        margin: 1rem 0 6.5rem 0;
     }
     .container .more button{
         padding: 1rem 5rem;

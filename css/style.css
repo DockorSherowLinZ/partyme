@@ -128,10 +128,11 @@ p{
     display: flex;
     align-items: center;
 }
-.pop_guide .carousel{
-    background: url(../image/pop_guides_bg.png) no-repeat center center;
-}
-    .pop_guide .card.profile_middle{
+    /* 嚮導輪播先用圖片替代 */
+    .pop_guide .carousel{
+        background: url(../image/pop_guides_bg.svg) no-repeat center center;
+    }
+    .pop_guide .card.profile_active{
         max-width: 50%;
         overflow: hidden;
         margin: auto;
@@ -151,17 +152,6 @@ p{
             top: calc(50% - 1.5rem);
             z-index: 2;
         }
-    /* 嚮導卡片 */
-    .pop_guide .carousel .card{
-        background-color: rgb(255, 255, 255);
-        border-radius: 1rem;
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.16);
-        position: relative;
-    }
-    .pop_guide .carousel .card:nth-child(2){
-        z-index: 2;
-        position: relative;
-    }
         /* 嚮導照片 */
         .pop_guide .carousel .card .cover{
             margin-left: -15px;
@@ -244,9 +234,6 @@ p{
 
 
 /* 主題探索 */
-.topic_exploration{
-    /* padding-bottom: 7.5rem; */
-}
 .topic_exploration .background{
     position: relative;
 }
