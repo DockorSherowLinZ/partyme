@@ -389,26 +389,3 @@ footer .background{
         font-family: Helvetica;
         padding: 0.75rem 0;
     }
-
-
-
-
-/* media Mobile*/
-@media screen and (min-width:768px) {
-    .container{
-        max-width: 720px;
-    }
-    /* header  還不會寫 */
-}
-/* media Tablet*/
-@media screen and (min-width:992px) {
-    .container{
-        max-width: 960px;
-    }
-}
-/* media */
-@media screen and (min-width:1200px) {
-    .container{
-        max-width: 1140px;
-    }
-}

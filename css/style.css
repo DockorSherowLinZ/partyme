@@ -65,14 +65,12 @@ p{
         left: 0;
         bottom: 0;
         overflow: hidden;
-        /* border-radius: 1rem; */
     }
     /* 影片內容欄 */
     .hot .card .content{
         display: flex;
         background-image: linear-gradient(90deg,rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.96),rgba(255, 255, 255, .94),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.86),rgba(255, 255, 255, 0.8));
         box-shadow: 0 0 1rem #fff;
-        /* filter: blur(1.5rem); */
     }
     .hot .card .content .info{
         margin: 1.5rem 1rem 0 4rem;
@@ -438,27 +436,3 @@ footer .background{
         font-family: Helvetica;
         padding: 0.75rem 0;
     }
-
-
-
-
-/* media Mobile*/
-@media screen and (min-width:768px) {
-    .container{
-        max-width: 720px;
-    }
-    /* header  還不會寫 */
-
-}
-/* media Tablet*/
-@media screen and (min-width:992px) {
-    .container{
-        max-width: 960px;
-    }
-}
-/* media */
-@media screen and (min-width:1200px) {
-    .container{
-        max-width: 1140px;
-    }
-}
