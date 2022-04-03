@@ -48,7 +48,6 @@ p{
         margin-bottom: 2rem;
         position: relative;
         border-radius: 1rem;
-        overflow: hidden;
     }
     .hot .carousel .video{
         height: 376px;  
@@ -58,19 +57,34 @@ p{
         height: 100%;
         vertical-align: top;
     }
-    /* 輪播影片介紹卡片 */
-   .hot .container .card{
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-    }
-    /* 影片內容欄 */
-    .hot .card .content{
-        display: flex;
-        background-image: linear-gradient(90deg,rgba(2, 32, 56, 0.88) 80%, rgba(2, 32, 56, 0.76) 93%, rgba(2, 32, 56, 0.16) 99%,transparent );
-    }
+        /* 輪播影片時間長度顯示框 */
+        .hot .card .video_length {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }        
+        .hot .card .video_length span {
+            background-color: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            padding: 0.5rem 0.75rem;
+            color: #fff;
+            border-radius: 0.5rem;
+            margin-bottom: 15px;
+        }
+        /* 輪播影片介紹卡片 */
+        .hot .container .card{
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+        /* 影片內容欄 */
+        .hot .card .content{
+            display: flex;
+            border-radius: 1rem;
+            background-image: linear-gradient(90deg,rgba(2, 32, 56, 0.88) 80%, rgba(2, 32, 56, 0.76) 93%, rgba(2, 32, 56, 0.16) 99%,transparent );
+        }
     /* 穿透col，選得到裡面的物件。 */
     .hot .card{
         pointer-events: none;
@@ -101,27 +115,6 @@ p{
     .hot .card .content span{
         margin-top: auto;
         margin-bottom: 1rem;
-    }
-
-    /* 熱門影片 */
-    .hot .row{
-        margin-bottom: 2rem;
-    }
-    .hot .row .col .video{
-        overflow: hidden;
-        border-radius: 0.5rem;
-        position: relative;
-    }
-    .hot .row .col .video iframe{
-        vertical-align: top;
-    }
-    /* 文字 */
-    .hot .container .row .col .content h3{
-        margin: 0.5rem 0;
-    }
-    .hot .row .col .content p{
-        margin-bottom: 0.5rem;
-        letter-spacing: 1.2px;
     }
 
 
@@ -158,12 +151,17 @@ p{
         .pop_guide .carousel .card .cover{
             margin-left: -15px;
             margin-right: -15px;
-            overflow: hidden;
+            overflow: hidden;            
         }
             .pop_guide .cover img{
                 vertical-align: top;
                 object-fit: cover;
                 width: 100%;
+                transform: scale(1);
+                transition: .3s all;
+            }
+            .pop_guide .carousel .card .cover:hover img{
+                transform: scale(1.3);
             }
         /* 嚮導簡介 */
         .pop_guide .card .content{
@@ -343,7 +341,7 @@ p{
 
 
 /* 熱門城市 */
-.popular_cities .carousel{
+.popular_cities .recommend{
     position: relative;
 }
 /* 使用 components 做國家卡片 */
@@ -355,38 +353,14 @@ p{
     object-fit: cover;
     margin-bottom: 2rem;
 }
-.popular_cities .container .row{
+.recommend.row{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 2rem;
 }
-    /* 卡片容器 */
-    .popular_cities .row .card{
-        position: relative;
-    }
-    /* 預設的卡片 */
-    .popular_cities .row .card:first-of-type{
-        width: calc(100% / 3);
-    }
-    /* 點選到的卡片 */
-    .popular_cities .row .card:first-of-type:hover{
-        flex: 1 0 0px;        
-    }
-    .popular_cities .row .card:nth-of-type(2):hover{
-        flex: 1 0 0px;
-    }
-    .popular_cities .row .card:nth-of-type(3):hover{
-        flex: 1 0 0px;
-    }
-    .popular_cities .row .card:nth-of-type(4):hover{
-        flex: 1 0 0px;
-    }
-    .popular_cities .row .card:nth-of-type(5):hover{
-        flex: 1 0 0px;
-    }
     /* more */
-    .popular_cities .more{
+    .recommend .more{
         margin-bottom: -2rem;
     }
 
