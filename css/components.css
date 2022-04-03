@@ -370,22 +370,22 @@
             }
     /* 用 first-of-type 才能選到 card 的子層 */
     .recommend.row .card:first-of-type .cover{
-        background: url(../image/Taipei.jpg);
+        background: url(../image/);
         background-size: cover;
     }
     .recommend.row .card:nth-of-type(2) .cover{
-        background: url(../image/Jiangsu.jpg);
+        background: url(../image/);
         background-size: cover;
     }
     .recommend.row .card:nth-of-type(3) .cover{
-        background: url(../image/Maldives.jpg);
+        background: url(../image/);
         background-size: cover;
     }
     .recommend.row .card:nth-of-type(4) .cover{
-        background: url(../image/Xian.jpg);
+        background: url(../image/);
         background-size: cover;
     }
     .recommend.row .card:nth-of-type(5) .cover{
-        background: url(../image/Manhattan.jpg);
+        background: url(../image/);
         background-size: cover;
     }

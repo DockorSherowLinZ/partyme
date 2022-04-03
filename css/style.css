@@ -359,6 +359,31 @@ p{
     justify-content: flex-start;
     margin-bottom: 2rem;
 }
+    /* 用 first-of-type 才能選到 card 的子層 */
+    .popular_cities .recommend.row .card:first-of-type .cover {
+        background: url(../image/Taipei.jpg);
+        background-size: cover;
+    }
+    
+    .popular_cities .recommend.row .card:nth-of-type(2) .cover {
+        background: url(../image/Jiangsu.jpg);
+        background-size: cover;
+    }
+    
+    .popular_cities .recommend.row .card:nth-of-type(3) .cover {
+        background: url(../image/Maldives.jpg);
+        background-size: cover;
+    }
+    
+    .popular_cities .recommend.row .card:nth-of-type(4) .cover {
+        background: url(../image/Xian.jpg);
+        background-size: cover;
+    }
+    
+    .popular_cities .recommend.row .card:nth-of-type(5) .cover {
+        background: url(../image/Manhattan.jpg);
+        background-size: cover;
+    }
     /* more */
     .recommend .more{
         margin-bottom: -2rem;
