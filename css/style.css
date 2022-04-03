@@ -47,12 +47,12 @@ p{
     .hot .carousel{
         margin-bottom: 2rem;
         position: relative;
-        border-radius: 1rem;
     }
     .hot .carousel .video{
-        height: 376px;  
+        height: 376px;
     }
     .hot .carousel iframe{
+        border-radius: 1rem;
         width: 100%;
         height: 100%;
         vertical-align: top;
