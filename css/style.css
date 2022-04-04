@@ -166,7 +166,7 @@ p{
             }
         /* 嚮導簡介 */
         .pop_guide .card .content{
-            padding: 1rem;
+            padding: 1.5rem;
         }
         .pop_guide .content .guide{
             display: flex;
