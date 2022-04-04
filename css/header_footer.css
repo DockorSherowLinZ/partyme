@@ -86,17 +86,15 @@
     .translate .flag{
         width: 28px;
         height: 18px;
-        padding: 0.8rem 0.5rem;
+        padding: 0.8rem 1rem;
     }
-    .translate img{
-        width: 100%;
-        vertical-align: top;
-        object-fit: cover;
+    .translate .flag .fa-solid{
+        transform: scale(1.5);
     }
     /* 下拉選單 icon */
     .translate .fa-solid{
         color: #333;
-        padding: 0 0.5rem;
+        padding: 0 1rem;
     }
 
 
