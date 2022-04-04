@@ -89,7 +89,7 @@ aside{
     background: linear-gradient(0deg,
     transparent 0%, white 6%);
 }
-.main .search .search_bar{
+.search_bar{
     max-width: 50%;
     margin: 0 auto;
 }

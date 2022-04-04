@@ -26,11 +26,11 @@
         background-color: var(--second_hover);
     }
 
-    /* 輪播按鈕父層 */
+    /* 首頁輪播按鈕父層 */
     .carousel{
         position: relative;
     }
-    /* 輪播按鈕 */
+    /* 首頁輪播按鈕 */
     .carousel .arrow{
         width: 3rem;
         height: 3rem;
@@ -85,7 +85,7 @@
 
 
 
-/* 搜尋欄 input */
+/* 首頁搜尋欄 input */
     /* 首頁搜尋欄 */
     .search_bar input{
         width: calc(100% - 5rem);
@@ -126,12 +126,7 @@
             transform: scale(1.6);
         }
 
-    /* 熱門話題 slider arrow */
-    .slider button.arrow {
-        color: var(--second);
-    }
-
-    /* 人氣嚮導聯繫按鈕 */
+    /* 首頁人氣嚮導聯繫按鈕 */
     .item.item.rectangle {
         border-width: 0;
         background-color: var(--white);
@@ -141,13 +136,12 @@
         padding: 0.75rem 1.5rem;
         margin-left: 0.5rem;
     }    
-        /* 人氣嚮導聯繫按鈕調整 icon 大小 */
+        /* 首頁人氣嚮導聯繫按鈕調整 icon 大小 */
         .item.rectangle .fa-solid {
             transform: scale(1.3);
         }    
 
-
-/* 嚮導欄按鈕父層 */
+/* 首頁嚮導欄按鈕父層 */
 .pop_guide .guides .card .cover{
     overflow: hidden;
     border-radius: 50%;
@@ -170,7 +164,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-    /* 嚮導欄按鈕照片 */
+    /* 首頁嚮導欄按鈕照片 */
     .pop_guide .guides .card .cover img{
         transition: .3s all;
         transform: scale(1);
@@ -178,7 +172,7 @@
     .pop_guide .guides .card .cover:hover img{
         transform: scale(1.15);
     }
-    /* 嚮導欄按鈕 */
+    /* 首頁嚮導欄按鈕 */
     .pop_guide .guides .card .contact button {
         width: 2rem;
         height: 2rem;
@@ -192,14 +186,14 @@
     .pop_guide .guides .card .contact button:hover {
         color: var(--hover);
     }
-        /* 嚮導欄按鈕調整 icon 大小 */
+        /* 首頁嚮導欄按鈕調整 icon 大小 */
         .pop_guide .guides .card .contact button .fa-solid {
             transform: scale(1.3);
         }
 
 
 /* 所有卡片類型 */
-    /* 熱門話題影片卡片 */
+    /* 首頁熱門話題影片卡片 */
     .hot .row {
         margin-bottom: 2rem;
     }    
@@ -219,7 +213,7 @@
             margin-bottom: 0.5rem;
             letter-spacing: 1.2px;
         }
-        /* 熱門話題影片時間長度顯示框 */
+        /* 首頁熱門話題影片時間長度顯示框 */
         .hot .row .col .video .video_length {
             background-color: rgba(0, 0, 0, 0.7);
             display: inline-block;
@@ -231,7 +225,7 @@
             right: 0.25rem;
         }
         
-    /* 嚮導卡片 */
+    /* 首頁嚮導卡片 */
     .pop_guide .carousel .card{
         background-color: rgb(255, 255, 255);
         border-radius: 1rem;
@@ -242,7 +236,7 @@
         z-index: 2;
         position: relative;
     }
-        /* 嚮導照片父層 */
+        /* 首頁嚮導照片父層 */
         .pop_guide .carousel .card .cover{
             margin-left: -15px;
             margin-right: -15px;
@@ -254,7 +248,7 @@
                 object-fit: cover;
                 width: 100%;
             }
-    /* 嚮導簡介 */
+    /* 首頁嚮導簡介 */
     .pop_guide .card .content{
         padding: 1rem;
     }
@@ -282,7 +276,7 @@
             color: var(--hover);
         }
 
-    /* 嚮導欄 */
+    /* 首頁嚮導欄 */
     .pop_guide .guides .cover{
         margin-bottom: 1rem;
     }
@@ -386,4 +380,37 @@
     .recommend.row .card:nth-of-type(5) .cover{
         background: url(../image/);
         background-size: cover;
+    }
+
+
+/* 熱門話題內頁 */
+
+    /* 熱門話題 slider arrow */
+    .slider button.arrow {
+        color: var(--second);
+    }
+    /* 搜尋欄 */
+    .main {
+        position: relative;
+        height: calc(100vh - 85px);
+        overflow: auto;
+    }    
+    .main .search {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        padding: 1.5rem 0 1rem;
+        background-color: var(--white);
+        background: linear-gradient(0deg,
+                transparent 0%, white 6%);
+    }    
+    .main .search .search_bar {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    /* 側邊推薦欄 */
+    .related{
+        /* display: flex; */
+        /* flex-direction: column; */
     }
