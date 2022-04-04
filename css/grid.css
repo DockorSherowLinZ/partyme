@@ -9,6 +9,12 @@
     padding-right: 15px;
     box-sizing: border-box;
 }
+.container_full{
+    max-width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
 .row{
     display: flex;
     flex-wrap: wrap;

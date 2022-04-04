@@ -49,7 +49,7 @@ aside{
         border-radius: 0.5rem;
     }
     aside .slider ul li .button:hover{
-        color: var(--second);
+        color: var(--second_hover);
     }
     aside .slider ul li .button:active{
         color: var(--white);
@@ -111,9 +111,9 @@ aside{
         margin: 0 .5rem;
     }
     .main .tag_slider ul li button:hover{
-        background-color: var(--second);
+        background-color: var(--second_hover);
         color: var(--white);
-        border: 1px solid var(--second);
+        border: 1px solid var(--second_hover);
     }
         /* 漸層覆蓋 */
         .main .tag_slider .overlap {
@@ -124,11 +124,14 @@ aside{
             background-image: linear-gradient(270deg, rgba(255, 255, 255, 1) 4%, transparent 20%);
             pointer-events: none;
         }
-        
+        /* more按鈕 */
         .main .tag_slider ul .arrow {
             position: relative;
             z-index: 3;
             color: var(--second);
+        }
+        .main .tag_slider ul .arrow:hover {
+            color: var(--second_hover);
         }
 
     /* medialist */
