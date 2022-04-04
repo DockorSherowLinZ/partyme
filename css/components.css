@@ -14,16 +14,16 @@
         margin: 1rem 0 6.5rem 0;
     }
     .container .more button{
-        padding: 1rem 5rem;
+        padding: 1rem 2rem;
         border-radius: 0.65rem;
-        background-color: var(--info);
+        background-color: var(--second);
         color: var(--white);
         font-size: 1rem;
         font-family:sans-serif;
         transition: 0.15s ease-in-out;
     }
     .container .more button:hover{
-        background-color: var(--info_hover);
+        background-color: var(--second_hover);
     }
 
     /* 輪播按鈕父層 */
@@ -65,21 +65,21 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 2px solid var(--info);
+        border-bottom: 2px solid var(--second);
         box-sizing: border-box;
         margin-bottom: 2rem;
     }
     .container .more_second_floor button{
         width: 48px;
         height: 48px;
-        color: var(--info);
+        color: var(--second);
         padding: 0.25rem;
         border-radius: 50%;
         margin-bottom: 1rem;
     }
     .container .more_second_floor button:hover{
         color: var(--white);
-        background-color: var(--info);
+        background-color: var(--second_hover);
     }
     .container .more_second_floor .fa-solid{
         transform: scale(1.6);
@@ -130,7 +130,7 @@
 
     /* 熱門話題 slider arrow */
     .slider button.arrow {
-        color: var(--info);
+        color: var(--second);
     }
 
     /* 人氣嚮導聯繫按鈕 */
@@ -319,7 +319,7 @@
     }
     /* hover 後內框線 */
     .recommend.row .card:hover .cover {
-        outline: 0.25rem solid var(--info);
+        outline: 0.25rem solid var(--second);
     }
         /* 圖片 */
         .recommend.row .card .cover{

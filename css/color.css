@@ -1,13 +1,12 @@
 :root{
     --primary: #1363BF;
-    --secondary: #F2A418;
     --hover: #3392FF;
-    --active: #0059BF;
-    --mouseover: #0f929e;
+    --active: #0E4A8F;
+    --second: #18ACEF;
+    --second_hover: #008DCC;
+    --second_actice: #00A5EF;
+    --info: #F2A418;
     --success: #23AE5E;
-    --info: #18ACEF;
-    --info_hover: #60C3EF;
-    --info_actice: #00A5EF;
     --warning: #F2CA00;
     --error: #F24030;
     --light: #eee;
@@ -15,5 +14,13 @@
     --shadow: rgba(2, 32, 56, 0.24);
     --text: #333;
     --muted: #b3b3b3;
+    --black_1:#000;
+    --black_2:#1d1d1d;
+    --black_3:#282828;
     --white: #fff;
+    --gray_1: #333;
+    --gray_2: #4f4f4f;
+    --gray_3: #828282;
+    --gray_4: #bdbdbd;
+    --gray_5: #e0e0e0;
 }

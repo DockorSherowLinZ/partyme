@@ -49,11 +49,11 @@ aside{
         border-radius: 0.5rem;
     }
     aside .slider ul li .button:hover{
-        color: var(--info);
+        color: var(--second);
     }
     aside .slider ul li .button:active{
         color: var(--white);
-        background-color: var(--info);
+        background-color: var(--second);
         text-shadow: 0 0 0 var(--white);
     }
         /* 滾軸樣式 */
@@ -71,7 +71,7 @@ aside{
         }
         
         aside ul:hover::-webkit-scrollbar-thumb {
-            background: var(--info);
+            background: var(--second);
         }
 
 /* 搜尋欄 */
@@ -105,15 +105,15 @@ aside{
     .main .tag_slider ul li button{
         display: inline-block;
         padding: 0.5rem 1rem;
-        color: var(--info);
-        border: 1px solid var(--info);
+        color: var(--second);
+        border: 1px solid var(--second);
         border-radius: 1rem;
         margin: 0 .5rem;
     }
     .main .tag_slider ul li button:hover{
-        background-color: var(--info);
+        background-color: var(--second);
         color: var(--white);
-        border: 1px solid var(--info);
+        border: 1px solid var(--second);
     }
         /* 漸層覆蓋 */
         .main .tag_slider .overlap {
@@ -128,7 +128,7 @@ aside{
         .main .tag_slider ul .arrow {
             position: relative;
             z-index: 3;
-            color: var(--info);
+            color: var(--second);
         }
 
     /* medialist */

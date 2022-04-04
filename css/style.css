@@ -169,7 +169,11 @@ p{
             padding: 1rem;
         }
         .pop_guide .content .guide{
+            display: flex;
             margin-bottom: 1rem;
+        }
+        .pop_guide .content .guide .achievement h4{
+            margin-bottom: 0.5em;
         }
         .pop_guide .content p{
             margin-bottom: 1rem;
@@ -186,6 +190,7 @@ p{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            color: var(--info);
         }
             /* 按鈕 */
             .pop_guide .detial .contact{
@@ -264,7 +269,7 @@ p{
         transition: 0.1s ease-in-out;       
     }
     .topic_exploration .container .col:hover{
-        color: var(--info);
+        color: var(--hover);
         transform: scale(1.2);
     }
     .topic_exploration .container .col .topic,.topic_exploration .container .col h3{
