@@ -83,17 +83,12 @@
         padding: 0.5rem 1.5rem;
     }
     /* 國旗圖案 */
-    .translate .flag{
-        width: 28px;
-        height: 18px;
-        padding: 0.8rem 1rem;
-    }
     .translate .flag .fa-solid{
         transform: scale(1.5);
     }
     /* 下拉選單 icon */
     .translate .fa-solid{
-        color: #333;
+        color: var(--gray_1);
         padding: 0 1rem;
     }
 
