@@ -177,6 +177,11 @@ p{
         }
         .pop_guide .content p{
             margin-bottom: 1rem;
+            word-wrap: break-word;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
             /* 名字 */
             .pop_guide .content .guide .name{
