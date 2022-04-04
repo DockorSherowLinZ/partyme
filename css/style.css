@@ -217,7 +217,8 @@ p{
     /* 按鈕 */
     .pop_guide .guides .card .contact{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        margin: 0 auto;
     }
     .pop_guide .guides .card .contact button{
         width: 2rem;
@@ -227,6 +228,7 @@ p{
         border-width: 0;
         border-radius: 50%;
         box-shadow: 0 2px 4px rgba(0,0,0,0.16);
+        margin:0 0.3rem;
         margin-bottom: 2rem;
     }
     .pop_guide .guides .card .contact button .fa-solid{
