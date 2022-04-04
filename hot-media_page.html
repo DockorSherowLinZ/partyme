@@ -12,6 +12,8 @@
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/header_footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hot.css">
     <link rel="stylesheet" href="./css/hot_media.css">
     <title>PARTYME</title>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -45,170 +47,217 @@
         </div>
     </section>
     <section class="main">
-        <section class="container search">
+        <section class="search">
             <div class="search_bar">
-                    <input type="text" placeholder="找尋您感興趣的話題吧！">
-                    <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                <input type="text" placeholder="找尋您感興趣的話題吧！">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </section>
+        <section class="hot_main_media">
+            <div class="container_full">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="main_media">
+                            <iframe src="https://www.youtube.com/embed/RItCgmTR-1U" title="YouTube video player"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="travel_note">
+                            <h2 class="h5_b_ch">旅遊筆記</h2>
+                            <div class="date_group_moneybill">
+                                <div class="date">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <p class="t2_r_ch">2022/06/21 ~ 2022/06/25 ( 5天 4夜 )</p>
+                                </div>
+                                <div class="group_moneybill">
+                                    <div class="group">
+                                        <i class="fa-solid fa-user-group"></i>
+                                        <p class="t2_r_ch">成員：4 人</p>
+                                    </div>
+                                    <span>｜</span>
+                                    <div class="moneybill">
+                                        <i class="fa-solid fa-money-bill"></i>
+                                        <p class="t2_r_ch">總金額：NT$ 308,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide"></div>
+                            <div class="tag_slider">
+                                <div class="overlap"></div>
+                                <ul>
+                                    <li>
+                                        <button class="tag">第一天</button class="tag">
+                                    </li>
+                                    <li>
+                                        <button class="tag">第二天</button class="tag">
+                                    </li>
+                                    <li>
+                                        <button class="tag">第三天</button class="tag">
+                                    </li>
+                                    <li>
+                                        <button class="tag">第四天</button class="tag">
+                                    </li>
+                                    <li>
+                                        <button class="tag">最後一天</button class="tag">
+                                    </li>
+                                    <button class="arrow right">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </ul>
+                            </div>
+                            <div class="divide"></div>
+                            <div class="journey_node">
+                                <div class="item plane">
+                                    <div class="departure">
+                                        <i class="fa-solid fa-plane-departure"></i>
+                                        <h3 class="t2_r_ch">CKS</h3><p class="t3_r_ch">，約 15.5hr</p>
+                                    </div>
+                                    <span>｜</span>
+                                    <div class="arrival">
+                                        <i class="fa-solid fa-plane-arrival"></i>
+                                        <h3 class="t2_r_ch">JFK  
+                                        </h3><p class="t3_r_ch">，約 17.5hr</p>
+                                    </div>
+                                </div>
+                                <div class="item car_rental">
+                                    <div class="website">
+                                        <i class="fa-solid fa-car-side"></i>
+                                        <h3 class="t2_r_ch">Rentalcars (國際最大租車比價網)</h3>
+                                    </div>
+                                </div>
+                                <div class="item hotel">
+                                    <div class="location">
+                                        <i class="fa-solid fa-bed"></i>
+                                        <h3 class="t2_r_ch">紐約市中心千禧希爾頓酒店 / New York City Hilton</h3>
+                                    </div>
+                                </div>
+                                <div class="item node">
+                                    <div class="location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <div class="name_group">
+                                            <div class="name">
+                                                <h3 class="t2_r_ch">時報廣場 （世代廣場）/ Times Square</h3><br>
+                                                <h3 class="t2_r_ch">百老匯 / Broadway</h3><br>
+                                                <h3 class="t2_r_ch">世界貿易中心一號大樓 / One World Trade Center</h3><br>
+                                                <h3 class="t2_r_ch">歸零地 / Ground Zero</h3><br>
+                                            </div>
+                                            <div class="more_second_floor">
+                                                <button>
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </button>
+                                                <div class="divide"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divide"></div>
+                            </div>
+                            <div class="note">
+                                <div class="context">
+                                    <h4 class="t2_r_ch">紐約行程推薦安排五天，足以玩遍最夯必去紐約景點了，紐約自助旅行想規劃五天也行。省去人氣次之Day3上西城教堂、表演中心＆Day5雀爾喜市場、高架公園、SOHO區就可以啦。最熱門的紐約景點都標記在紐約地圖裡啦，美國紐約自由行真的太好玩了～<br>整趟紐約自由行花費 (五天四夜) 約30萬8千元。紐約市由曼哈頓、布魯克林、皇后區、布朗士，史泰登島五個行政區組成。<br>紐約必去最夯10大熱門景點如下，來紐約自由行沒有去超級可惜：1.時代廣場、2.華爾街銅牛、3.自由女神、4.第五大道、5.大都會博物館、6.洛克斐勒中心觀景台夜景、7.布魯克林大橋、8.中央車站、9.中央公園、10.帝國大廈
+                                    </h4>
+                                </div>
+                                <div class="more_second_floor">
+                                    <button>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    <div class="divide"></div>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">                    
+                    </div>
+                    <div class="col-4">
+                        <section class="hot related">
+                            <div class="container">
+                                <h3 class="h5_b_ch">相關話題</h3>
+                                <div class="row row-cols-1">
+                                    <div class="col">
+                                        <div class="row row-cols-2">
+                                            <div class="col col-5">
+                                                <div class="video">
+                                                    <iframe src="https://www.youtube.com/embed/_tejFjY6pcA" title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen>
+                                                    </iframe>
+                                                    <div class="video_length">
+                                                        <span>09:28</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-7">
+                                                <div class="content">
+                                                    <h3 class="h6_b_ch">單車之旅</h3>
+                                                    <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                                    <span class="t3_r_ch">觀看次數：123萬次</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row row-cols-2">
+                                            <div class="col col-5">
+                                                <div class="video">
+                                                    <iframe src="https://www.youtube.com/embed/zyNMcPyfFxM" title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen>
+                                                    </iframe>
+                                                    <div class="video_length">
+                                                        <span>09:28</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-7">
+                                                <div class="content">
+                                                    <h3 class="h6_b_ch">戶外露營</h3>
+                                                    <p>戶外露營尹埃敬一建瘤許至洗。指的嘍憧愛的女原都出</p>
+                                                    <span class="t3_r_ch">觀看次數：123萬次</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row row-cols-2">
+                                            <div class="col col-5">
+                                                <div class="video">
+                                                    <iframe src="https://www.youtube.com/embed/ERVngmuVN3Q" title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen>
+                                                    </iframe>
+                                                    <div class="video_length">
+                                                        <span>09:28</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-7">
+                                                <div class="content">
+                                                    <h3 class="h6_b_ch">瑞士滑雪之旅</h3>
+                                                    <p>瑞士滑雪之旅澡拘台的期心著月的著謝駝，蜓最怎慧就要鳳</p>
+                                                    <span class="t3_r_ch">觀看次數：173萬次</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more_second_floor">
+                                    <button>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                    <div class="divide"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>                
             </div>
         </section>
     </section>
-    <section class="container medialist">
-        <div class="video"></div>
-    </section>
-    <section class="hot related">
-            <div class="container_full">
-                <div class="row row-cols-4">
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/_tejFjY6pcA" title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3 class="h6_b_ch">單車之旅</h3>
-                            <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
-                            <span class="t3_r_ch">觀看次數：123萬次</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zyNMcPyfFxM" title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3 class="h6_b_ch">戶外露營</h3>
-                            <p>戶外露營尹埃敬一建瘤許至洗。指的嘍憧愛的女原都出</p>
-                            <span class="t3_r_ch">觀看次數：123萬次</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/ERVngmuVN3Q" title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3 class="h6_b_ch">瑞士滑雪之旅</h3>
-                            <p>瑞士滑雪之旅澡拘台的期心著月的著謝駝，蜓最怎慧就要鳳</p>
-                            <span class="t3_r_ch">觀看次數：173萬次</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zgwArBbMyZA" title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <h3 class="h6_b_ch">攀岩體驗</h3>
-                            <p>攀岩體驗淪興思問在曝應如中重選稚榕給世知男數</p>
-                            <span class="t3_r_ch">觀看次數：123萬次</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="more_second_floor">
-                    <button>
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <div class="divide"></div>
-                </div>
-            </div>
-    </section>
-    <section class="hot related">
-        <div class="container_full">
-            <div class="row row-cols-4">
-                <div class="col">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/_tejFjY6pcA" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3 class="h6_b_ch">單車之旅</h3>
-                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
-                        <span class="t3_r_ch">觀看次數：123萬次</span>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/zyNMcPyfFxM" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3 class="h6_b_ch">戶外露營</h3>
-                        <p>戶外露營尹埃敬一建瘤許至洗。指的嘍憧愛的女原都出</p>
-                        <span class="t3_r_ch">觀看次數：123萬次</span>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/ERVngmuVN3Q" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3 class="h6_b_ch">瑞士滑雪之旅</h3>
-                        <p>瑞士滑雪之旅澡拘台的期心著月的著謝駝，蜓最怎慧就要鳳</p>
-                        <span class="t3_r_ch">觀看次數：173萬次</span>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/zgwArBbMyZA" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3 class="h6_b_ch">攀岩體驗</h3>
-                        <p>攀岩體驗淪興思問在曝應如中重選稚榕給世知男數</p>
-                        <span class="t3_r_ch">觀看次數：123萬次</span>
-                    </div>
-                </div>
-            </div>
-            <div class="more_second_floor">
-                <button>
-                    <i class="fa-solid fa-plus"></i>
-                </button>
-                <div class="divide"></div>
-            </div>
-        </div>
-    </section>
-    
 </body>
 </html>

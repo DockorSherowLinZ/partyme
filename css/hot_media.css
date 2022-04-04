@@ -1,0 +1,182 @@
+/* 搜尋欄 */
+.search_bar {
+    max-width: 32%;
+    margin: 0 auto 1rem;
+}
+/* hot_main_media */
+.hot_main_media .main_media{
+    height: 720px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+    /* iframe */
+    .hot_main_media .main_media iframe{
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        }
+
+/* 旅遊筆記 */
+
+    /* divide 分隔線 */
+    .travel_note .divide {
+        border-bottom: 1px solid var(--gray_5);
+        margin: 0.5rem auto;
+    }
+
+.travel_note h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.travel_note .date_group_moneybill{
+    color: var(--gray_2);
+}
+.travel_note .date,.group_moneybill{
+    margin-bottom: 0.5rem;
+}
+.travel_note .group_moneybill{
+    display: flex;
+    align-items: center;
+}
+    .travel_note .fa-solid{
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+    .travel_note p{
+        display: inline-block;
+    }
+    .travel_note span{
+        color: var(--gray_5);
+        margin: 0 0.25rem;
+    }
+
+    /* tag_slider */
+    .tag_slider ul{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0.5rem auto;
+    }
+    .tag_slider ul li{
+        margin: 0;
+    }
+    .tag_slider ul li button{
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;
+        font-size: 1rem;
+        color: var(--gray_2);
+        border-width: 0;
+    }
+    .tag_slider ul li button:hover{
+        color: var(--second_hover);
+        border-width: 0;
+    }
+        /* more按鈕 */
+        .tag_slider ul .arrow {
+            position: relative;
+            z-index: 3;
+            color: var(--gray_2);
+        }    
+        .tag_slider ul .arrow:hover {
+            color: var(--second_hover);
+        }
+        .tag_slider ul .arrow .fa-solid{
+            font-size: 1rem;
+        }
+
+
+/* journey_node */
+.journey_node{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+}
+.journey_node .fa-solid {
+    color: var(--gray_2);
+}
+.journey_node h3 {
+    display: inline-block;
+}
+    .item{
+        margin: 0.5rem 0;
+    }
+    .item h3:hover{
+        color: var(--info);
+    }
+    /* plane */
+    .journey_node .plane{
+        display: flex;
+        align-items: center;
+    }
+    /* hotel */
+    .journey_node .hotel{
+        display: flex;
+        align-items: center;
+    }
+    /* node */
+    .node{
+        margin-bottom: 0;
+    }
+    .node .location{
+        display: flex;
+        line-height: 1.75rem;
+    }
+    .node .location .name_group{
+        width: 100%;
+    }
+    .node .location .name_group .name{
+        margin-bottom: 0.5em;
+    }
+    .node .location .name_group .more_second_floor{
+        text-align: center;
+    }
+    .node .fa-solid{
+        padding: 0.5rem 0.782rem;
+    }
+    .node .more_second_floor .fa-solid{
+        padding: 0.5rem;
+    }
+    .node .more_second_floor:hover .fa-solid{
+        padding: 0.5rem;
+        color: var(--second_hover);
+    }
+    /* note */
+    .note{
+        margin: 0 0.5rem;
+    }
+        /* 展開按鈕 */
+        .note .fa-solid {
+            padding: 0.5rem 0.782rem;
+        }
+        .note .context{
+            display: flex;
+            word-wrap: break-word;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .context h4{
+            line-height: 1.65rem;
+        }
+    .note .more_second_floor{
+        text-align: center;
+    }
+    .note .more_second_floor:hover .fa-solid{
+        color: var(--second_hover);
+    }
+
+
+/* 側邊推薦欄 */
+.related .col{
+    display: flex;
+}
+.related .row-cols-1{
+    margin-bottom: 0;
+}
+.related .row-cols-1 .col:last-child .row-cols-2{
+    margin-bottom: 1rem;
+}
+/* 展開按鈕 */
+.related .more_second_floor button .fa-solid{
+    font-size: 0.5rem;
+}

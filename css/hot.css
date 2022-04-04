@@ -1,22 +1,6 @@
-section{
-    margin: 0 auto;
-}
-section h2{
-    color: var(--primary);
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-.container{
-    max-width: 1140px;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-}
-p{
-    letter-spacing: 1.2px;
-}
-button{
+/* tag_slider 在 component.css */
+
+.fa-solid{
     font-size: 1rem;
 }
 /* 側邊攔 */
@@ -73,6 +57,10 @@ aside{
         aside ul:hover::-webkit-scrollbar-thumb {
             background: var(--second);
         }
+        /* aside slider arrow 顏色 */
+        .slider button.arrow {
+            color: var(--second);
+        }
 
 /* 搜尋欄 */
 .main{
@@ -93,52 +81,21 @@ aside{
     max-width: 50%;
     margin: 0 auto;
 }
-    /* tag_slider */
-    .tag_slider{
-        position: relative;
-    }
-    .main .tag_slider ul{
-        display: flex;
-        justify-content: center;
-        margin: 2rem auto;
-    }
-    .main .tag_slider ul li button{
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        color: var(--second);
-        border: 1px solid var(--second);
-        border-radius: 1rem;
-        margin: 0 .5rem;
-    }
-    .main .tag_slider ul li button:hover{
-        background-color: var(--second_hover);
-        color: var(--white);
-        border: 1px solid var(--second_hover);
-    }
-        /* 漸層覆蓋 */
-        .main .tag_slider .overlap {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 3;
-            background-image: linear-gradient(270deg, rgba(255, 255, 255, 1) 4%, transparent 20%);
-            pointer-events: none;
-        }
-        /* more按鈕 */
-        .main .tag_slider ul .arrow {
-            position: relative;
-            z-index: 3;
-            color: var(--second);
-        }
-        .main .tag_slider ul .arrow:hover {
-            color: var(--second_hover);
-        }
 
     /* medialist */
-    .main .container.medialist h2{
+    .container.medialist h2{
         text-align: left;
     }
 
+/* 熱門話題影片 */
+.hot .row .col .video .link {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
 
 /* 推薦話題 */
 .topic_recommend{
@@ -176,4 +133,11 @@ aside{
     .topic_recommend .row .card:nth-of-type(6) .cover {
         background: url(../image/Shopping.jpg);
         background-size: cover;
+    }
+    /* 輪播按鈕 */
+    .carousel .arrow.left{
+        left: 1rem;
+    }
+    .carousel .arrow.right{
+        right: 1rem;
     }

@@ -1,3 +1,20 @@
+/* 區塊 */
+section {
+    margin: 0 auto;
+}
+/* h2 標題 */
+section h2 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+/* a連結 */
+.link{
+    text-decoration: none;
+    color: var(--white);
+}
 /* 所有的按鈕類別 */
     /* 按鈕 mouse-in */
     button,.button{
@@ -65,7 +82,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 2px solid var(--second);
+        border-bottom: 2px solid var(--gray_5);
         box-sizing: border-box;
         margin-bottom: 2rem;
     }
@@ -74,7 +91,6 @@
         height: 40px;
         color: var(--second);
         padding: 0.25rem;
-        border-radius: 50%;
     }
     .container .more_second_floor button:hover{
         color: var(--second_hover);
@@ -204,7 +220,7 @@
     }    
     .hot .row .col .video iframe {
         vertical-align: top;
-    }    
+    }
         /* 文字 */
         .hot .container .row .col .content h3 {
             margin: 0.5rem 0;
@@ -311,7 +327,7 @@
     }
     /* hover 後內框線 */
     .recommend.row .card:hover .cover {
-        outline: 0.25rem solid var(--second);
+        outline: 0.25rem solid var(--hover);
     }
         /* 圖片 */
         .recommend.row .card .cover{
@@ -383,34 +399,46 @@
     }
 
 
-/* 熱門話題內頁 */
-
-    /* 熱門話題 slider arrow */
-    .slider button.arrow {
-        color: var(--second);
-    }
-    /* 搜尋欄 */
-    .main {
+/* 所有 tag slider */
+    /* tag_slider */
+    .tag_slider {
         position: relative;
-        height: calc(100vh - 85px);
-        overflow: auto;
-    }    
-    .main .search {
-        position: sticky;
-        top: 0;
-        z-index: 3;
-        padding: 1.5rem 0 1rem;
-        background-color: var(--white);
-        background: linear-gradient(0deg,
-                transparent 0%, white 6%);
-    }    
-    .main .search .search_bar {
-        max-width: 50%;
-        margin: 0 auto;
     }
-
-    /* 側邊推薦欄 */
-    .related{
-        /* display: flex; */
-        /* flex-direction: column; */
+    .tag_slider ul {
+        display: flex;
+        justify-content: center;
+        margin: 2rem auto;
+        align-items: center;
+    }
+    .tag_slider ul li{
+        margin: auto .5rem;
+    }
+    .tag_slider ul li button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        color: var(--gray_2);
+        border: 1px solid var(--gray_2);
+        border-radius: 1rem;
+    }
+    .tag_slider ul li button:hover {
+        color: var(--second_hover);
+        border: 1px solid var(--second_hover);
+    }
+    /* 漸層覆蓋 */
+    .tag_slider .overlap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        background-image: linear-gradient(270deg, rgba(255, 255, 255, 1) 4%, transparent 20%);
+        pointer-events: none;
+    }
+    /* more按鈕 */
+    .tag_slider ul .arrow {
+        position: relative;
+        z-index: 3;
+        color: var(--gray_2);
+    }
+    .tag_slider ul .arrow:hover {
+        color: var(--second_hover);
     }
