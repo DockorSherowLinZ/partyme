@@ -53,7 +53,7 @@
     /* tag_slider */
     .tag_slider ul{
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         margin: 0.5rem auto;
     }
     .tag_slider ul li{
@@ -101,6 +101,7 @@
     }
     .item h3:hover{
         color: var(--info);
+        cursor: pointer;
     }
     /* plane */
     .journey_node .plane{
@@ -154,6 +155,7 @@
             -webkit-line-clamp: 5;
             -webkit-box-orient: vertical;
             overflow: hidden;
+            margin-bottom: 0.5rem;
         }
         .context h4{
             line-height: 1.65rem;
@@ -162,13 +164,15 @@
         text-align: center;
     }
     .note .more_second_floor:hover .fa-solid{
-        color: var(--second_hover);
+        color: var(--second_hover);        
     }
 
 
+
 /* 側邊推薦欄 */
-.related .col{
-    display: flex;
+/* 標題 */
+.related h2{
+    text-align-last: left;
 }
 .related .row-cols-1{
     margin-bottom: 0;
@@ -176,7 +180,41 @@
 .related .row-cols-1 .col:last-child .row-cols-2{
     margin-bottom: 1rem;
 }
+/* 圖片調整 */
+.related .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+    /* 相關話題內容 */
+    .related .row .col-7{
+        display: flex;
+    }
+    .related .contain {
+        display: flex;
+        flex: 1 0 0;
+        margin-left: -15px;
+    }
+        .related .context {
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 0;
+        }
+        .related .context p{
+            flex: 1 0 0;
+        }
+        /* 更多功能 */
+        .related .contain .ellipsis-vertical{
+            padding: 0.5rem;
+        }
+        .related .contain .ellipsis-vertical:hover{
+            cursor: pointer;
+        }
+
+
 /* 展開按鈕 */
 .related .more_second_floor button .fa-solid{
     font-size: 0.5rem;
+    color: var(--gray_2);
 }
