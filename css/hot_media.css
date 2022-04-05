@@ -410,10 +410,11 @@ i[class*="fa-"]{
             flex: 1 0 0;
         }
         /* 更多功能 */
-        .related .contain .ellipsis-vertical{
-            padding: 0.5rem;
+        .related .contain .ellipsis-vertical .fa-solid{
+            padding: 1rem;
         }
-        .related .contain .ellipsis-vertical:hover{
+        .related .contain .ellipsis-vertical .fa-solid:hover{
+            color: var(--hover);
             cursor: pointer;
         }
 
