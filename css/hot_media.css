@@ -396,7 +396,7 @@ i[class*="fa-"]{
         display: flex;
     }
     .related .contain {
-        display: flex;
+        display: flex;        
         flex: 1 0 0;
         margin-left: -15px;
     }
@@ -410,8 +410,12 @@ i[class*="fa-"]{
             flex: 1 0 0;
         }
         /* 更多功能 */
+        .related .contain button{
+            display: flex;
+            align-items: start;
+        }
         .related .contain .ellipsis-vertical .fa-solid{
-            padding: 1rem;
+            padding: 1rem;            
         }
         .related .contain .ellipsis-vertical .fa-solid:hover{
             color: var(--hover);
