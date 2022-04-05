@@ -16,6 +16,95 @@
         vertical-align: top;
         }
 
+/* 討論區 */
+.title{
+    text-align-last: left;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--gray_5);
+    padding: 1rem 0;
+}
+    .title h2{
+        margin-bottom: 0.5rem;
+        margin-top: 0.25rem;
+    }
+    .title .context{
+        flex: 1 0 0;
+    }
+    .title .tag{
+        color: var(--second);
+        cursor: pointer;
+    }
+    .title p{
+        color: var(--gray_1);
+    }
+
+    .title .content{
+        display: flex;
+        flex: 1 0 0;
+    }
+    .title .cover{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+    .title .cover img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: top;
+    }
+
+    .title .score{
+        display: flex;
+        align-items: center;
+        color: var(--info);
+    }
+    .title .achievement{
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .title .achievement span{
+        padding-right: 1rem;
+    }
+
+    /* 功能鍵 */
+    .function{
+        min-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        font: 1px 0 0px;
+    }
+    .function button:hover i,button:hover .amount{
+        color: var(--primary);
+    }
+    .function button i{
+        transform: scale(1.3);
+        color: var(--gray_1);
+    }
+    .function button:first-of-type{
+        display: flex;
+    }
+    .function button i:first-of-type{
+        padding-right: 0.5rem;
+    }
+
+    /* 嚮導 */
+
+
+
+
+
+
+
+
+
+
+
 /* 旅遊筆記 */
 
     /* divide 分隔線 */
