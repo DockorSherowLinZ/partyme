@@ -39,10 +39,10 @@
 }
 
 .t1_b_ch{
-    font-size: 1.25rem; font-weight: bold; line-height: 1.75;
+    font-size: 1.05rem; font-weight: bold; line-height: 1.75;
 }
 .t1_r_ch{
-    font-size: 1.25rem; font-weight: normal; line-height: 1.75;
+    font-size: 1.05rem; font-weight: normal; line-height: 1.75;
 }
 .t2_b_ch{
     font-size: 0.95rem; font-weight: bold; line-height: 1.5;
@@ -63,5 +63,5 @@
     font-size: 0.75rem; font-weight: normal; line-height: 1.2;
 }
 p{
-    line-height: 1.5; letter-spacing: 1.2px;
+    line-height: 1.5; letter-spacing: 1.05px;
 }
