@@ -202,6 +202,7 @@
             flex: 1 0 0;
         }
         .related .context p{
+            padding: 0.25rem 0;
             flex: 1 0 0;
         }
         /* 更多功能 */
@@ -212,9 +213,23 @@
             cursor: pointer;
         }
 
+    /* 推薦嚮導 */
+    .related .score{
+        color: var(--info);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .language span{
+        padding-right: 0.25rem;
+    }
+
 
 /* 展開按鈕 */
 .related .more_second_floor button .fa-solid{
     font-size: 0.5rem;
     color: var(--gray_2);
+}
+.related .more_second_floor button:hover .fa-solid{
+    color: var(--second_hover);
 }
