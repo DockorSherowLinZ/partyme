@@ -107,7 +107,7 @@
 }
     /* 嚮導輪播先用圖片替代 */
     .pop_guide .carousel{
-        background: url(../image/pop_guides_bg.svg) no-repeat center center;
+        background: url(../image/pop_guides_bg.jpg) no-repeat center center;
     }
     .pop_guide .card.profile_active{
         max-width: 50%;
