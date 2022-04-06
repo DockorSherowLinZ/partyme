@@ -261,7 +261,7 @@ section h2 {
                 vertical-align: top;
                 object-fit: cover;
                 width: 100%;
-                transform: scale(1.0000001);
+                transform: scale(1.01);
                 transition: .3s all;
             }
             .pop_guide .carousel .card .cover:hover img {

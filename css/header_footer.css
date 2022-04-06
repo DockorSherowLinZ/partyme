@@ -46,8 +46,12 @@
         display: flex;
         align-items: center;
     }    
+    .main_nav .member_button a{
+        text-decoration: none;
+        color: var(--gray_2);
+    }    
     /* 註冊按鈕 */
-    .member_button button {
+    .member_button button{
         font-size: 1rem;
         background-color: #fff;
         outline: 0;
@@ -68,6 +72,9 @@
         color: var(--white);
         background: var(--primary);
         transition: all 0.05s ease-in-out;
+    }
+    .member_button .login a{
+        color: var(--white);
     }
     
     .member_button .login:hover {
