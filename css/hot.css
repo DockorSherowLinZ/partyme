@@ -10,8 +10,9 @@
 aside{
     position: fixed;
     left: 2rem;
-    z-index: 3;
+    z-index: 5;
     margin: 1.5rem 0;
+    background-color: var(--white);
 }
     /* 清單 */
     aside h2 {
