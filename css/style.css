@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 /* 主視覺版塊 */
 .master_vision{
         background:url(../image/asian_blogger_travel.jpg) no-repeat top 0 center;

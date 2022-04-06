@@ -62,6 +62,12 @@ aside{
             color: var(--second);
         }
 
+/* 預算 */
+/* input{
+    accent-color: var(--info);
+} */
+
+
 /* 搜尋欄 */
 .main{
     position: relative;

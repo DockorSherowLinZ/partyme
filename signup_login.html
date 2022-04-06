@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/header_footer.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/signup_login.css">
     <title>signup_login</title>
 </head>
 <body>
@@ -31,15 +31,58 @@
                 </ul>
                 <span>｜</span>
                 <div class="member_button">
-                    <button class="signup">註冊會員</button>
-                    <button class="login">登入</button>
+                    <button class="signup">
+                        <a href="./signup_login.html">註冊會員</a>
+                    </button>
+                    <button class="login">
+                        <a href="./signup_login.html">登入</a>
+                    </button>
                     <div class="translate">
-                        <div class="flag"><i class="fa-solid fa-globe"></i></div>
-                        <div class="text">中文<i class="fa-solid fa-chevron-down"></i></div>
-    
+                        <div class="flag">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="text">中文
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="h3_b_ch">註冊會員</h2>
+            <div class="card">
+                <!-- <h3 class="h5_b_ch">註冊會員</h3> -->
+                <div class="content">
+                    <div class="account">
+                        <span>帳號：</span><input type="email" name="email" id="email" placeholder="example@email.com">
+                    </div>
+                    <div class="password">
+                        <span>密碼：</span><input type="password" name="password" id="password" placeholder="字串須為英文+數字至少6碼">
+                    </div>
+                </div>
+                <div class="forget"><a class="t3_r_ch" href="#">忘記密碼</a></div>
+                <div class="member_button">
+                    <button>註冊</button>
+                    <button>登入</button>
+                </div>
+            </div>
+            <!-- <div class="item">
+                <div class="card">
+                    <div class="profile">
+                        <div class="content">
+                                <p class="h6">註冊會員</p>
+                                <h4 class="p">微軟 Azure｜通關 AZ-104 認證，邁向雲端 IT 管理之路</h4>
+                                <h6 class="time">195小節 · 約0.2小時</h6>
+                                <div class="detial">
+                                    <h6 class="view">107 人瀏覽</h6>
+                                    <h3 class="price">NT$ 3,000</h3>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </section>
     <footer>
