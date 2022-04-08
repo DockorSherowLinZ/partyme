@@ -66,8 +66,8 @@ aside{
 /* 搜尋欄 */
 .main{
     position: relative;
-    height: calc(100vh - 85px);
-    overflow: auto;
+    /* height: calc(100vh - 85px); */
+    /* overflow: auto; */
 }
 .main .search{
     position: sticky;
