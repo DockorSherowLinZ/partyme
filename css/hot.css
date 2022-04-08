@@ -71,7 +71,7 @@ aside{
 }
 .main .search{
     position: sticky;
-    top: 0;
+    top: 68px;
     z-index: 3;
     padding: 1.5rem 0 1rem;
     background-color: var(--white);
