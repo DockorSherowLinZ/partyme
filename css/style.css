@@ -41,7 +41,7 @@ html {
 }
 
 .hot .carousel .video {
-    height: 376px;
+    /* height: 376px; */
     overflow: hidden;
     border-radius: 1rem;
 }
@@ -50,6 +50,14 @@ html {
     width: 100%;
     height: 100%;
     vertical-align: top;
+}
+
+.hot .row .col .video{
+    width: 100%;
+}
+
+.hot .row .col .video iframe{
+    width: 100%;
 }
 
 /* 輪播影片時間長度顯示框 */
@@ -80,13 +88,13 @@ html {
 /* 影片內容欄 */
 .hot .card .content {
     display: flex;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     background-image: linear-gradient(90deg, rgba(2, 32, 56, 0.88) 80%, rgba(2, 32, 56, 0.76) 93%, rgba(2, 32, 56, 0.16) 99%, transparent);
 }
 
 /* 穿透col，選得到裡面的物件。 */
 .hot .card {
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .hot .card .content .info {
@@ -415,6 +423,87 @@ html {
     margin-bottom: -2rem;
 }
 
+
+/* Swiper套件 */
+
+/* 熱門話題輪播 */
+.hot {
+    position: relative;
+}
+
+.hot .swiper {
+    height: 400px;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.hot .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+}
+
+.hot .swiper-slide img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.hot .swiper .video_length {
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.85rem;
+    margin: 0.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+}
+
+/* 人氣嚮導輪播 */
+.pop_guide .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pop_guide .swiper-slide {
+    width: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.25rem 1rem var(--shadow);
+}
+
+.pop_guide .swiper-slide img {
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.pop_guide .swiper-slide .content{
+    padding: 1.5rem;
+}
+
 @media screen and (max-width:1200px) {
     .container{
         max-width: 1140px;
@@ -609,7 +698,13 @@ html {
     }
     .container{
         max-width: 720px;
-    } 
+    }
+    
+/* 熱門話題 */
+    /* 熱門話題的影片 */
+    .hot .container .row .col{
+        margin-bottom: 1rem;
+    }
 
 /* 主題探索 */  
     /* 主題探索飛機背景圖 */
