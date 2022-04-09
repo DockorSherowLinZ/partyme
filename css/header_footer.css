@@ -1,3 +1,6 @@
+@media screen and (min-width:1200px) {
+
+}
 /* 導覽列 */
 .main_header{
     position: sticky;
@@ -103,8 +106,7 @@
 /* footer */
 footer{
     background-image: 
-        url(../image/wave_bottom_all.png);
-
+        url(../image/wave_bottom.png);
     background-repeat: no-repeat;
     background-position: top center;
     width: 100%;
@@ -117,28 +119,39 @@ footer .background{
     /* footer連結 */
     footer .footer_links{
         display: flex;
+        align-items: center;
     }
-        footer ul li{
+    footer .footer_links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        footer ul li a{
             padding-bottom: 2.25rem;
+            display: inline-block;
+            color: var(--white);
         }
-            footer ul li a{
-                display: inline-block;
-                color: var(--white);
-            }
     /* media     */
     footer .media ul{
         display: flex;
         justify-content: space-between;
-        max-width: calc( 100% - 5rem );
     }
     footer .media ul li {
         padding: 2.25rem 0;
     }
+    footer .media ul li img{
+        width: 100%;
+    }
     /* downapp */
     footer .downapp ul{
         display: flex;
-        justify-content: space-between;
-        max-width: calc( 100% - 9rem );
+    }
+    footer .downapp li{
+        padding-right: 2rem;
+    }
+    footer .downapp ul li img{
+        width: 100%;
+        object-fit: cover;
     }
 
     /* 著作權 */
@@ -149,3 +162,131 @@ footer .background{
         font-family: Helvetica;
         padding: 0.75rem 0;
     }
+
+    @media screen and (max-width:1200px) {        
+        footer{
+            max-width: 1200px;
+        }
+    }
+    @media screen and (max-width:992px) {        
+        footer{
+            max-width: 960px;
+        }
+        footer .background{
+            justify-content: space-evenly;
+        }
+        footer .footer_links{
+            justify-content: center;
+        }
+        footer .media ul li {
+            margin-right: 1rem;
+        }
+        footer .downapp li{
+            padding-right: 1rem;
+        }
+    }
+    @media screen and (max-width:768px) {        
+        footer .background {
+            padding: 0 0 1rem;
+        }
+
+        footer .container .background .col:first-child {
+            order: 1;
+        }
+        
+        footer .container .subscribe {
+            order: 0;
+        }
+        footer .footer_links ul{
+            /* flex-direction: row; */
+        }
+        footer ul li {
+            padding: 0.5rem 1rem 2rem;
+        }
+        footer .container .background .footer_links .col:first-of-type {
+            order: 1;
+        }
+        
+        footer .container .background .footer_links .col:nth-of-type(2) {
+            order: 2;
+        }
+
+        footer .downapp ul {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+    /* @media screen and (min-width:768px) {
+        footer{
+            min-width: 720px;
+            background:linear-gradient(0deg,var(--hover) 20%,var(--second_hover));
+            margin: 0 auto;
+        }
+        footer .background{
+            padding: 0;
+        }
+        footer .container .background{
+            justify-content: center;
+        }
+        footer .container .background .col:first-child{
+            order: 1;
+        }
+        footer .container .subscribe {
+            order: 0;
+        }
+        
+        footer ul {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        footer ul li {
+            padding: 0.5rem 1rem 2rem ;
+        }
+
+        footer .container .subscribe .downapp ul{
+            max-width: 100%;
+        }
+        footer .copyright div{
+            margin: 0 2rem;
+        }
+    }
+        @media screen and (min-width:992px) {
+            footer{
+
+                background-image: url(../image/wave_bottom.png);
+                background-repeat: no-repeat;
+                background-position: bottom center;
+                object-fit: cover;
+            }
+            footer .container .background .col:first-child {
+                order: 0;
+            }
+            footer .footer_links .col{
+                display: flex;
+            }
+            footer ul {
+                display: inline-block;
+            }
+            footer ul li{
+                display: inline-block;
+            }
+            footer .media ul{
+                max-width: 100%;
+            }
+            footer .downapp ul{
+                max-width: 100%;
+                justify-content: flex-start;
+            }
+            footer .downapp ul li{
+                padding: 0 1rem 2rem 0;
+            }
+        }
+        @media screen and (max-width:1200px) {
+            footer .container .background{
+                margin: 0 auto;
+                justify-content: space-around;
+            }            
+        } */

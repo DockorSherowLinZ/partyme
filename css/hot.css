@@ -66,6 +66,7 @@ aside{
 /* 搜尋欄 */
 .main{
     position: relative;
+    /* 寫出高度會body的高度只剩下nav */
     /* height: calc(100vh - 85px); */
     /* overflow: auto; */
 }
