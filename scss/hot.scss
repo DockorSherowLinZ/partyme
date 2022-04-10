@@ -14,67 +14,69 @@ aside {
     z-index: 5;
     margin: 1.5rem 0;
     background-color: var(--white);
-}
 
-/* 清單 */
-aside h2 {
-    color: var(--primary);
-    padding: 0.5rem 0 0;
-}
+    /* 清單 */
+    h2 {
+        color: var(--primary);
+        padding: 0.5rem 0 0;
+    }
 
-aside .slider ul {
-    padding: 0 1rem 1rem 0;
-    position: relative;
-    height: calc(100vh - 149px);
-    overflow: auto;
-}
+    .slider {
 
-/* 清單列按鈕 */
-aside .slider ul li .button {
-    text-align-last: left;
-    width: 100%;
-    padding: 0.5rem 0.75rem;
-    margin: 0.5rem 0;
-    border-radius: 0.5rem;
-}
+        ul {
+            padding: 0 1rem 1rem 0;
+            position: relative;
+            height: calc(100vh - 149px);
+            overflow: auto;
 
-aside .slider ul li .button:hover {
-    color: var(--second_hover);
-}
+            &:hover {
 
-aside .slider ul li .button:active {
-    color: var(--white);
-    background-color: var(--second);
-    text-shadow: 0 0 0 var(--white);
-}
+                &::-webkit-scrollbar-thumb {
+                    background: var(--second);
+                }
+            }
 
-/* 滾軸樣式 */
-aside ul::-webkit-scrollbar {
-    width: 0.25rem;
-}
+            li {
 
-aside ul::-webkit-scrollbar-track {
-    background: transparent;
-}
+                /* 清單列按鈕 */
+                .button {
+                    text-align-last: left;
+                    width: 100%;
+                    padding: 0.5rem 0.75rem;
+                    margin: 0.5rem 0;
+                    border-radius: 0.5rem;
 
-aside ul::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 5px;
-}
+                    &:hover {
+                        color: var(--second_hover);
+                    }
 
-aside ul:hover::-webkit-scrollbar-thumb {
-    background: var(--second);
-}
-
-/* aside slider arrow 顏色 */
-.slider button.arrow {
-    color: var(--second);
+                    &:active {
+                        color: var(--white);
+                        background-color: var(--second);
+                        text-shadow: 0 0 0 var(--white);
+                    }
+                }
+            }
+        }
+        
+        /* 滾軸樣式 */
+        &::-webkit-scrollbar {
+            width: 0.25rem;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: transparent;
+            border-radius: 5px;
+        }
+    }
 }
 
 /* 搜尋欄 */
 .main {
     position: relative;
-    /* 寫出高度會body的高度只剩下nav */
+    /* 寫出高度會讓body的高度只剩下nav */
     /* height: calc(100vh - 85px); */
     /* overflow: auto; */
 }
@@ -85,8 +87,7 @@ aside ul:hover::-webkit-scrollbar-thumb {
     z-index: 3;
     padding: 1.5rem 0 1rem;
     background-color: var(--white);
-    background: linear-gradient(0deg,
-            transparent 0%, white 6%);
+    background: linear-gradient(0deg, transparent 0%, white 6%);
 }
 
 .search_bar {

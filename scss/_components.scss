@@ -13,8 +13,7 @@ section h2 {
 
 /* 所有的按鈕類別 */
 /* 按鈕 mouse-in */
-button,
-.button {
+button,.button {
     cursor: pointer;
     border-width: 0;
     background: transparent;
@@ -26,57 +25,56 @@ button,
     justify-content: center;
     align-items: center;
     margin: 1rem 0 6.5rem 0;
-}
 
-.container .more button {
-    padding: 1rem 2rem;
-    border-radius: 0.65rem;
-    background-color: var(--second);
-    color: var(--white);
-    font-size: 1rem;
-    font-family: sans-serif;
-    transition: 0.15s ease-in-out;
-}
-
-.container .more button:hover {
-    background-color: var(--second_hover);
+    button {
+        padding: 1rem 2rem;
+        border-radius: 0.65rem;
+        background-color: var(--second);
+        color: var(--white);
+        font-size: 1rem;
+        font-family: sans-serif;
+        transition: 0.15s ease-in-out;
+    
+        &:hover {
+            background-color: var(--second_hover);
+        }
+    }
 }
 
 /* 首頁輪播按鈕父層 */
 .carousel {
     position: relative;
-}
 
-/* 首頁輪播按鈕 */
-.carousel .arrow {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    border-width: 0;
-    background-color: var(--white);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.16);
-    color: var(--primary);
-    position: absolute;
-    top: calc(50% - 1.5rem);
-    z-index: 3;
-}
+    /* 首頁輪播按鈕 */
+    .arrow {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border-width: 0;
+        background-color: var(--white);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.16);
+        color: var(--primary);
+        position: absolute;
+        top: calc(50% - 1.5rem);
+        z-index: 3;
 
-/* 調整按鈕位置 */
-.carousel .arrow.left {
-    left: -3rem;
-}
+        &:hover {
+            color: var(--hover);
+        }
 
-.carousel .arrow.right {
-    right: -3rem;
-}
+        /* 調整 icon 大小    */
+        .fa-solid {
+            transform: scale(1.6);
+        }
 
-.carousel .arrow:hover {
-    color: var(--hover);
-}
-
-/* 調整 icon 大小    */
-.carousel .arrow .fa-solid {
-    transform: scale(1.6);
+        /* 調整按鈕位置 */
+        .left {
+            left: -3rem;
+        }
+        .right {
+            right: -3rem;
+        }
+    }
 }
 
 /* 內頁的 more */
@@ -135,42 +133,6 @@ button,
     line-height: 0.5;
     color: var(--hover);
 }
-
-@media screen and (max-width:1200px) {
-
-    /* 首頁輪播按鈕 */
-    .carousel .arrow.left {
-        left: 0;
-    }
-
-    .carousel .arrow.right {
-        right: 0;
-    }
-
-    /* 回到頂端 */
-    .side_function {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-}
-
-@media screen and (max-width:992px) {
-    .side_function {
-        width: 3.25rem;
-        height: 3.25rem;
-        right: 1rem;
-        bottom: 3.5rem;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .side_function {
-        width: 2.5rem;
-        height: 2.5rem;
-        right: 2rem;
-    }
-}
-
 
 
 /* 首頁搜尋欄 input */
@@ -237,63 +199,76 @@ button,
 }
 
 /* 首頁嚮導欄按鈕父層 */
-.pop_guide .guides .card .cover {
-    overflow: hidden;
-    border-radius: 50%;
-    position: relative;
-}
-
-.pop_guide .guides .card .cover::after {
-    width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    transition: .3s all;
-}
-
-.pop_guide .guides .card:hover .cover::after {
-    opacity: 0.6;
-}
-
-.pop_guide .guides .card .contact {
+.pop_guide .guides .card{
     display: flex;
-    justify-content: space-evenly;
-}
+    flex-direction: column;
+    align-items: center;
 
-/* 首頁嚮導欄按鈕照片 */
-.pop_guide .guides .card .cover img {
-    transition: .3s all;
-    transform: scale(1);
-}
+    &:hover {
+        .cover::after {
+            opacity: 0.6;
+        }
+    }
 
-.pop_guide .guides .card .cover:hover img {
-    transform: scale(1.15);
-}
+    &::after {
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        transition: .3s all;
+    }
 
-/* 首頁嚮導欄按鈕 */
-.pop_guide .guides .card .contact button {
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--white);
-    color: var(--dark);
-    border-width: 0;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
-    margin-bottom: 2rem;
-}
+    /* 首頁嚮導欄按鈕照片 */
+    .cover {
+        width: 130px;
+        height: 130px;
+        overflow: hidden;
+        border-radius: 50%;
+        position: relative;
 
-.pop_guide .guides .card .contact button:hover {
-    color: var(--hover);
-}
+        img {
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+            transition: .3s all;
+            transform: scale(1);
+        }
 
-/* 首頁嚮導欄按鈕調整 icon 大小 */
-.pop_guide .guides .card .contact button .fa-solid {
-    transform: scale(1.3);
-}
+        &:hover img {
+            transform: scale(1.15);
+        }
+    }    
 
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+
+        /* 首頁嚮導欄按鈕 */
+        button {
+            width: 2rem;
+            height: 2rem;
+            background-color: var(--white);
+            color: var(--dark);
+            border-width: 0;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+            margin: 0.25rem;
+            margin-bottom: 2rem;
+
+            &:hover {
+                color: var(--hover);
+            }
+
+            /* 首頁嚮導欄按鈕調整 icon 大小 */
+            .fa-solid {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
 
 /* 所有卡片類型 */
 /* 首頁熱門話題影片卡片 */
@@ -697,4 +672,41 @@ button,
 
 .tag_slider ul .arrow:hover {
     color: var(--second_hover);
+}
+
+
+
+@media screen and (max-width:1200px) {
+
+    /* 首頁輪播按鈕 */
+    .carousel .arrow.left {
+        left: 0;
+    }
+
+    .carousel .arrow.right {
+        right: 0;
+    }
+
+    /* 回到頂端 */
+    .side_function {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .side_function {
+        width: 3.25rem;
+        height: 3.25rem;
+        right: 1rem;
+        bottom: 3.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .side_function {
+        width: 2.5rem;
+        height: 2.5rem;
+        right: 2rem;
+    }
 }
