@@ -12,12 +12,12 @@
     <title>PARTYME</title>
 </head>
 <body>
-    <!-- 導覽列 -->
+    <!-- 網頁版導覽列 -->
     <section class="main_header">
             <div class="main_nav">            
                 <a href="./index.html">
                     <h1 class="logo">
-                    <img src="./image/mainav_Logo.svg" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
+                    <img src="./image/mainav_Logo.webp" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
                     </h1>
                 </a>           
                 <div class="main_menu">
@@ -48,6 +48,42 @@
             </div>
     </section>
     
+    <!-- 手機版導覽列 -->
+    <section class="main_header_mobile">
+        <button onclick="showBottomSheet()">Show Bottom sheet</button>    
+        <div onclick="hideBottomSheet()" id="bottomSheetContainer">
+            <div  id="bottomSheet">
+                <a href="#">Edit</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+                <a href="#">Add</a>
+                <a href="#">Cancel</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- <input type="checkbox" name="" id="menu_switch">
+        <div class="menu_button">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./image/mainav_Logo_mobile.webp" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
+                </a>
+            </h1>
+            <label for="menu_switch" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="main_nav">
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i>首頁</a></li>
+                <li><a href="./hot.html"><i class="fa-solid fa-fire-flame-curved"></i>熱門話題</a></li>
+                <li><a href="./pop_guide.html"><i class="fa-solid fa-signs-post"></i>人氣嚮導</a></li>
+                <li><a href="./topic_exploration.html"><i class="fa-solid fa-compass"></i>主題探索</a></li>
+                <li><a href="./popular_cities.html"><i class="fa-solid fa-tree-city"></i>熱門城市</a></li>
+                <li><a href="./signup_login.html"><i class="fa-solid fa-user"></i>會員專區</a></li>
+            </ul>
+        </div> -->
+    
 
     <!-- 主視覺Banner及搜尋欄 -->
     <!-- <section class="master_vision">
@@ -69,7 +105,7 @@
     
 
     <!-- 熱門話題 -->
-    <!-- <section class="hot">
+    <section class="hot">
         <div class="container">
             <h2 class="h1_b_ch">熱門話題</h2>
             <div class="swiper mySwiper" id="hot_carousel">
@@ -334,7 +370,7 @@
                 </button>
             </div>
         </div>
-    </section> -->
+    </section>
     
 
     <!-- 人氣嚮導 -->
@@ -1165,32 +1201,22 @@
 
     <!-- 熱門話題輪播 -->
     <script>
-    // var swiper = new Swiper("#hot_carousel", {
-    //     cssMode: true,        
-    //     navigation: {
-    //         nextEl: ".swiper-button-next",
-    //         prevEl: ".swiper-button-prev",
-    //     },
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //     },
-    // });
-    const hot_swiper = new Swiper("#hot_carousel", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        pagination: {
-            el: ".swiper-pagination"
-        },
-        loop: true, // 循環播放：https://swiperjs.com/swiper-api#param-loop
+        const hot_swiper = new Swiper("#hot_carousel", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination"
+            },
+            loop: true, // 循環播放：https://swiperjs.com/swiper-api#param-loop
 
-        disableOnInteraction: true,//滑鼠事件設定
-        autoplay: {
-            delay: 1800,
-        },
-        // mousewheel: true,
-        keyboard: true,
+            disableOnInteraction: true,//滑鼠事件設定
+            autoplay: {
+                delay: 1800,
+            },
+            mousewheel: true,
+            keyboard: true,
         
     });
     const hot_autoplay = document.getElementById('hot_carousel');
@@ -1234,15 +1260,16 @@
         });
         const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
 
-        pop_guide_autoplay.addEventListener('mouseenter',function(e){
+        pop_guide_autoplay.addEventListener('mouseenter',function(){
             swiper_pop_guide.autoplay.stop();
-            console.log(e,'slider stopped');
+            console.log('slider stopped');
         })
         pop_guide_autoplay.addEventListener('mouseleave',function(){
             swiper_pop_guide.autoplay.start();
             console.log('slider start again');
         })
-
+        
     </script>
+    <script src="./script/bottom-sheet.js"></script>
 </body>
 </html>
