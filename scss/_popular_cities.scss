@@ -1,0 +1,164 @@
+/* tag_slider 在 component.css */
+
+.fa-solid {
+    font-size: 1rem;
+}
+
+/* 側邊攔 */
+.container {
+    position: relative;
+}
+
+aside {
+    position: fixed;
+    left: 2rem;
+    z-index: 3;
+    margin: 1.5rem 0;
+}
+
+/* 清單 */
+aside h2 {
+    color: var(--primary);
+    padding: 0.5rem 0 0;
+}
+
+aside .slider ul {
+    padding: 0 1rem 1rem 0;
+    position: relative;
+    height: calc(100vh - 149px);
+    overflow: auto;
+}
+
+/* 清單列按鈕 */
+aside .slider ul li .button {
+    text-align-last: left;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+}
+
+aside .slider ul li .button:hover {
+    color: var(--second_hover);
+}
+
+aside .slider ul li .button:active {
+    color: var(--white);
+    background-color: var(--second);
+    text-shadow: 0 0 0 var(--white);
+}
+
+/* 滾軸樣式 */
+aside ul::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+aside ul::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+aside ul::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+}
+
+aside ul:hover::-webkit-scrollbar-thumb {
+    background: var(--second);
+}
+
+/* aside slider arrow 顏色 */
+.slider button.arrow {
+    color: var(--second);
+}
+
+/* 預算 */
+/* input{
+    accent-color: var(--info);
+} */
+
+
+/* 搜尋欄 */
+.main {
+    position: relative;
+    height: calc(100vh - 85px);
+    overflow: auto;
+}
+
+.main .search {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding: 1.5rem 0 1rem;
+    background-color: var(--white);
+    background: linear-gradient(0deg,
+            transparent 0%, white 6%);
+}
+
+.search_bar {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* medialist */
+.container.medialist h2 {
+    text-align: left;
+}
+
+/* 熱門話題影片 */
+.hot .row .col .video .link {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* 推薦城市 */
+.topic_recommend {
+    margin-bottom: 2rem;
+}
+
+.topic_recommend .row .card .cover {
+    margin-bottom: 2rem;
+}
+
+/* 用 first-of-type 才能選到 card 的子層 */
+.topic_recommend .row .card:first-of-type .cover {
+    background: url(../image/two_skiers_standing_together.jpg);
+    background-size: cover;
+}
+
+.topic_recommend .row .card:nth-of-type(2) .cover {
+    background: url(../image/cruise.jpg);
+    background-size: cover;
+}
+
+.topic_recommend .row .card:nth-of-type(3) .cover {
+    background: url(../image/underwater-scuba-diving.jpg);
+    background-size: cover;
+}
+
+.topic_recommend .row .card:nth-of-type(4) .cover {
+    background: url(../image/hot_air_balloons.jpg);
+    background-size: cover;
+}
+
+.topic_recommend .row .card:nth-of-type(5) .cover {
+    background: url(../image/Philippines.jpg);
+    background-size: cover;
+}
+
+.topic_recommend .row .card:nth-of-type(6) .cover {
+    background: url(../image/Shopping.jpg);
+    background-size: cover;
+}
+
+/* 輪播按鈕 */
+.carousel .arrow.left {
+    left: 1rem;
+}
+
+.carousel .arrow.right {
+    right: 1rem;
+}

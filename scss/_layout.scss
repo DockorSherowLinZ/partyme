@@ -1,0 +1,248 @@
+/* 導覽列 */
+.main_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: #fff;
+}
+
+.main_header .main_nav {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.16);
+    padding: 0.75rem 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 導覽列logo */
+.main_nav img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* 導覽列選單 */
+.main_nav .main_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_nav ul {
+    display: flex;
+    align-items: center;
+}
+
+/* 導覽列連結 */
+.main_nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    color: #333;
+}
+
+.main_nav ul li a:hover {
+    color: var(--primary);
+}
+
+
+/* 會員相關按鈕 */
+.main_nav .member_button {
+    display: flex;
+    align-items: center;
+}
+
+.main_nav .member_button a {
+    text-decoration: none;
+    color: var(--gray_2);
+}
+
+/* 註冊按鈕 */
+.member_button button {
+    font-size: 1rem;
+    background-color: #fff;
+    outline: 0;
+    border-width: 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.member_button .signup {
+    color: var(--text);
+    transition: all 0.05s ease-in-out;
+}
+
+.member_button .signup:hover {
+    color: var(--hover);
+}
+
+/* 登入 */
+.member_button .login {
+    margin-right: 30px;
+    color: var(--white);
+    background: var(--primary);
+    transition: all 0.05s ease-in-out;
+}
+
+.member_button .login a {
+    color: var(--white);
+}
+
+.member_button .login:hover {
+    background: var(--hover);
+    color: var(--white);
+    transition: all 0.05s ease-in-out;
+}
+
+/* 語言切換按鈕 */
+.member_button .translate {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+}
+
+/* 國旗圖案 */
+.translate .flag .fa-solid {
+    transform: scale(1.5);
+}
+
+/* 下拉選單 icon */
+.translate .fa-solid {
+    color: var(--gray_2);
+    padding: 0 1rem;
+}
+
+
+/* footer */
+footer {
+    background-image:
+        url(../image/wave_bottom.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer .background {
+    padding-top: 15rem;
+    padding-bottom: 1rem;
+}
+
+/* footer連結 */
+footer .footer_links {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer_links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul li a {
+    padding-bottom: 2.25rem;
+    display: inline-block;
+    color: var(--white);
+}
+
+/* media     */
+footer .media ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .media ul li {
+    padding: 2.25rem 0;
+}
+
+footer .media ul li img {
+    width: 100%;
+}
+
+/* downapp */
+footer .downapp ul {
+    display: flex;
+}
+
+footer .downapp li {
+    padding-right: 2rem;
+}
+
+footer .downapp ul li img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 著作權 */
+footer .copyright {
+    background-color: var(--dark);
+    color: var(--white);
+    text-align: center;
+    font-family: Helvetica;
+    padding: 0.75rem 0;
+}
+
+@media screen and (max-width:1200px) {
+    footer {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    footer {
+        max-width: 960px;
+    }
+
+    footer .background {
+        justify-content: space-evenly;
+    }
+
+    footer .footer_links {
+        justify-content: center;
+    }
+
+    footer .media ul li {
+        margin-right: 1rem;
+    }
+
+    footer .downapp li {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer .background {
+        padding: 0 0 1rem;
+    }
+
+    footer .container .background .col:first-child {
+        order: 1;
+    }
+
+    footer .container .subscribe {
+        order: 0;
+    }
+
+    footer .footer_links ul {
+        /* flex-direction: row; */
+    }
+
+    footer ul li {
+        padding: 0.5rem 1rem 2rem;
+    }
+
+    footer .container .background .footer_links .col:first-of-type {
+        order: 1;
+    }
+
+    footer .container .background .footer_links .col:nth-of-type(2) {
+        order: 2;
+    }
+
+    footer .downapp ul {
+        align-items: center;
+        justify-content: center;
+    }
+}

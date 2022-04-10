@@ -1,0 +1,82 @@
+h2 {
+    margin: 2rem;
+}
+
+h3 {
+    color: var(--primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray_2);
+}
+
+
+/* 卡片 */
+.card {
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 1rem var(--shadow);
+    background-color: var(--white);
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+}
+
+/* 卡片內容 */
+.signup_data {
+    margin-bottom: 1rem;
+}
+
+.content {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.account,
+.password,
+.name {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+input {
+    display: flex;
+    flex: 1 0 0;
+    border-width: 0;
+    border-bottom: 1px solid var(--gray_4);
+    padding: 0.25rem;
+}
+
+input::placeholder {
+    color: var(--gray_4);
+}
+
+input:focus {
+    outline: 0;
+}
+
+
+/* 登入 */
+.member_button .sent {
+    color: var(--white);
+    background: var(--primary);
+    transition: all 0.05s ease-in-out;
+}
+
+.member_button .sent a {
+    color: var(--white);
+}
+
+.member_button .sent:hover {
+    background: var(--hover);
+    color: var(--white);
+    transition: all 0.05s ease-in-out;
+}

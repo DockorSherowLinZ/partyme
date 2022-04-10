@@ -1,0 +1,159 @@
+// 色彩規範
+:root {
+    --primary: #1363BF;
+    --hover: #3392FF;
+    --active: #0E4A8F;
+    --second: #18ACEF;
+    --second_hover: #008DCC;
+    --second_actice: #00A5EF;
+    --info: #F2A418;
+    --success: #23AE5E;
+    --warning: #F2CA00;
+    --error: #F24030;
+    --light: #eee;
+    --dark: #092C4C;
+    --shadow: rgba(2, 32, 56, 0.24);
+    --muted: #b3b3b3;
+    --black_1: #000;
+    --black_2: #1d1d1d;
+    --black_3: #282828;
+    --white: #fff;
+    --gray_1: #333;
+    --gray_2: #4f4f4f;
+    --gray_3: #828282;
+    --gray_4: #bdbdbd;
+    --gray_5: #e0e0e0;
+}
+
+
+
+// 字體規範
+:root {
+    font-family: "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "sans-serif", "Microsoft JhengHei", "Font Awesome 5 Pro", "Font Awesome 5 Brands", -apple-system, BlinkMacSystemFont, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.h1_b_ch {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.h1_r_ch {
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.h2_b_ch {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.h2_r_ch {
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.h3_b_ch {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.h3_r_ch {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.h4_b_ch {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.h4_r_ch {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.h5_b_ch {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.h5_r_ch {
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.h6_b_ch {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.h6_r_ch {
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.t1_b_ch {
+    font-size: 1.05rem;
+    font-weight: bold;
+    line-height: 1.75;
+}
+
+.t1_r_ch {
+    font-size: 1.05rem;
+    font-weight: normal;
+    line-height: 1.75;
+}
+
+.t2_b_ch {
+    font-size: 0.95rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.t2_r_ch {
+    font-size: 0.95rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.t3_b_ch {
+    font-size: 0.88rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.t3_r_ch {
+    font-size: 0.88rem;
+    font-weight: normal;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+}
+
+.t4_b_ch {
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.t4_r_ch {
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.5;
+    letter-spacing: 1.05px;
+}
