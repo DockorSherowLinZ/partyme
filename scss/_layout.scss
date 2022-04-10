@@ -6,93 +6,91 @@
     right: 0;
     z-index: 50;
     background-color: #fff;
-}
+    
+    .main_nav {
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.16);
+        padding: 0.75rem 7.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        /* 導覽列logo */
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+        
+        /* 導覽列選單 */
+        .main_menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-.main_header .main_nav {
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.16);
-    padding: 0.75rem 7.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+            ul {
+                display: flex;
+                align-items: center;
 
-/* 導覽列logo */
-.main_nav img {
-    width: 100%;
-    vertical-align: top;
-}
+                /* 導覽列連結 */
+                a {
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 0.5rem 1.5rem;
+                    color: #333;
 
-/* 導覽列選單 */
-.main_nav .main_menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+                    &:hover{
+                        color: var(--primary);
+                    }
+                }
+            }
 
-.main_nav ul {
-    display: flex;
-    align-items: center;
-}
+            /* 會員相關按鈕 */
+            .member_button {
+                display: flex;
+                align-items: center;
+                
+                button {
+                    font-size: 1rem;
+                    background-color: #fff;
+                    outline: 0;
+                    border-width: 0;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem 1.5rem;                    
+                    
+                    /* 按鈕 */
+                    &.signup {
+                        transition: all 0.05s ease-in-out;
+                        
+                        a {
+                            text-decoration: none;
+                            color: var(--gray_2);
+                        }
+                        &:hover{
+                            a {
+                                color: var(--hover);
+                            }
+                        }
 
-/* 導覽列連結 */
-.main_nav ul li a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    color: #333;
-}
+                    }
 
-.main_nav ul li a:hover {
-    color: var(--primary);
-}
+                    /* 登入 */
+                    &.login {
+                        margin-right: 30px;
+                        background: var(--primary);
+                        transition: all 0.05s ease-in-out;
 
+                        a {
+                            color: var(--white);
+                        }
 
-/* 會員相關按鈕 */
-.main_nav .member_button {
-    display: flex;
-    align-items: center;
-}
-
-.main_nav .member_button a {
-    text-decoration: none;
-    color: var(--gray_2);
-}
-
-/* 註冊按鈕 */
-.member_button button {
-    font-size: 1rem;
-    background-color: #fff;
-    outline: 0;
-    border-width: 0;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1.5rem;
-}
-
-.member_button .signup {
-    color: var(--text);
-    transition: all 0.05s ease-in-out;
-}
-
-.member_button .signup:hover {
-    color: var(--hover);
-}
-
-/* 登入 */
-.member_button .login {
-    margin-right: 30px;
-    color: var(--white);
-    background: var(--primary);
-    transition: all 0.05s ease-in-out;
-}
-
-.member_button .login a {
-    color: var(--white);
-}
-
-.member_button .login:hover {
-    background: var(--hover);
-    color: var(--white);
-    transition: all 0.05s ease-in-out;
+                        &:hover {
+                            background: var(--hover);
+                            transition: all 0.05s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* 語言切換按鈕 */
@@ -223,10 +221,6 @@ footer .copyright {
 
     footer .container .subscribe {
         order: 0;
-    }
-
-    footer .footer_links ul {
-        /* flex-direction: row; */
     }
 
     footer ul li {

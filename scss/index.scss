@@ -128,123 +128,11 @@ html {
     margin-bottom: 1rem;
 }
 
-
 /* 人氣嚮導 */
-.pop_guide .guide {
-    display: flex;
-    align-items: center;
-}
+// 在components裡
 
-/* 嚮導輪播先用圖片替代 */
-.pop_guide .carousel {
-    background: url(../image/pop_guides_bg.jpg) no-repeat center center;
-}
 
-.pop_guide .card.profile_active {
-    max-width: 50%;
-    margin: auto;
-}
 
-/* 分數 */
-.pop_guide .score {
-    color: var(--info);
-}
-
-/* 嚮導輪播 */
-/* 按鈕 */
-.pop_guide .carousel {
-    position: relative;
-    margin-bottom: 4rem;
-}
-
-.pop_guide .carousel button {
-    position: absolute;
-    top: calc(50% - 1.5rem);
-    z-index: 2;
-}
-
-/* 嚮導簡介 */
-.pop_guide .card .content {
-    padding: 1.5rem;
-}
-
-.pop_guide .content .guide {
-    display: flex;
-    margin-bottom: 1rem;
-}
-
-.pop_guide .content .guide .achievement h4 {
-    margin-bottom: 0.5em;
-}
-
-.pop_guide .content p {
-    margin-bottom: 1rem;
-    word-wrap: break-word;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-/* 名字 */
-.pop_guide .content .guide .name {
-    margin-right: 1rem;
-}
-
-.pop_guide .container .guides .name {
-    margin-bottom: 0.5rem;
-}
-
-/* 細節 */
-.pop_guide .detial {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* 按鈕 */
-.pop_guide .detial .contact {
-    display: flex;
-}
-
-.pop_guide .detial .contact .item:hover {
-    color: var(--hover);
-}
-
-/* 嚮導欄 */
-.pop_guide .guides .cover {
-    margin-bottom: 1rem;
-}
-
-.pop_guide .guides .card .guide {
-    display: flex;
-    flex-direction: column;
-}
-
-.pop_guide .guides .card .score {
-    margin-bottom: 1rem;
-}
-
-.pop_guide .guides .card .score i {
-    margin-right: 0.5rem;
-}
-
-.pop_guide .guides .card h4 {
-    margin-bottom: 0.5rem;
-}
-
-.pop_guide .guides .card p {
-    margin-bottom: 0.5rem;
-}
-
-/* 按鈕 */
-.pop_guide .guides .card .contact {
-    margin: 0 auto;
-}
-
-.pop_guide .guides .card .contact button {
-    position: relative;
-}
 
 
 /* 主題探索 */
@@ -491,10 +379,10 @@ html {
 }
 
 .pop_guide .swiper-slide {
-    width: 400px;
+    max-width: 400px;
     background-position: center;
     background-size: cover;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
     box-shadow: 0 0.25rem 1rem var(--shadow);
 }
 
