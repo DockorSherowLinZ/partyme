@@ -716,20 +716,45 @@ html {
     }
 
     /* 熱門城市卡片 */
-    .popular_cities .container .map {
-        display: none;
+    .popular_cities {
+
+        .container {
+
+            .carousel {
+                
+                .right {
+                    right: 1rem;
+                }
+                .left {
+                    left: 1rem;
+                }
+            } 
+            
+            .recommend.row .card .cover {
+                height: 180px;
+                border-radius: 0.25rem;
+            }
+            
+            .recommend.row .card .cover h3 {
+                font-size: 1.1rem;
+            }
+            
+            .recommend.row .card .cover h4 {
+                font-size: 0.85rem;
+            }
+            
+            
+
+
+
+
+
+
+            .map {
+                display: none;
+            }
+        }
     }
 
-    .recommend.row .card .cover {
-        height: 180px;
-        border-radius: 0.25rem;
-    }
-
-    .recommend.row .card .cover h3 {
-        font-size: 1.1rem;
-    }
-
-    .recommend.row .card .cover h4 {
-        font-size: 0.85rem;
-    }
+    
 }

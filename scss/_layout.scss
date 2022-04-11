@@ -4,43 +4,60 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 50;
+    z-index: 10;
     background-color: #fff;
+
+    /* 導覽列選單 */
+    #menu-switch {
+        display: none;
+    }
     
     .main_nav {
-        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.16);
-        padding: 0.75rem 7.5rem;
+        box-shadow: 0 0.25rem 0.75rem var(--shadow);        
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+        position: relative;
+        z-index: 3;
+        padding: 1rem 4rem 1rem;
+
         /* 導覽列logo */
-        img {
-            width: 100%;
-            vertical-align: top;
-        }
-        
-        /* 導覽列選單 */
+        .logo{
+            width: 7.5rem;
+            height: 100%;
+
+            img {
+                width: 100%;
+                vertical-align: top;
+            }
+        }     
+
         .main_menu {
             display: flex;
             align-items: center;
             justify-content: space-between;
 
+            /* 導覽列連結 */
             ul {
                 display: flex;
                 align-items: center;
 
-                /* 導覽列連結 */
-                a {
-                    text-decoration: none;
-                    display: inline-block;
-                    padding: 0.5rem 1.5rem;
-                    color: #333;
-
-                    &:hover{
-                        color: var(--primary);
+                li{
+                    a {
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 0.5rem 1.5rem;
+                        color: var(--gray_2);
+    
+                        &:hover{
+                            color: var(--hover);
+                        }
                     }
-                }
+                }                
+            }
+
+            span{
+                color: var(--gray_2);
             }
 
             /* 會員相關按鈕 */
@@ -48,43 +65,57 @@
                 display: flex;
                 align-items: center;
                 
-                button {
-                    font-size: 1rem;
-                    background-color: #fff;
-                    outline: 0;
-                    border-width: 0;
-                    border-radius: 0.5rem;
-                    padding: 0.5rem 1.5rem;                    
-                    
-                    /* 按鈕 */
-                    &.signup {
+                /* 按鈕 */
+                .signup {
+                    padding: 0.5rem 1.5rem;
+                    margin-right: 0.5rem;
+                    transition: all 0.05s ease-in-out;
+                    color: var(--gray_2);
+
+                    &:hover{
+                        color: var(--hover);
+                    }
+                }
+
+                /* 登入 */
+                .login {
+                    padding: 0.5rem 1.5rem;
+                    margin-right: 0.5rem;
+                    background: var(--primary);
+                    color: var(--white);
+                    border-radius: 0.3rem;
+                    transition: all 0.05s ease-in-out;
+
+                    &:hover {
+                        background: var(--hover);
                         transition: all 0.05s ease-in-out;
-                        
-                        a {
-                            text-decoration: none;
-                            color: var(--gray_2);
+                    }
+                }
+
+                /* 語言切換按鈕 */
+                .translate {
+                    display: flex;
+                    align-items: center;
+                    padding: 0.5rem 1.5rem;
+                    color: var(--gray_2);
+    
+                    /* 國旗圖案 */
+                    .flag {
+                        padding: 0 0.5rem;
+                        .fa-solid {
+                            font-size: 1.15rem;
                         }
-                        &:hover{
-                            a {
+                    }
+    
+                    /* 下拉選單 icon */
+                    .text {
+                        .fa-solid {
+                            color: var(--gray_2);
+                            padding: 0 0.5rem;
+
+                            &:hover{
                                 color: var(--hover);
                             }
-                        }
-
-                    }
-
-                    /* 登入 */
-                    &.login {
-                        margin-right: 30px;
-                        background: var(--primary);
-                        transition: all 0.05s ease-in-out;
-
-                        a {
-                            color: var(--white);
-                        }
-
-                        &:hover {
-                            background: var(--hover);
-                            transition: all 0.05s ease-in-out;
                         }
                     }
                 }
@@ -92,23 +123,7 @@
         }
     }
 }
-/* 語言切換按鈕 */
-.member_button .translate {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1.5rem;
-}
 
-/* 國旗圖案 */
-.translate .flag .fa-solid {
-    transform: scale(1.5);
-}
-
-/* 下拉選單 icon */
-.translate .fa-solid {
-    color: var(--gray_2);
-    padding: 0 1rem;
-}
 
 
 /* footer */
@@ -181,16 +196,156 @@ footer .copyright {
     padding: 0.75rem 0;
 }
 
+
 @media screen and (max-width:1200px) {
-    footer {
+    .main_header {
+        .main_nav {
+            padding: 1rem 1.875rem;
+
+                img {
+                    width: 100%;
+                    vertical-align: top;
+                }
+            
+    
+            .main_menu {
+                font-size: 0.95rem;
+    
+                ul {    
+                    li {    
+                        a {
+                            padding: 0.75rem;    
+                        }
+                    }
+                }
+                
+                span{
+                    padding: 0 0.25rem;
+                }
+    
+                .member_button {
+                    display: flex;                    
+                
+                    a {
+                        text-decoration: none;
+                        color: var(--gray_2);
+                        
+                    }
+                
+                    .signup {
+                        padding: 0.5rem;
+                        margin-right: 1rem;
+                    }
+                
+                    .translate {
+                        color: var(--gray_2);
+                        padding: 0.5rem;
+                        
+                        .fa-solid{
+                            padding: 0.5rem;
+                        }
+
+                        .text {
+                            .fa-solid{
+                                padding: 0.5rem;
+
+                                &:hover {
+                                    color: var(--hover);
+                                }
+                            }
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+
+    .container{
         max-width: 1200px;
+
     }
 }
 
 @media screen and (max-width:992px) {
-    footer {
-        max-width: 960px;
+    .main_header {
+        .main_nav {
+            padding: 0.5rem 1.5rem;
 
+            .logo {
+                width: 6.5rem;
+                height: 100%;
+            }
+
+            .main_menu {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                font-size: 0.95rem;
+                padding-top: 0.75rem;
+                padding-bottom: 0.5rem;
+
+                ul {
+                    li {
+                        a {
+                            padding: 0.5rem;                
+                        }
+                    }
+                }
+
+                span{
+                    padding: 0.1rem;
+                }
+
+                .member_button {
+                    display: flex;
+                    
+                
+                    a {
+                        text-decoration: none;
+                        color: var(--gray_2);
+                        
+                    }
+                
+                    .signup {
+                        margin-right: 0.5rem;
+                    }
+                
+                    .login {
+                        padding: 0.5rem 1.25rem;
+                        border-radius: 0.2rem;
+                    }
+                
+                    .translate {
+                        color: var(--gray_2);
+                        padding: 0.5rem;
+                        
+                        .fa-solid{
+                            padding: 0;
+                        }
+
+                        .text {
+                            .fa-solid{
+                                padding: 0.25rem;
+
+                                &:hover {
+                                    color: var(--hover);
+                                }
+                            }
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+
+    .container{
+        max-width: 960px;
+    }
+
+    footer {
+        
         .background {
             justify-content: space-evenly;
 
@@ -211,11 +366,183 @@ footer .copyright {
 
 @media screen and (max-width:768px) {
     
-    // 網頁版輪播
+    // 網頁版導覽列
     .main_header{
-        display: none;
-    }
+        .main_nav{
+            padding: 0.8rem 1rem 0.4rem;
+            align-items: center;
+            justify-content: space-between;
+            
 
+            .logo{
+                display: flex;
+                width: 7rem;
+            }
+
+            .hamburger{
+                background-color: var(--white);
+                width: 40px;
+                height: 40px;
+                position: relative;
+                
+                span{
+                    background-color: var(--primary);
+                    width: 80%;
+                    height: 3px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+    
+                    &:first-child {
+                        top: 14px;
+                    }
+                    
+                    &:nth-child(2) {
+                        top: 2px;
+                        bottom: 0px;
+                    }
+    
+                    &:last-child {
+                        bottom: 11px;
+                    }
+                }
+    
+            }
+            .main_menu {
+                position: absolute;
+                top: 100%;
+                left: -100%;
+                width: 100%;
+                height: 12rem;
+                transition: left 0.3s;
+                display: block;
+                box-shadow: 0 0.5rem 1rem var(--shadow);
+                z-index: 2;
+                border-radius: 0 0 0.5rem 0.5rem;
+
+                ul{
+                    display: block;
+
+                    li{
+                        a{
+                            padding: 0.75rem;
+                            text-decoration: none;
+                            color: var(--gray_2);
+                        }
+
+                        &:first-of-type, 
+                        &:nth-last-of-type(1),
+                        &:nth-last-of-type(2),
+                        &:nth-last-of-type(3) {
+                            display: none;
+                        }
+                    }
+                }
+
+                span {
+                    display: none;
+                }
+
+                .member_button {
+                    display: block;
+                    padding-top: 0.75rem;
+                    padding-bottom: 0.5rem;
+
+                    a {
+                        display: flex;
+                        text-decoration: none;
+                        color: var(--gray_2);
+                        font-size: 0.95rem;
+                        border-bottom: 1px solid var(--gray_5);
+                        
+                        &:hover{
+                            border-bottom: 1px solid var(--white);
+                            background-color: var(--hover);
+                            color: var(--white);
+                        }
+                    }
+                    
+                    .signup {
+                        margin-right: 0;
+                        padding: 1rem;
+
+                        &:hover{
+                            color: var(--white);
+                        }
+                    }
+                    .login {
+                        margin-right: 0;
+                        padding: 1rem;
+                        background: var(--white);
+                        color: var(--gray_2);
+                        border-radius: 0;
+                    }
+
+                    .translate {
+                        color: var(--gray_2);
+                        padding: 1rem;
+                        font-size: 0.95rem;
+
+                        &:hover , .text .fa-solid:hover{
+                            background: var(--hover);
+                            color: var(--white);
+                        }
+
+                        .flag {
+                            display: none;
+                        }
+
+                        .text{
+                            .fa-solid{
+                                &:hover{
+                                    color: var(--white);
+                                }
+                            }
+                        }
+                       
+                    }
+
+                }
+
+            }
+        }
+        #menu-switch{
+            position: fixed;
+            top: 0;
+            z-index: 2;
+
+            &:checked ~ .main_nav{
+                .main_menu{
+                    left: 0;
+                }
+
+                .hamburger{
+                    span{
+                        &:first-child{
+                            top: 19px;
+                            transform: rotate(45deg);
+                            transition: top 0.1s,
+                            transform 0.05s 0.1s;
+                            
+                        }
+                        &:nth-child(2){
+                            display: none;
+                        }
+                        &:last-child{
+                            bottom: 19px;
+                            transform: rotate(-45deg);
+                            transition: bottom 0.1s,
+                            transform 0.05s 0.1s;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //bottomSheet
     .main_header_mobile{
         #bottomSheetContainer {
             background-color: rgba(0, 0, 0, 0.76);
@@ -237,7 +564,6 @@ footer .copyright {
         #bottomSheet {
             background-color: #fff;
             width: 600px;
-            /* height: 300px; */
             transform: translateY(100%);
             transition: transform 0.3s ease-in-out;
 
@@ -263,136 +589,7 @@ footer .copyright {
         }
 
     }
-    // .main_header_mobile{
-    //     margin: 0 auto;
-    //     width: 100%;
-    //     background-color: var(--white);
-    //     box-shadow: 0 -0.35rem 1.85rem var(--shadow);
-    //     border-radius: 0.5rem;
-    //     position: fixed;
-    //     bottom: 0;
-    //     left: 0;
-
-    //     #menu_switch {
-    //         position: absolute;
-    //         z-index: 20;
-    //         display: none;
-
-    //         &:checked ~ .menu_button {        
-    //             .hamburger {
-    //                 height: 2.5rem;
-    //                 position: relative;
-    //                 display: inline-block;
-
-    //                 span {        
-    //                     &:first-of-type {
-    //                         top: 19px;
-    //                         transform: rotate(45deg);
-    //                         /* 轉場：頂部 0.3秒，變化 0.3秒、延遲 0.3秒 */
-    //                         transition: top 0.1s, transform 0.05s 0.1s;
-    //                     }
-        
-    //                     &:nth-child(2) {
-    //                         display: none;
-    //                     }
-        
-    //                     &:last-of-type {
-    //                         bottom: 19px;
-    //                         transform: rotate(-45deg);
-    //                         /* 轉場：底部 0.3秒，變化 0.3秒、延遲 0.3秒 */
-    //                         transition: bottom 0.1s, transform 0.05s 0.1s;
-    //                     }
-    //                 }
-    //             }
-
-    //             .main_nav{
-    //                 display: block;
-    //                 bottom: 0;
-    //             }
-    //         }
-
-            
-    //     }
-
-    //     .menu_button{
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: space-between;
-    //         margin: 0 auto;
-    //         padding: 0.5rem 1rem;
-    //         position: relative;
-    //         z-index: 2;
-
-    //         img {
-    //             object-fit: cover;
-    //             vertical-align: top;
-    //         }
-
-    //         .hamburger {
-    //             width: 2.5rem;
-    //             height: 2.5rem;
-    //             position: relative;
-            
-    //             span {
-    //                 background-color: #333;
-    //                 width: 1.5rem;
-    //                 height: 0.15rem;
-    //                 border-radius: 1rem;
-    //                 position: absolute;
-    //                 left: 0;
-    //                 right: 0;
-    //                 margin: auto;
-            
-    //                 &:first-of-type {
-    //                     top: 11px;
-    //                 }
-            
-    //                 &:nth-of-type(2) {
-    //                     top: 0;
-    //                     bottom: 0;
-    //                 }
-            
-    //                 &:last-of-type {
-    //                     bottom: 11px;
-    //                 }
-    //             }
-            
-    //         }
-
-    //         .main_nav {
-    //             // background-color: #333;
-    //             position: absolute;
-    //             left: 0;
-    //             // bottom: -100%;
-    //             width: 100%;
-    //             display: none;
-    //             z-index: 1;
-            
-    //             li {
-    //                 padding: 0.5rem 1rem;
-    //                 margin: 1.5rem 0;
-            
-    //                 a {
-    //                     text-decoration: none;
-    //                     color: var(--gray_2);
-            
-    //                     &:hover {
-    //                         color: var(--primary);
-    //                     }
-            
-    //                     .fa-solid {
-    //                         text-align: center;
-    //                         width: 1.5rem;
-    //                         margin-right: 1rem;
-    //                         transform: scale(1.2);
-            
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }        
-    // }
-
+    
     footer .background {
         padding: 0 0 1rem;
     }

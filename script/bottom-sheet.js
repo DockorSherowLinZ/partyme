@@ -19,3 +19,11 @@ function hideBottomSheet() {
         container.classList.remove("active");
     }, 300);
 }
+
+
+// function init() {
+//     showBottomSheet.onclick = 
+// }
+
+
+// window.addEventListener("load", init, false);

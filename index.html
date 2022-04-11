@@ -14,79 +14,45 @@
 <body>
     <!-- 網頁版導覽列 -->
     <section class="main_header">
-            <div class="main_nav">            
+        <input type="checkbox" name="" id="menu-switch">
+        <div class="main_nav">            
+            <h1 class="logo">
                 <a href="./index.html">
-                    <h1 class="logo">
                     <img src="./image/mainav_Logo.webp" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
-                    </h1>
-                </a>           
-                <div class="main_menu">
-                    <ul>
-                        <li><a href="./hot.html">熱門話題</a></li>
-                        <li><a href="./pop_guide.html">人氣嚮導</a></li>
-                        <li><a href="./topic_exploration.html">主題探索</a></li>
-                        <li><a href="./popular_cities.html">熱門城市</a></li>
-                    </ul>
-                    <span>｜</span>
-                    <div class="member_button">
-                        <button class="signup">
-                            <a href="./signup_login.html">註冊會員</a>
-                        </button>
-                        <button class="login">
-                            <a href="#">登入</a>
-                        </button>
-                        <div class="translate">
-                            <div class="flag">
-                                <i class="fa-solid fa-globe"></i>
-                            </div>
-                            <div class="text">中文
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </div>                        
+                </a>
+            </h1>
+            <label for="menu-switch" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>           
+            <div class="main_menu">
+                <ul>
+                    <li><a href="./hot.html">熱門話題</a></li>
+                    <li><a href="./pop_guide.html">人氣嚮導</a></li>
+                    <li><a href="./topic_exploration.html">主題探索</a></li>
+                    <li><a href="./popular_cities.html">熱門城市</a></li>
+                </ul>
+                <span>｜</span>
+                <div class="member_button">
+                    <a class="signup" href="./signup_login.html">註冊會員</a>
+                    <a class="login" href="./signup_login.html">登入</a>
+                    <div class="translate">
+                        <div class="flag">
+                            <i class="fa-solid fa-globe"></i>
                         </div>
+                        <div class="text">中文
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>                        
                     </div>
                 </div>
-            </div>
-    </section>
-    
-    <!-- 手機版導覽列 -->
-    <section class="main_header_mobile">
-        <button onclick="showBottomSheet()">Show Bottom sheet</button>    
-        <div onclick="hideBottomSheet()" id="bottomSheetContainer">
-            <div  id="bottomSheet">
-                <a href="#">Edit</a>
-                <a href="#">Edit</a>
-                <a href="#">Delete</a>
-                <a href="#">Add</a>
-                <a href="#">Cancel</a>
             </div>
         </div>
     </section>
 
-        <!-- <input type="checkbox" name="" id="menu_switch">
-        <div class="menu_button">
-            <h1 class="logo">
-                <a href="./index.html">
-                    <img src="./image/mainav_Logo_mobile.webp" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
-                </a>
-            </h1>
-            <label for="menu_switch" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="main_nav">
-                <li><a href="./index.html"><i class="fa-solid fa-house"></i>首頁</a></li>
-                <li><a href="./hot.html"><i class="fa-solid fa-fire-flame-curved"></i>熱門話題</a></li>
-                <li><a href="./pop_guide.html"><i class="fa-solid fa-signs-post"></i>人氣嚮導</a></li>
-                <li><a href="./topic_exploration.html"><i class="fa-solid fa-compass"></i>主題探索</a></li>
-                <li><a href="./popular_cities.html"><i class="fa-solid fa-tree-city"></i>熱門城市</a></li>
-                <li><a href="./signup_login.html"><i class="fa-solid fa-user"></i>會員專區</a></li>
-            </ul>
-        </div> -->
-    
 
     <!-- 主視覺Banner及搜尋欄 -->
-    <!-- <section class="master_vision">
+<section class="master_vision">
         <div class="container">
             <div class="search row row-cols-xl-2 row-cols-lg-1 row-cols-md-1">
                 <div class="col">
@@ -101,11 +67,11 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     
 
     <!-- 熱門話題 -->
-    <section class="hot">
+<section class="hot">
         <div class="container">
             <h2 class="h1_b_ch">熱門話題</h2>
             <div class="swiper mySwiper" id="hot_carousel">
@@ -374,7 +340,7 @@
     
 
     <!-- 人氣嚮導 -->
-    <section class="pop_guide">
+<section class="pop_guide">
         <div class="container">
             <h2 class="h1_b_ch">人氣嚮導</h2>
             <div id="pop_guide_carousel" class="swiper">
@@ -1001,7 +967,7 @@
     
 
     <!-- 主題探索 -->
-    <!-- <section class="topic_exploration">
+<section class="topic_exploration">
         <div class="container">
             <div class="background">
                 <div class="scoll_effect">
@@ -1046,11 +1012,11 @@
                 </button>
             </div>
         </div>
-    </section> -->
-    
+    </section>
+
 
     <!-- 熱門城市 -->
-    <!-- <section class="popular_cities">
+<section class="popular_cities">
         <div class="container">
             <h2 class="h1_b_ch">熱門城市</h2>
             <div class="recommend carousel row row-cols-3 row-cols-xl-6 row-cols-lg-6 row-cols-md-5">
@@ -1128,19 +1094,20 @@
                 </button>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     <!-- 回到頂端 -->
-    <!-- <section>
+<section>
         <buttom class="side_function top">
             <a href="#">
                 <i class="fa-solid fa-caret-up"></i>
             </a>
         </buttom>
-    </section> -->
+    </section>
 
-    <!-- <footer>
+
+<footer>
         <div class="container">
             <div class="background row .row-cols-2 row-cols-xl-2 row-cols-lg-2 row-cols-md-2">
                 <div class="col">
@@ -1193,8 +1160,23 @@
             <div class="t3_r_ch">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。<br>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</div>
             <div class="t3_r_ch">COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</div>
         </div>
-    </footer> -->
+    </footer>
 
+
+    <!-- ButtonSheet -->
+    <!-- <section class="main_header_mobile">
+            <button onclick="showBottomSheet()">Show Bottom sheet</button>    
+            <div onclick="hideBottomSheet()" id="bottomSheetContainer">
+                <div  id="bottomSheet">
+                    <a href="./index.html"><img src="./image/mainav_Logo_mobile.webp" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。"></a>
+                    <a href="#"><i class="fa-solid fa-house"></i>首頁</a>
+                    <a href="#"><i class="fa-solid fa-fire-flame-curved"></i>熱門話題</a>
+                    <a href="#"><i class="fa-solid fa-signs-post"></i>人氣嚮導</a>
+                    <a href="#"><i class="fa-solid fa-compass"></i>主題探索</a>
+                    <a href="#"><i class="fa-solid fa-user"></i>會員專區</a>
+                </div>
+            </div>
+        </section> -->
 
     <!-- 輪播套件script -->
     <script src="./script/swiper-bundle.min.js"></script>
