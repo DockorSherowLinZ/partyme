@@ -7,132 +7,148 @@ html {
     background: url(../image/asian_blogger_travel.jpg) no-repeat top 0 center;
     width: 100%;
     object-fit: contain;
+
+    .container {
+        margin-bottom: 4rem;
+
+        /* 搜尋板塊 */
+        .banner {
+            height: 595px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            /* 主標題文字 */
+            h2, p {
+                color: var(--white);
+                text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.8);
+                text-align: left;
+            }
+            p {
+                margin-bottom: 2rem;
+                ;
+            }
+        }
+    }
 }
 
-.master_vision .container {
-    margin-bottom: 4rem;
-}
 
-/* 搜尋板塊 */
-.master_vision .search {
-    display: flex;
-    flex-direction: column;
-    height: 595px;
-    justify-content: center;
-}
-
-/* 主標題文字 */
-.master_vision .search .h2_b_ch,
-.h4_r_ch {
-    color: var(--white);
-    text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.8);
-}
-
-.master_vision .search .h4_r_ch {
-    margin-bottom: 2rem;
-    ;
-}
-
-/* 熱門話題 */
-/* 輪播影片 */
-.hot .carousel {
-    margin-bottom: 2rem;
+/* 熱門話題輪播 */
+.hot {
     position: relative;
+
+    .container {    
+        /* Swiper 輪播套件 */
+        .swiper {
+            height: 440px;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+
+            .swiper-wrapper{
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+
+                    .banner{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        vertical-align: top;
+
+                        img{
+                            width: 100%;
+                            vertical-align: top;
+                        }
+                                                
+                        /* 輪播影片介紹卡片 */
+                        .card {
+                            display: flex;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            z-index: 2;
+    
+                            /* 影片內容欄 */
+                            .content {
+                                background-image: linear-gradient(90deg, rgba(2, 32, 56, 0.88) 80%, rgba(2, 32, 56, 0.76) 93%, rgba(2, 32, 56, 0.16) 99%, transparent);
+                                display: flex;
+                                align-items: center;
+    
+                                .info {
+                                    text-align-last: left;
+                                    margin: 1.5rem 1.5rem 0 1rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    flex: 1 0 0;
+                                    color: var(--white);
+    
+                                    h3 {
+                                        margin-bottom: 1.5rem;
+                                        word-wrap: break-word;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                    }
+    
+                                    p {
+                                        margin-bottom: 2rem;
+                                        word-wrap: break-word;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 7;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                    }
+    
+                                    span {
+                                        margin-top: auto;
+                                        margin-bottom: 1rem;
+                                    }
+                                }
+                            }                        
+                        }
+                    }
+
+                    .card_mobile{
+                        display: none;
+                    }
+                }
+            }
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: var(--white);
+                opacity: 0.9;
+
+                &:active{
+                    color: var(--primary);
+                }
+            }
+        }
+        /* 影片卡片在components裡 */
+    }
 }
 
-.hot .carousel .video {
-    /* height: 376px; */
-    overflow: hidden;
-    border-radius: 1rem;
-}
 
-.hot .carousel iframe {
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-}
-
-.hot .row .col .video {
-    width: 100%;
-}
-
-.hot .row .col .video iframe {
-    width: 100%;
-}
-
-/* 輪播影片時間長度顯示框 */
-.hot .card .video_length {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.hot .card .video_length span {
-    background-color: rgba(0, 0, 0, 0.7);
-    display: inline-block;
-    padding: 0.5rem 0.75rem;
-    color: #fff;
-    border-radius: 0.5rem;
-    margin-bottom: 15px;
-}
-
-/* 輪播影片介紹卡片 */
-.hot .container .card {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-}
-
-/* 影片內容欄 */
-.hot .card .content {
-    display: flex;
-    /* border-radius: 1rem; */
-    background-image: linear-gradient(90deg, rgba(2, 32, 56, 0.88) 80%, rgba(2, 32, 56, 0.76) 93%, rgba(2, 32, 56, 0.16) 99%, transparent);
-}
-
-/* 穿透col，選得到裡面的物件。 */
-.hot .card {
-    /* pointer-events: none; */
-}
-
-.hot .card .content .info {
-    margin: 1.5rem 1.5rem 0 1rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 0;
-    color: var(--white);
-}
-
-.hot .card .content h3 {
-    margin-bottom: 1.5rem;
-    word-wrap: break-word;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.hot .card .content p {
-    margin-bottom: 2rem;
-    word-wrap: break-word;
-    display: -webkit-box;
-    -webkit-line-clamp: 7;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.hot .card .content span {
-    margin-top: auto;
-    margin-bottom: 1rem;
-}
 
 /* 人氣嚮導 */
 // 在components裡
-
-
-
 
 
 /* 主題探索 */
@@ -317,60 +333,6 @@ html {
 }
 
 
-/* Swiper套件 */
-
-/* 熱門話題輪播 */
-.hot {
-    position: relative;
-}
-
-.hot .swiper {
-    height: 400px;
-    margin-bottom: 2rem;
-    border-radius: 0.5rem;
-    position: relative;
-}
-
-.hot .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-
-}
-
-.hot .swiper-slide img {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hot .swiper .video_length {
-    color: var(--white);
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 0.5rem;
-    padding: 0.5rem 0.85rem;
-    margin: 0.5rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 5;
-}
-
 /* 人氣嚮導輪播 */
 .pop_guide .swiper {
     width: 100%;
@@ -401,6 +363,21 @@ html {
     .container {
         max-width: 1140px;
     }
+
+    /* 主視覺版塊 */
+    .master_vision {            
+        .container {
+            margin-bottom: 3rem;
+    
+            /* 搜尋板塊 */
+            .banner {
+                height: 575px;
+            }
+        }
+    }
+
+    /* 熱門話題 */
+
 
     /* 主題探索 */
 
@@ -508,11 +485,64 @@ html {
         margin: auto;
     }
 
-    /* 回到頂端 */
-    .side_function {
-        right: 1rem;
+    /* 主視覺版塊 */
+    .master_vision {
+        .container {
+            margin-bottom: 2rem;
+    
+            /* 搜尋板塊 */
+            .banner {
+                height: 575px;
+                
+                .col{
+                    
+
+                    /* 主標題文字 */
+                    .h2_b_ch {
+                        font-size: 2.4rem;
+                    }
+        
+                    .h4_r_ch {
+                        font-size: 1.6rem;
+                        ;
+                    }
+                }
+            }
+        }
     }
 
+
+    /* 熱門話題 */
+    .hot {
+        .container {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .card {
+                            .content {
+                                .info {
+                                    h3 {
+                                        text-align: left;
+                                        font-size: 1.2rem;
+                                    }
+    
+                                    p {
+                                        text-align: left;
+                                        font-size: 0.95rem;
+                                    }
+    
+                                    span {
+                                        text-align: left;
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     /* 主題探索 */
     .topic_exploration .container .background .row .col h3 {
@@ -610,6 +640,40 @@ html {
 
     .container {
         max-width: 720px;
+    }
+
+    /* 主視覺 master_vision */
+    .master_vision {
+        .container {            
+            padding-bottom: 0;            
+            .col{
+                padding: 0 2rem;
+                
+                h2 {
+                    font-size: 2rem;
+                }
+                
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    
+    }
+    
+    /* hot 熱門話題 */
+
+
+    /* pop_guide 人氣嚮導 */
+    .pop_guide {
+        .guides {
+            .card {
+                &:after {
+                    width: 0%;
+                    height: 0%;
+                }
+            }
+        }
     }
 
     /* 熱門話題 */
@@ -743,13 +807,6 @@ html {
                 font-size: 0.85rem;
             }
             
-            
-
-
-
-
-
-
             .map {
                 display: none;
             }
@@ -757,4 +814,104 @@ html {
     }
 
     
+}
+
+@media screen and (max-width:640px) {
+    /* 熱門話題輪播 */
+    .hot {
+        position: relative;    
+        .container {    
+            /* Swiper 輪播套件 */
+            .swiper {
+                .swiper-wrapper{
+                    .swiper-slide{
+
+                    }                    
+                }    
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container {
+        max-width: 395px;
+    }
+    /* 主視覺 master_vision */
+    .master_vision {
+        .container {
+            padding-bottom: 0;
+    
+            .row {
+                justify-content: center;
+    
+                .col {
+                    padding: 0 2rem;
+    
+                    h2 {
+                        font-size: 2.5rem;
+                        text-align: center;
+                    }
+    
+                    p {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    
+    }
+    /* 熱門話題 */
+    .hot {
+        .container {
+            .swiper {
+                height: 100%;
+                padding-bottom: 2rem;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .banner {
+                            display: none;
+                        }
+
+                        .card_mobile{
+                            display: block;
+                            .content{
+                                padding: 1rem 0;
+                                text-align-last: left;
+
+                                img{
+                                    vertical-align: top;
+                                    width: 100%;
+                                }
+                                h3{
+                                    display: -webkit-box;
+                                    word-wrap: break-word;
+                                    -webkit-line-clamp: 1;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                }
+                                p{
+                                    display: -webkit-box;
+                                    word-wrap: break-word;
+                                    -webkit-line-clamp: 2;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper-button-next, .swiper-button-prev {
+                    color: var(--white);
+                    opacity: 0;
+                }
+                .video_length{
+                    bottom: 43%;
+                    right: 2%;
+                }
+            }
+        }
+    }
 }

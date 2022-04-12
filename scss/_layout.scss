@@ -1,11 +1,11 @@
 /* 網頁導覽列 */
 .main_header {
+    background-color: var(--white);
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
-    background-color: #fff;
+    z-index: 5;
 
     /* 導覽列選單 */
     #menu-switch {
@@ -14,12 +14,12 @@
     
     .main_nav {
         box-shadow: 0 0.25rem 0.75rem var(--shadow);        
+        padding: 1rem 4rem 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative;
-        z-index: 3;
-        padding: 1rem 4rem 1rem;
+        z-index: 4;
 
         /* 導覽列logo */
         .logo{
@@ -30,12 +30,68 @@
                 width: 100%;
                 vertical-align: top;
             }
-        }     
+        }
+        
+        /* 首頁搜尋欄 */
+        .search_bar {
+            font-size: 1rem;
+            margin: auto;
+            border-radius: 0.5rem;
+            border: 1.5px solid var(--gray_5);
+            background-color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 0 0 400px;
+            
+            input{
+                border-width: 0;
+                padding: 0.5rem 1rem;
+
+                &::placeholder {
+                    color: var(--gray_4);
+                    font-size: 1rem;
+                    letter-spacing: 0.6px;
+                }
+                
+                &:focus {
+                    outline: 0;
+                }
+            }
+            .fa-solid {
+                margin-right: 1rem;
+                color: var(--gray_3);
+            }            
+        
+        
+            /* 訂閱按鈕 */
+            button {
+                background-color: var(--primary);
+                color: var(--white);
+                width: 96px;
+                border-width: 0;
+                border-radius: 0 0.5rem 0.5rem 0;
+        
+                &:hover {
+                    background-color: var(--hover);
+                }
+        
+                &:active {
+                    background-color: var(--active);
+                }
+        
+                /* 首頁搜尋欄按鈕調整 icon 大小 */
+                .fa-solid {
+                    font-size: 1rem;
+                }
+            }
+        }
 
         .main_menu {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            font-size: 0.9rem;
 
             /* 導覽列連結 */
             ul {
@@ -46,7 +102,7 @@
                     a {
                         text-decoration: none;
                         display: inline-block;
-                        padding: 0.5rem 1.5rem;
+                        padding: 0.5rem 0.75rem;                        
                         color: var(--gray_2);
     
                         &:hover{
@@ -67,8 +123,7 @@
                 
                 /* 按鈕 */
                 .signup {
-                    padding: 0.5rem 1.5rem;
-                    margin-right: 0.5rem;
+                    padding: 0.5rem 0.75rem;
                     transition: all 0.05s ease-in-out;
                     color: var(--gray_2);
 
@@ -77,26 +132,11 @@
                     }
                 }
 
-                /* 登入 */
-                .login {
-                    padding: 0.5rem 1.5rem;
-                    margin-right: 0.5rem;
-                    background: var(--primary);
-                    color: var(--white);
-                    border-radius: 0.3rem;
-                    transition: all 0.05s ease-in-out;
-
-                    &:hover {
-                        background: var(--hover);
-                        transition: all 0.05s ease-in-out;
-                    }
-                }
-
                 /* 語言切換按鈕 */
                 .translate {
                     display: flex;
                     align-items: center;
-                    padding: 0.5rem 1.5rem;
+                    padding: 0.5rem 0.75rem;
                     color: var(--gray_2);
     
                     /* 國旗圖案 */
@@ -124,7 +164,10 @@
     }
 }
 
-
+/* 手機 Tabbar */
+.main_tabbar{
+    display: none;
+}
 
 /* footer */
 footer {
@@ -140,6 +183,8 @@ footer .background {
     padding-top: 15rem;
     padding-bottom: 1rem;
 }
+
+
 
 /* footer連結 */
 footer .footer_links {
@@ -196,29 +241,25 @@ footer .copyright {
     padding: 0.75rem 0;
 }
 
+@media screen and (max-width:1440px) {
+    .main_header {
+        .main_nav {
+            .search_bar {
+                flex: 0 0 360px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width:1200px) {
     .main_header {
         .main_nav {
-            padding: 1rem 1.875rem;
-
-                img {
-                    width: 100%;
-                    vertical-align: top;
-                }
-            
-    
-            .main_menu {
-                font-size: 0.95rem;
-    
-                ul {    
-                    li {    
-                        a {
-                            padding: 0.75rem;    
-                        }
-                    }
-                }
+            padding: 0.75rem 2.5rem;
+            .search_bar {
+                flex: 0 0 320px;
+            }
                 
+            .main_menu {
                 span{
                     padding: 0 0.25rem;
                 }
@@ -228,13 +269,11 @@ footer .copyright {
                 
                     a {
                         text-decoration: none;
-                        color: var(--gray_2);
-                        
+                        color: var(--gray_2);                        
                     }
                 
                     .signup {
                         padding: 0.5rem;
-                        margin-right: 1rem;
                     }
                 
                     .translate {
@@ -270,18 +309,14 @@ footer .copyright {
 @media screen and (max-width:992px) {
     .main_header {
         .main_nav {
-            padding: 0.5rem 1.5rem;
+            padding: 0.6rem 2rem;
 
-            .logo {
-                width: 6.5rem;
-                height: 100%;
+            /* 搜尋欄 */
+            .search_bar {
+                flex: 0 0 240px;
             }
-
+            
             .main_menu {
-                display: flex;
-                align-items: center;
-                height: 100%;
-                font-size: 0.95rem;
                 padding-top: 0.75rem;
                 padding-bottom: 0.5rem;
 
@@ -306,11 +341,7 @@ footer .copyright {
                         color: var(--gray_2);
                         
                     }
-                
-                    .signup {
-                        margin-right: 0.5rem;
-                    }
-                
+
                     .login {
                         padding: 0.5rem 1.25rem;
                         border-radius: 0.2rem;
@@ -343,6 +374,7 @@ footer .copyright {
     .container{
         max-width: 960px;
     }
+    
 
     footer {
         
@@ -364,19 +396,93 @@ footer .copyright {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:930px) {
+    .main_header {
+        .main_nav {
+            padding: 0.5rem 1.5rem;
     
-    // 網頁版導覽列
+            /* 搜尋欄 */
+            .search_bar {
+                font-size: 0.85rem;
+                flex: 0 0 220px;
+
+                input {
+                    padding: 0.4rem 0.75rem;
+                }
+            }
+
+            .main_menu {
+                font-size: 0.85rem;
+
+                .member_button{
+                    .signup{
+                        margin-right: 0;
+                    }
+
+                    .translate{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:852px) {
+    .main_header {
+        .main_nav {
+            padding: 0.5rem 1.5rem;
+    
+            /* 搜尋欄 */
+            .search_bar {
+                font-size: 0.8rem;
+                flex: 0 0 100px;
+
+                input {
+                    padding: 0.4rem 0.5rem;
+                }
+            }
+
+            .main_menu {
+                font-size: 0.85rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.3rem;
+
+                ul {
+                    li {
+                        a {
+                            padding: 0.35rem;
+                        }
+                    }
+                }
+
+                .member_button{
+                    .signup{
+                        padding: 0.35rem;
+                        margin-right: 0;
+                    }
+
+                    .translate{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    /* 網頁版導覽列 */
     .main_header{
         .main_nav{
-            padding: 0.8rem 1rem 0.4rem;
-            align-items: center;
-            justify-content: space-between;
-            
+            padding: 0.8rem 1rem 0.4rem;       
 
             .logo{
-                display: flex;
                 width: 7rem;
+            }
+
+            .search_bar {
+                display: none;
             }
 
             .hamburger{
@@ -409,17 +515,23 @@ footer .copyright {
                 }
     
             }
+
             .main_menu {
+                width: 100%;
+                height: 12rem;
+                background: var(--white);
+                border-radius: 0 0 0.5rem 0.5rem;
+                border-top: 1px solid var(--gray_5);
+                box-shadow: 0 1rem 1rem var(--shadow);
+                display: block;
                 position: absolute;
                 top: 100%;
                 left: -100%;
-                width: 100%;
-                height: 12rem;
+                z-index: 3;
                 transition: left 0.3s;
-                display: block;
-                box-shadow: 0 0.5rem 1rem var(--shadow);
-                z-index: 2;
-                border-radius: 0 0 0.5rem 0.5rem;
+
+                padding-top: 0;
+                padding-bottom: 0.25rem;
 
                 ul{
                     display: block;
@@ -542,7 +654,62 @@ footer .copyright {
         }
     }
     
-    //bottomSheet
+    /* 手機 Tabbar */
+    .main_tabbar {
+        display: block;
+        position: relative;
+
+        .container_full {
+            width: 100%;
+            background: var(--gray_2);
+            background-color: var(--white);
+            margin: 0 auto;
+            padding: 0.5rem 1rem;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 4;
+            box-shadow: 0 -0.25rem 0.5rem var(--shadow);
+
+            .row {
+                text-align: center;
+
+                .col {
+                    a {
+                        color: var(--gray_2);
+                        font-size: 1rem;
+                        padding: 0.2rem 0 0;
+                        text-align: center;
+                        display: inline-block;
+                        margin: 0 -15px;
+
+                        h2 {
+                            margin-bottom: 0;
+                            color: var(--primary);
+                            letter-spacing: 0;
+
+                            &:hover{
+                                color: var(--hover);
+                            }
+                        }
+
+                        .fa-solid {
+                            color: var(--primary);
+
+                            &:hover {
+                                color: var(--hover);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+   /* bottomSheet */
     .main_header_mobile{
         #bottomSheetContainer {
             background-color: rgba(0, 0, 0, 0.76);
@@ -589,7 +756,9 @@ footer .copyright {
         }
 
     }
-    
+
+
+    /* footer */
     footer .background {
         padding: 0 0 1rem;
     }
