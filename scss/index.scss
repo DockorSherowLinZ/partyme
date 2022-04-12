@@ -101,6 +101,7 @@ html {
                                     color: var(--white);
     
                                     h3 {
+                                        text-align-last: left;
                                         margin-bottom: 1.5rem;
                                         word-wrap: break-word;
                                         display: -webkit-box;
@@ -110,6 +111,7 @@ html {
                                     }
     
                                     p {
+                                        text-align-last: left;
                                         margin-bottom: 2rem;
                                         word-wrap: break-word;
                                         display: -webkit-box;
@@ -119,6 +121,7 @@ html {
                                     }
     
                                     span {
+                                        text-align-last: left;
                                         margin-top: auto;
                                         margin-bottom: 1rem;
                                     }
@@ -370,7 +373,6 @@ html {
         .container {
             margin-bottom: 3rem;
     
-            /* 搜尋板塊 */
             .banner {
                 height: 575px;
             }
@@ -378,7 +380,33 @@ html {
     }
 
     /* 熱門話題 */
-
+    .hot {
+        .container {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .banner {
+                            .card {
+                                .content {
+                                    .info {
+                                        h3{
+                                            font-size: 1.35rem;
+                                        }
+                                        p {
+                                            font-size: 1rem;
+                                        }
+                                        span {
+                                            font-size: 0.9rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     /* 主題探索 */
 
@@ -522,18 +550,15 @@ html {
                         .card {
                             .content {
                                 .info {
-                                    h3 {
-                                        text-align: left;
+                                    h3 {                                       
                                         font-size: 1.2rem;
                                     }
     
-                                    p {
-                                        text-align: left;
+                                    p {                                       
                                         font-size: 0.95rem;
                                     }
     
-                                    span {
-                                        text-align: left;
+                                    span {                                        
                                         font-size: 0.8rem;
                                     }
                                 }
@@ -629,10 +654,8 @@ html {
         top: 20px;
         left: 2.5rem;
     }
-
-
-
 }
+
 
 @media screen and (max-width:768px) {
     section .container h2 {
@@ -663,7 +686,38 @@ html {
     }
     
     /* hot 熱門話題 */
+    .hot {
+        .container {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .banner {
+                            .card {
+                                .content {                                    
+                                    .info {
+                                        h3 {
+                                            font-size: 1.15rem;
+                                        }
+                                        p{
+                                            font-size: 0.85rem;
+                                        }
+                                        span {
+                                            font-size: 0.8rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
+    /* 熱門話題的影片 */
+    .hot .container .row .col {
+        margin-bottom: 1rem;
+    }
 
     /* pop_guide 人氣嚮導 */
     .pop_guide {
@@ -676,12 +730,7 @@ html {
             }
         }
     }
-
-    /* 熱門話題 */
-    /* 熱門話題的影片 */
-    .hot .container .row .col {
-        margin-bottom: 1rem;
-    }
+  
 
     /* 主題探索 */
     /* 主題探索飛機背景圖 */
