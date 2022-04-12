@@ -394,6 +394,7 @@ html {
                                         }
                                         p {
                                             font-size: 1rem;
+                                            -webkit-line-clamp: 6;
                                         }
                                         span {
                                             font-size: 0.9rem;
@@ -556,6 +557,7 @@ html {
     
                                     p {                                       
                                         font-size: 0.95rem;
+                                        -webkit-line-clamp: 5;
                                     }
     
                                     span {                                        
@@ -700,6 +702,7 @@ html {
                                         }
                                         p{
                                             font-size: 0.85rem;
+                                            -webkit-line-clamp: 4;
                                         }
                                         span {
                                             font-size: 0.8rem;
@@ -873,9 +876,27 @@ html {
         .container {    
             /* Swiper 輪播套件 */
             .swiper {
-                .swiper-wrapper{
-                    .swiper-slide{
-
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .banner {
+                            .card {
+                                .content {
+                                    .info {
+                                        h3{
+                                            font-size: 1rem;
+                                            -webkit-line-clamp: 1;
+                                        }
+                                        p {
+                                            font-size: 0.75rem;
+                                            -webkit-line-clamp: 4;
+                                        }
+                                        span {
+                                            font-size: 0.7rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }                    
                 }    
             }
