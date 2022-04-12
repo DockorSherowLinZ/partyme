@@ -958,20 +958,19 @@ html {
 
                             .video_mobile {
                                 overflow: hidden;
-                            }
 
-                            img{
-                                width: 100%;
-                                position: relative;
-                                vertical-align: top;
-                                transform: scale(1);
-                                transition: 0.3s all ease-in-out;
-
-                                &:hover {
-                                    transform: scale(1.2);
-                                }
-                            }
-                            
+                                img {
+                                    width: 100%;
+                                    position: relative;
+                                    vertical-align: top;
+                                    transform: scale(1);
+                                    transition: 0.3s all ease-in-out;
+                                
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                            }                            
+                            }                            
                             .content{
                                 position: relative;
                                 padding: 1rem 0;
