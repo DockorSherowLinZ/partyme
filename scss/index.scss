@@ -40,7 +40,6 @@ html {
     .container {    
         /* Swiper 輪播套件 */
         .swiper {
-            height: 440px;
             border-radius: 0.5rem;
             margin-bottom: 2rem;
             position: relative;
@@ -72,8 +71,10 @@ html {
                         vertical-align: top;
 
                         img{
-                            width: 100%;
                             vertical-align: top;
+                            object-fit: cover;
+                            height: 100%;
+                            width: 100%;
                         }
                                                 
                         /* 輪播影片介紹卡片 */
@@ -869,6 +870,7 @@ html {
             .swiper {
                 height: 100%;
                 padding-bottom: 2rem;
+
                 .swiper-wrapper {
                     .swiper-slide {
                         .banner {
@@ -877,14 +879,16 @@ html {
 
                         .card_mobile{
                             display: block;
+
+                            img{
+                                width: 100%;
+                                // height: 100%;
+                                vertical-align: top;
+                            }
                             .content{
                                 padding: 1rem 0;
                                 text-align-last: left;
 
-                                img{
-                                    vertical-align: top;
-                                    width: 100%;
-                                }
                                 h3{
                                     display: -webkit-box;
                                     word-wrap: break-word;
