@@ -788,3 +788,14 @@ footer .copyright {
         justify-content: center;
     }
 }
+
+@media screen and (max-width:320px) {
+    /* 手機 Tabbar */
+    .main_tabbar {
+        .col {
+            h2 {
+                font-size: 0.75rem;        
+            }
+        }           
+    }
+}
