@@ -504,101 +504,103 @@ button,.button {
 }
 
 /* 卡片容器 */
-/* 卡片容器 */
+/* 熱門城市 */
 .recommend.row .card {
     box-sizing: border-box;
     position: relative;
+    transition: 0.3s all ease-in-out;
+
+    /* 選取到的卡片 */
+    &:hover, &.extend {
+        width: 33.333333%;
+
+        /* hover 後內框線 */
+        .cover {
+            outline: 0.25rem solid var(--hover);
+            
+            .caption .tag h4{
+                display: inline-block;
+            }
+        }
+    }
+
+    /* 用 first-of-type 才能選到 card 的子層 */
+    &:first-of-type .cover {
+        background: url(../image/);
+        background-size: cover;
+    }
+    /* 用 nth-of-type( ) 選到 card 的第二之後的子層 */
+    &:nth-of-type(2) .cover {
+        background: url(../image/);
+        background-size: cover;
+    }
+    &:nth-of-type(3) .cover {
+        background: url(../image/);
+        background-size: cover;
+    }
+    &:nth-of-type(4) .cover {
+        background: url(../image/);
+        background-size: cover;
+    }
+    &:nth-of-type(5) .cover {
+        background: url(../image/);
+        background-size: cover;
+    }
+
+    /* 圖片 */
+    .cover {
+        height: 320px;
+        border-radius: 1.25rem;
+        vertical-align: top;
+        background-position: 50%;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+
+        /* 漸層覆蓋 */
+        .overlap {
+            background: linear-gradient(transparent 60%, rgba(2, 32, 56, 0.761) 80%, rgba(2, 32, 56, 0.98) 100%);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+
+        /* 標題 */
+        .caption {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            position: relative;
+
+            /* 名稱 */
+            h3 {
+                color: var(--white);
+                text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
+                margin: 0 0 0.75rem 0.6rem;
+                z-index: 2;
+            }
+
+            /* 次標 */
+            .tag{
+                h4 {
+                    color: var(--white);
+                    padding: 0.25rem 0.75rem;
+                    border: 1px solid #fff;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.16);
+                    margin: 0 0 0.75rem 0.6rem;
+                    z-index: 2;
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
-/* 選取到的卡片 */
-.recommend.row .card:hover {
-    flex: 1 0 0px;
-}
 
-/* hover 後內框線 */
-.recommend.row .card:hover .cover {
-    outline: 0.25rem solid var(--hover);
-}
 
-/* 圖片 */
-.recommend.row .card .cover {
-    height: 320px;
-    border-radius: 1.25rem;
-    vertical-align: top;
-    background-position: 50%;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-}
-
-/* 漸層覆蓋 */
-.recommend.row .card .cover .overlap {
-    background: linear-gradient(transparent 60%, rgba(2, 32, 56, 0.761) 80%, rgba(2, 32, 56, 0.98) 100%);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-}
-
-/* 標題 */
-.recommend.row .card .cover .caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    position: relative;
-}
-
-/* 名稱 */
-.recommend .card h3 {
-    color: var(--white);
-    text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
-    margin: 0 0 0.75rem 0.6rem;
-    z-index: 2;
-}
-
-/* 次標 */
-.recommend .card h4 {
-    color: var(--white);
-    padding: 0.25rem 0.75rem;
-    border: 1px solid #fff;
-    border-radius: 1rem;
-    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.16);
-    margin: 0 0 0.75rem 0.6rem;
-    z-index: 2;
-    display: none;
-}
-
-.recommend .card:hover h4 {
-    display: inline-block;
-}
-
-/* 熱門城市 */
-/* 用 first-of-type 才能選到 card 的子層 */
-.recommend.row .card:first-of-type .cover {
-    background: url(../image/);
-    background-size: cover;
-}
-
-.recommend.row .card:nth-of-type(2) .cover {
-    background: url(../image/);
-    background-size: cover;
-}
-
-.recommend.row .card:nth-of-type(3) .cover {
-    background: url(../image/);
-    background-size: cover;
-}
-
-.recommend.row .card:nth-of-type(4) .cover {
-    background: url(../image/);
-    background-size: cover;
-}
-
-.recommend.row .card:nth-of-type(5) .cover {
-    background: url(../image/);
-    background-size: cover;
-}
 
 
 /* 所有 tag slider */
@@ -694,8 +696,55 @@ button,.button {
         display: none;
     }
 
+
+    /* 首頁熱門話題影片卡片 */
+    .hot {
+        .container {
+            .row {
+                margin-bottom: 2rem;
+            
+                .col {
+                    display: flex;
+                    margin-bottom: 1.5rem;
+            
+                    .video {
+                        width: 40%;
+                        overflow: hidden;
+                        border-radius: 0.5rem;
+                        position: relative;
+            
+                        iframe {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            vertical-align: top;
+                        }
+                    }
+            
+                    .content {
+                        width: 50%;
+            
+                        /* 文字 */
+                        h3 {
+                            margin: 0.5rem 0 0;
+                        }
+            
+                        p {
+                            margin-bottom: 0.5rem;
+                            letter-spacing: 1.2px;
+                        }
+            
+                        span {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
     
-    
+
     /* 回到頂端 */
     .side_function {
         width: 2.5rem;

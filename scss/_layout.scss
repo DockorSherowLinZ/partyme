@@ -45,6 +45,8 @@
             flex: 0 0 400px;
             
             input{
+                background: transparent;
+                width: 100%;
                 border-width: 0;
                 padding: 0.5rem 1rem;
 
@@ -57,6 +59,12 @@
                 &:focus {
                     outline: 0;
                 }
+                &::-webkit-calendar-picker-indicator {
+                    // display: none;
+                }
+            }
+            datalist {
+                background-color: #fff;
             }
             .fa-solid {
                 margin-right: 1rem;
@@ -436,7 +444,8 @@ footer .copyright {
             /* 搜尋欄 */
             .search_bar {
                 font-size: 0.8rem;
-                flex: 0 0 100px;
+                flex: 1 0 100px;
+                margin: 0 1rem;
 
                 input {
                     padding: 0.4rem 0.5rem;

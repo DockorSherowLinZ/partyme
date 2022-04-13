@@ -11,81 +11,87 @@
     <link rel="stylesheet" href="./css/index.css">
     <title>PARTYME</title>
 </head>
-<body>
-    
-    <!-- 網頁版導覽列 -->
-    <section class="main_header">
-        <input type="checkbox" name="" id="menu-switch">
-        <div class="main_nav">            
-            <h1 class="logo">
-                <a href="./index.html">
-                    <img src="./image/mainav_Logo.webp" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
-                </a>
-            </h1>
-            <div class="search_bar">
-                <input type="text" name="search_bar" placeholder="想想去哪呢？">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <label for="menu-switch" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>           
-            <div class="main_menu">
-                <ul>
-                    <li><a href="./hot.html">熱門話題</a></li>
-                    <li><a href="./pop_guide.html">人氣嚮導</a></li>
-                    <li><a href="./topic_exploration.html">主題探索</a></li>
-                    <li><a href="./popular_cities.html">熱門城市</a></li>
-                </ul>
-                <span>｜</span>
-                <div class="member_button">
-                    <a class="signup" href="./signup_login.html">註冊/登入</a>
-                    <div class="translate">
-                        <div class="flag">
-                            <i class="fa-solid fa-globe"></i>
-                        </div>
-                        <div class="text">中文
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>                        
+<body>    
+<!-- 網頁版導覽列 -->
+<section class="main_header">
+    <input type="checkbox" name="" id="menu-switch">
+    <div class="main_nav">            
+        <h1 class="logo">
+            <a href="./index.html">
+                <img src="./image/mainav_Logo.webp" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
+            </a>
+        </h1>
+        <div class="search_bar">            
+            <input type="search" id="search_bar" name="search_bar" placeholder="想想去哪呢？" list="browsers" >
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Google Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <label for="menu-switch" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>           
+        <div class="main_menu">
+            <ul>
+                <li><a href="./hot.html">熱門話題</a></li>
+                <li><a href="./pop_guide.html">人氣嚮導</a></li>
+                <li><a href="./topic_exploration.html">主題探索</a></li>
+                <li><a href="./popular_cities.html">熱門城市</a></li>
+            </ul>
+            <span>｜</span>
+            <div class="member_button">
+                <a class="signup" href="./signup_login.html">註冊/登入</a>
+                <div class="translate">
+                    <div class="flag">
+                        <i class="fa-solid fa-globe"></i>
                     </div>
+                    <div class="text">中文
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>                        
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- 手機板按鈕 -->
-    <section class="main_tabbar">
-        <div class="container_full">
-            <div class="row row-cols-5">
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
-                        <h2 class="t3_r_ch">熱門話題</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
-                        <h2 class="t3_r_ch">人氣嚮導</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
-                        <h2 class="t3_r_ch">主題探索</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
-                        <h2 class="t3_r_ch">熱門城市</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
-                        <h2 class="t3_r_ch">搜尋</h2>
-                    </a>
-                </div>
+<section class="main_tabbar">
+    <div class="container_full">
+        <div class="row row-cols-5">
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
+                    <h2 class="t3_r_ch">熱門話題</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
+                    <h2 class="t3_r_ch">人氣嚮導</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
+                    <h2 class="t3_r_ch">主題探索</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
+                    <h2 class="t3_r_ch">熱門城市</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
+                    <h2 class="t3_r_ch">搜尋</h2>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- 主視覺Banner及搜尋欄 -->
 <section class="master_vision">
@@ -100,7 +106,7 @@
     </section>    
 
     <!-- 熱門話題 -->
-<section class="hot">
+<!-- <section class="hot">
         <div class="container">
             <h2 class="h1_b_ch">熱門話題</h2>
             <div class="swiper mySwiper" id="hot_carousel">
@@ -393,7 +399,7 @@
                         <h3 class="h6_b_ch">單車之旅</h3>
                         <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
                         <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="col">
                     <div class="video">
@@ -514,7 +520,7 @@
                 </button>
             </div>
         </div>
-    </section>
+    </section> -->
     
 
     <!-- 人氣嚮導 -->
@@ -1199,14 +1205,14 @@
 <!-- <section class="popular_cities">
         <div class="container">
             <h2 class="h1_b_ch">熱門城市</h2>
-            <div class="recommend carousel row row-cols-3 row-cols-xl-6 row-cols-lg-6 row-cols-md-5">
+            <div class="recommend carousel row row-cols-2 row-cols-xl-6 row-cols-lg-6 row-cols-md-3">
                 <button class="arrow left">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button class="arrow right">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
-                <div class="card col">
+                <div class="card col extend">
                     <div class="cover">
                         <div class="overlap"></div>
                         <div class="caption">
@@ -1431,5 +1437,8 @@
         
     </script>
     <script src="./script/bottom-sheet.js"></script>
+    <script src="./script/jquery-3.6.0.js"></script>
+    <script src="./script/jquery-ui.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>
