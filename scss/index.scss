@@ -32,7 +32,7 @@ html {
     }
 }
 
-
+/* 熱門話題 */
 /* 熱門話題輪播 */
 .hot {
     position: relative;
@@ -156,219 +156,221 @@ html {
     }
 }
 
-
-
 /* 人氣嚮導 */
-// 在components裡
-
-
-/* 主題探索 */
-.topic_exploration .background {
-    position: relative;
-}
-
-.topic_exploration .background .row:last-of-type {
-    margin-bottom: 2rem;
-}
-
-.topic_exploration .background .scoll_effect {
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 42%;
-}
-
-.topic_exploration .background .scoll_effect img {
-    object-fit: cover;
-    vertical-align: top;
-    height: 100%;
-}
-
-/* 圓形圖片 */
-.topic_exploration .container .col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1);
-    transition: 0.1s ease-in-out;
-}
-
-.topic_exploration .container .col:hover {
-    color: var(--hover);
-    transform: scale(1.2);
-}
-
-.topic_exploration .container .col .topic,
-.topic_exploration .container .col h3 {
-    position: relative;
-}
-
-.topic_exploration .container .col .topic {
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.topic_exploration .col img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    vertical-align: top;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* 圓形圖片移動位置 */
-/* 知名景點 */
-.topic_exploration .container .row .attractions .topic {
-    padding-top: 47%;
-    width: 47%;
-    right: 40px;
-}
-
-.topic_exploration .container .row .attractions h3 {
-    right: 40px;
-}
-
-/* 派對聚會 */
-.topic_exploration .container .row .party .topic {
-    padding-top: 63%;
-    width: 63%;
-}
-
-/* 夯翻美食 */
-.topic_exploration .container .row .meals .topic {
-    padding-top: 80%;
-    width: 80%;
-    right: 53px;
-    top: 30px;
-}
-
-.topic_exploration .container .row .meals h3 {
-    right: 53px;
-    top: 30px;
-}
-
-/* 手作DIY工坊 */
-.topic_exploration .container .row .diy .topic {
-    padding-top: 52%;
-    width: 52%;
-    left: 130px;
-}
-
-.topic_exploration .container .row .diy h3 {
-    left: 130px;
-}
-
-/* 親子旅遊 */
-.topic_exploration .container .row .pctravel .topic {
-    padding-top: 45%;
-    width: 45%;
-    top: 30px;
-    right: 80px;
-}
-
-.topic_exploration .container .row .pctravel h3 {
-    top: 30px;
-    right: 80px;
-}
-
-/* 戶外露營 */
-.topic_exploration .container .row .camping .topic {
-    padding-top: 72%;
-    width: 72%;
-    left: 75px;
-    top: 20px;
-}
-
-.topic_exploration .container .row .camping h3 {
-    left: 75px;
-    top: 20px;
-}
-
-
-/* 熱門城市 */
-.popular_cities .recommend {
-    position: relative;
-}
-
-/* 使用 components 做國家卡片 */
-/* 地圖 */
-.popular_cities .container .map {
-    background: url(../image/map.svg) no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 410px;
-    object-fit: cover;
-    margin-bottom: 2rem;
-}
-
-.recommend.row {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 2rem;
-}
-
-/* 用 first-of-type 才能選到 card 的子層 */
-.popular_cities .recommend.row .card:first-of-type .cover {
-    background: url(../image/Taipei.jpg);
-    background-size: cover;
-}
-
-.popular_cities .recommend.row .card:nth-of-type(2) .cover {
-    background: url(../image/Jiangsu.jpg);
-    background-size: cover;
-}
-
-.popular_cities .recommend.row .card:nth-of-type(3) .cover {
-    background: url(../image/Maldives.jpg);
-    background-size: cover;
-}
-
-.popular_cities .recommend.row .card:nth-of-type(4) .cover {
-    background: url(../image/Xian.jpg);
-    background-size: cover;
-}
-
-.popular_cities .recommend.row .card:nth-of-type(5) .cover {
-    background: url(../image/Manhattan.jpg);
-    background-size: cover;
-}
-
-/* more */
-.recommend .more {
-    margin-bottom: -2rem;
-}
-
-
 /* 人氣嚮導輪播 */
 .pop_guide .swiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    .swiper-slide {
+        max-width: 400px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.25rem 1rem var(--shadow);
+        img {
+            display: inline-block;
+            width: 100%;
+            object-fit: cover;
+            vertical-align: top;
+        }
+        .content {
+            padding: 1.5rem;
+        }
+    }
+}
+// 人氣嚮導卡片在components裡
+
+
+/* 主題探索 */
+.topic_exploration {
+    .container {
+        overflow: hidden;
+        .background {
+            position: relative;
+        
+            // 飛機圖
+            .scoll_effect {
+                height: 100%;
+                position: absolute;
+                top: 0%;
+                left: 42%;
+        
+                img {
+                    object-fit: cover;
+                    vertical-align: top;
+                    height: 100%;
+                }
+            }
+            .row{
+                /* 圓形圖片 */
+                .col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transform: scale(1);
+                    transition: 0.1s ease-in-out;
+
+                    &:hover {
+                        color: var(--hover);
+                        transform: scale(1.12);
+                    }
+
+                    .topic{
+                        border-radius: 50%;
+                        overflow: hidden;
+                        position: relative;
+                        cursor: pointer;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            vertical-align: top;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                    h3{
+                        font-size: 2.25rem;
+                        position: relative;
+                    }
+                }
+
+                /* 圓形圖片移動位置 */
+                /* 知名景點 */
+                .attractions {
+                    .topic {
+                        padding-top: 47%;
+                        width: 47%;
+                        right: 40px;
+                    }                
+                    h3 {
+                        right: 40px;
+                    }
+                }
+                /* 派對聚會 */
+                .party {
+                    .topic {
+                        padding-top: 52%;
+                        width: 52%;
+                    }
+                }
+                /* 夯翻美食 */
+                .meals {
+                    .topic {
+                        padding-top: 70%;
+                        width: 70%;
+                        right: 53px;
+                        top: 30px;
+                    }
+                
+                    h3 {
+                        right: 53px;
+                        top: 30px;
+                    }
+                }
+                /* 手作DIY工坊 */
+                .diy {
+                    .topic {
+                        padding-top: 52%;
+                        width: 52%;
+                        left: 100px;
+                    }
+                
+                    h3 {
+                        left: 100px;
+                    }
+                }
+                /* 親子旅遊 */
+                .pctravel {
+                    .topic {
+                        padding-top: 45%;
+                        width: 45%;
+                        top: 30px;
+                        right: 80px;
+                    }
+                
+                    h3 {
+                        top: 30px;
+                        right: 80px;
+                    }
+                }
+                /* 戶外露營 */
+                .camping {
+                    .topic {
+                        padding-top: 66%;
+                        width: 66%;
+                        top: 20px;
+                        left: 65px;
+                    }
+                
+                    h3 {
+                        top: 20px;
+                        left: 65px;
+                    }
+                }
+            }
+            .row:last-of-type {
+                margin-bottom: 2rem;
+            }
+        }
+    }    
 }
 
-.pop_guide .swiper-slide {
-    max-width: 400px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 1rem var(--shadow);
+
+/* 熱門城市 */
+/* 使用 components 做國家卡片 */
+.popular_cities {
+    .container {
+        .recommend.row {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+
+            /* 用 first-of-type 才能選到 card 的子層 */
+            .card:first-of-type .cover {
+                background: url(../image/Taipei.jpg);
+                background-size: cover;
+            }
+            .card:nth-of-type(2) .cover {
+                background: url(../image/Jiangsu.jpg);
+                background-size: cover;
+            }
+            .card:nth-of-type(3) .cover {
+                background: url(../image/Maldives.jpg);
+                background-size: cover;
+            }
+            .card:nth-of-type(4) .cover {
+                background: url(../image/Xian.jpg);
+                background-size: cover;
+            }
+            .card:nth-of-type(5) .cover {
+                background: url(../image/Manhattan.jpg);
+                background-size: cover;
+            }
+        }
+        /* 地圖 */
+        .map {
+            background: url(../image/map_with\ name.svg) no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 410px;
+            object-fit: cover;
+            margin-bottom: 2rem;
+        }
+
+        /* more按鈕 */
+        .more {
+            margin-bottom: -2rem;
+        }
+    }
 }
 
-.pop_guide .swiper-slide img {
-    display: inline-block;
-    width: 100%;
-    object-fit: cover;
-    vertical-align: top;
-}
-
-.pop_guide .swiper-slide .content {
-    padding: 1.5rem;
-}
 
 @media screen and (max-width:1200px) {
     .container {
@@ -417,100 +419,73 @@ html {
     }
 
     /* 主題探索 */
-
-    /* 圖片hover效果 */
-    .topic_exploration .container .col:hover {
-        color: var(--hover);
-        transform: scale(1);
-    }
-
-    .topic_exploration .container .col .topic {
-        overflow: hidden;
-    }
-
-    .topic_exploration .container .col .topic img {
-        transition: 0.3s all;
-    }
-
-    .topic_exploration .container .col .topic:hover img {
-        transform: scale(1.2);
-    }
-
-    .topic_exploration .container .background .row .col {
-        margin: auto;
-        justify-content: center;
-    }
-
-    .topic_exploration .container .background .row .col h3 {
-        font-size: 2.25rem;
-    }
-
     /* 圓形圖片移動位置 */
-    /* 知名景點 */
-    .topic_exploration .container .row .attractions .topic {
-        padding-top: 47%;
-        width: 47%;
-        right: 2.5rem;
+    .topic_exploration .container .row {
+
+        /* 知名景點 */
+        .attractions .topic {
+            padding-top: 47%;
+            width: 47%;
+            right: 2.5rem;
+        }
+        /* 派對聚會 */
+        .party .topic {
+            padding-top: 63%;
+            width: 63%;
+            right: 2rem;
+        }
+        /* 夯翻美食 */
+        .meals {
+            .topic {
+                padding-top: 70%;
+                width: 70%;
+                right: 3.125rem;
+                top: 1.875rem;
+            }
+            h3 {
+                right: 3.125rem;
+                top: 1.875rem;
+            }
+        }
+        /* 手作DIY工坊 */
+        .diy {
+            .topic {
+                padding-top: 52%;
+                width: 52%;
+                left: 3.5rem;
+            }
+            h3 {
+                left: 3.5rem;
+            }
+        }
+        /* 親子旅遊 */
+        .pctravel {
+            .topic {
+                padding-top: 45%;
+                width: 45%;
+                top: 1.875rem;
+                right: 5rem;
+            }
+            h3 {
+                top: 1.875rem;
+                right: 5rem;
+            }
+        }
+        /* 戶外露營 */
+        .camping {
+            .topic {
+                padding-top: 72%;
+                width: 72%;
+                left: 2.75rem;
+                top: 1.25rem;
+            }
+            h3 {
+                left: 2.75rem;
+                top: 1.25rem;
+            }
+        }
     }
 
-    /* 派對聚會 */
-    .topic_exploration .container .row .party .topic {
-        padding-top: 63%;
-        width: 63%;
-        right: 2rem;
-    }
-
-    /* 夯翻美食 */
-    .topic_exploration .container .row .meals .topic {
-        padding-top: 70%;
-        width: 70%;
-        right: 3.125rem;
-        top: 1.875rem;
-    }
-
-    .topic_exploration .container .row .meals h3 {
-        right: 3.125rem;
-        top: 1.875rem;
-    }
-
-    /* 手作DIY工坊 */
-    .topic_exploration .container .row .diy .topic {
-        padding-top: 52%;
-        width: 52%;
-        left: 3.5rem;
-    }
-
-    .topic_exploration .container .row .diy h3 {
-        left: 3.5rem;
-    }
-
-    /* 親子旅遊 */
-    .topic_exploration .container .row .pctravel .topic {
-        padding-top: 45%;
-        width: 45%;
-        top: 1.875rem;
-        right: 5rem;
-    }
-
-    .topic_exploration .container .row .pctravel h3 {
-        top: 1.875rem;
-        right: 5rem;
-    }
-
-    /* 戶外露營 */
-    .topic_exploration .container .row .camping .topic {
-        padding-top: 72%;
-        width: 72%;
-        left: 2.75rem;
-        top: 1.25rem;
-    }
-
-    .topic_exploration .container .row .camping h3 {
-        left: 2.75rem;
-        top: 1.25rem;
-    }
-
-}
 
 @media screen and (max-width:992px) {
     section .container h2 {
@@ -580,90 +555,83 @@ html {
     }
 
     /* 主題探索 */
-    .topic_exploration .container .background .row .col h3 {
-        font-size: 2.25rem;
-        margin-top: 0.5rem;
-        margin-bottom: 3rem;
-    }
+    .topic_exploration .container .background .row{
+        .col{            
+            h3 {
+                font-size: 2.25rem;
+                margin-top: 0.5rem;
+                margin-bottom: 3rem;
+            }
+        }
 
-    /* 主題探索飛機背景圖 */
-    .topic_exploration .background .scoll_effect {
-        left: 0;
+        /* 圖形圖片、文字間距與文字尺寸 */
+        /* 知名景點 */
+        .attractions{
+            .topic {
+                padding-top: 57%;
+                width: 57%;
+                right: 2.5rem;
+            }
+            h3 {
+                right: 2.5rem;
+            }
+        }
+        /* 派對聚會 */
+        .party .topic {
+            padding-top: 63%;
+            width: 63%;
+        }
+        /* 夯翻美食 */
+        .meals {
+            .topic {
+                padding-top: 72%;
+                width: 72%;
+                top: 30px;
+                right: 1.5rem;
+            }
+            h3 {
+                top: 30px;
+                right: 1.5rem;
+            }
+        }
+        /* 手作DIY工坊 */
+        .diy {
+            .topic {
+                padding-top: 52%;
+                width: 52%;
+                left: 3.75rem;
+            }
+            h3 {
+                left: 3.75rem;
+            }
+        }
+        /* 親子旅遊 */
+        .pctravel {
+            .topic {
+                padding-top: 45%;
+                width: 45%;
+                top: 30px;
+                right: 5rem;
+            }
+            h3 {
+                top: 30px;
+                right: 5rem;
+            }
+        }
+        /* 戶外露營 */
+        .camping {
+            .topic {
+                padding-top: 62%;
+                width: 62%;
+                top: 20px;
+                left: 2.5rem;
+            }
+            h3 {
+                top: 20px;
+                left: 2.5rem;
+            }
+        }
     }
-
-    /* 圖片hover效果 */
-    .topic_exploration .container .col:hover {
-        transform: scale(1);
-    }
-
-    /* 圖形圖片、文字間距與文字尺寸 */
-    /* 知名景點 */
-    .topic_exploration .container .row .attractions .topic {
-        padding-top: 57%;
-        width: 57%;
-        right: 2.5rem;
-    }
-
-    .topic_exploration .container .row .attractions h3 {
-        right: 2.5rem;
-    }
-
-    /* 派對聚會 */
-    .topic_exploration .container .row .party .topic {
-        padding-top: 63%;
-        width: 63%;
-    }
-
-    /* 夯翻美食 */
-    .topic_exploration .container .row .meals .topic {
-        padding-top: 72%;
-        width: 72%;
-        top: 30px;
-        right: 1.5rem;
-    }
-
-    .topic_exploration .container .row .meals h3 {
-        top: 30px;
-        right: 1.5rem;
-    }
-
-    /* 手作DIY工坊 */
-    .topic_exploration .container .row .diy .topic {
-        padding-top: 52%;
-        width: 52%;
-        left: 3.75rem;
-    }
-
-    .topic_exploration .container .row .diy h3 {
-        left: 3.75rem;
-    }
-
-    /* 親子旅遊 */
-    .topic_exploration .container .row .pctravel .topic {
-        padding-top: 45%;
-        width: 45%;
-        top: 30px;
-        right: 5rem;
-    }
-
-    .topic_exploration .container .row .pctravel h3 {
-        top: 30px;
-        right: 5rem;
-    }
-
-    /* 戶外露營 */
-    .topic_exploration .container .row .camping .topic {
-        padding-top: 62%;
-        width: 62%;
-        top: 20px;
-        left: 2.5rem;
-    }
-
-    .topic_exploration .container .row .camping h3 {
-        top: 20px;
-        left: 2.5rem;
-    }
-}
 
 
 @media screen and (max-width:768px) {
@@ -721,12 +689,11 @@ html {
                     }
                 }
             }
+            /* 熱門話題的影片 */
+            .row .col {
+                margin-bottom: 1rem;
+            }
         }
-    }
-
-    /* 熱門話題的影片 */
-    .hot .container .row .col {
-        margin-bottom: 1rem;
     }
 
     /* pop_guide 人氣嚮導 */
@@ -743,137 +710,117 @@ html {
   
 
     /* 主題探索 */
-    /* 主題探索飛機背景圖 */
-    .topic_exploration .background .scoll_effect {
-        left: 0;
-    }
 
-    .topic_exploration .container .background .row .col {
-        margin: auto;
-        justify-content: center;
-    }
-
-    .topic_exploration .container .background .row .col h3 {
-        font-size: 1.5rem;
-        margin-top: 0.5rem;
-        margin-bottom: 3rem;
-    }
-
-    /* 圖形圖片、文字間距與文字尺寸 */
-    .topic_exploration .container .row .topic {
-        margin-bottom: 0.5rem;
-    }
-
-    /* 圖片hover效果 */
-    .topic_exploration .container .col:hover {
-        transform: scale(1);
-    }
-
-
-    /* 圓形圖片移動位置 */
-    /* 知名景點 */
-    .topic_exploration .container .row .attractions .topic {
-        padding-top: 68%;
-        width: 68%;
-        left: 1.875rem;
-    }
-
-    .topic_exploration .container .row .attractions h3 {
-        left: 1.875rem;
-    }
-
-    /* 派對聚會 */
-    .topic_exploration .container .row .party .topic {
-        padding-top: 57%;
-        width: 57%;
-        left: 3.125rem;
-    }
-
-    .topic_exploration .container .row .party h3 {
-        left: 3.125rem;
-    }
-
-    /* 夯翻美食 */
-    .topic_exploration .container .row .meals .topic {
-        padding-top: 47%;
-        width: 47%;
-        left: 5.3125rem;
-    }
-
-    .topic_exploration .container .row .meals h3 {
-        left: 5.3125rem;
-    }
-
-    /* 手作DIY工坊 */
-    .topic_exploration .container .row .diy .topic {
-        padding-top: 49%;
-        width: 49%;
-        left: 0;
-        top: 1.875rem;
-    }
-
-    .topic_exploration .container .row .diy h3 {
-        left: 0;
-        top: 1.875rem;
-    }
-
-    /* 親子旅遊 */
-    .topic_exploration .container .row .pctravel .topic {
-        padding-top: 58%;
-        width: 58%;
-        right: 25px;
-    }
-
-    .topic_exploration .container .row .pctravel h3 {
-        right: 25px;
-    }
-
-    /* 戶外露營 */
-    .topic_exploration .container .row .camping .topic {
-        padding-top: 62%;
-        width: 62%;
-        left: 4.375rem;
-    }
-
-    .topic_exploration .container .row .camping h3 {
-        left: 4.375rem;
-    }
+    .topic_exploration .container .background .row{
+        .col {
+            .topic {
+                margin-bottom: 0.5rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+                margin-top: 0.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+        /* 圓形圖片移動位置 */
+        /* 知名景點 */
+        .attractions {
+            .topic {
+                padding-top: 68%;
+                width: 68%;
+                left: 1.875rem;
+            }
+            h3 {
+                left: 1.875rem;
+            }
+        }
+        /* 派對聚會 */
+        .party {
+            .topic {
+                padding-top: 57%;
+                width: 57%;
+                left: 3.125rem;
+            }
+            h3 {
+                left: 3.125rem;
+            }
+        }
+        /* 夯翻美食 */
+        .meals {
+            .topic {
+                padding-top: 47%;
+                width: 47%;
+                left: 5.3125rem;
+            }
+            h3 {
+                left: 5.3125rem;
+            }
+        }
+        /* 手作DIY工坊 */
+        .diy {
+            .topic {
+                padding-top: 49%;
+                width: 49%;
+                left: 0;
+                top: 1.875rem;
+            }
+            h3 {
+                left: 0;
+                top: 1.875rem;
+            }
+        }
+        /* 親子旅遊 */
+        .pctravel {
+            .topic {
+                padding-top: 58%;
+                width: 58%;
+                right: 25px;
+            }
+            h3 {
+                right: 25px;
+            }
+        }
+        /* 戶外露營 */
+        .camping {
+            .topic {
+                padding-top: 62%;
+                width: 62%;
+                left: 4.375rem;
+            }
+            h3 {
+                left: 4.375rem;
+            }
+        }
+    } 
 
     /* 熱門城市卡片 */
     .popular_cities {
-
         .container {
-
-            .carousel {
-                
+            .carousel {                
                 .right {
                     right: 1rem;
                 }
                 .left {
                     left: 1rem;
                 }
-            } 
-            
-            .recommend.row .card .cover {
-                height: 180px;
-                border-radius: 0.25rem;
+            }             
+            .recommend.row .card {
+                .cover {
+                    height: 180px;
+                    border-radius: 0.25rem;
+                    h3 {
+                        font-size: 1.1rem;
+                    }
+                    h4 {
+                        font-size: 0.85rem;
+                    }
+                }
             }
-            
-            .recommend.row .card .cover h3 {
-                font-size: 1.1rem;
-            }
-            
-            .recommend.row .card .cover h4 {
-                font-size: 0.85rem;
-            }
-            
             .map {
                 display: none;
             }
         }
     }
-
-    
 }
 
 @media screen and (max-width:640px) {
