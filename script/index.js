@@ -1,4 +1,4 @@
-//導覽列搜尋欄
+//導覽列漢堡鍵
 $(function () {
     
 })
@@ -30,10 +30,10 @@ $(function () {
 
 // 原生 Javascript 寫法：
 // const cards = document.querySelectorAll('.recommend .card')
-// cards.forEach(function (item) {
-//     item.addEventListener('mouseover', function () {
-//         cards.forEach(function (iitem) {
-//             iitem.classList.remove('extend');
+// cards.forEach(function (e) {
+//     e.addEventListener('mouseover', function () {
+//         cards.forEach(function (f) {
+//             f.classList.remove('extend');
 //         });
 //         this.classList.add('extend')
 //     });
