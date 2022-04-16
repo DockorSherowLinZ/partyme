@@ -460,19 +460,9 @@ form{
                 display: flex;
                 animation: fadeVisibility 1.5s;
             }
-        }
-        /* 調整按鈕位置 */
-        .arrow.left {
-            top: 25%;
-            // transform: translateY(50%);
-            left: 1rem;
-        }        
-        .arrow.right {
-            top: 25%;
-            // transform: translateY(50%);
-            right: 1rem;
-        }
+        } 
     }
+    /* 調整按鈕位置 */
     .swiper-button-prev, .swiper-button-next{
         margin-top: 0;
         color: var(--white);

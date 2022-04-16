@@ -59,68 +59,32 @@
             </div>
         </div>
     </section>
-    <!-- 手機板 Tabbar 按鈕 -->
-    <section class="main_tabbar">
-        <div class="container_full">
-            <div class="row row-cols-5">
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
-                        <h2 class="t3_r_ch">熱門話題</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
-                        <h2 class="t3_r_ch">人氣嚮導</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
-                        <h2 class="t3_r_ch">主題探索</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
-                        <h2 class="t3_r_ch">熱門城市</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
-                        <h2 class="t3_r_ch">搜尋</h2>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- 主體 -->
     <section class="main">
         <div class="container_full">
             <div class="row">
-                <div class="col-2">
-                    <aside>
-                        <div class="slider">
-                            <ul>
-                                <li><button class="button">PARTYME精選</button></li>
-                                <li><button class="button">單車旅遊</button></li>
-                                <li><button class="button">露營</button></li>
-                                <li><button class="button">滑雪</button></li>
-                                <li><button class="button">遊輪</button></li>
-                                <li><button class="button">潛水</button></li>
-                                <li><button class="button">高空熱氣球</button></li>
-                                <li><button class="button">世外桃源</button></li>
-                                <li><button class="button">購物天堂</button></li>
-                                <li><button class="button">自由女神</button></li>
-                                <li><button class="button">家庭旅行</button></li>
-                                <li><button class="button">徒步環島</button></li>
-                                <li><button class="button">觀看紀錄</button></li>
-                                <li><button class="button">稍後觀看</button></li>
-                            </ul>
-                        </div>
-                    </aside>
-                </div>                
-                <div class="hot col-9">
+                <aside class="col">
+                    <div class="slider">
+                        <ul>
+                            <li><button class="button">PARTYME精選</button></li>
+                            <li><button class="button">單車旅遊</button></li>
+                            <li><button class="button">露營</button></li>
+                            <li><button class="button">滑雪</button></li>
+                            <li><button class="button">遊輪</button></li>
+                            <li><button class="button">潛水</button></li>
+                            <li><button class="button">高空熱氣球</button></li>
+                            <li><button class="button">觀看紀錄</button></li>
+                            <li><button class="button">稍後觀看</button></li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="hot col">
                     <div class="tag_name_header">
                         <h2 class="h2_b_ch">熱門話題</h2>
                         <div class="tag_slider">
+                            <button class="arrow right">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
                             <div class="overlap"></div>
                             <ul>
                                 <li><button class="tag">南迴公路</button></li>
@@ -132,13 +96,10 @@
                                 <li><button class="tag">北海道自由行</button></li>
                                 <li><button class="tag">長灘島渡假</button></li>
                                 <li><button class="tag">大堡礁潛水</button></li>
-                                <button class="arrow right">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                </button>
                             </ul>
                         </div>
                     </div>
-                    <section class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2">
+                    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                         <div class="col ">
                             <div class="video">
                                 <iframe src="https://www.youtube.com/embed/_tejFjY6pcA" title="YouTube video player"
@@ -299,78 +260,203 @@
                         </div>
                     </section>
                     <h2 class="h2_b_ch">推薦話題</h2>
-                    <section class="recommend carousel row row-cols-2 row-cols-xl-6 row-cols-lg-6 row-cols-md-3">
-                        <button class="arrow left">
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </button>
-                        <button class="arrow right">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
-                        <div class="card col extend">
-                            <div class="cover">
-                                <div class="overlap">
-                                    <img src="./image/two_skiers_standing_together.jpg" alt="">
+                    <div class="overflow_hidden">
+                        <div class="carousel">
+                            <section class="carousel_item carousel_item-visible">
+                                <div class="card col extend">
+                                    <div class="cover">
+                                        <div class="overlap">
+                                            <img src="./image/two_skiers_standing_together.jpg" alt="">
+                                        </div>
+                                        <div class="caption">
+                                            <h3 class="h4_b_ch">滑雪</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="caption">
-                                    <h3 class="h4_b_ch">滑雪</h3>
-                                    <div class="tag">
-                                        <h4>旅遊首選城市</h4>
-                                        <h4>優質移居城市</h4>
+                                <div class="card col">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">江蘇</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card col">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">馬爾地夫</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card col">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">西安</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card col">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">曼哈頓</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card col">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">曼哈頓</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card col">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">曼哈頓</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="carousel_item">
+                                <div class="card extend">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h4_b_ch">新竹</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">台中</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">台南</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">紐約</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">哥本哈根</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">哥本哈根</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">哥本哈根</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">哥本哈根</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card col">
-                            <div class="cover">
-                                <div class="overlap"></div>
-                                <div class="caption">
-                                    <h3 class="h5_b_ch">江蘇</h3>
-                                    <div class="tag">
-                                        <h4>旅遊首選城市</h4>
-                                        <h4>優質移居城市</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card col">
-                            <div class="cover">
-                                <div class="overlap"></div>
-                                <div class="caption">
-                                    <h3 class="h5_b_ch">馬爾地夫</h3>
-                                    <div class="tag">
-                                        <h4>旅遊首選城市</h4>
-                                        <h4>優質移居城市</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card col">
-                            <div class="cover">
-                                <div class="overlap"></div>
-                                <div class="caption">
-                                    <h3 class="h5_b_ch">西安</h3>
-                                    <div class="tag">
-                                        <h4>旅遊首選城市</h4>
-                                        <h4>優質移居城市</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card col">
-                            <div class="cover">
-                                <div class="overlap"></div>
-                                <div class="caption">
-                                    <h3 class="h5_b_ch">曼哈頓</h3>
-                                    <div class="tag">
-                                        <h4>旅遊首選城市</h4>
-                                        <h4>優質移居城市</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                        <button id="carousel_button_prev" class="swiper-button-prev"></button>
+                        <button id="carousel_button_next" class="swiper-button-next"></button>
+                    </div>
+                    <div class="more_second_floor">
+                        <div class="divide"></div>
+                    </div>
                     <h2 class="h2_b_ch">猜你喜歡的話題</h2>
-                    <section class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2">
+                    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                         <div class="col ">
                             <div class="video">
                                 <iframe src="https://www.youtube.com/embed/_tejFjY6pcA" title="YouTube video player"
@@ -527,11 +613,10 @@
                             <button>
                                 <i class="fa-solid fa-plus"></i>
                             </button>
-                            <div class="divide"></div>
                         </div>
-                    </section>
+                    </section>                    
                 </div>
-                <div class="col-1">
+                <div class="back_to_top col">
                     <div>
                         <a class="side_function" href="#">
                             <i class="fa-solid fa-caret-up"></i>
@@ -540,6 +625,38 @@
                 </div>
             </div>
         </div>
+        <!-- 手機板 Tabbar 按鈕 -->
+        <section class="main_tabbar">
+            <div class="container_full">
+                <div class="row row-cols-5">
+                    <div class="col">
+                        <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
+                            <h2 class="t3_r_ch">熱門話題</h2>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
+                            <h2 class="t3_r_ch">人氣嚮導</h2>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
+                            <h2 class="t3_r_ch">主題探索</h2>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
+                            <h2 class="t3_r_ch">熱門城市</h2>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
+                            <h2 class="t3_r_ch">搜尋</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
     <!-- 輪播套件script -->

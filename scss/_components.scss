@@ -100,13 +100,14 @@ button,.button {
 }
 
 /* 內頁的 more */
-.more_second_floor {
-    border-bottom: 2px solid var(--gray_5);
-    box-sizing: border-box;
+.more_second_floor {    
     width: 100%;
     margin: 2rem auto;
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     button {
         width: 40px;
@@ -123,14 +124,18 @@ button,.button {
             color: var(--second_hover);
         }
     }
+    .divide {
+        width: 100%;
+        border-bottom: 2px solid var(--gray_5);
+    }
 }
 
 
 /* 回到頂端按鈕 */
 .side_function {
     margin: auto;
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     background-color: var(--white);
     font-size: 1rem;
@@ -270,6 +275,8 @@ button,.button {
     margin-bottom: 0.25rem;
     display: inline-block;
     position: absolute;
+    bottom: 0;
+    right: 0;
     z-index: 2;
 }
 
@@ -550,6 +557,169 @@ button,.button {
     position: relative;
 }
 
+/* 熱門城市卡片 */
+.carousel {
+    width: 2800px;
+    max-height: 320px;
+    margin-bottom: 2rem;
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+
+    .carousel_item {
+        display: flex;
+
+        .card {
+            width: 190px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            position: relative;
+            transition: 0.3s all ease-in-out;
+            // 文字不換行
+            white-space: nowrap;
+
+            /* 選取到的卡片 */
+            &:hover,
+            &.extend {
+                width: 370px;
+
+                /* hover 後內框線 */
+                .cover {
+                    outline: 0.25rem solid var(--hover);
+
+                    .caption .tag h4 {
+                        display: inline-block;
+                        color: var(--white);
+                        padding: 0.25rem 0.75rem;
+                        border: 1px solid #fff;
+                        border-radius: 1rem;
+                        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.16);
+                        margin: 0 0 0.75rem 0.6rem;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+        /* 用 first-of-type 才能選到 card 的子層 */
+        .card:first-of-type .cover {
+            background: url(../image/taipei.webp);
+            background-size: cover;
+        }
+
+        .card:nth-of-type(2) .cover {
+            background: url(../image/Jiangsu.jpg);
+            background-size: cover;
+        }
+
+        .card:nth-of-type(3) .cover {
+            background: url(../image/Maldives.jpg);
+            background-size: cover;
+        }
+
+        .card:nth-of-type(4) .cover {
+            background: url(../image/Xian.jpg);
+            background-size: cover;
+        }
+
+        .card:nth-of-type(5) .cover {
+            background: url(../image/Manhattan.jpg);
+            background-size: cover;
+        }
+
+        &:last-child {
+            .card:nth-of-type(1) .cover {
+                background: url(../image/hsinchu.webp);
+                background-size: cover;
+            }
+
+            .card:nth-of-type(2) .cover {
+                background: url(../image/Manhattan.jpg);
+                background-size: cover;
+            }
+
+            .card:nth-of-type(3) .cover {
+                background: url(../image/Manhattan.jpg);
+                background-size: cover;
+            }
+
+            .card:nth-of-type(4) .cover {
+                background: url(../image/Manhattan.jpg);
+                background-size: cover;
+            }
+
+            .card:nth-of-type(5) .cover {
+                background: url(../image/Manhattan.jpg);
+                background-size: cover;
+            }
+        }
+
+        /* 圖片 */
+        .cover {
+            height: 320px;
+            border-radius: 1.25rem;
+            vertical-align: top;
+            background-position: 50%;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+
+            /* 漸層覆蓋 */
+            .overlap {
+                background: linear-gradient(transparent 60%, rgba(2, 32, 56, 0.761) 80%, rgba(2, 32, 56, 0.98) 100%);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+            }
+
+            /* 標題 */
+            .caption {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                height: 100%;
+                position: relative;
+
+                /* 名稱 */
+                h3 {
+                    color: var(--white);
+                    text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
+                    margin: 0 0 0.75rem 0.6rem;
+                    z-index: 2;
+                }
+
+                /* 次標 */
+                .tag h4 {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .carousel_item-hidden {
+        display: none;
+    }
+
+    .carousel_item-visible {
+        display: flex;
+        animation: fadeVisibility 1.5s;
+    }
+}
+/* 調整按鈕位置 */
+.swiper-button-prev,
+.swiper-button-next {
+    margin-top: 0;
+    color: var(--white);
+}
+.swiper-button-prev {
+    left: 2.5rem;
+}
+.swiper-button-next {
+    right: 2.5rem;
+}
 
 /* 所有 tag slider */
 /* tag_slider */
@@ -615,8 +785,8 @@ button,.button {
 
     /* 回到頂端 */
     .side_function {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 2.25rem;
+        height: 2.25rem;
     }
 }
 
@@ -624,76 +794,85 @@ button,.button {
 
     /* 回到頂端 */
     .side_function {
-        width: 3.25rem;
-        height: 3.25rem;
+        width: 2rem;
+        height: 2rem;
         right: 1rem;
     }
     
 }
 
-@media screen and (max-width:768px) {
-    
-
+@media screen and (max-width:768px) { 
     /* 首頁熱門話題影片卡片 */
     .hot {
-        .container {
-            .row {
-                margin-bottom: 2rem;
-            
-                .col {
-                    height: 120px;
-                    display: flex;
-                    margin-bottom: 1.5rem;
-            
-                    .video {
-                        width: 54%;
-                        overflow: hidden;
-                        border-radius: 0.5rem;
-                        position: relative;
-            
-                        iframe {
-                            width: 100%;
-                            // height: 100%;
-                            object-fit: cover;
-                            vertical-align: top;
-                        }
+        .row {
+            margin-bottom: 2rem;            
+            .col {                    
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 1.5rem;            
+                .video {
+                    width: 54%;
+                    height: 100%;
+                    border-radius: 0.5rem;
+                    overflow: hidden;
+                    position: relative;            
+                    iframe {
+                        width: 100%;
+                        height: 180px;
+                        object-fit: cover;
+                        vertical-align: top;
                     }
-            
-                    .content {
-                        display: flex;
-                        flex-direction: column;
-                        width: 42%;
-                        margin-left: auto;
-                        /* 文字 */
-                        h3 {
-                            font-size: 1rem;
-                            margin: 0;
-                        }
-            
-                        p {
-                            font-size: 0.8rem;
-                            margin-bottom: auto;
-                            letter-spacing: 0;
-                            flex: 1 0 0;
-                        }
-            
-                        span {
-                            font-size: 0.75rem;
-                            margin-bottom: 0.5rem;
-                            letter-spacing: 0;
-                        }
+                }            
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    width: 42%;
+                    margin:0 1rem;
+                    /* 文字 */
+                    h3 {
+                        font-size: 1rem;
+                        margin: 0;
+                    }            
+                    p {
+                        font-size: 0.8rem;
+                        margin-bottom: auto;
+                        letter-spacing: 0;
+                        flex: 1 0 0;
+                    }            
+                    span {
+                        font-size: 0.75rem;
+                        margin-bottom: 0.5rem;
+                        letter-spacing: 0;
                     }
                 }
             }
         }
-
     }
     
+    /* 內頁的 more */
+    .more_second_floor {
+        margin: 1rem auto;
+
+        button {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            color: var(--gray_3);
+            padding: 0.25rem;
+            margin-bottom: 0.5rem;
+    
+            .fa-solid {
+                transform: scale(1.3);
+            }
+    
+            &:hover {
+                color: var(--second_hover);
+            }
+        }        
+    }
 
     /* 回到頂端 */
     .side_function {
-        width: 2.5rem;
-        height: 2.5rem;
         bottom: 5rem;
         right: 0.5rem;
     }

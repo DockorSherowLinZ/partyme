@@ -2,32 +2,40 @@
     .container_full {
         .row {
             position: relative;
-            .col-2 {
+            margin-bottom: 0;
                 /* aside */
                 aside {
+                    width: 18%;
+                    padding-right: 1rem;
+                    margin-right: 3rem;
+                    margin-right: auto; 
+                    margin-top: 1.5rem;
+                    height: calc(100vh - 94px);
+                    background-color: var(--white);
                     position: sticky;
                     top: 94px;
                     left: 1rem;
-                    background-color: var(--white);
-                    margin-right: auto; 
-                    margin-top: 1.5rem;              
-                    .slider {                
+                    overflow: auto;
+
+                    .slider {
+                        margin-right: 1rem;
                         /* 清單 */
                         ul {
                             width: 100%;
-                            padding: 0 1rem 1rem 0;
-                            margin-right: 2rem;
+
                             position: relative;
-                            height: calc(100vh - 149px);
-                            overflow: auto;
-                            li {                
+                            li {         
+                                       
                                 /* 清單列按鈕 */
                                 .button {
-                                    text-align-last: left;
                                     width: 100%;
-                                    padding: 0.5rem 0.75rem;
+                                    padding: 0.5rem 0.75rem 0.5rem 0;
                                     margin: 0.5rem 0;
                                     border-radius: 0.5rem;
+                                    text-align-last: left;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis ;
+                                    overflow: hidden;
                 
                                     &:hover {
                                         color: var(--second_hover);
@@ -43,38 +51,69 @@
                         }
                     }
                 }
-            }
-            
+
             .hot {
+                width: 75%;
                 position: relative;
+
+                .overflow_hidden {
+                    overflow: hidden;
+                    padding: 0.5rem;
+                }
+
+                h2 {
+                    text-align-last: left;
+                    margin-bottom: 2rem;
+                }
+
                 .tag_name_header {
+                    margin: 0 -1rem;
                     margin-top: 2rem;
                     background-color: var(--white);
                     position: sticky;
                     top: 32px;
-                    z-index: 4;
-
-                    h2 {
-                        text-align-last: left;
-                        margin-bottom: 0;                        
-                    }
+                    z-index: 11;
+                    
                     .tag_slider {
+                        background: var(--white);
                         display: flex;
                         justify-content: center;
-                        background: var(--white);
-                        margin: 0 -15px;
-                    
+                        position: relative;
+                        transition: 0.3s all;
+
+                        .arrow {
+                            position: absolute;
+                            top: 36%;
+                            right: 3%;
+                            z-index: 4;
+                        }
                         ul {
                             li {
-                                a {
+                                .tag {
                                     padding: 0.5rem 1rem;
                                 }
                             }
+                            
                         }
                     }
                 }
             }
+
+            .back_to_top {
+                width: 5%;
+            }
+
         }
+    }
+    /* 調整按鈕位置 */
+    .swiper-button-prev, .swiper-button-next {
+        margin-top: 0.5rem;
+    }
+    .swiper-button-prev {
+        left: 1.5rem;
+    }    
+    .swiper-button-next {
+        right: 1.5rem;
     }
 }
 
@@ -109,10 +148,8 @@ aside {
     transition: 0.3s all ease-in-out;
 
     /* 選取到的卡片 */
-    &:hover,
-    &.extend {
+    &:hover, &.extend {    
         width: 33.333333%;
-
         /* hover 後內框線 */
         .cover {
             outline: 0.25rem solid var(--hover);
@@ -179,4 +216,55 @@ aside {
             }
         }
     }
+}
+@media screen and (max-width:992px) {
+    .main {
+        .container_full {
+            max-width: 960px;
+        }
+    }    
+}
+@media screen and (max-width:768px) {
+    .main {
+        .container_full {
+            max-width: 720px;
+            .row {
+                position: relative;    
+                aside.col {    
+                    display: none;
+                }
+                .hot {
+                    margin: auto;
+                    width: 90%;
+                    .tag_name_header {
+                        top: 25px;
+                    }
+                }                
+            }    
+        }
+        .main_tabbar {
+            width: 100%;
+            position: sticky;
+            bottom: 0;
+            z-index: 5;
+
+            .container_full {
+                position: relative;
+
+                .row {
+                    margin: 0;
+                }
+                .back_to_top {
+                    width: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .main {
+        .container_full {
+            max-width: 390px;
+        }
+    }    
 }
