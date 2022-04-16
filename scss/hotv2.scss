@@ -1,0 +1,165 @@
+/* aside */
+aside {
+    // position: fixed;
+    // left: 2rem;
+    // z-index: 5;
+    background-color: var(--white);
+    margin-right: auto;
+    .slider{
+        h2 {
+            color: var(--primary);
+            padding: 0.5rem 0 0;
+        }
+        /* 清單 */
+        ul {
+            padding: 0 1rem 1rem 0;
+            position: relative;
+            height: calc(100vh - 149px);
+            overflow: auto;
+
+            li {
+                /* 清單列按鈕 */
+                .button {
+                    text-align-last: left;
+                    width: 100%;
+                    padding: 0.5rem 0.75rem;
+                    margin: 0.5rem 0;
+                    border-radius: 0.5rem;
+
+                    &:hover {
+                        color: var(--second_hover);
+                    }
+                    &:active {
+                        color: var(--white);
+                        background-color: var(--second);
+                        text-shadow: 0 0 0 var(--white);
+                    }
+                }
+            }
+        }
+    }    
+}
+
+/* 滾軸樣式 */
+aside{
+    ul::-webkit-scrollbar {
+        width: 0.25rem;
+    }
+    ul::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    ul::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 5px;
+    }
+    ul:hover::-webkit-scrollbar-thumb {
+        background: var(--second);
+    }
+} 
+
+
+
+/* tag_slider 在 component.css */
+.fa-solid {
+    font-size: 1rem;
+}
+
+
+.recommend.row .card {
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+
+    /* 選取到的卡片 */
+    &:hover,
+    &.extend {
+        width: 33.333333%;
+
+        /* hover 後內框線 */
+        .cover {
+            outline: 0.25rem solid var(--hover);
+
+            .caption .tag h4 {
+                display: inline-block;
+            }
+        }
+    }
+
+    /* 用 first-of-type 才能選到 card 的子層 */
+    &:first-of-type .cover {
+        background: url(../image/);
+        background-size: cover;
+    }
+
+    /* 用 nth-of-type( ) 選到 card 的第二之後的子層 */
+    &:nth-of-type(2) .cover {
+        background: url(../image/);
+        background-size: cover;
+    }
+
+    &:nth-of-type(3) .cover {
+        background: url(../image/);
+        background-size: cover;
+    }
+
+    &:nth-of-type(4) .cover {
+        background: url(../image/);
+        background-size: cover;
+    }
+
+    &:nth-of-type(5) .cover {
+        background: url(../image/);
+        background-size: cover;
+    }
+
+    /* 圖片 */
+    .cover {
+        height: 320px;
+        border-radius: 1.25rem;
+        vertical-align: top;
+        background-position: 50%;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+
+        /* 漸層覆蓋 */
+        .overlap {
+            background: linear-gradient(transparent 60%, rgba(2, 32, 56, 0.761) 80%, rgba(2, 32, 56, 0.98) 100%);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+
+        /* 標題 */
+        .caption {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            position: relative;
+
+            /* 名稱 */
+            h3 {
+                color: var(--white);
+                text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
+                margin: 0 0 0.75rem 0.6rem;
+                z-index: 2;
+            }
+
+            /* 次標 */
+            .tag {
+                h4 {
+                    color: var(--white);
+                    padding: 0.25rem 0.75rem;
+                    border: 1px solid #fff;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.16);
+                    margin: 0 0 0.75rem 0.6rem;
+                    z-index: 2;
+                    display: none;
+                }
+            }
+        }
+    }
+}

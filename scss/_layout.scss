@@ -176,75 +176,119 @@
 
 /* footer */
 footer {
-    background-image:
-        url(../image/wave_bottom.png);
+    margin: 0 auto;
+    background: linear-gradient(0deg,rgba(38,127,191,1) ,rgba(51,146,255,0.5));
+    clip-path: url("#footer_x5F_clip_x5F_path");
     background-repeat: no-repeat;
-    background-position: top center;
-    width: 100%;
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+
+    svg{
+        margin: 0 auto;
+        height: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 主體 */
+    .container {
+        .background {
+            padding-top: 11rem;
+            padding-bottom: 4rem;
+
+            /* footer連結 */
+            .footer_links {
+                display: flex;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    li a {
+                        padding-bottom: 2.25rem;
+                        display: inline-block;
+                        color: var(--white);
+                    }
+                }
+            }
+            .subscribe {
+                .subscribe_email {                    
+                    display: flex;
+                    input{
+                        margin-right: auto;
+                        width: 100%;
+                        padding: 1rem 0;
+                        padding-left: 1rem;
+                        border-width: 0;
+                        border-radius: 0.5rem 0 0 0.5rem;
+                        &::placeholder {
+                            width: 100%;
+                            color: var(--gray_4);
+                        }
+                        &:focus {
+                            outline: 0;
+                        }
+                    }
+                    button {
+                        background-color: var(--primary);
+                        color: var(--white);
+                        width: 96px;
+                        border-width: 0;
+                        border-radius: 0 0.5rem 0.5rem 0;
+                        &:hover {
+                            background-color: var(--hover);
+                        }
+                        &:active {
+                            background-color: var(--active);
+                        }
+                        i.fa-solid {
+                            transform: scale(1.6);
+                        }
+                    }                    
+                }
+                /* media */
+                .media {
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+
+                        li {
+                            padding: 2.25rem 0;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                /* downapp */
+                .downapp {
+                    ul {
+                        display: flex;
+                        li {
+                            padding-right: 2rem;
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* 著作權 */
+    .copyright {
+        background-color: var(--dark);
+        color: var(--white);
+        text-align: center;
+        font-family: Helvetica;
+        padding: 0.75rem 0 0;
+    }
 }
 
-footer .background {
-    padding-top: 15rem;
-    padding-bottom: 1rem;
-}
-
-
-
-/* footer連結 */
-footer .footer_links {
-    display: flex;
-    align-items: center;
-}
-
-footer .footer_links ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer ul li a {
-    padding-bottom: 2.25rem;
-    display: inline-block;
-    color: var(--white);
-}
-
-/* media     */
-footer .media ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-footer .media ul li {
-    padding: 2.25rem 0;
-}
-
-footer .media ul li img {
-    width: 100%;
-}
-
-/* downapp */
-footer .downapp ul {
-    display: flex;
-}
-
-footer .downapp li {
-    padding-right: 2rem;
-}
-
-footer .downapp ul li img {
-    width: 100%;
-    object-fit: cover;
-}
-
-/* 著作權 */
-footer .copyright {
-    background-color: var(--dark);
-    color: var(--white);
-    text-align: center;
-    font-family: Helvetica;
-    padding: 0.75rem 0;
-}
 
 @media screen and (max-width:1440px) {
     .main_header {
@@ -713,8 +757,6 @@ footer .copyright {
         }
     }
 
-
-
    /* bottomSheet */
     .main_header_mobile{
         #bottomSheetContainer {
@@ -763,35 +805,106 @@ footer .copyright {
 
     }
 
+    /* footer */ 
+    footer {
+        .container{
+            padding-top: 10rem;
+            padding-bottom: 3rem;
+            .background {
+                padding: 0 0 1rem;
+            
+                .col {
+                    width: 100%;
+            
+                    &:first-of-type {
+                        order: 1;
+                    }            
+                    .footer_links {
+                        .col {
+                            max-width: 70%;
+                            display: flex;
+                            justify-content: center;
+            
+                            ul {
+                                width: 100%;
+                                padding-top: 3rem;
+                                flex-direction: row;
+                                justify-content: space-between;
+            
+                                li {
+                                    padding: 0 1rem;
+                                    a {
+                                        padding-bottom: 0;
+                                    }
+                                }
+                            }
+            
+                            &:first-of-type {
+                                order: 1;
+                            }
+            
+                            &:nth-of-type(2) {
+                                order: 2;
+                            }
+                        }
+                    }
+                }
 
-    /* footer */
-    footer .background {
-        padding: 0 0 1rem;
+                .subscribe {
+                    text-align: -webkit-center;
+
+                    .subscribe_email{
+                        max-width: 70%;
+                    }
+                    .media {
+                        max-width: 70%;
+                        ul{
+                            li{
+                                margin-right: 0;
+                            }
+                        }
+                    }            
+                    .downapp {
+                        max-width: 70%;
+                        ul {
+                            justify-content: space-between;            
+                            li {
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+}
 
-    footer .container .background .col:first-child {
-        order: 1;
-    }
-
-    footer .container .subscribe {
-        order: 0;
-    }
-
-    footer ul li {
-        padding: 0.5rem 1rem 2rem;
-    }
-
-    footer .container .background .footer_links .col:first-of-type {
-        order: 1;
-    }
-
-    footer .container .background .footer_links .col:nth-of-type(2) {
-        order: 2;
-    }
-
-    footer .downapp ul {
-        align-items: center;
-        justify-content: center;
+@media screen and (max-width:425px) {
+    footer {
+        .container {
+            .background {
+                .col {
+                    .footer_links {
+                        .col {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .subscribe {
+                    .subscribe_email {
+                        max-width: 100%;
+                    }
+            
+                    .media {
+                        max-width: 100%;
+                    }
+            
+                    .downapp {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 

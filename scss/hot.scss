@@ -4,14 +4,16 @@
 }
 
 /* 側邊攔 */
-.container {
+.container_full {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
 }
 
 aside {
-    position: fixed;
-    left: 2rem;
-    z-index: 5;
+    // position: fixed;
+    // left: 2rem;
+    // z-index: 5;
     margin: 1.5rem 0;
     background-color: var(--white);
 
