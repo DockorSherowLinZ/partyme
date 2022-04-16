@@ -799,10 +799,6 @@ form{
 
 }
 @media screen and (max-width:768px) {
-    section .container h2 {
-        font-size: 2.25rem;
-    }
-
     .container {
         max-width: 720px;
     }
@@ -964,7 +960,7 @@ form{
                     .card {
                         width: 160px;
                         white-space: wrap;
-                        
+
                         /* 選取到的卡片 */
                         &.extend {
                             width: 240px;
@@ -981,7 +977,8 @@ form{
             }             
         }
     }
-}
+
+
 @media screen and (max-width:640px) {
     /* 熱門話題輪播 */
     .hot {
