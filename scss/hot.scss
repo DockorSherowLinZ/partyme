@@ -1,45 +1,32 @@
-/* tag_slider 在 component.css */
-.fa-solid {
-    font-size: 1rem;
-}
-
-/* 側邊攔 */
-.container_full {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-aside {
-    // position: fixed;
-    // left: 2rem;
-    // z-index: 5;
-    margin: 1.5rem 0;
-    background-color: var(--white);
-
-    /* 清單 */
-    h2 {
-        color: var(--primary);
-        padding: 0.5rem 0 0;
+.main {
+    .container_full {
+        .row {
+            .hot {
+                h2 {
+                    text-align-last: left;
+                }
+            }
+        }
     }
+}
+
+
+/* aside */
+aside {
+    position: fixed;
+    left: 1rem;
+    background-color: var(--white);
+    margin-right: auto;
 
     .slider {
-
+        /* 清單 */
         ul {
             padding: 0 1rem 1rem 0;
             position: relative;
             height: calc(100vh - 149px);
             overflow: auto;
 
-            &:hover {
-
-                &::-webkit-scrollbar-thumb {
-                    background: var(--second);
-                }
-            }
-
             li {
-
                 /* 清單列按鈕 */
                 .button {
                     text-align-last: left;
@@ -60,103 +47,108 @@ aside {
                 }
             }
         }
-        
-        /* 滾軸樣式 */
-        &::-webkit-scrollbar {
-            width: 0.25rem;
-        }
-        &::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        &::-webkit-scrollbar-thumb {
-            background: transparent;
-            border-radius: 5px;
-        }
     }
 }
 
-/* 搜尋欄 */
-.main {
+/* 滾軸樣式 */
+aside { 
+    ul::-webkit-scrollbar {
+        width: 0.25rem;
+    }
+
+    ul::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ul::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 5px;
+    }
+
+    ul:hover::-webkit-scrollbar-thumb {
+        background: var(--second);
+    }
+}
+
+/* tag_slider 在 component.css */
+.fa-solid {
+    font-size: 1rem;
+}
+
+.recommend.row .card {
+    box-sizing: border-box;
     position: relative;
-    /* 寫出高度會讓body的高度只剩下nav */
-    /* height: calc(100vh - 85px); */
-    /* overflow: auto; */
-}
+    transition: 0.3s all ease-in-out;
 
-.main .search {
-    position: sticky;
-    top: 68px;
-    z-index: 3;
-    padding: 1.5rem 0 1rem;
-    background-color: var(--white);
-    background: linear-gradient(0deg, transparent 0%, white 6%);
-}
+    /* 選取到的卡片 */
+    &:hover,
+    &.extend {
+        width: 33.333333%;
 
-.search_bar {
-    max-width: 50%;
-    margin: 0 auto;
-}
+        /* hover 後內框線 */
+        .cover {
+            outline: 0.25rem solid var(--hover);
 
-/* medialist */
-.container.medialist h2 {
-    text-align: left;
-}
+            .caption .tag h4 {
+                display: inline-block;
+            }
+        }
+    }
 
-/* 熱門話題影片 */
-.hot .row .col .video .link {
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
+    /* 圖片 */
+    .cover {
+        height: 320px;
+        border-radius: 1.25rem;
+        vertical-align: top;
+        background-position: 50%;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
 
-/* 推薦話題 */
-.topic_recommend {
-    margin-bottom: 2rem;
-}
+        /* 漸層覆蓋 */
+        .overlap {
+            background: linear-gradient(transparent 60%, rgba(2, 32, 56, 0.761) 80%, rgba(2, 32, 56, 0.98) 100%);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
 
-.topic_recommend .row .card .cover {
-    margin-bottom: 2rem;
-}
+            img {
+                width: 100%;
+                vertical-align: top;
+                object-fit: cover;
+            }
+        }
 
-/* 用 first-of-type 才能選到 card 的子層 */
-.topic_recommend .row .card:first-of-type .cover {
-    background: url(../image/two_skiers_standing_together.jpg);
-    background-size: cover;
-}
+        /* 標題 */
+        .caption {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            position: relative;
 
-.topic_recommend .row .card:nth-of-type(2) .cover {
-    background: url(../image/cruise.jpg);
-    background-size: cover;
-}
+            /* 名稱 */
+            h3 {
+                color: var(--white);
+                text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
+                margin: 0 0 0.75rem 0.6rem;
+                z-index: 2;
+            }
 
-.topic_recommend .row .card:nth-of-type(3) .cover {
-    background: url(../image/underwater-scuba-diving.jpg);
-    background-size: cover;
-}
-
-.topic_recommend .row .card:nth-of-type(4) .cover {
-    background: url(../image/hot_air_balloons.jpg);
-    background-size: cover;
-}
-
-.topic_recommend .row .card:nth-of-type(5) .cover {
-    background: url(../image/Philippines.jpg);
-    background-size: cover;
-}
-
-.topic_recommend .row .card:nth-of-type(6) .cover {
-    background: url(../image/Shopping.jpg);
-    background-size: cover;
-}
-
-/* 輪播按鈕 */
-.carousel .arrow.left {
-    left: 1rem;
-}
-
-.carousel .arrow.right {
-    right: 1rem;
+            /* 次標 */
+            .tag {
+                h4 {
+                    color: var(--white);
+                    padding: 0.25rem 0.75rem;
+                    border: 1px solid #fff;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.16);
+                    margin: 0 0 0.75rem 0.6rem;
+                    z-index: 2;
+                    display: none;
+                }
+            }
+        }
+    }
 }
