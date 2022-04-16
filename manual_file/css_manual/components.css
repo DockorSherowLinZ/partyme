@@ -157,16 +157,7 @@ section h2 {
 
 /* 首頁搜尋欄 input */
     /* 首頁搜尋欄 */
-    .search_bar input{
-        width: calc(100% - 5rem);
-        font-size: 1rem;
-        padding: 1rem 1.5rem;
-        border-radius: 0.5rem 0 0 0.5rem;
-        border-width: 0;
-        background-color: var(--white);
-        box-shadow: 0 0 0.5rem rgba(0,0,0,0.16);
-    }
-    .search_bar input::placeholder{
+    .search_bar .search_bar input::placeholder{
         width: 100%;
         color: var(--gray_4);
     }
