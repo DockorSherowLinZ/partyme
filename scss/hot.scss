@@ -1,48 +1,76 @@
 .main {
     .container_full {
         .row {
-            .hot {
-                h2 {
-                    text-align-last: left;
+            position: relative;
+            .col-2 {
+                /* aside */
+                aside {
+                    position: sticky;
+                    top: 94px;
+                    left: 1rem;
+                    background-color: var(--white);
+                    margin-right: auto; 
+                    margin-top: 1.5rem;              
+                    .slider {                
+                        /* 清單 */
+                        ul {
+                            width: 100%;
+                            padding: 0 1rem 1rem 0;
+                            margin-right: 2rem;
+                            position: relative;
+                            height: calc(100vh - 149px);
+                            overflow: auto;
+                            li {                
+                                /* 清單列按鈕 */
+                                .button {
+                                    text-align-last: left;
+                                    width: 100%;
+                                    padding: 0.5rem 0.75rem;
+                                    margin: 0.5rem 0;
+                                    border-radius: 0.5rem;
+                
+                                    &:hover {
+                                        color: var(--second_hover);
+                                    }
+                
+                                    &:active {
+                                        color: var(--white);
+                                        background-color: var(--second);
+                                        text-shadow: 0 0 0 var(--white);
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
-        }
-    }
-}
+            
+            .hot {
+                position: relative;
+                .tag_name_header {
+                    margin-top: 2rem;
+                    background-color: var(--white);
+                    position: sticky;
+                    top: 32px;
+                    z-index: 4;
 
-
-/* aside */
-aside {
-    position: fixed;
-    left: 1rem;
-    background-color: var(--white);
-    margin-right: auto;
-
-    .slider {
-        /* 清單 */
-        ul {
-            padding: 0 1rem 1rem 0;
-            position: relative;
-            height: calc(100vh - 149px);
-            overflow: auto;
-
-            li {
-                /* 清單列按鈕 */
-                .button {
-                    text-align-last: left;
-                    width: 100%;
-                    padding: 0.5rem 0.75rem;
-                    margin: 0.5rem 0;
-                    border-radius: 0.5rem;
-
-                    &:hover {
-                        color: var(--second_hover);
+                    h2 {
+                        text-align-last: left;
+                        margin-bottom: 0;                        
                     }
-
-                    &:active {
-                        color: var(--white);
-                        background-color: var(--second);
-                        text-shadow: 0 0 0 var(--white);
+                    .tag_slider {
+                        display: flex;
+                        justify-content: center;
+                        background: var(--white);
+                        margin: 0 -15px;
+                    
+                        ul {
+                            li {
+                                a {
+                                    padding: 0.5rem 1rem;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -61,7 +89,7 @@ aside {
     }
 
     ul::-webkit-scrollbar-thumb {
-        background: transparent;
+        background: var(--second);
         border-radius: 5px;
     }
 

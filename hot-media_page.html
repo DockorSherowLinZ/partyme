@@ -14,13 +14,31 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 網頁版導覽列 -->
     <section class="main_header">
+        <input type="checkbox" name="" id="menu-switch">
         <div class="main_nav">
-            <a href="./index.html">
-                <h1 class="logo">
-                    <img src="./image/mainav_Logo.svg" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
-                </h1>
-            </a>
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./image/mainav_Logo.webp" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
+                </a>
+            </h1>
+            <div class="search_bar">
+                <input type="search" id="search_bar" name="search_bar" placeholder="想想去哪呢？" list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Google Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <label for="menu-switch" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <div class="main_menu">
                 <ul>
                     <li><a href="./hot.html">熱門話題</a></li>
@@ -30,26 +48,53 @@
                 </ul>
                 <span>｜</span>
                 <div class="member_button">
-                    <button class="signup">註冊會員</button>
-                    <button class="login">登入</button>
+                    <a class="signup" href="./signup_login.html">註冊/登入</a>
                     <div class="translate">
-                        <div class="flag"><i class="fa-solid fa-globe"></i></div>
-                        <div class="text">中文<i class="fa-solid fa-chevron-down"></i></div>
-    
+                        <div class="flag">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="text">中文
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="main">
-        <section class="search">
-            <div class="search_bar">
-                <input type="text" placeholder="找尋您感興趣的話題吧！">
-                <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+    <!-- 手機板 Tabbar 按鈕 -->
+    <section class="main_tabbar">
+        <div class="container_full">
+            <div class="row row-cols-5">
+                <div class="col">
+                    <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
+                        <h2 class="t3_r_ch">熱門話題</h2>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
+                        <h2 class="t3_r_ch">人氣嚮導</h2>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
+                        <h2 class="t3_r_ch">主題探索</h2>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
+                        <h2 class="t3_r_ch">熱門城市</h2>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
+                        <h2 class="t3_r_ch">搜尋</h2>
+                    </a>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <!-- 主體 -->
+    <section class="main">
         <section class="hot_main_media">
             <div class="container_full">
                 <div class="row">

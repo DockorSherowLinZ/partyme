@@ -9,15 +9,14 @@ i[class*="fa-"] {
     margin-right: 0.25rem;
 }
 
-/* 搜尋欄 */
-.search_bar {
-    max-width: 32%;
-    margin: 0 auto 1rem;
+.main {
+    .hot_main_media {
+        .container_full {
+            margin-top: 2rem;
+        }
+    }
 }
 
-.search_bar .fa-solid {
-    color: var(--white);
-}
 
 /* hot_main_media */
 .hot_main_media .main_media {
