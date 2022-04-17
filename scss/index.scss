@@ -94,8 +94,9 @@ form{
                                 align-items: center;
     
                                 .info {
-                                    text-align-last: left;
+                                    padding: 0 1rem;
                                     margin: 1.5rem 1.5rem 0 1rem;
+                                    text-align-last: left;
                                     display: flex;
                                     flex-direction: column;
                                     flex: 1 0 0;
@@ -134,19 +135,6 @@ form{
                         display: none;
                     }
                 }
-            }
-            .swiper-button-next,
-            .swiper-button-prev {                
-                color: var(--white);
-                opacity: 0.9;
-
-                &:active{
-                    color: var(--primary);
-                }
-            }
-            span.swiper-pagination-bullet{
-                background: var(--white);
-                box-shadow: var(--shadow);
             }
         }
         /* 影片卡片在components裡 */
@@ -468,10 +456,10 @@ form{
         color: var(--white);
     }
     .swiper-button-prev{
-        left: 2.5rem;
+        left: 1.5rem;
     }
     .swiper-button-next{
-        right: 2.5rem;
+        right: 1.5rem;
     }
     /* 地圖 */
     .map {

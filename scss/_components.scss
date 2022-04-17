@@ -46,6 +46,95 @@ button,.button {
     }
 }
 
+/* 影片播放按鈕icon */
+.playerButton{
+    &::before {
+        font-family: var(--font-awesome-family);
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 3rem;
+        content: '\f144';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+}
+/* 手機板影片播放按鈕icon */
+.playerButtonMobile{
+    &::before {
+        font-family: var(--font-awesome-family);
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 3rem;
+        content: '\f144';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* 影片長度 */
+.videoLength {
+    &::after {
+        content: attr(data-videoLength);
+        color: var(--white);
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 0.5rem;
+        padding: 0.375rem 0.5rem;
+        margin-right: 0.25rem;
+        margin-bottom: 0.25rem;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+}
+/* 手機板影片長度 */
+.videoLengthMobile {
+    &::after {
+        font-size: 1rem;
+        content: attr(data-videoLength);
+        color: var(--white);
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 0.5rem;
+        padding: 0.375rem 0.5rem;
+        margin-right: 0.25rem;
+        margin-bottom: 0.25rem;
+        display: inline-block;
+        position: absolute;
+        bottom: 38%;
+        right: 0;
+        z-index: 2;
+    }
+}
+
+/* 輪播方向按鈕 */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--white);
+    opacity: 0.9;
+    text-shadow: 0 0.25rem 0.5rem var(--dark);
+
+    &:active {
+        color: var(--primary);
+    }
+}
+
+span.swiper-pagination-bullet {
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+
 /* 熱門城市輪播按鈕 */
 .container{
     position: relative;
@@ -265,21 +354,6 @@ button,.button {
     }
 }
 
-
-/* 首頁熱門話題影片時間長度顯示框 */
-.video_length {
-    color: var(--white);
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 0.5rem;
-    padding: 0.375rem 0.5rem;
-    margin-right: 0.25rem;
-    margin-bottom: 0.25rem;
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-}
 
 .pop_guide .carousel .card:nth-child(2) {
     z-index: 2;
@@ -527,7 +601,7 @@ button,.button {
         right: 0;
 
         &:hover {
-            background-color: var(--primary);
+            background-color: var(--error);
             color: var(--white);
         }
 
@@ -756,13 +830,15 @@ button,.button {
 .swiper-button-prev,
 .swiper-button-next {
     margin-top: 0;
+    margin: auto;
     color: var(--white);
+    transform: translate(0% , -50%);
 }
 .swiper-button-prev {
-    left: 2.5rem;
+    left: 0.5rem;
 }
 .swiper-button-next {
-    right: 2.5rem;
+    right: 0.5rem;
 }
 
 /* 所有 tag slider */

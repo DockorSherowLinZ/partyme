@@ -7,6 +7,7 @@ $(function () {
 const lightBox = document.getElementById(`lightBox`); //宣告 lightBox 是 #lightBox
 const colseBtns = document.getElementsByClassName(`closeBtn`); //宣告 colseBtns 是 closeBtn
 const videos = document.querySelectorAll('.video'); // 宣告 videos 是 .video
+const mySwiperSlides = document.querySelectorAll('.swiper-slide');
 
 const closeLightbox = function () { //宣告 closeLightbox 函式
     lightBox.style.display = 'none';
@@ -31,7 +32,11 @@ videos.forEach(function (video) {
         openLightBox(video.dataset.url);
     })
 })
-
+mySwiperSlides.forEach(function (video) {
+    video.addEventListener("click", function () {
+        openLightBox(video.dataset.url);
+    })
+})
 //熱門城市
 //jQuery 寫法：
 // $(function () {
