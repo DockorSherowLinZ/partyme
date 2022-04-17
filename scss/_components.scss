@@ -15,6 +15,7 @@ section h2 {
     color: var(--white);
 }
 
+
 /* 所有的按鈕類別 */
 /* 按鈕 mouse-in */
 button,.button {
@@ -501,6 +502,47 @@ button,.button {
 
 /* 所有卡片類型 */
 /* 首頁熱門話題影片卡片 */
+#lightBox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    // display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+    .x-btn {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: var(--gray_5);
+        transition: 0.1s all ease-in-out;
+        position: absolute;
+        margin: 1.5rem;
+        top: 0;
+        right: 0;
+
+        &:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .fa-solid {
+            transform: scale(1.6);
+        }
+    }
+
+    iframe {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        vertical-align: top;
+    }
+}
 .hot .row {
     margin-bottom: 2rem;
 
@@ -510,18 +552,20 @@ button,.button {
         margin-bottom: 1.5rem;
 
         .video {
+            height: 160px;
+            border-radius: 0.25rem;
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
-            border-radius: 0.25rem;
             overflow: hidden;
             position: relative;
 
-            iframe {
+            img {
                 width: 100%;
+                height: 100%;
                 object-fit: cover;
                 vertical-align: top;
-            }
+            }            
         }
 
         .content {

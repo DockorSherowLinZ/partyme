@@ -182,6 +182,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 
     svg{
         margin: 0 auto;
@@ -706,20 +707,19 @@ footer {
     
     /* 手機 Tabbar */
     .main_tabbar {
+        width: 100%;
         display: block;
-        position: relative;
+        position: sticky;
+        bottom: 0;
+        z-index: 12;
 
         .container_full {
-            width: 100%;
             background: var(--gray_2);
             background-color: var(--white);
             margin: 0 auto;
             padding: 0.5rem 1rem;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            z-index: 4;
             box-shadow: 0 -0.25rem 0.5rem var(--shadow);
+            position: relative;
 
             .row {
                 text-align: center;

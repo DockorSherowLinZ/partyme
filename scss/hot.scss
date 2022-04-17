@@ -217,17 +217,11 @@ aside {
         }
     }
 }
-@media screen and (max-width:992px) {
-    .main {
-        .container_full {
-            max-width: 960px;
-        }
-    }    
+@media screen and (max-width:992px) { 
 }
 @media screen and (max-width:768px) {
     .main {
         .container_full {
-            max-width: 720px;
             .row {
                 position: relative;    
                 aside.col {    
@@ -242,29 +236,25 @@ aside {
                 }                
             }    
         }
-        .main_tabbar {
-            width: 100%;
-            position: sticky;
-            bottom: 0;
-            z-index: 5;
 
-            .container_full {
-                position: relative;
+        /*  手機板 Tabbar 按鈕 */
+        // .main_tabbar {
+        //     width: 100%;
+        //     position: sticky;
+        //     bottom: 0;
+        //     z-index: 5;
+        //     .container_full {
+        //         position: relative;
 
-                .row {
-                    margin: 0;
-                }
-                .back_to_top {
-                    width: 0;
-                }
-            }
-        }
+        //         .row {
+        //             margin: 0;
+        //         }
+        //         .back_to_top {
+        //             width: 0;
+        //         }
+        //     }
+        // }
     }
 }
-@media screen and (max-width:425px) {
-    .main {
-        .container_full {
-            max-width: 390px;
-        }
-    }    
+@media screen and (max-width:425px) { 
 }
