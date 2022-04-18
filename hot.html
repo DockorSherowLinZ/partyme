@@ -65,413 +65,788 @@
         <div class="row">
             <aside class="col">
                 <div class="slider">
-                    <ul>
-                        <li><button class="button">PARTYME精選</button></li>
-                        <li><button class="button">單車旅遊</button></li>
-                        <li><button class="button">露營</button></li>
-                        <li><button class="button">滑雪</button></li>
-                        <li><button class="button">遊輪</button></li>
-                        <li><button class="button">潛水</button></li>
-                        <li><button class="button">高空熱氣球</button></li>
-                        <li><button class="button">觀看紀錄</button></li>
-                        <li><button class="button">稍後觀看</button></li>
+                    <ul class="tabs">
+                        <li class="tab is-active"><a data-switcher data-tab="1" class="button">PARTYME精選</a></li>
+                        <li class="tab"><a data-switcher data-tab="2" class="button">單車旅遊</a></li>
+                        <li class="tab"><a data-switcher data-tab="3" class="button">露營</a></li>
+                        <li class="tab"><a data-switcher data-tab="4" class="button">滑雪</a></li>
+                        <li class="tab"><a data-switcher data-tab="5" class="button">遊輪</a></li>
+                        <li class="tab"><a data-switcher data-tab="6" class="button">潛水</a></li>
+                        <li class="tab"><a data-switcher data-tab="7" class="button">高空熱氣球</a></li>
+                        <li class="tab"><a data-switcher data-tab="8" class="button">觀看紀錄</a></li>
+                        <li class="tab"><a data-switcher data-tab="9" class="button">稍後觀看</a></li>
                     </ul>
                 </div>
             </aside>
-            <div class="hot col">
-                <div class="tag_name_header">
-                    <h2 class="h2_b_ch">熱門話題</h2>
-                    <div class="tag_slider">
-                        <button class="arrow right">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
-                        <div class="overlap"></div>
-                        <ul>
-                            <li><button class="tag">南迴公路</button></li>
-                            <li><button class="tag">公路之旅</button></li>
-                            <li><button class="tag">南加州旅行</button></li>
-                            <li><button class="tag">黃石公園</button></li>
-                            <li><button class="tag">拉斯維加斯</button></li>
-                            <li><button class="tag">釜山</button></li>
-                            <li><button class="tag">北海道自由行</button></li>
-                            <li><button class="tag">長灘島渡假</button></li>
-                            <li><button class="tag">大堡礁潛水</button></li>
-                        </ul>
-                    </div>
-                </div>
-                <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-                    <div id="lightBox"></div>
-                    <div class="col ">
-                        <div class="video" data-url="https://www.youtube.com/embed/_tejFjY6pcA">
-                            <img src="https://i.ytimg.com/vi_webp/_tejFjY6pcA/maxresdefault.webp" alt="">
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">單車之旅</h3>
-                                <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+            <div class="hot col pages">
+                <div class="page is-active" data-page="1">
+                    <div class="tag_name_header">
+                        <h2 class="h2_b_ch">熱門話題</h2>
+                        <div class="tag_slider">
+                            <button class="arrow right">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <div class="overlap"></div>
+                            <ul>
+                                <li><button class="tag">南迴公路</button></li>
+                                <li><button class="tag">公路之旅</button></li>
+                                <li><button class="tag">南加州旅行</button></li>
+                                <li><button class="tag">黃石公園</button></li>
+                                <li><button class="tag">拉斯維加斯</button></li>
+                                <li><button class="tag">釜山</button></li>
+                                <li><button class="tag">北海道自由行</button></li>
+                                <li><button class="tag">長灘島渡假</button></li>
+                                <li><button class="tag">大堡礁潛水</button></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="video" data-url="https://www.youtube.com/embed/zyNMcPyfFxM">
-                            <img src="https://i.ytimg.com/vi_webp/zyNMcPyfFxM/maxresdefault.webp" alt="">
-                            <div class="video_length">
-                                <span>09:28</span>
+                    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_01.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_02.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_03.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_04.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_05.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_06.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_07.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_08.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_09.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="more_second_floor">
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <div class="divide"></div>
+                        </div>
+                    </section>
+                    <h2 class="h2_b_ch">推薦話題</h2>
+                    <section class="recommend">
+                        <div id="carousel" class="carousel">
+                            <div class="carousel_item carousel_item-visible">
+                                <div class="card extend">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h4_b_ch">滑雪</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">江蘇</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">馬爾地夫</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">西安</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">曼哈頓</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">曼哈頓</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">曼哈頓</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">戶外露營</h3>
-                                <p>戶外露營尹埃敬一建瘤許至洗。指的嘍憧愛的女原都出</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video" data-url="https://www.youtube.com/embed/ERVngmuVN3Q">
-                            <img src="https://i.ytimg.com/vi_webp/ERVngmuVN3Q/maxresdefault.webp" alt="">
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">瑞士滑雪之旅</h3>
-                                <p>瑞士滑雪之旅澡拘台的期心著月的著謝駝，蜓最怎慧就要鳳</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video" data-url="https://www.youtube.com/embed/zgwArBbMyZA">
-                            <img src="https://i.ytimg.com/vi/zgwArBbMyZA/sddefault.jpg" alt="">
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">攀岩體驗</h3>
-                                <p>攀岩體驗淪興思問在曝應如中重選稚榕給世知男數</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video" data-url="https://www.youtube.com/embed/oL_hKEweXy8">
-                            <img src="https://i.ytimg.com/vi_webp/oL_hKEweXy8/sddefault.webp" alt="">
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">日落美景</h3>
-                                <p>日落美景山唯心系的轉。哎寵中大像楠挽接同</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video" data-url="https://www.youtube.com/embed/5UWV0FxMsm4">
-                            <img src="https://i.ytimg.com/vi_webp/5UWV0FxMsm4/maxresdefault.webp" alt="">
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">九寨溝旅遊</h3>
-                                <p>九寨溝旅遊尹埃敬一建瘤許至洗。指的嘍憧愛的女原都出</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video" data-url="https://www.youtube.com/embed/jPtc5wIbV_Y">
-                            <img src="https://i.ytimg.com/vi/jPtc5wIbV_Y/hqdefault.jpg" alt="">
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">東京早櫻開花速報</h3>
-                                <p>打雪仗澡拘台的期心著月的著謝駝，蜓最怎慧就要鳳</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video" data-url="https://www.youtube.com/embed/FWTUIduahRc">
-                            <img src="https://i.ytimg.com/vi/FWTUIduahRc/hqdefault.jpg" alt="">
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">拉斯維加斯必去景點</h3>
-                                <p>攀岩芥諾淪興思問在曝應如中重選稚榕給世知男數</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
+                    </section>
                     <div class="more_second_floor">
-                        <button>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
                         <div class="divide"></div>
                     </div>
-                </section>
-                <h2 class="h2_b_ch">推薦話題</h2>
-                <div class="overflow_hidden">
-                    <div class="carousel">
-                        <section class="carousel_item carousel_item-visible">
-                            <div class="card col extend">
-                                <div class="cover">
-                                    <div class="overlap">
-                                        <img src="./image/two_skiers_standing_together.jpg" alt="">
-                                    </div>
-                                    <div class="caption">
-                                        <h3 class="h4_b_ch">滑雪</h3>
-                                        <div class="tag">
-                                            <h4>旅遊首選城市</h4>
-                                            <h4>優質移居城市</h4>
-                                        </div>
-                                    </div>
+                    <h2 class="h2_b_ch">猜你喜歡的話題</h2>
+                    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_01.webp" alt="">
                                 </div>
-                            </div>
-                            <div class="card col">
-                                <div class="cover">
-                                    <div class="overlap"></div>
-                                    <div class="caption">
-                                        <h3 class="h5_b_ch">江蘇</h3>
-                                        <div class="tag">
-                                            <h4>旅遊首選城市</h4>
-                                            <h4>優質移居城市</h4>
-                                        </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
                                     </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
                                 </div>
-                            </div>
-                            <div class="card col">
-                                <div class="cover">
-                                    <div class="overlap"></div>
-                                    <div class="caption">
-                                        <h3 class="h5_b_ch">馬爾地夫</h3>
-                                        <div class="tag">
-                                            <h4>旅遊首選城市</h4>
-                                            <h4>優質移居城市</h4>
-                                        </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_02.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
                                     </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
                                 </div>
-                            </div>
-                            <div class="card col">
-                                <div class="cover">
-                                    <div class="overlap"></div>
-                                    <div class="caption">
-                                        <h3 class="h5_b_ch">西安</h3>
-                                        <div class="tag">
-                                            <h4>旅遊首選城市</h4>
-                                            <h4>優質移居城市</h4>
-                                        </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_03.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
                                     </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
                                 </div>
-                            </div>
-                            <div class="card col">
-                                <div class="cover">
-                                    <div class="overlap"></div>
-                                    <div class="caption">
-                                        <h3 class="h5_b_ch">曼哈頓</h3>
-                                        <div class="tag">
-                                            <h4>旅遊首選城市</h4>
-                                            <h4>優質移居城市</h4>
-                                        </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_04.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
                                     </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
                                 </div>
-                            </div>
-                            <div class="card col">
-                                <div class="cover">
-                                    <div class="overlap"></div>
-                                    <div class="caption">
-                                        <h3 class="h5_b_ch">曼哈頓</h3>
-                                        <div class="tag">
-                                            <h4>旅遊首選城市</h4>
-                                            <h4>優質移居城市</h4>
-                                        </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_05.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
                                     </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
                                 </div>
-                            </div>
-                        </section>
-                    </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_06.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_07.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_08.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_09.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="more_second_floor">
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </section>
                 </div>
-                <div class="more_second_floor">
-                    <div class="divide"></div>
-                </div>
-                <h2 class="h2_b_ch">猜你喜歡的話題</h2>
-                <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-                    <div class="col ">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/_tejFjY6pcA" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">單車之旅</h3>
-                                <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                <div class="page" data-page="2">
+                    <div class="tag_name_header">
+                        <h2 class="h2_b_ch">單車旅遊</h2>
+                        <div class="tag_slider">
+                            <button class="arrow right">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <div class="overlap"></div>
+                            <ul>
+                                <li><button class="tag">南迴公路</button></li>
+                                <li><button class="tag">公路之旅</button></li>
+                                <li><button class="tag">南加州旅行</button></li>
+                                <li><button class="tag">黃石公園</button></li>
+                                <li><button class="tag">拉斯維加斯</button></li>
+                                <li><button class="tag">釜山</button></li>
+                                <li><button class="tag">北海道自由行</button></li>
+                                <li><button class="tag">長灘島渡假</button></li>
+                                <li><button class="tag">大堡礁潛水</button></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zyNMcPyfFxM" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
+                    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_01.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_02.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_03.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_04.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_05.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_06.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_07.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_08.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_09.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="more_second_floor">
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <div class="divide"></div>
+                        </div>
+                    </section>
+                    <h2 class="h2_b_ch">推薦話題</h2>
+                    <section class="recommend">
+                        <div id="carousel" class="carousel">
+                            <div class="carousel_item carousel_item-visible">
+                                <div class="card extend">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h4_b_ch">滑雪</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">江蘇</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">馬爾地夫</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">西安</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">曼哈頓</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">曼哈頓</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="cover">
+                                        <div class="overlap"></div>
+                                        <div class="caption">
+                                            <h3 class="h5_b_ch">曼哈頓</h3>
+                                            <div class="tag">
+                                                <h4>旅遊首選城市</h4>
+                                                <h4>優質移居城市</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">戶外露營</h3>
-                                <p>戶外露營尹埃敬一建瘤許至洗。指的嘍憧愛的女原都出</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/ERVngmuVN3Q" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">瑞士滑雪之旅</h3>
-                                <p>瑞士滑雪之旅澡拘台的期心著月的著謝駝，蜓最怎慧就要鳳</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zgwArBbMyZA" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">攀岩體驗</h3>
-                                <p>攀岩體驗淪興思問在曝應如中重選稚榕給世知男數</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/oL_hKEweXy8" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">日落美景</h3>
-                                <p>日落美景山唯心系的轉。哎寵中大像楠挽接同</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/5UWV0FxMsm4" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">九寨溝旅遊</h3>
-                                <p>九寨溝旅遊尹埃敬一建瘤許至洗。指的嘍憧愛的女原都出</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/jPtc5wIbV_Y" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">東京早櫻開花速報</h3>
-                                <p>打雪仗澡拘台的期心著月的著謝駝，蜓最怎慧就要鳳</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/FWTUIduahRc" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video_length">
-                                <span>09:28</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="title_paragraph">
-                                <h3 class="h6_b_ch">拉斯維加斯必去景點</h3>
-                                <p>攀岩芥諾淪興思問在曝應如中重選稚榕給世知男數</p>
-                            </div>
-                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                        </div>
-                    </div>
+                    </section>
                     <div class="more_second_floor">
-                        <button>
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
+                        <div class="divide"></div>
                     </div>
-                </section>                    
+                    <h2 class="h2_b_ch">猜你喜歡的話題</h2>
+                    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_01.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_02.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_03.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_04.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_05.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_06.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_07.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_08.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="./hot-media_page_test.html">
+                                <div class="video videoLength playerButton" data-videoLength="05:28">
+                                    <img src="./image/hot_video_09.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title_paragraph">
+                                        <h3 class="h6_b_ch">單車之旅</h3>
+                                        <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                                    </div>
+                                    <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="more_second_floor">
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </section>
+                </div>
             </div>
             <div class="back_to_top col">
                 <div>
@@ -515,84 +890,9 @@
         </div>
     </section>
 </section>
-
-<!-- 輪播套件script -->
-<script src="./script/swiper-bundle.min.js"></script>
-
-<!-- 熱門話題輪播 -->
-<script>
-    const hot_swiper = new Swiper("#hot_carousel", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        pagination: {
-            el: ".swiper-pagination"
-        },
-        loop: true, // 循環播放：https://swiperjs.com/swiper-api#param-loop
-
-        disableOnInteraction: true,//滑鼠事件設定
-        autoplay: {
-            delay: 999999,
-        },
-        mousewheel: true,
-        keyboard: true,
-    
-});
-const hot_autoplay = document.getElementById('hot_carousel');
-
-    hot_autoplay.addEventListener('mouseenter', function () {
-        hot_swiper.autoplay.stop();
-        console.log('slider stopped');
-    })
-    hot_autoplay.addEventListener('mouseleave', function () {
-        hot_swiper.autoplay.start();
-        console.log('slider start again');
-    })
-</script>
-
-<!-- 人氣嚮導輪播 -->
-<script>
-    /* const swiper_pop_guide 宣告變數；new Swiper 不可以更改；可以使用 class 或 id 來命名物件 "#pop_guide_carousel" */
-    const swiper_pop_guide = new Swiper("#pop_guide_carousel", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        loop: true,  // 循環播放：https://swiperjs.com/swiper-api#param-loop
-        
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 80,
-            depth: 60,
-            modifier: 1,
-            scale: 0.86,
-            slideShadows: true,
-        },
-        roundLengths: true,         //模糊特效
-        disableOnInteraction: true, //滑鼠事件設定
-        autoplay: {
-            delay: 99999,
-        },        
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-    const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
-
-    pop_guide_autoplay.addEventListener('mouseenter',function(){
-        swiper_pop_guide.autoplay.stop();
-        console.log('slider stopped');
-    })
-    pop_guide_autoplay.addEventListener('mouseleave',function(){
-        swiper_pop_guide.autoplay.start();
-        console.log('slider start again');
-    })
-    
-</script>
 <script src="./script/bottom-sheet.js"></script>
 <script src="./script/jquery-3.6.0.js"></script>
 <script src="./script/jquery-ui.js"></script>
-<script src="./script/index.js"></script>    
+<script src="./script/hot.js"></script>    
 </body>
 </html>

@@ -122,7 +122,39 @@
 .page {
     display: none;
 }
+.main {
+    .tabs {
+        list-style-type: none;
 
+        // display: flex;
+        // justify-content: flex-end;
+        .tab {
+            display: block;
+
+            a[data-switcher] {
+                display: block;
+                padding: 15px 30px;
+                text-decoration: none;
+                color: #fff;
+                background-color: blue;
+                cursor: pointer;
+            }
+
+            &:hover {
+                a[data-switcher] {
+                    background-color: orange;
+                }
+            }
+        }
+
+        .tab.is-active {
+            a[data-switcher] {
+                background-color: orange;
+                font-weight: 700;
+            }
+        }
+    }
+}
 .page.is-active {
     display: block;
 }
@@ -269,33 +301,5 @@ aside {
 @media screen and (max-width:425px) { 
 }
 
-.main{
-    .tabs {
-        list-style-type: none;
-        // display: flex;
-        // justify-content: flex-end;
-        .tab{
-            display: block;
-            a[data-switcher]{
-                display: block;
-                padding: 15px 30px;
-                text-decoration: none;
-                color: #fff;
-                background-color: blue;
-                cursor: pointer;
-            }
-            &:hover{
-                a[data-switcher]{
-                    background-color: orange;
-                }
-            }
-        }
-        .tab.is-active{
-            a[data-switcher]{
-                background-color: orange;
-                font-weight: 700;
-            }
-        }
-    }
-}
+
 

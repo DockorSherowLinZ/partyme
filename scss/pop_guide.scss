@@ -1,0 +1,32 @@
+/* 【人氣嚮導】 */
+/* 人氣嚮導輪播 */
+.pop_guide .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .swiper-slide {
+        max-width: 400px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.25rem 1rem var(--shadow);
+
+        img {
+            display: inline-block;
+            width: 100%;
+            object-fit: cover;
+            vertical-align: top;
+        }
+
+        .content {
+            padding: 1.5rem;
+        }
+    }
+}
+
+span.badge.rounded-pill {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: var(--white);
+}
