@@ -61,6 +61,7 @@ button,.button {
         left: 50%;
         z-index: 2;
         transform: translate(-50%, -50%);
+        pointer-events: none;
     }
 }
 /* 手機板影片播放按鈕icon */
@@ -78,6 +79,7 @@ button,.button {
         left: 50%;
         z-index: 2;
         transform: translate(-50%, -50%);
+        pointer-events: none;
     }
 }
 

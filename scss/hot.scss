@@ -27,7 +27,7 @@
                             li {         
                                        
                                 /* 清單列按鈕 */
-                                .button {
+                                a.button {
                                     width: 100%;
                                     padding: 0.5rem 0.75rem 0.5rem 0;
                                     margin: 0.5rem 0;
@@ -98,7 +98,10 @@
                     }
                 }
             }
-
+            .recommend{
+                padding: 1rem;
+                overflow: hidden;
+            }
             .back_to_top {
                 width: 5%;
             }
@@ -116,7 +119,13 @@
         right: 1.5rem;
     }
 }
+.page {
+    display: none;
+}
 
+.page.is-active {
+    display: block;
+}
 /* 滾軸樣式 */
 aside { 
     ul::-webkit-scrollbar {
@@ -142,7 +151,8 @@ aside {
     font-size: 1rem;
 }
 
-.recommend.row .card {
+.recommend .carousel .carousel_item .card {
+    width: 186px;
     box-sizing: border-box;
     position: relative;
     transition: 0.3s all ease-in-out;
@@ -258,3 +268,34 @@ aside {
 }
 @media screen and (max-width:425px) { 
 }
+
+.main{
+    .tabs {
+        list-style-type: none;
+        // display: flex;
+        // justify-content: flex-end;
+        .tab{
+            display: block;
+            a[data-switcher]{
+                display: block;
+                padding: 15px 30px;
+                text-decoration: none;
+                color: #fff;
+                background-color: blue;
+                cursor: pointer;
+            }
+            &:hover{
+                a[data-switcher]{
+                    background-color: orange;
+                }
+            }
+        }
+        .tab.is-active{
+            a[data-switcher]{
+                background-color: orange;
+                font-weight: 700;
+            }
+        }
+    }
+}
+

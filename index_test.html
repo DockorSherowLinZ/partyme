@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <title>PARTYME</title>
 </head>
-<body>  
-    <div id="lightBox"></div>
+<body>    
 <!-- 網頁版導覽列 -->
 <section class="main_header">
     <input type="checkbox" name="" id="menu-switch">
@@ -62,29 +61,28 @@
     </div>
 </section>
 
-    
-
-    <!-- 主視覺Banner及搜尋欄 -->
+<!-- 主視覺Banner及搜尋欄 -->
 <section class="master_vision">
-        <div class="container">
-            <div class="banner row  row-cols-xl-2 row-cols-lg-2 row-cols-md-1">
-                <div class="col">
-                    <h2 class="h1_b_ch">尋找最適合你的旅遊夥伴</h2>
-                    <p class="h2_r_ch">一同探索有趣又獨特的旅遊體驗</p>
-                </div>
+    <div class="container">
+        <div class="banner row  row-cols-xl-2 row-cols-lg-2 row-cols-md-1">
+            <div class="col">
+                <h2 class="h1_b_ch">尋找最適合你的旅遊夥伴</h2>
+                <p class="h2_r_ch">一同探索有趣又獨特的旅遊體驗</p>
             </div>
         </div>
-    </section>    
+    </div>
+</section>    
 
-    <!-- 熱門話題 -->
-<section class="hot">    
+<!-- 熱門話題 -->
+<section class="hot">
         <div class="container">
+<!-- 燈箱 --><div id="lightBox"></div>
             <h2 class="h1_b_ch">熱門話題</h2>
             <div class="swiper mySwiper" id="hot_carousel">
                 <div class="swiper-wrapper"> 
                     <div class="swiper-slide">
                         <div class="banner">
-                            <div class="card">
+                            <a href="./hot-media_page_test.html" class="card">
                                 <div class="content col-4">
                                     <div class="info">
                                         <h3 class="h5_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
@@ -93,18 +91,18 @@
                                         <span class="t3_r_ch">觀看次數：589萬次 • 3小時前</span>
                                     </div>
                                 </div>
-                            </div>                            
-                            <div class="video">
+                            </a>                            
+                            <div class="video videoLength playerButton" 
+                                data-videoLength="05:28">
                                 <img src="./image/hot_video_01.webp" alt="">
-                                <span class="video_length">09:28</span>
                             </div>
                         </div>
-                        <div class="card_mobile">
-                            <div class="video_mobile">
-                                <img src="./image/hot_video_01.webp" alt="">                                
+                        <div class="card_mobile" data-url="https://www.youtube.com/embed/WUwFl_mQFyQ">
+                            <div class="video_mobile videoLengthMobile playerButtonMobile"
+                                data-videoLength="05:28">
+                                <img src="./image/hot_video_01.webp" alt="">                     
                             </div>
                             <div class="content">
-                                <span class="video_length">09:28</span>
                                 <h3 class="t2_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
                                 <p class="t3_r_ch">喜歡自駕遊的朋友，往往愛上的是一種能自我掌握旅行節奏的隨興感，公路旅行既便利又舒服，隨走隨停，對於探索生活的深度又更濃了些。而這樣的旅行方式，特別適合狹長而遼闊的台東，許多散落在土地角落那些美好的人、事、景，就是得彎進小路才能尋得，南迴公路便是這樣的存在。
                                 </p>
@@ -114,7 +112,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="banner">
-                            <div class="card">
+                            <div class="card"data-url="https://www.youtube.com/embed/_tejFjY6pcA">
                                 <div class="content col-4">
                                     <div class="info">
                                         <h3 class="h5_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
@@ -124,17 +122,17 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <div class="video">
+                            <div class="video videoLength playerButton" 
+                                data-videoLength="06:28">
                                 <img src="./image/hot_video_02.webp" alt="">
-                                <span class="video_length">09:28</span>
                             </div>
                         </div>
                         <div class="card_mobile">
-                            <div class="video_mobile">
-                                <img src="./image/hot_video_02.webp" alt="">                                
+                            <div class="video_mobile videoLengthMobile playerButtonMobile"
+                                data-videoLength="06:28">
+                                <img src="./image/hot_video_02.webp" alt="">                     
                             </div>
                             <div class="content">
-                                <span class="video_length">09:28</span>
                                 <h3 class="t2_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
                                 <p class="t3_r_ch">喜歡自駕遊的朋友，往往愛上的是一種能自我掌握旅行節奏的隨興感，公路旅行既便利又舒服，隨走隨停，對於探索生活的深度又更濃了些。而這樣的旅行方式，特別適合狹長而遼闊的台東，許多散落在土地角落那些美好的人、事、景，就是得彎進小路才能尋得，南迴公路便是這樣的存在。
                                 </p>
@@ -144,7 +142,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="banner">
-                            <div class="card">
+                            <div class="card" data-url="https://www.youtube.com/embed/zyNMcPyfFxM">
                                 <div class="content col-4">
                                     <div class="info">
                                         <h3 class="h5_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
@@ -154,17 +152,17 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <div class="video">
+                            <div class="videoLength playerButton" 
+                                data-videoLength="07:28">
                                 <img src="./image/hot_video_03.webp" alt="">
-                                <span class="video_length">09:28</span>
                             </div>
                         </div>
                         <div class="card_mobile">
-                            <div class="video_mobile">
-                                <img src="./image/hot_video_03.webp" alt="">                                
+                            <div class="video_mobile videoLengthMobile playerButtonMobile"
+                                data-videoLength="07:28">
+                                <img src="./image/hot_video_03.webp" alt="">                     
                             </div>
                             <div class="content">
-                                <span class="video_length">09:28</span>
                                 <h3 class="t2_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
                                 <p class="t3_r_ch">喜歡自駕遊的朋友，往往愛上的是一種能自我掌握旅行節奏的隨興感，公路旅行既便利又舒服，隨走隨停，對於探索生活的深度又更濃了些。而這樣的旅行方式，特別適合狹長而遼闊的台東，許多散落在土地角落那些美好的人、事、景，就是得彎進小路才能尋得，南迴公路便是這樣的存在。
                                 </p>
@@ -174,7 +172,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="banner">
-                            <div class="card">
+                            <div class="card" data-url="https://www.youtube.com/embed/ERVngmuVN3Q">
                                 <div class="content col-4">
                                     <div class="info">
                                         <h3 class="h5_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
@@ -184,17 +182,17 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <div class="video">
+                            <div class="video videoLength playerButton" 
+                                data-videoLength="08:28">
                                 <img src="./image/hot_video_04.webp" alt="">
-                                <span class="video_length">09:28</span>
                             </div>
                         </div>
                         <div class="card_mobile">
-                            <div class="video_mobile">
-                                <img src="./image/hot_video_04.webp" alt="">                                
+                            <div class="video_mobile videoLengthMobile playerButtonMobile"
+                                data-videoLength="08:28">
+                                <img src="./image/hot_video_04.webp" alt="">                     
                             </div>
                             <div class="content">
-                                <span class="video_length">09:28</span>
                                 <h3 class="t2_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
                                 <p class="t3_r_ch">喜歡自駕遊的朋友，往往愛上的是一種能自我掌握旅行節奏的隨興感，公路旅行既便利又舒服，隨走隨停，對於探索生活的深度又更濃了些。而這樣的旅行方式，特別適合狹長而遼闊的台東，許多散落在土地角落那些美好的人、事、景，就是得彎進小路才能尋得，南迴公路便是這樣的存在。
                                 </p>
@@ -204,7 +202,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="banner">
-                            <div class="card">
+                            <div class="card" data-url="https://www.youtube.com/embed/zgwArBbMyZA">
                                 <div class="content col-4">
                                     <div class="info">
                                         <h3 class="h5_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
@@ -214,17 +212,17 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <div class="video">
+                            <div class="video videoLength playerButton" 
+                                data-videoLength="09:28">
                                 <img src="./image/hot_video_05.webp" alt="">
-                                <span class="video_length">09:28</span>
                             </div>
                         </div>
                         <div class="card_mobile">
-                            <div class="video_mobile">
-                                <img src="./image/hot_video_05.webp" alt="">                                
+                            <div class="video_mobile videoLengthMobile playerButtonMobile"
+                                data-videoLength="09:28">
+                                <img src="./image/hot_video_05.webp" alt="">                     
                             </div>
                             <div class="content">
-                                <span class="video_length">09:28</span>
                                 <h3 class="t2_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
                                 <p class="t3_r_ch">喜歡自駕遊的朋友，往往愛上的是一種能自我掌握旅行節奏的隨興感，公路旅行既便利又舒服，隨走隨停，對於探索生活的深度又更濃了些。而這樣的旅行方式，特別適合狹長而遼闊的台東，許多散落在土地角落那些美好的人、事、景，就是得彎進小路才能尋得，南迴公路便是這樣的存在。
                                 </p>
@@ -234,7 +232,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="banner">
-                            <div class="card">
+                            <div class="card" data-url="https://www.youtube.com/embed/oL_hKEweXy8">
                                 <div class="content col-4">
                                     <div class="info">
                                         <h3 class="h5_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
@@ -244,17 +242,17 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <div class="video">
+                            <div class="video videoLength playerButton" 
+                                data-videoLength="10:28">
                                 <img src="./image/hot_video_06.webp" alt="">
-                                <span class="video_length">09:28</span>
                             </div>
                         </div>
                         <div class="card_mobile">
-                            <div class="video_mobile">
-                                <img src="./image/hot_video_06.webp" alt="">                                
+                            <div class="video_mobile videoLengthMobile playerButtonMobile"
+                                data-videoLength="10:28">
+                                <img src="./image/hot_video_06.webp" alt="">                     
                             </div>
                             <div class="content">
-                                <span class="video_length">09:28</span>
                                 <h3 class="t2_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
                                 <p class="t3_r_ch">喜歡自駕遊的朋友，往往愛上的是一種能自我掌握旅行節奏的隨興感，公路旅行既便利又舒服，隨走隨停，對於探索生活的深度又更濃了些。而這樣的旅行方式，特別適合狹長而遼闊的台東，許多散落在土地角落那些美好的人、事、景，就是得彎進小路才能尋得，南迴公路便是這樣的存在。
                                 </p>
@@ -264,7 +262,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="banner">
-                            <div class="card">
+                            <div class="card"  data-url="https://www.youtube.com/embed/5UWV0FxMsm4">
                                 <div class="content col-4">
                                     <div class="info">
                                         <h3 class="h5_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
@@ -274,17 +272,17 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <div class="video">
+                            <div class="video videoLength playerButton" 
+                                data-videoLength="11:28">
                                 <img src="./image/hot_video_07.webp" alt="">
-                                <span class="video_length">09:28</span>
                             </div>
                         </div>
                         <div class="card_mobile">
-                            <div class="video_mobile">
-                                <img src="./image/hot_video_07.webp" alt="">                                
+                            <div class="video_mobile videoLengthMobile playerButtonMobile"
+                                data-videoLength="11:28">
+                                <img src="./image/hot_video_07.webp" alt="">                     
                             </div>
                             <div class="content">
-                                <span class="video_length">09:28</span>
                                 <h3 class="t2_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
                                 <p class="t3_r_ch">喜歡自駕遊的朋友，往往愛上的是一種能自我掌握旅行節奏的隨興感，公路旅行既便利又舒服，隨走隨停，對於探索生活的深度又更濃了些。而這樣的旅行方式，特別適合狹長而遼闊的台東，許多散落在土地角落那些美好的人、事、景，就是得彎進小路才能尋得，南迴公路便是這樣的存在。
                                 </p>
@@ -294,7 +292,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="banner">
-                            <div class="card">
+                            <div class="card" data-url="https://www.youtube.com/embed/jPtc5wIbV_Y">
                                 <div class="content col-4">
                                     <div class="info">
                                         <h3 class="h5_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
@@ -304,17 +302,17 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <div class="video">
+                            <div class="video videoLength playerButton" 
+                                data-videoLength="12:28">
                                 <img src="./image/hot_video_08.webp" alt="">
-                                <span class="video_length">09:28</span>
                             </div>
                         </div>
                         <div class="card_mobile">
-                            <div class="video_mobile">
-                                <img src="./image/hot_video_08.webp" alt="">                                
+                            <div class="video_mobile videoLengthMobile playerButtonMobile"
+                                data-videoLength="12:28">
+                                <img src="./image/hot_video_08.webp" alt="">                     
                             </div>
                             <div class="content">
-                                <span class="video_length">09:28</span>
                                 <h3 class="t2_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
                                 <p class="t3_r_ch">喜歡自駕遊的朋友，往往愛上的是一種能自我掌握旅行節奏的隨興感，公路旅行既便利又舒服，隨走隨停，對於探索生活的深度又更濃了些。而這樣的旅行方式，特別適合狹長而遼闊的台東，許多散落在土地角落那些美好的人、事、景，就是得彎進小路才能尋得，南迴公路便是這樣的存在。
                                 </p>
@@ -324,7 +322,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="banner">
-                            <div class="card">
+                            <div class="card" data-url="https://www.youtube.com/embed/FWTUIduahRc">
                                 <div class="content col-4">
                                     <div class="info">
                                         <h3 class="h5_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
@@ -334,17 +332,17 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <div class="video">
+                            <div class="video videoLength playerButton" 
+                                data-videoLength="13:28">
                                 <img src="./image/hot_video_09.webp" alt="">
-                                <span class="video_length">09:28</span>
                             </div>
                         </div>
                         <div class="card_mobile">
-                            <div class="video_mobile">
-                                <img src="./image/hot_video_09.webp" alt="">                                
+                            <div class="video_mobile videoLengthMobile playerButtonMobile"
+                                data-videoLength="13:28">
+                                <img src="./image/hot_video_09.webp" alt="">                     
                             </div>
                             <div class="content">
-                                <span class="video_length">09:28</span>
                                 <h3 class="t2_b_ch">南迴公路旅行│遇見台東的山海小村落│台九線旅行</h3>
                                 <p class="t3_r_ch">喜歡自駕遊的朋友，往往愛上的是一種能自我掌握旅行節奏的隨興感，公路旅行既便利又舒服，隨走隨停，對於探索生活的深度又更濃了些。而這樣的旅行方式，特別適合狹長而遼闊的台東，許多散落在土地角落那些美好的人、事、景，就是得彎進小路才能尋得，南迴公路便是這樣的存在。
                                 </p>
@@ -356,32 +354,28 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
-            </div>            
-            <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2">
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">                
                 <div class="col ">
-                    <div class="video" data-url="https://www.youtube.com/embed/_tejFjY6pcA">
-                        <img src="https://i.ytimg.com/vi_webp/_tejFjY6pcA/maxresdefault.webp" alt="">                     
-                        <div class="video_length">
-                            <span>09:28</span>
+                    <a href="./hot-media_page_test.html">
+                        <div class="video videoLength playerButton"
+                        data-videoLength="05:28">
+                            <img src="./image/hot_video_01.webp" alt="">
                         </div>
-                    </div>
-                    <div class="content">
-                        <div class="title_paragraph">
-                            <h3 class="h6_b_ch">單車之旅</h3>
-                            <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                        <div class="content">
+                            <div class="title_paragraph">
+                                <h3 class="h6_b_ch">單車之旅</h3>
+                                <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+                            </div>
+                            <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
                         </div>
-                        <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
-                    </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/zyNMcPyfFxM" title="YouTube video player"
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
+                    <div class="video videoLength playerButton" 
+                    data-videoLength="06:28" 
+                    data-url="https://www.youtube.com/embed/zyNMcPyfFxM">
+                        <img src="./image/hot_video_02.webp" alt="">
                     </div>
                     <div class="content">
                         <div class="title_paragraph">
@@ -392,14 +386,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/ERVngmuVN3Q" title="YouTube video player"
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
+                    <div class="video videoLength playerButton" 
+                    data-videoLength="07:28" data-url="https://www.youtube.com/embed/ERVngmuVN3Q">
+                        <img src="./image/hot_video_03.webp" alt="">
                     </div>
                     <div class="content">
                         <div class="title_paragraph">
@@ -410,14 +399,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="video">
-                        <iframe  src="https://www.youtube.com/embed/zgwArBbMyZA" title="YouTube video player"
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
+                    <div class="video videoLength playerButton" 
+                    data-videoLength="08:28" data-url="https://www.youtube.com/embed/zgwArBbMyZA">
+                        <img src="./image/hot_video_04.webp" alt="">
                     </div>
                     <div class="content">
                         <div class="title_paragraph">
@@ -428,14 +412,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/oL_hKEweXy8" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
+                    <div class="video videoLength playerButton" 
+                    data-videoLength="09:28" data-url="https://www.youtube.com/embed/oL_hKEweXy8">
+                        <img src="./image/hot_video_05.webp" alt="">
                     </div>
                     <div class="content">
                         <div class="title_paragraph">
@@ -446,14 +425,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/5UWV0FxMsm4" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
+                    <div class="video videoLength playerButton" 
+                    data-videoLength="10:28" data-url="https://www.youtube.com/embed/5UWV0FxMsm4">
+                        <img src="./image/hot_video_06.webp" alt="">
                     </div>
                     <div class="content">
                         <div class="title_paragraph">
@@ -464,14 +438,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/jPtc5wIbV_Y" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
+                    <div class="video videoLength playerButton" 
+                    data-videoLength="11:28" data-url="https://www.youtube.com/embed/jPtc5wIbV_Y">
+                        <img src="./image/hot_video_07.webp" alt="">
                     </div>
                     <div class="content">
                         <div class="title_paragraph">
@@ -482,14 +451,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/FWTUIduahRc" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <div class="video_length">
-                            <span>09:28</span>
-                        </div>
+                    <div class="video videoLength playerButton" 
+                    data-videoLength="12:28" data-url="https://www.youtube.com/embed/FWTUIduahRc">
+                        <img src="./image/hot_video_08.webp" alt="">
                     </div>
                     <div class="content">
                         <div class="title_paragraph">
@@ -511,99 +475,51 @@
 
     <!-- 人氣嚮導 -->
 <section class="pop_guide">
-        <div class="container">
-            <h2 class="h1_b_ch">人氣嚮導</h2>
-            <div id="pop_guide_carousel" class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="baffle">
-                            <div class="cover">
-                                <img src="./image/pop_guide01.webp" />
-                            </div>
-                            <div class="content">
-                                <div class="guide">
-                                    <h3 class="name h3_b_ch">David</h3>
-                                    <div class="achievement">
-                                        <h4>美食探索｜戶外露營</h4>
-                                        <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
-                                    </div>
-                                </div>
-                                <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
-                                </p>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half"></i>
-                                        <span>(4.9)</span>
-                                    </div>
-                                    <div class="contact">
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-message"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-video"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-list-ul"></i>
-                                            <div class="list-ul">
-                                                <div class="record note-books">
-                                                    <i class="fa-solid fa-clipboard"></i>
-                                                    <span>筆記本</span>
-                                                </div>
-                                                <div class="record photo-books">
-                                                    <i class="fa-solid fa-images"></i>
-                                                    <span>相簿</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    <div class="container">
+        <h2 class="h1_b_ch">人氣嚮導</h2>
+        <div id="pop_guide_carousel" class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="baffle">
+                        <div class="cover">
+                            <img src="./image/pop_guide01.webp" />
                         </div>
-                    </div>                        
-                    <div class="swiper-slide">
-                        <div class="baffle">
-                            <div class="cover"><img src="./image/pop_guide02.webp" /></div>
-                            <div class="content">
-                                <div class="guide">
-                                    <h3 class="name h3_b_ch">David</h3>
-                                    <div class="achievement">
-                                        <h4>美食探索｜戶外露營</h4>
-                                        <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
-                                    </div>
+                        <div class="content">
+                            <div class="guide">
+                                <h3 class="name h3_b_ch">David</h3>
+                                <div class="achievement">
+                                    <h4>美食探索｜戶外露營</h4>
+                                    <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
                                 </div>
-                                <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
-                                </p>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half"></i>
-                                        <span>(4.9)</span>
+                            </div>
+                            <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
+                            </p>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                    <span>(4.9)</span>
+                                </div>
+                                <div class="contact">
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="contact">
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-message"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-video"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-list-ul"></i>
-                                            <div class="list-ul">
-                                                <div class="record note-books">
-                                                    <i class="fa-solid fa-clipboard"></i>
-                                                    <span>筆記本</span>
-                                                </div>
-                                                <div class="record photo-books">
-                                                    <i class="fa-solid fa-images"></i>
-                                                    <span>相簿</span>
-                                                </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                        <div class="list-ul">
+                                            <div class="record note-books">
+                                                <i class="fa-solid fa-clipboard"></i>
+                                                <span>筆記本</span>
+                                            </div>
+                                            <div class="record photo-books">
+                                                <i class="fa-solid fa-images"></i>
+                                                <span>相簿</span>
                                             </div>
                                         </div>
                                     </div>
@@ -611,234 +527,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="baffle">
-                            <div class="cover"><img src="./image/pop_guide03.webp" /></div>
-                            <div class="content">
-                                <div class="guide">
-                                    <h3 class="name h3_b_ch">David</h3>
-                                    <div class="achievement">
-                                        <h4>美食探索｜戶外露營</h4>
-                                        <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
-                                    </div>
-                                </div>
-                                <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
-                                </p>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half"></i>
-                                        <span>(4.9)</span>
-                                    </div>
-                                    <div class="contact">
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-message"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-video"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-list-ul"></i>
-                                            <div class="list-ul">
-                                                <div class="record note-books">
-                                                    <i class="fa-solid fa-clipboard"></i>
-                                                    <span>筆記本</span>
-                                                </div>
-                                                <div class="record photo-books">
-                                                    <i class="fa-solid fa-images"></i>
-                                                    <span>相簿</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                </div>                        
+                <div class="swiper-slide">
+                    <div class="baffle">
+                        <div class="cover"><img src="./image/pop_guide02.webp" /></div>
+                        <div class="content">
+                            <div class="guide">
+                                <h3 class="name h3_b_ch">David</h3>
+                                <div class="achievement">
+                                    <h4>美食探索｜戶外露營</h4>
+                                    <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="baffle">
-                            <div class="cover"><img src="./image/pop_guide04.webp" /></div>
-                            <div class="content">
-                                <div class="guide">
-                                    <h3 class="name h3_b_ch">David</h3>
-                                    <div class="achievement">
-                                        <h4>美食探索｜戶外露營</h4>
-                                        <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
-                                    </div>
+                            <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
+                            </p>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                    <span>(4.9)</span>
                                 </div>
-                                <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
-                                </p>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half"></i>
-                                        <span>(4.9)</span>
+                                <div class="contact">
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="contact">
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-message"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-video"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-list-ul"></i>
-                                            <div class="list-ul">
-                                                <div class="record note-books">
-                                                    <i class="fa-solid fa-clipboard"></i>
-                                                    <span>筆記本</span>
-                                                </div>
-                                                <div class="record photo-books">
-                                                    <i class="fa-solid fa-images"></i>
-                                                    <span>相簿</span>
-                                                </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                        <div class="list-ul">
+                                            <div class="record note-books">
+                                                <i class="fa-solid fa-clipboard"></i>
+                                                <span>筆記本</span>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="baffle">
-                            <div class="cover"><img src="./image/pop_guide05.webp" /></div>
-                            <div class="content">
-                                <div class="guide">
-                                    <h3 class="name h3_b_ch">David</h3>
-                                    <div class="achievement">
-                                        <h4>美食探索｜戶外露營</h4>
-                                        <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
-                                    </div>
-                                </div>
-                                <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
-                                </p>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half"></i>
-                                        <span>(4.9)</span>
-                                    </div>
-                                    <div class="contact">
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-message"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-video"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-list-ul"></i>
-                                            <div class="list-ul">
-                                                <div class="record note-books">
-                                                    <i class="fa-solid fa-clipboard"></i>
-                                                    <span>筆記本</span>
-                                                </div>
-                                                <div class="record photo-books">
-                                                    <i class="fa-solid fa-images"></i>
-                                                    <span>相簿</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="baffle">
-                            <div class="cover"><img src="./image/pop_guide06.webp" /></div>
-                            <div class="content">
-                                <div class="guide">
-                                    <h3 class="name h3_b_ch">David</h3>
-                                    <div class="achievement">
-                                        <h4>美食探索｜戶外露營</h4>
-                                        <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
-                                    </div>
-                                </div>
-                                <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
-                                </p>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half"></i>
-                                        <span>(4.9)</span>
-                                    </div>
-                                    <div class="contact">
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-message"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-video"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-list-ul"></i>
-                                            <div class="list-ul">
-                                                <div class="record note-books">
-                                                    <i class="fa-solid fa-clipboard"></i>
-                                                    <span>筆記本</span>
-                                                </div>
-                                                <div class="record photo-books">
-                                                    <i class="fa-solid fa-images"></i>
-                                                    <span>相簿</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="baffle">
-                            <div class="cover"><img src="./image/pop_guide07.webp" /></div>
-                            <div class="content">
-                                <div class="guide">
-                                    <h3 class="name h3_b_ch">David</h3>
-                                    <div class="achievement">
-                                        <h4>美食探索｜戶外露營</h4>
-                                        <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
-                                    </div>
-                                </div>
-                                <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
-                                </p>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half"></i>
-                                        <span>(4.9)</span>
-                                    </div>
-                                    <div class="contact">
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-message"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-video"></i>
-                                        </div>
-                                        <div class="item rectangle">
-                                            <i class="fa-solid fa-list-ul"></i>
-                                            <div class="list-ul">
-                                                <div class="record note-books">
-                                                    <i class="fa-solid fa-clipboard"></i>
-                                                    <span>筆記本</span>
-                                                </div>
-                                                <div class="record photo-books">
-                                                    <i class="fa-solid fa-images"></i>
-                                                    <span>相簿</span>
-                                                </div>
+                                            <div class="record photo-books">
+                                                <i class="fa-solid fa-images"></i>
+                                                <span>相簿</span>
                                             </div>
                                         </div>
                                     </div>
@@ -847,347 +575,583 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="guides">
-                <div class="row row-cols-2 row-cols-xl-6 row-cols-lg-4 row-cols-md-3">
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide01.png" alt="">
-                            </div>
+                <div class="swiper-slide">
+                    <div class="baffle">
+                        <div class="cover"><img src="./image/pop_guide03.webp" /></div>
+                        <div class="content">
                             <div class="guide">
-                                <h3 class="name h5_b_ch">Jolin</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
-                                    </div>
+                                <h3 class="name h3_b_ch">David</h3>
+                                <div class="achievement">
+                                    <h4>美食探索｜戶外露營</h4>
+                                    <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
                                 </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
                             </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide02.png" alt="">
-                            </div>
-                            <div class="guide">
-                                <h3 class="name h5_b_ch">Brandon</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
-                                    </div>
+                            <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
+                            </p>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                    <span>(4.9)</span>
                                 </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-message"></i></button>
-                                <button><i class="fa-solid fa-video"></i></button>
-                                <button class="item">
-                                    <i class="fa-solid fa-list-ul"></i>
-                                    <div class="list-ul">
-                                        <div class="record note-books">
-                                            <i class="fa-solid fa-clipboard"></i>
-                                            <span>筆記本</span>
-                                        </div>
-                                        <div class="record photo-books">
-                                            <i class="fa-solid fa-images"></i>
-                                            <span>相簿</span>
+                                <div class="contact">
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                        <div class="list-ul">
+                                            <div class="record note-books">
+                                                <i class="fa-solid fa-clipboard"></i>
+                                                <span>筆記本</span>
+                                            </div>
+                                            <div class="record photo-books">
+                                                <i class="fa-solid fa-images"></i>
+                                                <span>相簿</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide03.png" alt="">
-                            </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="baffle">
+                        <div class="cover"><img src="./image/pop_guide04.webp" /></div>
+                        <div class="content">
                             <div class="guide">
-                                <h3 class="name h5_b_ch">Mindy</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
+                                <h3 class="name h3_b_ch">David</h3>
+                                <div class="achievement">
+                                    <h4>美食探索｜戶外露營</h4>
+                                    <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
+                                </div>
+                            </div>
+                            <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
+                            </p>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                    <span>(4.9)</span>
+                                </div>
+                                <div class="contact">
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                        <div class="list-ul">
+                                            <div class="record note-books">
+                                                <i class="fa-solid fa-clipboard"></i>
+                                                <span>筆記本</span>
+                                            </div>
+                                            <div class="record photo-books">
+                                                <i class="fa-solid fa-images"></i>
+                                                <span>相簿</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide04.png" alt="">
-                            </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="baffle">
+                        <div class="cover"><img src="./image/pop_guide05.webp" /></div>
+                        <div class="content">
                             <div class="guide">
-                                <h3 class="name h5_b_ch">Jarrett</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
+                                <h3 class="name h3_b_ch">David</h3>
+                                <div class="achievement">
+                                    <h4>美食探索｜戶外露營</h4>
+                                    <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
+                                </div>
+                            </div>
+                            <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
+                            </p>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                    <span>(4.9)</span>
+                                </div>
+                                <div class="contact">
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                        <div class="list-ul">
+                                            <div class="record note-books">
+                                                <i class="fa-solid fa-clipboard"></i>
+                                                <span>筆記本</span>
+                                            </div>
+                                            <div class="record photo-books">
+                                                <i class="fa-solid fa-images"></i>
+                                                <span>相簿</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide05.png" alt="">
-                            </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="baffle">
+                        <div class="cover"><img src="./image/pop_guide06.webp" /></div>
+                        <div class="content">
                             <div class="guide">
-                                <h3 class="name h5_b_ch">Maria</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
+                                <h3 class="name h3_b_ch">David</h3>
+                                <div class="achievement">
+                                    <h4>美食探索｜戶外露營</h4>
+                                    <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
+                                </div>
+                            </div>
+                            <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
+                            </p>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                    <span>(4.9)</span>
+                                </div>
+                                <div class="contact">
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                        <div class="list-ul">
+                                            <div class="record note-books">
+                                                <i class="fa-solid fa-clipboard"></i>
+                                                <span>筆記本</span>
+                                            </div>
+                                            <div class="record photo-books">
+                                                <i class="fa-solid fa-images"></i>
+                                                <span>相簿</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide06.png" alt="">
-                            </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="baffle">
+                        <div class="cover"><img src="./image/pop_guide07.webp" /></div>
+                        <div class="content">
                             <div class="guide">
-                                <h3 class="name h5_b_ch">Trent</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
+                                <h3 class="name h3_b_ch">David</h3>
+                                <div class="achievement">
+                                    <h4>美食探索｜戶外露營</h4>
+                                    <span>訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
+                                </div>
+                            </div>
+                            <p>美食探索及露營黎程變在…是覽之的抑文的許人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。人資言師色球樣要過作道了用恰不三要光分甸赤到見掏不別面美記計飯不琪贏、通盪體幾如讓你，我第事大隊仿價捉溫癮題。
+                            </p>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half"></i>
+                                    <span>(4.9)</span>
+                                </div>
+                                <div class="contact">
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-message"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-video"></i>
+                                    </div>
+                                    <div class="item rectangle">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                        <div class="list-ul">
+                                            <div class="record note-books">
+                                                <i class="fa-solid fa-clipboard"></i>
+                                                <span>筆記本</span>
+                                            </div>
+                                            <div class="record photo-books">
+                                                <i class="fa-solid fa-images"></i>
+                                                <span>相簿</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide07.png" alt="">
-                            </div>
-                            <div class="guide">
-                                <h3 class="name h5_b_ch">Nixon</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
-                                    </div>
-                                </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide08.png" alt="">
-                            </div>
-                            <div class="guide">
-                                <h3 class="name h5_b_ch">Paige</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
-                                    </div>
-                                </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide09.png" alt="">
-                            </div>
-                            <div class="guide">
-                                <h3 class="name h5_b_ch">Christopher</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
-                                    </div>
-                                </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide10.png" alt="">
-                            </div>
-                            <div class="guide">
-                                <h3 class="name h5_b_ch">Claire</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
-                                    </div>
-                                </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide11.png" alt="">
-                            </div>
-                            <div class="guide">
-                                <h3 class="name h5_b_ch">Frank</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
-                                    </div>
-                                </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="cover">
-                                <img src="./image/guide12.png" alt="">
-                            </div>
-                            <div class="guide">
-                                <h3 class="name h5_b_ch">Alexandra</h3>
-                                <div class="detial">
-                                    <div class="score">
-                                        <i class="fa-solid fa-star"></i><span>4.2</span>
-                                    </div>
-                                </div>
-                                <h4>美食探索｜戶外露營</h4>
-                                <p>已成團 2,206人</p>
-                            </div>
-                            <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
-                                <button><i class="fa-solid fa-bell"></i></button>
-                                <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="more">
-                <button>
-                    <p class="t2_r_ch"><a href="./pop_guide.html" class="link">MORE</a></p>
-                </button>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="guides">
+            <div class="row row-cols-2 row-cols-xl-6 row-cols-lg-4 row-cols-md-3">
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide01.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Jolin</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide02.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Brandon</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-message"></i></button>
+                            <button><i class="fa-solid fa-video"></i></button>
+                            <button class="item">
+                                <i class="fa-solid fa-list-ul"></i>
+                                <div class="list-ul">
+                                    <div class="record note-books">
+                                        <i class="fa-solid fa-clipboard"></i>
+                                        <span>筆記本</span>
+                                    </div>
+                                    <div class="record photo-books">
+                                        <i class="fa-solid fa-images"></i>
+                                        <span>相簿</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide03.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Mindy</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide04.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Jarrett</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide05.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Maria</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide06.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Trent</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide07.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Nixon</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide08.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Paige</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide09.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Christopher</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide10.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Claire</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide11.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Frank</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="cover">
+                            <img src="./image/guide12.png" alt="">
+                        </div>
+                        <div class="guide">
+                            <h3 class="name h5_b_ch">Alexandra</h3>
+                            <div class="detial">
+                                <div class="score">
+                                    <i class="fa-solid fa-star"></i><span>4.2</span>
+                                </div>
+                            </div>
+                            <h4>美食探索｜戶外露營</h4>
+                            <p>已成團 2,206人</p>
+                        </div>
+                        <div class="contact">
+                            <button><i class="fa-solid fa-user-plus"></i></button>
+                            <button><i class="fa-solid fa-bell"></i></button>
+                            <button><i class="fa-solid fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="more">
+            <button>
+                <p class="t2_r_ch"><a href="./pop_guide.html" class="link">MORE</a></p>
+            </button>
+        </div>
+    </div>
+</section>
     
 
     <!-- 主題探索 -->
 <section class="topic_exploration">
-        <div class="container">
-            <div class="background">
-                <div class="scoll_effect">
-                    <img src="./image/icon_airplane.svg" alt="">
+    <div class="container">
+        <div class="background">
+            <div class="scoll_effect">
+                <img src="./image/icon_airplane.svg" alt="">
+            </div>
+            <h2 class="h1_b_ch">主題探索</h2>
+            <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2">
+                <div class="attractions col .col-xl-6 ">
+                    <div class="topic">
+                        <img src="./image/attractions.jpg" alt="">
+                    </div>
+                    <h3 class="h3_b_ch">知名景觀</h3>
                 </div>
-                <h2 class="h1_b_ch">主題探索</h2>
-                <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2">
-                    <div class="attractions col .col-xl-6 ">
-                        <div class="topic">
-                            <img src="./image/attractions.jpg" alt="">
-                        </div>
-                        <h3 class="h3_b_ch">知名景觀</h3>
+                <div class="party col .col-xl-6 ">
+                    <div class="topic">
+                        <img src="./image/party.jpg" alt="">
                     </div>
-                    <div class="party col .col-xl-6 ">
-                        <div class="topic">
-                            <img src="./image/party.jpg" alt="">
-                        </div>
-                        <h3 class="h3_b_ch">派對聚會</h3>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2">
-                    <div class="meals col .col-xl-6">
-                        <div class="topic"><img src="./image/Meals.jpg" alt=""></div>
-                        <h3 class="h3_b_ch">夯翻美食</h3>
-                    </div>
-                    <div class="diy col .col-xl-6">
-                        <div class="topic"><img src="./image/Diy.jpg" alt=""></div>
-                        <h3 class="h3_b_ch">手作DIY工坊</h3>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2">
-                    <div class="pctravel col .col-xl-6">
-                        <div class="topic"><img src="./image/Parent-child-travel.jpg" alt=""></div>
-                        <h3 class="h3_b_ch">親子旅遊</h3>
-                    </div>
-                    <div class="camping col .col-xl-6">
-                        <div class="topic"><img src="./image/camping.jpg" alt=""></div>
-                        <h3 class="h3_b_ch">戶外露營</h3>
-                    </div>
+                    <h3 class="h3_b_ch">派對聚會</h3>
                 </div>
             </div>
-            <div class="more">
-                <button>
-                    <p class="t2_r_ch"><a href="./topic_exploration.html" class="link">MORE</a></p>
-                </button>
+            <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2">
+                <div class="meals col .col-xl-6">
+                    <div class="topic"><img src="./image/Meals.jpg" alt=""></div>
+                    <h3 class="h3_b_ch">夯翻美食</h3>
+                </div>
+                <div class="diy col .col-xl-6">
+                    <div class="topic"><img src="./image/Diy.jpg" alt=""></div>
+                    <h3 class="h3_b_ch">手作DIY工坊</h3>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2">
+                <div class="pctravel col .col-xl-6">
+                    <div class="topic"><img src="./image/Parent-child-travel.jpg" alt=""></div>
+                    <h3 class="h3_b_ch">親子旅遊</h3>
+                </div>
+                <div class="camping col .col-xl-6">
+                    <div class="topic"><img src="./image/camping.jpg" alt=""></div>
+                    <h3 class="h3_b_ch">戶外露營</h3>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="more">
+            <button>
+                <p class="t2_r_ch"><a href="./topic_exploration.html" class="link">MORE</a></p>
+            </button>
+        </div>
+    </div>
+</section>
 
 
     <!-- 熱門城市 -->
@@ -1196,7 +1160,7 @@
         <h2 class="h1_b_ch">熱門城市</h2>
         <div id="carousel" class="carousel">
             <div class="carousel_item carousel_item-visible" >
-                <div class="card extend">
+                <div class="card extend" data-city="台北">
                     <div class="cover">
                         <div class="overlap"></div>
                         <div class="caption">
@@ -1208,7 +1172,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card"  data-city="江蘇">
                     <div class="cover">
                         <div class="overlap"></div>
                         <div class="caption">
@@ -1220,7 +1184,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-city="馬爾地夫">
                     <div class="cover">
                         <div class="overlap"></div>
                         <div class="caption">
@@ -1232,7 +1196,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-city="西安">
                     <div class="cover">
                         <div class="overlap"></div>
                         <div class="caption">
@@ -1244,7 +1208,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-city="曼哈頓">
                     <div class="cover">
                         <div class="overlap"></div>
                         <div class="caption">
@@ -1257,80 +1221,10 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel_item" >
-                <div class="card extend">
-                    <div class="cover">
-                        <div class="overlap"></div>
-                        <div class="caption">
-                            <h3 class="h4_b_ch">新竹</h3>
-                            <div class="tag">
-                                <h4>旅遊首選城市</h4>
-                                <h4>優質移居城市</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover">
-                        <div class="overlap"></div>
-                        <div class="caption">
-                            <h3 class="h5_b_ch">台中</h3>
-                            <div class="tag">
-                                <h4>旅遊首選城市</h4>
-                                <h4>優質移居城市</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover">
-                        <div class="overlap"></div>
-                        <div class="caption">
-                            <h3 class="h5_b_ch">台南</h3>
-                            <div class="tag">
-                                <h4>旅遊首選城市</h4>
-                                <h4>優質移居城市</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover">
-                        <div class="overlap"></div>
-                        <div class="caption">
-                            <h3 class="h5_b_ch">紐約</h3>
-                            <div class="tag">
-                                <h4>旅遊首選城市</h4>
-                                <h4>優質移居城市</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover">
-                        <div class="overlap"></div>
-                        <div class="caption">
-                            <h3 class="h5_b_ch">哥本哈根</h3>
-                            <div class="tag">
-                                <h4>旅遊首選城市</h4>
-                                <h4>優質移居城市</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>        
-        <button id="carousel_button_prev" class="swiper-button-prev"></button>
-        <button id="carousel_button_next" class="swiper-button-next"></button>
     </div>
     <div class="map">
-        <span class="taipei city_pin city_pin_bounce"><i class="fa-solid fa-location-dot fa-bounce"><h5 class="t1_r_ch">台北</h5></i></span>
-        <!-- <span class="city_pin"><i class="fa-solid fa-location-dot">江蘇</i></span> -->
-        <!-- <span class="city_pin"><i class="fa-solid fa-location-dot">馬爾地夫</i></span> -->
-        <!-- <span class="city_pin"><i class="fa-solid fa-location-dot">西安</i></span> -->
-        <!-- <span class="city_pin"><i class="fa-solid fa-location-dot">曼哈頓</i></span> -->
         <img src="./image/map_with name.svg" alt="熱門城市">
-        <div id="coordinate"></div>
     </div>
     <div class="more">
         <button>
@@ -1398,7 +1292,8 @@
         </div>
     </div>
     <div class="copyright">
-        <div class="t3_r_ch">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。<br>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</div>
+        <div class="t3_r_ch">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。<br>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+        </div>
         <div class="t3_r_ch">COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</div>
     </div>
     <svg width="0" height="0">
@@ -1412,40 +1307,41 @@
                    Z" />
             </clipPath>
         </defs>
-    </svg>
-    <!-- 手機板 Tabbar 按鈕 -->
-    <section class="main_tabbar">
-        <div class="container_full">
-            <div class="row row-cols-5">
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
-                        <h2 class="t3_r_ch">熱門話題</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
-                        <h2 class="t3_r_ch">人氣嚮導</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
-                        <h2 class="t3_r_ch">主題探索</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
-                        <h2 class="t3_r_ch">熱門城市</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
-                        <h2 class="t3_r_ch">搜尋</h2>
-                    </a>
-                </div>
+    </svg>   
+</footer>
+
+<!-- 手機板 Tabbar 按鈕 -->
+<section class="main_tabbar">
+    <div class="container_full">
+        <div class="row row-cols-5">
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
+                    <h2 class="t3_r_ch">熱門話題</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
+                    <h2 class="t3_r_ch">人氣嚮導</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
+                    <h2 class="t3_r_ch">主題探索</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
+                    <h2 class="t3_r_ch">熱門城市</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
+                    <h2 class="t3_r_ch">搜尋</h2>
+                </a>
             </div>
         </div>
-    </section>
-</footer>
+    </div>
+</section>
 
 
     <!-- ButtonSheet -->

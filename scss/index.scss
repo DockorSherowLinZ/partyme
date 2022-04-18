@@ -377,28 +377,6 @@ form{
                     background: url(../image/Manhattan.jpg);
                     background-size: cover;
                 } 
-                &:last-child{
-                    .card:nth-of-type(1) .cover {
-                        background: url(../image/hsinchu.webp);
-                        background-size: cover;
-                    }                
-                    .card:nth-of-type(2) .cover {
-                        background: url(../image/Manhattan.jpg);
-                        background-size: cover;
-                    }                
-                    .card:nth-of-type(3) .cover {
-                        background: url(../image/Manhattan.jpg);
-                        background-size: cover;
-                    }                
-                    .card:nth-of-type(4) .cover {
-                        background: url(../image/Manhattan.jpg);
-                        background-size: cover;
-                    }                
-                    .card:nth-of-type(5) .cover {
-                        background: url(../image/Manhattan.jpg);
-                        background-size: cover;
-                    }               
-                }
                 /* 圖片 */
                 .cover {
                     height: 320px;
@@ -502,6 +480,19 @@ form{
     /* more按鈕 */
     .more {
         margin-bottom: -2rem;
+    }
+    /* 座標 icon */
+    .icon {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        display: block;
+
+        &.text-active {
+            color: var(--primary);
+        }
+        &.text-gray {
+            color: var(--gray_2);
+        }
     }
 }
 @media screen and (max-width:1200px) {
