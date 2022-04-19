@@ -1,6 +1,7 @@
 /* 【人氣嚮導】 */
 /* Banner */
 .Banner{
+    margin-bottom: 5rem;
     .container_full {
         width: 100%;
         height: 595px;
@@ -43,7 +44,20 @@
             padding: 1.5rem;
         }
     }
+
+    .swiper-slide-active {
+        position: relative;    
+        &::before,
+        &::after {
+            width: 200%;
+            right: -200%;    
+        }    
+        &::after {
+            left: -200%;
+        }
+    }
 }
+
 
 .detial {
     .score {
