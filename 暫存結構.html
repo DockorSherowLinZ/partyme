@@ -1,0 +1,66 @@
+<!-- 熱門話題影片 -->
+<div class="col ">
+    <div class="video videoLength playerButton" data-videoLength="05:28"
+        data-url="https://www.youtube.com/embed/_tejFjY6pcA">
+        <img src="./image/hot_video_01.webp" alt="">
+    </div>
+    <div class="content">
+        <div class="title_paragraph">
+            <h3 class="h6_b_ch">單車之旅</h3>
+            <p>單車之旅山唯心系的轉。哎寵中大像楠挽接同</p>
+        </div>
+        <span class="t3_r_ch">觀看次數：123萬次 • 3小時前</span>
+    </div>
+</div>
+<style>
+    .hot {
+        .row {
+            margin-bottom: 2rem;            
+            .col {                    
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 1.5rem;
+                .video {
+                    width: 54%;
+                    height: 100%;
+                    border-radius: 0.5rem;
+                    overflow: hidden;
+                    position: relative;
+                
+                    iframe {
+                        width: 100%;
+                        height: 180px;
+                        object-fit: cover;
+                        vertical-align: top;
+                    }
+                }
+                
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    width: 42%;
+                    margin: 0 1rem;
+                
+                    /* 文字 */
+                    h3 {
+                        font-size: 1rem;
+                        margin: 0;
+                    }
+                
+                    p {
+                        font-size: 0.8rem;
+                        margin-bottom: auto;
+                        letter-spacing: 0;
+                        flex: 1 0 0;
+                    }
+                
+                    span {
+                        font-size: 0.75rem;
+                        margin-bottom: 0.5rem;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
+</style>
