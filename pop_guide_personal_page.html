@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/Swiper.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/pop_guide.css">
+    <title>PARTYME</title>
+</head>
+
+<body>
+<!-- 網頁版導覽列 -->
+<section class="main_header">
+    <input type="checkbox" name="" id="menu-switch">
+    <div class="main_nav">
+        <h1 class="logo">
+            <a href="./index.html">
+                <img src="./image/mainav_Logo.webp" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
+            </a>
+        </h1>
+        <div class="search_bar">
+            <input type="search" id="search_bar" name="search_bar" placeholder="想想去哪呢？" list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Google Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <label for="menu-switch" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="main_menu">
+            <ul>
+                <li><a href="./hot.html">熱門話題</a></li>
+                <li><a href="./pop_guide.html">人氣嚮導</a></li>
+                <li><a href="./topic_exploration.html">主題探索</a></li>
+                <li><a href="./popular_cities.html">熱門城市</a></li>
+            </ul>
+            <span>｜</span>
+            <div class="member_button">
+                <a class="signup" href="./signup_login.html">註冊/登入</a>
+                <div class="translate">
+                    <div class="flag">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="text">中文
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner -->
+<section class="Banner">
+    <div class="container_full">
+        <div class="baffle">
+            <div class="cover">
+                <img src="./image/pop_guide01.webp" />
+            </div>
+            <div class="content">
+                <div class="guide">
+                    <h4 class="t1_r_ch">美食探索｜戶外露營</h4>
+                    <div class="name">
+                        <h3 class="h3_b_ch">David</h3>
+                        <div class="score"><i class="fa-solid fa-star"></i><span>4.9</span>
+                        </div>
+                    </div>
+                    <span class="t1_r_ch">訂閱人數：209,634,090 人｜出團次數 2,206 次</span>
+                </div>
+                <p>"世事洞明皆學問,人情練達即文章" , "行萬里路勝
+                    讀萬卷書" 是我人生最喜愛的座右銘。
+                    在職場工作 20 年後,很幸運地考上外語導遊及外語
+                    領隊. 這讓我開始真正有機會認識台灣.透過帶團的
+                    機會也讓我行銷台灣給國際旅遊人士,同時也有機
+                    會帶領國人到世界各走走,開拓視野.這樣的工作讓
+                    我有使命感與榮譽感.我熱愛這份工作,更砥礪自己
+                    隨時要充實自我以提供更好的專業服務給客人。
+                </p>
+                <div class="detial">
+                    <div class="contact">
+                        <div class="item rectangle">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div class="item rectangle">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <div class="item rectangle">
+                            <i class="fa-solid fa-clipboard"></i>
+                        </div>
+                        <div class="item rectangle">
+                            <i class="fa-solid fa-images"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 個人簡介影片 -->
+<section>
+    <div class="container">
+        <div id="lightBox"></div>
+        <div class="intruduce_video"><img src="./image/travel02.jpg" alt=""></div>
+    </div>
+</section>
+<!-- 名人牆 -->
+<section class="wall-of-fame">
+    <div class="container">
+        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 d-flex flex-wrap gy-5">
+            <div class="col">
+                <div class="card">
+                    <img src="./image/pop_guide01.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4_b_ch">David</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            <span>4.9</span>
+                            card's
+                            content.</p>
+                        <div class="detial d-flex align-items-center mt-5">
+                            <a href="#" class="t1_r_ch me-1">了解更多<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/pop_guide01.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4_b_ch">David</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            <span>4.9</span>
+                            card's
+                            content.</p>
+                        <div class="detial d-flex align-items-center mt-5">
+                            <a href="#" class="t1_r_ch me-1">了解更多<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/pop_guide01.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4_b_ch">David</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            <span>4.9</span>
+                            card's
+                            content.</p>
+                        <div class="detial d-flex align-items-center mt-5">
+                            <a href="#" class="t1_r_ch me-1">了解更多<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/pop_guide01.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4_b_ch">David</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            <span>4.9</span>
+                            card's
+                            content.</p>
+                        <div class="detial d-flex align-items-center mt-5">
+                            <a href="#" class="t1_r_ch me-1">了解更多<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/pop_guide01.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4_b_ch">David</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            <span>4.9</span>
+                            card's
+                            content.</p>
+                        <div class="detial d-flex align-items-center mt-5">
+                            <a href="#" class="t1_r_ch me-1">了解更多<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/pop_guide01.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4_b_ch">David</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            <span>4.9</span>
+                            card's
+                            content.</p>
+                        <div class="detial d-flex align-items-center mt-5">
+                            <a href="#" class="t1_r_ch me-1">了解更多<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/pop_guide01.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4_b_ch">David</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            <span>4.9</span>
+                            card's
+                            content.</p>
+                        <div class="detial d-flex align-items-center mt-5">
+                            <a href="#" class="t1_r_ch me-1">了解更多<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/pop_guide01.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4_b_ch">David</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            <span>4.9</span>
+                            card's
+                            content.</p>
+                        <div class="detial d-flex align-items-center mt-5">
+                            <a href="#" class="t1_r_ch me-1">了解更多<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/pop_guide01.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4_b_ch">David</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            <span>4.9</span>
+                            card's
+                            content.</p>
+                        <div class="detial d-flex align-items-center mt-5">
+                            <a href="#" class="t1_r_ch me-1">了解更多<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 手機板 Tabbar 按鈕 -->
+<section class="main_tabbar">
+    <div class="container_full">
+        <div class="row row-cols-5">
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
+                    <h2 class="t3_r_ch">熱門話題</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
+                    <h2 class="t3_r_ch">人氣嚮導</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
+                    <h2 class="t3_r_ch">主題探索</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
+                    <h2 class="t3_r_ch">熱門城市</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
+                    <h2 class="t3_r_ch">搜尋</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous">
+</script>
+<!-- 輪播套件script -->
+<script src="./script/swiper-bundle.min.js"></script>
+<!-- 人氣嚮導輪播 -->
+<script>
+    /* const swiper_pop_guide 宣告變數；new Swiper 不可以更改；可以使用 class 或 id 來命名物件 "#pop_guide_carousel" */
+    const swiper_pop_guide = new Swiper("#pop_guide_carousel", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,  // 循環播放：https://swiperjs.com/swiper-api#param-loop
+
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 80,
+            depth: 60,
+            modifier: 1,
+            scale: 0.86,
+            slideShadows: true,
+        },
+        roundLengths: true,         //模糊特效
+        disableOnInteraction: true, //滑鼠事件設定
+        autoplay: {
+            delay: 99999,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+    const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
+
+    pop_guide_autoplay.addEventListener('mouseenter', function () {
+        swiper_pop_guide.autoplay.stop();
+        console.log('slider stopped');
+    })
+    pop_guide_autoplay.addEventListener('mouseleave', function () {
+        swiper_pop_guide.autoplay.start();
+        console.log('slider start again');
+    })
+</script>
+</body>
+</html>

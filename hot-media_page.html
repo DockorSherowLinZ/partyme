@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,8 @@
     <link rel="stylesheet" href="./css/hot.css">
     <link rel="stylesheet" href="./css/hot_media.css">
     <title>PARTYME</title>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- 網頁版導覽列 -->
     <section class="main_header">
@@ -61,39 +62,9 @@
             </div>
         </div>
     </section>
-    <!-- 手機板 Tabbar 按鈕 -->
-    <section class="main_tabbar">
-        <div class="container_full">
-            <div class="row row-cols-5">
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
-                        <h2 class="t3_r_ch">熱門話題</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
-                        <h2 class="t3_r_ch">人氣嚮導</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
-                        <h2 class="t3_r_ch">主題探索</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
-                        <h2 class="t3_r_ch">熱門城市</h2>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
-                        <h2 class="t3_r_ch">搜尋</h2>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- 主體 -->
+    <div id="lightBox"></div><!-- 燈箱 -->
     <section class="main">
         <section class="hot_main_media">
             <div class="container_full">
@@ -126,41 +97,35 @@
                                 </div>
                             </div>
                             <div class="divide"></div>
-                            <div class="tag_slider">
-                                <div class="overlap"></div>
-                                <ul>
-                                    <li>
-                                        <button class="tag">第一天</button class="tag">
-                                    </li>
-                                    <li>
-                                        <button class="tag">第二天</button class="tag">
-                                    </li>
-                                    <li>
-                                        <button class="tag">第三天</button class="tag">
-                                    </li>
-                                    <li>
-                                        <button class="tag">第四天</button class="tag">
-                                    </li>
-                                    <li>
-                                        <button class="tag">最後一天</button class="tag">
-                                    </li>
-                                    <button class="arrow right">
+                            <div class="tag_name_header">
+                                <div class="tag_slider">                                    
+                                    <div class="overlap"></div>
+                                    <ul>
+                                        <li><button class="tag">第一天</button></li>
+                                        <li><button class="tag">第二天</button></li>
+                                        <li><button class="tag">第三天</button></li>
+                                        <li><button class="tag">第四天</button></li>
+                                        <li><button class="tag">最後一天</button></li>
+                                    </ul>
+                                    <!-- <button class="arrow right">
                                         <i class="fa-solid fa-chevron-right"></i>
-                                    </button>
-                                </ul>
+                                    </button> -->
+                                </div>
                             </div>
                             <div class="divide"></div>
                             <div class="journey_node">
                                 <div class="item plane">
                                     <div class="departure">
                                         <i class="fa-solid fa-plane-departure"></i>
-                                        <h3 class="t2_r_ch">CKS</h3><p class="t3_r_ch">，約 15.5hr</p>
+                                        <h3 class="t2_r_ch">CKS</h3>
+                                        <p class="t3_r_ch">，約 15.5hr</p>
                                     </div>
                                     <span>｜</span>
                                     <div class="arrival">
                                         <i class="fa-solid fa-plane-arrival"></i>
-                                        <h3 class="t2_r_ch">JFK  
-                                        </h3><p class="t3_r_ch">，約 17.5hr</p>
+                                        <h3 class="t2_r_ch">JFK
+                                        </h3>
+                                        <p class="t3_r_ch">，約 17.5hr</p>
                                     </div>
                                 </div>
                                 <div class="item car_rental">
@@ -198,7 +163,10 @@
                             </div>
                             <div class="note">
                                 <div class="context">
-                                    <h4 class="t2_r_ch">紐約行程推薦安排五天，足以玩遍最夯必去紐約景點了，紐約自助旅行想規劃五天也行。省去人氣次之Day3上西城教堂、表演中心＆Day5雀爾喜市場、高架公園、SOHO區就可以啦。最熱門的紐約景點都標記在紐約地圖裡啦，美國紐約自由行真的太好玩了～<br>整趟紐約自由行花費 (五天四夜) 約30萬8千元。紐約市由曼哈頓、布魯克林、皇后區、布朗士，史泰登島五個行政區組成。<br>紐約必去最夯10大熱門景點如下，來紐約自由行沒有去超級可惜：1.時代廣場、2.華爾街銅牛、3.自由女神、4.第五大道、5.大都會博物館、6.洛克斐勒中心觀景台夜景、7.布魯克林大橋、8.中央車站、9.中央公園、10.帝國大廈
+                                    <h4 class="t2_r_ch">
+                                        紐約行程推薦安排五天，足以玩遍最夯必去紐約景點了，紐約自助旅行想規劃五天也行。省去人氣次之Day3上西城教堂、表演中心＆Day5雀爾喜市場、高架公園、SOHO區就可以啦。最熱門的紐約景點都標記在紐約地圖裡啦，美國紐約自由行真的太好玩了～<br>整趟紐約自由行花費
+                                        (五天四夜)
+                                        約30萬8千元。紐約市由曼哈頓、布魯克林、皇后區、布朗士，史泰登島五個行政區組成。<br>紐約必去最夯10大熱門景點如下，來紐約自由行沒有去超級可惜：1.時代廣場、2.華爾街銅牛、3.自由女神、4.第五大道、5.大都會博物館、6.洛克斐勒中心觀景台夜景、7.布魯克林大橋、8.中央車站、9.中央公園、10.帝國大廈
                                     </h4>
                                 </div>
                                 <div class="more_second_floor">
@@ -207,7 +175,7 @@
                                     </button>
                                     <div class="divide"></div>
                                 </div>
-                            </div>                        
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -220,14 +188,16 @@
                                 <p>觀看次數：3,022,346 次 · 2022年3月14日</p>
                             </div>
                             <div class="function">
-                                <button><i class="fa-solid fa-thumbs-up"></i><div class="amount">2萬</div></button>
+                                <button><i class="fa-solid fa-thumbs-up"></i>
+                                    <div class="amount">2萬</div>
+                                </button>
                                 <button><i class="fa-solid fa-share-from-square"></i></button>
                                 <button><i class="fa-solid fa-cloud-arrow-down"></i></button>
                                 <button><i class="fa-solid fa-language"></i></button>
                                 <button><i class="fa-regular fa-flag"></i></button>
-                            </div>                            
+                            </div>
                         </div>
-                        <div class="title guide">                            
+                        <div class="title guide">
                             <div class="content">
                                 <div class="cover">
                                     <img src="./image/guide14.jpg" alt="">
@@ -260,7 +230,8 @@
                         <div class="title message">
                             <div class="message_amount">
                                 <span>7683 則留言</span>
-                                <button><i class="fa-solid fa-arrow-down-wide-short"></i><span class="t2_r_ch">排序依據</span></button>
+                                <button><i class="fa-solid fa-arrow-down-wide-short"></i><span
+                                        class="t2_r_ch">排序依據</span></button>
                             </div>
                             <div class="content">
                                 <div class="cover">
@@ -271,12 +242,14 @@
                                     <div class="context">
                                         <input type="text" name="message" id="message" placeholder="說說你的感想吧！">
                                         <div class="function ">
-                                            <button><i class="fa-solid fa-face-grin"></i><span class="t2_r_ch">表情符號</span></button>
-                                            <button><i class="fa-solid fa-image"></i><span class="t2_r_ch">插入圖片</span></button>
+                                            <button><i class="fa-solid fa-face-grin"></i><span
+                                                    class="t2_r_ch">表情符號</span></button>
+                                            <button><i class="fa-solid fa-image"></i><span
+                                                    class="t2_r_ch">插入圖片</span></button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
                             <div class="message_wall">
                                 <div class="content">
                                     <div class="cover">
@@ -286,18 +259,18 @@
                                         <span class="t1_b_ch">粉絲</span>
                                         <div class="context">
                                             <p>部其實就是用科幻包裝告訴大家要珍惜現在的親情片。
-                                            像有段2050年的亞當跟他媽媽的道歉就有點小感人，推薦原片還是可以花時間看看
-                                            。
-                                            不管科幻理論的話有些事情一定也是長大後的自己會想要跟小時候的自己說的這。部其實就是用科幻包裝告訴大家要珍惜現在的親情片。
-                                            像有段2050年的亞當跟他媽媽的道歉就有點小感人，推薦原片還是可以花時間看看
-                                            。
-                                            不管科幻理論的話有些事情一定也是長大後的自己會想要跟小時候的自己說的這。部其實就是用科幻包裝告訴大家要珍惜現在的親情片。
-                                            像有段2050年的亞當跟他媽媽的道歉就有點小感人，推薦原片還是可以花時間看看
-                                            。
-                                            不管科幻理論的話有些事情一定也是長大後的自己會想要跟小時候的自己說的這。部其實就是用科幻包裝告訴大家要珍惜現在的親情片。
-                                            像有段2050年的亞當跟他媽媽的道歉就有點小感人，推薦原片還是可以花時間看看
-                                            。
-                                            不管科幻理論的話有些事情一定也是長大後的自己會想要跟小時候的自己說的這。</p>
+                                                像有段2050年的亞當跟他媽媽的道歉就有點小感人，推薦原片還是可以花時間看看
+                                                。
+                                                不管科幻理論的話有些事情一定也是長大後的自己會想要跟小時候的自己說的這。部其實就是用科幻包裝告訴大家要珍惜現在的親情片。
+                                                像有段2050年的亞當跟他媽媽的道歉就有點小感人，推薦原片還是可以花時間看看
+                                                。
+                                                不管科幻理論的話有些事情一定也是長大後的自己會想要跟小時候的自己說的這。部其實就是用科幻包裝告訴大家要珍惜現在的親情片。
+                                                像有段2050年的亞當跟他媽媽的道歉就有點小感人，推薦原片還是可以花時間看看
+                                                。
+                                                不管科幻理論的話有些事情一定也是長大後的自己會想要跟小時候的自己說的這。部其實就是用科幻包裝告訴大家要珍惜現在的親情片。
+                                                像有段2050年的亞當跟他媽媽的道歉就有點小感人，推薦原片還是可以花時間看看
+                                                。
+                                                不管科幻理論的話有些事情一定也是長大後的自己會想要跟小時候的自己說的這。</p>
                                             <button>
                                                 <span>查看</span>
                                                 <i class="fa-solid fa-caret-down"></i>
@@ -319,7 +292,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                         
+                            </div>
                         </div>
                     </div>
                     <div class="col-4">
@@ -330,15 +303,12 @@
                                     <div class="col">
                                         <div class="row">
                                             <div class="col-5">
-                                                <div class="video">
-                                                    <iframe src="https://www.youtube.com/embed/_tejFjY6pcA" title="YouTube video player" frameborder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen>
-                                                    </iframe>
-                                                    <div class="video_length">
-                                                        <span>09:28</span>
+                                                <a href="./hot-media_page_test.html">
+                                                    <div class="video videoLength playerButton"
+                                                        data-videoLength="05:28">
+                                                        <img src="./image/hot_video_01.webp" alt="">
                                                     </div>
-                                                </div>
+                                                </a>
                                             </div>
                                             <div class="col-7">
                                                 <div class="contain">
@@ -357,21 +327,18 @@
                                     <div class="col">
                                         <div class="row">
                                             <div class="col-5">
-                                                <div class="video">
-                                                    <iframe src="https://www.youtube.com/embed/zyNMcPyfFxM" title="YouTube video player" frameborder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen>
-                                                    </iframe>
-                                                    <div class="video_length">
-                                                        <span>09:28</span>
+                                                <a href="./hot-media_page_test.html">
+                                                    <div class="video videoLength playerButton"
+                                                        data-videoLength="05:28">
+                                                        <img src="./image/hot_video_01.webp" alt="">
                                                     </div>
-                                                </div>
+                                                </a>
                                             </div>
-                                            <div class="col col-7">
+                                            <div class="col-7">
                                                 <div class="contain">
                                                     <div class="context">
                                                         <h3 class="h6_b_ch">戶外露營</h3>
-                                                        <p >戶外露營尹埃敬一建瘤許至洗。指的嘍憧愛的女原都出</p>
+                                                        <p>戶外露營尹埃敬一建瘤許至洗。指的嘍憧愛的女原都出</p>
                                                         <span class="t3_r_ch">觀看次數：106萬次• 8小時前</span>
                                                     </div>
                                                     <button class="ellipsis-vertical">
@@ -384,21 +351,18 @@
                                     <div class="col">
                                         <div class="row">
                                             <div class="col-5">
-                                                <div class="video">
-                                                    <iframe src="https://www.youtube.com/embed/ERVngmuVN3Q" title="YouTube video player" frameborder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowfullscreen>
-                                                    </iframe>
-                                                    <div class="video_length">
-                                                        <span>09:28</span>
+                                                <a href="./hot-media_page_test.html">
+                                                    <div class="video videoLength playerButton"
+                                                        data-videoLength="05:28">
+                                                        <img src="./image/hot_video_01.webp" alt="">
                                                     </div>
-                                                </div>
+                                                </a>
                                             </div>
                                             <div class="col-7">
                                                 <div class="contain">
                                                     <div class="context">
                                                         <h3 class="h6_b_ch">瑞士滑雪之旅</h3>
-                                                        <p >瑞士滑雪之旅澡拘台的期心著月的著謝駝，蜓最怎慧就要鳳</p>
+                                                        <p>瑞士滑雪之旅澡拘台的期心著月的著謝駝，蜓最怎慧就要鳳</p>
                                                         <span class="t3_r_ch">觀看次數：173萬次• 1小時前</span>
                                                     </div>
                                                     <button class="ellipsis-vertical">
@@ -433,7 +397,10 @@
                                                     <div class="context">
                                                         <h3 class="h6_b_ch">Rita</h3>
                                                         <div class="score">
-                                                            <i class="fa-solid fa-star"></i><span>4.3</span><span>．</span><h4 class="tr3_r_ch">美食博主</h4><span>．</span<h4 class="tr3_r_ch">IG美景踩點</h4>
+                                                            <i
+                                                                class="fa-solid fa-star"></i><span>4.3</span><span>．</span>
+                                                            <h4 class="tr3_r_ch">美食博主</h4><span>．</span<h4
+                                                                    class="tr3_r_ch">IG美景踩點</h4>
                                                         </div>
                                                         <p class="t2_r_ch">訂閱人數：209 萬人<br>出團次數 2,206 次</p>
                                                         <div class="language">
@@ -463,8 +430,10 @@
                                                     <div class="context">
                                                         <h3 class="h6_b_ch">杉本裕典</h3>
                                                         <div class="score">
-                                                            <i class="fa-solid fa-star"></i><span>4.2</span><span>．</span>
-                                                            <h4 class="tr3_r_ch">秘境探索</h4><span>．</span<h4 class="tr3_r_ch">攝影大神</h4>
+                                                            <i
+                                                                class="fa-solid fa-star"></i><span>4.2</span><span>．</span>
+                                                            <h4 class="tr3_r_ch">秘境探索</h4><span>．</span<h4
+                                                                    class="tr3_r_ch">攝影大神</h4>
                                                         </div>
                                                         <p class="t2_r_ch">訂閱人數：209 萬人<br>出團次數 2,206 次</p>
                                                         <div class="language">
@@ -493,8 +462,10 @@
                                                     <div class="context">
                                                         <h3 class="h6_b_ch">PeterPark</h3>
                                                         <div class="score">
-                                                            <i class="fa-solid fa-star"></i><span>4.1</span><span>．</span>
-                                                            <h4 class="tr3_r_ch">野外露營</h4><span>．</span<h4 class="tr3_r_ch">野外求生</h4>
+                                                            <i
+                                                                class="fa-solid fa-star"></i><span>4.1</span><span>．</span>
+                                                            <h4 class="tr3_r_ch">野外露營</h4><span>．</span<h4
+                                                                    class="tr3_r_ch">野外求生</h4>
                                                         </div>
                                                         <p class="t2_r_ch">訂閱人數：209 萬人<br>出團次數 2,206 次</p>
                                                         <div class="language">
@@ -520,88 +491,48 @@
                             </div>
                         </section>
                     </div>
-                </div>                
+                </div>
             </div>
         </section>
     </section>
 
-    <!-- 輪播套件script -->
-    <script src="./script/swiper-bundle.min.js"></script>
-    
-    <!-- 熱門話題輪播 -->
-    <script>
-        const hot_swiper = new Swiper("#hot_carousel", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            pagination: {
-                el: ".swiper-pagination"
-            },
-            loop: true, // 循環播放：https://swiperjs.com/swiper-api#param-loop
+    <!-- 手機板 Tabbar 按鈕 -->
+    <section class="main_tabbar">
+        <div class="container_full">
+            <div class="row row-cols-5">
+                <div class="col">
+                    <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
+                        <h2 class="t3_r_ch">熱門話題</h2>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
+                        <h2 class="t3_r_ch">人氣嚮導</h2>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
+                        <h2 class="t3_r_ch">主題探索</h2>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
+                        <h2 class="t3_r_ch">熱門城市</h2>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
+                        <h2 class="t3_r_ch">搜尋</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            disableOnInteraction: true,//滑鼠事件設定
-            autoplay: {
-                delay: 999999,
-            },
-            mousewheel: true,
-            keyboard: true,
-
-        });
-        const hot_autoplay = document.getElementById('hot_carousel');
-
-        hot_autoplay.addEventListener('mouseenter', function () {
-            hot_swiper.autoplay.stop();
-            console.log('slider stopped');
-        })
-        hot_autoplay.addEventListener('mouseleave', function () {
-            hot_swiper.autoplay.start();
-            console.log('slider start again');
-        })
-    </script>
-    
-    <!-- 人氣嚮導輪播 -->
-    <script>
-        /* const swiper_pop_guide 宣告變數；new Swiper 不可以更改；可以使用 class 或 id 來命名物件 "#pop_guide_carousel" */
-        const swiper_pop_guide = new Swiper("#pop_guide_carousel", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            loop: true,  // 循環播放：https://swiperjs.com/swiper-api#param-loop
-
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 80,
-                depth: 60,
-                modifier: 1,
-                scale: 0.86,
-                slideShadows: true,
-            },
-            roundLengths: true,         //模糊特效
-            disableOnInteraction: true, //滑鼠事件設定
-            autoplay: {
-                delay: 99999,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-        const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
-
-        pop_guide_autoplay.addEventListener('mouseenter', function () {
-            swiper_pop_guide.autoplay.stop();
-            console.log('slider stopped');
-        })
-        pop_guide_autoplay.addEventListener('mouseleave', function () {
-            swiper_pop_guide.autoplay.start();
-            console.log('slider start again');
-        })
-
-    </script>
     <script src="./script/bottom-sheet.js"></script>
     <script src="./script/jquery-3.6.0.js"></script>
     <script src="./script/jquery-ui.js"></script>
-    <script src="./script/index.js"></script>
+    <script src="./script/hot_media_page.js"></script>
 </body>
+
 </html>

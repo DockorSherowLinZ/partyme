@@ -1,3 +1,55 @@
+/* 相關熱門話題影片卡片 */
+.row {
+    margin-bottom: 2rem;
+
+    .col {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
+
+        .video {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+
+            iframe {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                vertical-align: top;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 42%;
+            margin: 0 1rem;
+
+            /* 文字 */
+            h3 {
+                font-size: 1rem;
+                margin: 0;
+            }
+
+            p {
+                font-size: 0.8rem;
+                margin-bottom: auto;
+                letter-spacing: 0;
+                flex: 1 0 0;
+            }
+
+            span {
+                font-size: 0.75rem;
+                margin-bottom: 0.5rem;
+                letter-spacing: 0;
+            }
+        }
+    }
+}
+
 /* fontawesome符號 */
 i[class*="fa-"] {
     color: var(--gray_3);
@@ -9,28 +61,35 @@ i[class*="fa-"] {
     margin-right: 0.25rem;
 }
 
+/* 主體 */
 .main {
     .hot_main_media {
         .container_full {
             margin-top: 2rem;
+
+            .row {
+                .hot {
+                    width: 100%;
+                }
+            }
+
+            /* hot_main_media */
+            .main_media {
+                height: 720px;
+                overflow: hidden;
+                margin-bottom: 1.5rem;
+
+                /* iframe */
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                    vertical-align: top;
+                }
+            }
         }
     }
 }
 
-
-/* hot_main_media */
-.hot_main_media .main_media {
-    height: 720px;
-    overflow: hidden;
-    margin-bottom: 1.5rem;
-}
-
-/* iframe */
-.hot_main_media .main_media iframe {
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-}
 
 /* 討論區 */
 .title {
@@ -39,15 +98,15 @@ i[class*="fa-"] {
     align-items: flex-end;
     border-bottom: 1px solid var(--gray_5);
     padding: 1rem 0;
-}
 
-.title h2 {
-    margin-bottom: 0.5rem;
-    margin-top: 0.25rem;
-}
+    .context {
+        flex: 1 0 0;
 
-.title .context {
-    flex: 1 0 0;
+        h2 {
+            margin-bottom: 0.5rem;
+            margin-top: 0.25rem;
+        }
+    }
 }
 
 .title .tag {
@@ -301,27 +360,46 @@ button:hover .fa-solid {
 }
 
 /* tag_slider */
-.tag_slider ul {
+.tag_slider {
     display: flex;
-    justify-content: space-between;
-    margin: 0.5rem auto;
-}
+    ul {
+        margin: 1rem 0;
+        li {
+            margin: auto .5rem;
+            .tag {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                color: var(--gray_2);
+                border: 0;
 
-.tag_slider ul li {
-    margin: 0;
-}
+                &:hover {
+                    color: var(--second_hover);
+                    border: 0;
+                }
+            }
 
-.tag_slider ul li button {
-    padding: 0.5rem 1rem;
-    margin-right: 1rem;
-    font-size: 1rem;
-    color: var(--gray_2);
-    border-width: 0;
-}
+            /* more按鈕 */
+            .arrow {
+                position: relative;
+                z-index: 3;
+                color: var(--gray_2);
 
-.tag_slider ul li button:hover {
-    color: var(--second_hover);
-    border-width: 0;
+                &:hover {
+                    color: var(--second_hover);
+                }
+            }
+        }
+    }
+
+    /* 漸層覆蓋 */
+    .overlap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        background-image: linear-gradient(270deg, rgba(255, 255, 255, 1) 4%, transparent 20%);
+        pointer-events: none;
+    }
 }
 
 /* more按鈕 */
@@ -444,19 +522,22 @@ button:hover .fa-solid {
 }
 
 
+/* 相關推薦欄 */
+.related {
+    width: 100%;
 
-/* 側邊推薦欄 */
-/* 標題 */
-.related h2 {
-    text-align-last: left;
-}
+    /* 標題 */
+    h2 {
+        text-align-last: left;
 
-.related .row-cols-1 {
-    margin-bottom: 0;
-}
+        .row-cols-1 {
+            margin-bottom: 0;
 
-.related .row-cols-1 .col:last-child .row-cols-2 {
-    margin-bottom: 1rem;
+            .col:last-child .row-cols-2 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 
 /* 圖片調整 */
