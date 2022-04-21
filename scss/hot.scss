@@ -143,9 +143,6 @@
 .main {
     .tabs {
         list-style-type: none;
-
-        // display: flex;
-        // justify-content: flex-end;
         .tab {
             display: block;
 
@@ -191,9 +188,8 @@ aside {
         background: transparent;
     }
 
-    ul::-webkit-scrollbar-thumb {
-        background: var(--second);
-        border-radius: 5px;
+    ul::-webkit-scrollbar-track {
+        background: transparent;
     }
 
     ul:hover::-webkit-scrollbar-thumb {
