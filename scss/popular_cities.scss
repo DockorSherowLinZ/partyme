@@ -1,0 +1,23 @@
+/* 【熱門城市】 */
+/* Banner */
+.Banner {
+    margin-bottom: 5rem;
+
+    .container_full {
+        width: 100%;
+        height: 595px;
+        background-image: url(../image/couple-sitting-resting-beach-summer-day-near-river.webp);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: var(--white);
+            text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.8);
+        }
+    }
+}

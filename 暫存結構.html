@@ -64,3 +64,12 @@
         }
     }
 </style>
+
+const openLightBox = function (url) { //宣告 openLightBox 函式，帶入 iframe 連結 url
+lightBox.style.display = `flex`; // lightBox 的 css 屬性的 display 是 `flex`。
+lightBox.innerHTML = `<iframe src='${url}?output=embed&rel=0&autoplay=1' title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+<button class="closeBtn x-btn" onclick="closeLightbox()"> <i class="fa-solid fa-xmark"></i> </button>`
+}
