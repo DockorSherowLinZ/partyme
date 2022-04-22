@@ -664,12 +664,11 @@ span.swiper-pagination-bullet {
     background-color: rgb(255, 255, 255);
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.16);
-    position: relative;
+    position: relative;    
 }
 
 /* 熱門城市卡片 */
 .carousel {
-    width: 2800px;
     max-height: 320px;
     margin-bottom: 2rem;
     margin: 0 -15px;
@@ -737,33 +736,6 @@ span.swiper-pagination-bullet {
         .card:nth-of-type(5) .cover {
             background: url(../image/Manhattan.jpg);
             background-size: cover;
-        }
-
-        &:last-child {
-            .card:nth-of-type(1) .cover {
-                background: url(../image/hsinchu.webp);
-                background-size: cover;
-            }
-
-            .card:nth-of-type(2) .cover {
-                background: url(../image/Manhattan.jpg);
-                background-size: cover;
-            }
-
-            .card:nth-of-type(3) .cover {
-                background: url(../image/Manhattan.jpg);
-                background-size: cover;
-            }
-
-            .card:nth-of-type(4) .cover {
-                background: url(../image/Manhattan.jpg);
-                background-size: cover;
-            }
-
-            .card:nth-of-type(5) .cover {
-                background: url(../image/Manhattan.jpg);
-                background-size: cover;
-            }
         }
 
         /* 圖片 */

@@ -424,6 +424,7 @@ form{
             }
         } 
     }
+    
     /* 調整按鈕位置 */
     .swiper-button-prev, .swiper-button-next{
         margin-top: 0;
@@ -490,6 +491,10 @@ form{
             color: var(--gray_2);
         }
     }
+}
+/* 手機版 熱門城市 */
+.popular_cities_mobile{
+    display: none;
 }
 @media screen and (max-width:1200px) {
     .container {
@@ -974,8 +979,145 @@ form{
         }
     }
     /* 熱門城市 */
-    .popular_cities .map {
+    .popular_cities {
         display: none;
+    }
+    
+    /* 手機版 熱門城市 */
+    .popular_cities_mobile {
+        padding: 0 15px;
+        display: block;
+        position: relative;
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }    
+        .container {                
+            overflow: auto;
+            position: relative;
+    
+            &::-webkit-scrollbar {
+                display: none;
+            }
+    
+            -ms-overflow-style: none;
+    
+            .carousel {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+    
+                .card {
+                    a {
+                        text-decoration: none;
+                    }
+    
+                    .cover {
+                        width: 150px;
+                        height: 150px;
+                        margin: 0.25rem;
+                        border-radius: 0.5rem;
+                        overflow: hidden;
+                        position: relative;
+    
+                        &:hover {
+                            background-color: #fff;
+                        }
+    
+                        .overlap::after {
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(transparent 60%, rgba(2, 32, 56, 0.761) 80%, rgba(2, 32, 56, 0.98) 100%);
+                            position: absolute;
+                            top: 0;
+                            z-index: 1;
+                        }
+    
+                        .caption {
+                            height: 100%;
+                            padding: 0.5rem;
+                            color: white;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            position: relative;
+                            z-index: 2;
+    
+                            h3 {
+                                font-size: 1rem;
+                            }
+                            
+                            .tag {
+                                display: block;
+                                
+                                h4 {
+                                    line-height: 1.2;
+                                    font-size: 0.85rem;
+                                    white-space: pre-wrap;
+                                }
+                            }
+                        }
+                    }
+                }
+                /* 用 first-of-type 才能選到 card 的子層 */
+                .card:first-of-type .cover {
+                    background: url(../image/taipei.webp);
+                    background-size: cover;
+                }
+                
+                .card:nth-of-type(2) .cover {
+                    background: url(../image/Jiangsu.jpg);
+                    background-size: cover;
+                }
+                
+                .card:nth-of-type(3) .cover {
+                    background: url(../image/Maldives.jpg);
+                    background-size: cover;
+                }
+                
+                .card:nth-of-type(4) .cover {
+                    background: url(../image/Xian.jpg);
+                    background-size: cover;
+                }
+                
+                .card:nth-of-type(5) .cover {
+                    background: url(../image/Manhattan.jpg);
+                    background-size: cover;
+                }
+            }
+        }
+    
+        .carousel_actions {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, 25%);
+            z-index: 5;
+    
+            button {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                border-width: 0;
+                color: darkslategrey;
+                background-color: rgba(255, 255, 255, 0.64);
+                font-weight: bold;
+                cursor: pointer;
+            }
+    
+            #carousel_button_prev {
+                margin-left: -0.25rem;
+            }
+    
+            #carousel_button_next {
+                margin-right: -0.25rem;
+            }
+        }
     }
 }
 @media screen and (max-width:425px) {

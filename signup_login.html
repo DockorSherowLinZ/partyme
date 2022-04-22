@@ -6,125 +6,242 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/Swiper.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/signup_login.css">
     <title>PARTYME</title>
 </head>
 <body>
-    <section class="main_header">
-        <div class="main_nav">
+<!-- 網頁版導覽列 -->
+<section class="main_header">
+    <input type="checkbox" name="" id="menu-switch">
+    <div class="main_nav">
+        <h1 class="logo">
             <a href="./index.html">
-                <h1 class="logo">
-                    <img src="./image/mainav_Logo.svg" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
-                </h1>
+                <img src="./image/mainav_Logo.webp" alt="PARTYME，尋找最適合你的旅遊夥伴，一同探索有趣又獨特的旅遊體驗。">
             </a>
-            <div class="main_menu">
-                <ul>
-                    <li><a href="./hot.html">熱門話題</a></li>
-                    <li><a href="./pop_guide.html">人氣嚮導</a></li>
-                    <li><a href="./topic_exploration.html">主題探索</a></li>
-                    <li><a href="./popular_cities.html">熱門城市</a></li>
-                </ul>
-                <span>｜</span>
-                <div class="member_button">
-                    <button class="signup">
-                        <a href="./signup_login.html">註冊會員</a>
-                    </button>
-                    <button class="login">
-                        <a href="./signup_login.html">登入</a>
-                    </button>
-                    <div class="translate">
-                        <div class="flag">
-                            <i class="fa-solid fa-globe"></i>
-                        </div>
-                        <div class="text">中文
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
+        </h1>
+        <div class="search_bar">
+            <input type="search" id="search_bar" name="search_bar" placeholder="想想去哪呢？" list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Google Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <label for="menu-switch" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="main_menu">
+            <ul>
+                <li><a href="./hot.html">熱門話題</a></li>
+                <li><a href="./pop_guide.html">人氣嚮導</a></li>
+                <li><a href="./topic_exploration.html">主題探索</a></li>
+                <li><a href="./popular_cities.html">熱門城市</a></li>
+            </ul>
+            <span>｜</span>
+            <div class="member_button">
+                <a class="signup" href="./signup_login.html">註冊/登入</a>
+                <div class="translate">
+                    <div class="flag">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="text">中文
+                        <i class="fa-solid fa-chevron-down"></i>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="signup">
-        <div class="container">
-            <h2 class="h3_b_ch">會員專區</h2>
-            <div class="card">
-                <h3 class="h5_b_ch">註冊會員</h3>
-                <div class="signup_data">
-                    <div class="content">
-                        <div class="account">
-                            <span>帳號：</span>
-                            <input type="email" name="email" id="email" placeholder="example@email.com">
-                        </div>
-                        <div class="password">
-                            <span>密碼：</span><input type="password" name="password" id="password" placeholder="字串須為英文+數字至少6碼">
-                        </div>
-                        <div class="name">
-                            <span>名稱：</span><input type="name" name="password" id="password">
-                        </div>
-                    </div>
-                </div>
-                <div class="member_button">
-                    <button class="sent">送出</button>
-                </div>
+    </div>
+</section>
+<!-- 新版登入頁 -->
+<div class="container sign_in">
+    <div class="wrap form-wrap form-sign_in">
+        <form id="signinform" autocomplete="off">
+            <h2>登入</h2>
+            <div class="input-control mb-2">
+                <label for="signinemail" class="text-left"><small>電子郵件</small></label>
+                <input type="email" id="signinemail" placeholder="電子信箱" name="email" />
+            </div>
+            <div class="input-control">
+                <label for="signinpassword" class="text-left"><small>密碼</small></label>
+                <input type="Password" id="signinpassword" placeholder="密碼" class="mb-2" name="password" />
+            </div>
+            <a href="javascript:void(0)" class="text-gray mb-3">忘記密碼</a>
+            <button type="button" class="btn text-white">登入</button>
+        </form>
+    </div>
+    <div class="wrap form-wrap form-sign_up">
+        <form id="signupform" autocomplete="off">
+            <h2>註冊</h2>
+            <div class="input-control mb-2">
+                <label for="signupname" class="text-left"><small>名稱</small></label>
+                <input type="text" id="signupname" placeholder="名稱" name="name" />
+            </div>
+            <div class="input-control mb-2">
+                <label for="signupemail" class="text-left"><small>電子郵件</small></label>
+                <input type="email" id="signupemail" placeholder="電子信箱" name="email" />
+            </div>
+            <div class="input-control">
+                <label for="signuppassword" class="text-left"><small>密碼</small></label>
+                <input type="Password" id="signuppassword" placeholder="密碼" class="mb-5" name="password" />
+            </div>
+            <button type="button" class="btn text-white">註冊</button>
+        </form>
+    </div>
+    <div class="wrap overlay-wrap text-white">
+        <div class="overlay">
+            <div class="panel overlay-left">
+                <h3>歡迎回來</h3>
+                <p>與我們保持聯繫，接收最新資訊</p>
+                <button type="button" class="btn toggle-btn">登入</button>
+            </div>
+            <div class="panel overlay-right">
+                <h3>嗨，新朋友</h3>
+                <p>還不是我們的一員嗎？趕緊來註冊吧</p>
+                <button type="button" class="btn toggle-btn">註冊</button>
             </div>
         </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="background row row-cols-xl-2">
-                <div class="col">
-                    <div class="footer_links row row-cols-xl-2">
-                        <div class="col">
-                            <ul>
-                                <li><a href="#">關於我們</a></li>
-                                <li><a href="#">平台政策</a></li>
-                                <li><a href="#">隱私政策</a></li>
-                                <li><a href="#">服務條款</a></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li><a href="#">重大消息</a></li>
-                                <li><a href="#">活動快訊</a></li>
-                                <li><a href="#">常見問題</a></li>
-                                <li><a href="#">檢舉專區</a></li>
-                            </ul>
-                        </div>
+    </div>
+</div>
+<i class="fa-brands fa-google"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-facebook-f"></i>
+<!-- 舊版登入頁 -->
+<!-- <section class="signup">
+    <div class="container">
+        <h2 class="h3_b_ch">會員專區</h2>
+        <div class="card">
+            <h3 class="h5_b_ch">註冊會員</h3>
+            <div class="signup_data">
+                <div class="content">
+                    <div class="account">
+                        <span>帳號：</span>
+                        <input type="email" name="email" id="email" placeholder="example@email.com">
+                    </div>
+                    <div class="password">
+                        <span>密碼：</span><input type="password" name="password" id="password" placeholder="字串須為英文+數字至少6碼">
+                    </div>
+                    <div class="name">
+                        <span>名稱：</span><input type="name" name="password" id="password">
                     </div>
                 </div>
-                <div class="subcribe col">
-                    <div class="search_bar">
-                        <input type="text" placeholder="訂閱新資訊：example@email.com">
-                        <button class="t2_r_ch">訂閱</button>
-                        </input>
-                    </div>
-                    <div class="media">
+            </div>
+            <div class="member_button">
+                <button class="sent">送出</button>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- 回到頂端 -->
+<div>
+    <a class="side_function" href="#">
+        <i class="fa-solid fa-caret-up"></i>
+    </a>
+</div>
+<footer>
+    <div class="container">
+        <div class="background row .row-cols-2 row-cols-xl-2 row-cols-lg-2 row-cols-md-2">
+            <div class="col">
+                <div class="footer_links row row-cols-2 row-cols-lg-3 row-cols-md-2">
+                    <div class="col">
                         <ul>
-                            <li><img src="./image/Youtube.png" alt="Youtube"></li>
-                            <li><img src="./image/Twitter.png" alt="Twitter"></li>
-                            <li><img src="./image/Facebook.png" alt="Facebook"></li>
-                            <li><img src="./image/Instagram.png" alt="Instagram"></li>
-                            <li><img src="./image/Line.png" alt="Line"></li>
-                            <li><img src="./image/Kakao Talk.png" alt="Kakao"></li>
-                            <li><img src="./image/Wechat.png" alt="Wechat"></li>
+                            <li><a href="#" class="h6_r_ch">關於我們</a></li>
+                            <li><a href="#" class="h6_r_ch">平台政策</a></li>
+                            <li><a href="#" class="h6_r_ch">隱私政策</a></li>
+                            <li><a href="#" class="h6_r_ch">服務條款</a></li>
                         </ul>
                     </div>
-                    <div class="downapp">
+                    <div class="col">
                         <ul>
-                            <li><img src="./image/GooglePlay.png" alt="GooglePlay"></li>
-                            <li><img src="./image/AppStore.png" alt="AppStore"></li>
+                            <li><a href="#" class="h6_r_ch">重大消息</a></li>
+                            <li><a href="#" class="h6_r_ch">活動快訊</a></li>
+                            <li><a href="#" class="h6_r_ch">常見問題</a></li>
+                            <li><a href="#" class="h6_r_ch">檢舉專區</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            <div class="t3_r_ch">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+            <div class="subscribe col">
+                <div class="subscribe_email col-12">
+                    <input type="text" placeholder="訂閱新資訊：example@email.com">
+                    <button class="t2_r_ch">訂閱</button>
+                    </input>
+                </div>
+                <div class="media col-12 col-xl-11 col-lg-11 col-md-12">
+                    <ul>
+                        <li><img src="./image/Youtube.png" alt="Youtube"></li>
+                        <li><img src="./image/Twitter.png" alt="Twitter"></li>
+                        <li><img src="./image/Facebook.png" alt="Facebook"></li>
+                        <li><img src="./image/Instagram.png" alt="Instagram"></li>
+                        <li><img src="./image/Line.png" alt="Line"></li>
+                        <li><img src="./image/Kakao Talk.png" alt="Kakao"></li>
+                        <li><img src="./image/Wechat.png" alt="Wechat"></li>
+                    </ul>
+                </div>
+                <div class="downapp col-12 col-xl-11 col-lg-11 col-md-12">
+                    <ul>
+                        <li><img src="./image/GooglePlay.png" alt="GooglePlay"></li>
+                        <li><img src="./image/AppStore.png" alt="AppStore"></li>
+                    </ul>
+                </div>
             </div>
-            <div class="t3_r_ch">COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</div>
         </div>
-    </footer>
+    </div>
+    <div class="copyright">
+        <div class="t3_r_ch">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。<br>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。
+        </div>
+        <div class="t3_r_ch">COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</div>
+    </div>
+    <svg width="0" height="0">
+        <defs>
+            <clipPath id="footer_x5F_clip_x5F_path" clipPathUnits="objectBoundingBox">
+                <path d="M 0,1
+                   L 0,0
+                   C .35 .23, .65 .23, 1 0
+                   L 1,1
+                   L 0,1
+                   Z" />
+            </clipPath>
+        </defs>
+    </svg>
+</footer>
+<!-- 手機板 Tabbar 按鈕 -->
+<section class="main_tabbar">
+    <div class="container_full">
+        <div class="row row-cols-5">
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-fire-flame-curved"></i>
+                    <h2 class="t3_r_ch">熱門話題</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-signs-post"></i>
+                    <h2 class="t3_r_ch">人氣嚮導</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-compass"></i>
+                    <h2 class="t3_r_ch">主題探索</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-tree-city"></i>
+                    <h2 class="t3_r_ch">熱門城市</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href=""><i class="h6_b_ch fa-solid fa-magnifying-glass"></i>
+                    <h2 class="t3_r_ch">搜尋</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="./script/signup_login.js"></script>
 </body>
 </html>

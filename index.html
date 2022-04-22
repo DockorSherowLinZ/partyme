@@ -81,7 +81,7 @@
         <div class="swiper mySwiper" id="hot_carousel">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="banner">
+                    <a href="./hot-media_page.html" class="banner">
                         <div class="card" data-url="https://www.youtube.com/embed/FWTUIduahRc">
                             <div class="content col-4">
                                 <div class="info">
@@ -95,8 +95,8 @@
                         <div class="video videoLength playerButton" data-videoLength="13:28">
                             <img src="./image/hot_video_09.webp" alt="">
                         </div>
-                    </div>
-                    <div class="card_mobile">
+                    </a>
+                    <a href="./hot-media_page.html" class="card_mobile">
                         <div class="video_mobile videoLengthMobile playerButtonMobile" data-videoLength="13:28">
                             <img src="./image/hot_video_09.webp" alt="">
                         </div>
@@ -107,7 +107,7 @@
                             </p>
                             <span class="t4_r_ch">觀看次數：589萬次 • 3小時前</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="swiper-slide">
                     <div class="banner">
@@ -1122,7 +1122,7 @@
     <div class="container">
         <h2 class="h1_b_ch">熱門城市</h2>
         <div id="carousel" class="carousel">
-            <div class="carousel_item carousel_item-visible">
+            <ul class="carousel_item carousel_item-visible">
                 <div class="card extend" data-city="台北">
                     <div class="cover">
                         <div class="overlap"></div>
@@ -1183,7 +1183,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </ul>
         </div>
     </div>
     <div class="map">
@@ -1204,15 +1204,95 @@
             <p class="t2_r_ch"><a href="./popular_cities.html" class="link">MORE</a></p>
         </button>
     </div>
-</section>
+    </section>
 
+    <!-- 手機版 熱門城市 -->
+<section class="popular_cities_mobile">
+    <h2 class="h1_b_ch">熱門城市</h2>
+    <div class="container">
+        <div id="carousel" class="carousel">
+            <div class="card">
+                <a href="#">
+                    <div class="cover">
+                        <div class="caption">
+                            <h3 class="h4_b_ch">台北</h3>
+                            <div class="tag">
+                                <h4>旅遊首選城市</h4>
+                            </div>
+                        </div>
+                        <div class="overlap"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">江蘇</h3>
+                            <div class="tag">
+                                <h4>旅遊首選城市</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">馬爾地夫</h3>
+                            <div class="tag">
+                                <h4>旅遊首選城市</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">西安</h3>
+                            <div class="tag">
+                                <h4>旅遊首選城市</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">曼哈頓</h3>
+                            <div class="tag">
+                                <h4>旅遊首選城市</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="carousel_actions">
+            <button id="carousel_button_prev" aria-label="Previouse slide">
+                < </button>
+                    <button id="carousel_button_next" aria-label="Next slide">
+                        >
+                    </button>
+        </div> -->
+    </div>
+    </section>
 
     <!-- 回到頂端 -->
 <div>
     <a class="side_function" href="#">
         <i class="fa-solid fa-caret-up"></i>
     </a>
-</div>
+    </div>
 
 
 <footer>
@@ -1281,7 +1361,7 @@
             </clipPath>
         </defs>
     </svg>
-</footer>
+    </footer>
 <!-- 手機板 Tabbar 按鈕 -->
 <section class="main_tabbar">
     <div class="container_full">
@@ -1316,7 +1396,7 @@
 </section>
 
     <!-- ButtonSheet -->
-    <!-- <section class="main_header_mobile">
+<!-- <section class="main_header_mobile">
             <button onclick="showBottomSheet()">Show Bottom sheet</button>    
             <div onclick="hideBottomSheet()" id="bottomSheetContainer">
                 <div  id="bottomSheet">
@@ -1331,10 +1411,10 @@
         </section> -->
 
     <!-- 輪播套件script -->
-    <script src="./script/swiper-bundle.min.js"></script>
+<script src="./script/swiper-bundle.min.js"></script>
 
     <!-- 熱門話題輪播 -->
-    <script>
+<script>
         const hot_swiper = new Swiper("#hot_carousel", {
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -1363,50 +1443,51 @@
             hot_swiper.autoplay.start();
             console.log('slider start again');
         })
-    </script>
+</script>
 
     <!-- 人氣嚮導輪播 -->
-    <script>
-        /* const swiper_pop_guide 宣告變數；new Swiper 不可以更改；可以使用 class 或 id 來命名物件 "#pop_guide_carousel" */
-        const swiper_pop_guide = new Swiper("#pop_guide_carousel", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            loop: true,  // 循環播放：https://swiperjs.com/swiper-api#param-loop
-            
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 80,
-                depth: 60,
-                modifier: 1,
-                scale: 0.86,
-                slideShadows: true,
-            },
-            roundLengths: true,         //模糊特效
-            disableOnInteraction: true, //滑鼠事件設定
-            autoplay: {
-                delay: 99999,
-            },        
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-        const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
-
-        pop_guide_autoplay.addEventListener('mouseenter',function(){
-            swiper_pop_guide.autoplay.stop();
-            console.log('slider stopped');
-        })
-        pop_guide_autoplay.addEventListener('mouseleave',function(){
-            swiper_pop_guide.autoplay.start();
-            console.log('slider start again');
-        })
+<script>
+    /* const swiper_pop_guide 宣告變數；new Swiper 不可以更改；可以使用 class 或 id 來命名物件 "#pop_guide_carousel" */
+    const swiper_pop_guide = new Swiper("#pop_guide_carousel", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,  // 循環播放：https://swiperjs.com/swiper-api#param-loop
         
-    </script>
-    <script src="./script/bottom-sheet.js"></script>
-    <script src="./script/jquery-3.6.0.js"></script>
-    <script src="./script/jquery-ui.js"></script>
-    <script src="./script/index.js"></script>
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 80,
+            depth: 60,
+            modifier: 1,
+            scale: 0.86,
+            slideShadows: true,
+        },
+        roundLengths: true,         //模糊特效
+        disableOnInteraction: true, //滑鼠事件設定
+        autoplay: {
+            delay: 99999,
+        },        
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+    const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
+
+    pop_guide_autoplay.addEventListener('mouseenter',function(){
+        swiper_pop_guide.autoplay.stop();
+        console.log('slider stopped');
+    })
+    pop_guide_autoplay.addEventListener('mouseleave',function(){
+        swiper_pop_guide.autoplay.start();
+        console.log('slider start again');
+    })
+    
+</script>
+<script src="./script/jquery-3.6.0.js"></script>
+<script src="./script/jquery-ui.js"></script>
+<script src="./script/bottom-sheet.js"></script>
+<script src="./script/popular_cities_mobile.js"></script>
+<script src="./script/index.js"></script>
 </body>
 </html>

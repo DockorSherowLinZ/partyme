@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+// 色彩規範
+:root {
+    --primary: #1363BF;
+    --hover: #3392FF;
+    --active: #0E4A8F;
+    --second: #18ACEF;
+    --second_hover: #008DCC;
+    --second_actice: #00A5EF;
+    --info: #F2A418;
+    --success: #23AE5E;
+    --warning: #F2CA00;
+    --error: #F24030;
+    --light: #eee;
+    --dark: #092C4C;
+    --shadow: rgba(2, 32, 56, 0.24);
+    --muted: #b3b3b3;
+    --black_1: #000;
+    --black_2: #1d1d1d;
+    --black_3: #282828;
+    --white: #fff;
+    --gray_1: #333;
+    --gray_2: #4f4f4f;
+    --gray_3: #828282;
+    --gray_4: #bdbdbd;
+    --gray_5: #e0e0e0;
+}
+
+// 共用元素
+@for $i from 1 through 5 {
+    .m-#{$i} {
+        margin: calc(.25rem * #{$i});
+    }
+
+    .mt-#{$i} {
+        margin-top: calc(.25rem * #{$i});
+    }
+
+    .mb-#{$i} {
+        margin-bottom: calc(.25rem * #{$i});
+    }
+
+    .ms-#{$i} {
+        margin-left: calc(.25rem * #{$i});
+    }
+
+    .me-#{$i} {
+        margin-right: calc(.25rem * #{$i});
+    }
+}
+
+@mixin flex($dr:row, $jc:center, $ai:center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $dr;
+}
+
+.text-white {
+    color: var(--white) !important;
+}
+
+.text-gray {
+    color: var(--gray_3);
+}
+
+.text-left {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    text-align: left;
+}
+
+.btn {
+    border-radius: .75rem;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    padding: 0.55rem 1.75rem;
+    color: inherit;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 2px var(--shadow);
+    min-height: 480px;
+
+    // ⬇️控制方向相關 開始
+    &.sign_in .wrap {
+        &.form-sign_in {
+            z-index: 1;
+            opacity: 1;
+        }
+
+        &.form-sign_up {
+            z-index: -1;
+            opacity: 0;
+        }
+
+        &.form-wrap {
+            left: 0;
+        }
+
+        &.overlay-wrap {
+            left: 50%;
+
+            .overlay {
+                left: -50%;
+            }
+        }
+    }
+
+    &.sign_up .wrap {
+        &.form-sign_in {
+            z-index: -1;
+            opacity: 0;
+        }
+
+        &.form-sign_up {
+            z-index: 1;
+            opacity: 1;
+        }
+
+        &.form-wrap {
+            left: 50%;
+        }
+
+        &.overlay-wrap {
+            left: 0;
+
+            .overlay {
+                left: 50%;
+            }
+        }
+    }
+
+    // ⬆️控制方向相關 結束
+
+
+    // 樣式主控台
+    .wrap {
+        @include flex(column);
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        text-align: center;
+        transition: .3s;
+
+        &.form-wrap {
+            form {
+                @include flex(column);
+                padding: 1.75rem;
+                width: 100%;
+            }
+
+            .btn {
+                background: var(--primary);
+
+                &:hover {
+                    background: var(--hover);
+                }
+
+                &:active {
+                    background: var(--active);
+                }
+            }
+
+            input:not([type=checkbox]) {
+                outline: 0;
+                background: var(--gray_5);
+                width: 100%;
+                border: none;
+                padding: .75rem;
+            }
+        }
+
+        &.overlay-wrap {
+            overflow: hidden;
+            z-index: 5;
+
+            .btn {
+                border: 1px solid var(--white);
+            }
+
+            .overlay {
+                background: linear-gradient(-45deg, var(--primary), var(--hover));
+                position: relative;
+                width: 200%;
+                height: 100%;
+                transition: .3s;
+
+                .panel {
+                    position: absolute;
+                    width: 50%;
+                    height: 100%;
+                    top: 0;
+                    padding: 1.25rem;
+                    @include flex(column);
+
+                    &.overlay-left {
+                        left: 0;
+                    }
+
+                    &.overlay-right {
+                        left: 50%;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+}

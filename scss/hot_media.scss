@@ -1,6 +1,7 @@
 /* 相關熱門話題影片卡片 */
 .row {
     margin-bottom: 2rem;
+
     .col {
         display: flex;
         flex-direction: row;
@@ -63,11 +64,13 @@ i[class*="fa-"] {
 /* 主體 */
 .container_full {
     margin-top: 2rem;
+
     .row {
         .hot {
             width: 100%;
         }
     }
+
     /* hot_main_media */
     .main_media {
         height: 720px;
@@ -357,10 +360,13 @@ button:hover .fa-solid {
 /* tag_slider */
 .tag_slider {
     display: flex;
+
     ul {
         margin: 0;
+
         li {
             margin: auto .5rem;
+
             .tag {
                 display: inline-block;
                 padding: 0.5rem 1rem;
@@ -485,21 +491,25 @@ button:hover .fa-solid {
 }
 
 /* note */
-.travel_note{
+.travel_note {
     .note {
         height: 150px;
         bottom: 0;
-        overflow:auto ;
+        overflow: auto;
         margin: 0 0.5rem;
-        .context::-webkit-scrollbar{
+
+        .context::-webkit-scrollbar {
             width: 0.25rem;
         }
+
         .context::-webkit-scrollbar-track {
             background: transparent;
         }
+
         .context::-webkit-scrollbar-track {
             background: transparent;
         }
+
         .context:hover::-webkit-scrollbar-thumb {
             background: var(--second);
         }
@@ -622,46 +632,58 @@ button:hover .fa-solid {
 }
 
 @media screen and (max-width:1200px) {
+
     /* 主體 */
     .container_full {
-    
+
         /* hot_main_media */
         .main_media {
             height: 550px;
         }
     }
+
     .travel_note {
-        margin-bottom: 1rem;    
+        margin-bottom: 1rem;
+
         .date_group_moneybill {
             display: flex;
-            .date{
+
+            .date {
                 margin-right: 4rem;
             }
         }
     }
-    .video_travel_note_content{
+
+    .video_travel_note_content {
         display: block;
-            .video_content{
-                width: auto;
-            }
-            .travel_note_content{
-                width: auto;
-            }
+
+        .video_content {
+            width: auto;
+        }
+
+        .travel_note_content {
+            width: auto;
+        }
     }
-    .discuss_related_content{
+
+    .discuss_related_content {
         display: block;
-            .discuss_content{
-                width: auto;
-            }
-            .related_content{
-                width: auto;
-            }
+
+        .discuss_content {
+            width: auto;
+        }
+
+        .related_content {
+            width: auto;
+        }
     }
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:992px) {
+
     /* 主體 */
     .container_full {
+
         /* hot_main_media */
         .main_media {
             height: 500px;
@@ -669,19 +691,22 @@ button:hover .fa-solid {
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     .row {
         margin-bottom: 0;
+
         .col {
             flex-direction: column;
         }
     }
-    
-    .discuss_content{
-        .title{
-            .function{
+
+    .discuss_content {
+        .title {
+            display: block;
+            .function {
                 min-width: auto;
-                button{
+
+                button {
                     padding: 0 1rem;
                 }
             }
@@ -701,25 +726,33 @@ button:hover .fa-solid {
         }
     }
 }
-@media screen and (max-width:425px){
+
+@media screen and (max-width:425px) {
+
     /* 主體 */
     .container_full {
+
         /* hot_main_media */
         .main_media {
             height: 280px;
         }
-        .discuss_related_content{
-            .related_content{
+
+        .discuss_related_content {
+            .related_content {
                 margin-right: -15px;
-                .hot{
+
+                .hot {
                     width: 100%;
                     margin: 0 -15px;
-                    .contain{
+
+                    .contain {
                         margin-right: -15px;
-                        .intro{
+
+                        .intro {
                             display: flex;
                             align-items: center;
-                            h3{
+
+                            h3 {
                                 margin-right: 0.5rem;
                             }
                         }
@@ -728,80 +761,97 @@ button:hover .fa-solid {
             }
         }
     }
+
     .row {
         margin-bottom: 0;
+
         .col {
             flex-direction: column;
         }
     }
+
     .travel_note {
         margin-bottom: 1rem;
-    
+
         .date_group_moneybill {
             display: block;
-    
+
             .date {
                 margin-right: 4rem;
             }
         }
     }
-    .tag_name_header{
-        .tag_slider{
-            ul{
+
+    .tag_name_header {
+        .tag_slider {
+            ul {
                 overflow: auto;
             }
         }
     }
-    
-    .discuss_content{
-        .title{
-            display: block;
+
+    .discuss_content {
+        .title {
             margin-bottom: 2rem;
-            .context{
+
+            .context {
                 margin-bottom: 2rem;
-                .tag{
+
+                .tag {
                     margin-bottom: 1rem;
                 }
             }
-            .function{
+
+            .function {
                 min-width: auto;
-                button{
+
+                button {
                     padding: 0 1rem;
                 }
             }
         }
-        .title.guide{
+
+        .title.guide {
             display: block;
-            .function{
+
+            .function {
                 margin: 2rem auto;
-                button{
+
+                button {
                     margin: 0;
                     padding: 0 0.25rem;
-                    i{
+
+                    i {
                         transform: scale(1.15);
                     }
                 }
             }
         }
-        .title.message{
-            .message_amount{
+
+        .title.message {
+            .message_amount {
                 margin-top: 0;
             }
-            .content{
-                .user{
-                    .context{
+
+            .content {
+                .user {
+                    .context {
                         display: block;
                         margin-bottom: 1rem;
-                        input{
+
+                        input {
                             margin-bottom: 1rem;
                         }
-                        .function{
+
+                        .function {
                             min-width: auto;
                             justify-content: flex-start;
-                            button{
+
+                            button {
                                 padding: 0;
                                 padding-right: 1rem;
-                                i{
+
+                                i {
                                     transform: scale(1.15);
                                 }
                             }
@@ -809,10 +859,11 @@ button:hover .fa-solid {
                     }
                 }
             }
-            .message_wall{
-                .content{
-                    .context{
-                        p{
+
+            .message_wall {
+                .content {
+                    .context {
+                        p {
                             max-width: fit-content;
                             -webkit-line-clamp: 3;
                         }
