@@ -1,96 +1,96 @@
 /* 【人氣嚮導】 */
 /* 個人簡介 */
-.bref{
-    .container_full {
-        width: 100%;
-        padding-top: 12rem;
-        background: linear-gradient(0deg,rgba(255,255,255,1) 30%,rgba(255, 255, 255, 0)),
-                    url(../image/aerial-view-beautiful-koh-tao-island-surat-thani-thailand.webp)
-                    no-repeat center center / cover;
+.container_full {
+    width: 100%;
+    padding-top: 12rem;
+    background: linear-gradient(0deg,rgba(255,255,255,1) 50%,rgba(255, 255, 255, 0)),
+                url(../image/aerial-view-beautiful-koh-tao-island-surat-thani-thailand.webp)
+                no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .baffle {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .baffle {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        /* 嚮導照片 */
+        .cover {
+            width: 12rem;
+            height: 12rem;
+            margin-bottom: 2rem;
+            border-radius: 50%;
+            box-shadow: 0 0.5rem 2rem var(--shadow);
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                vertical-align: top;
+                transform: scale(1.01);
+                transition: .3s all;
 
-            /* 嚮導照片 */
-            .cover {
-                width: 12rem;
-                height: 12rem;
-                border-radius: 50%;
-                box-shadow: 0 0.5rem 2rem var(--shadow);
-                overflow: hidden;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    vertical-align: top;
-                    transform: scale(1.01);
-                    transition: .3s all;
-
-                    &:hover img {
-                        transform: scale(1.3);
-                    }
+                &:hover img {
+                    transform: scale(1.3);
                 }
             }
-            // 首頁嚮導簡介 卡片內容/*
-            .content {                
-                margin: auto 24rem;
+        }
+        // 首頁嚮導簡介 卡片內容/*
+        .content {
+            max-width: 768px;           
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 人氣嚮導 */
+            .guide {
+                margin-bottom: 2rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                /* 人氣嚮導 */
-                .guide {
-                    margin-bottom: 2rem;
+                text-align: center;
+                .name {
+                    color: var(--primary);
+                    margin-bottom: 1rem;
+                }
+                .category {
+                    margin-bottom: 0.5rem;
+                }
+                .score {
                     display: flex;
-                    flex-direction: column;
                     align-items: center;
-                    text-align: center;
-                    .name {
-                        color: var(--white);
-                        margin-bottom: 0.5rem;
-                        text-shadow: 0 0.1rem 0.3rem var(--shadow);
-                    }
-                    .category {
-                        margin-bottom: 0.5rem;
-                    }
-                    .score {
-                        display: flex;
-                        align-items: center;
-                        color: var(--info);
-                        margin-bottom: 0.5rem;
-                    
-                        .fa-star {
-                            transform: scale(0.85);
-                        }
+                    color: var(--info);
+                    margin-bottom: 0.5rem;
+                
+                    .fa-star {
+                        transform: scale(0.85);
                     }
                 }
-            
-                p {
-                    color: var(--dark);
-                    margin-bottom: 3.5rem;
-                    text-align: center;
-                    line-height: 1.5;
-                }
-            
-                /* 細節 */
-                .detial {
+            }
+        
+            p {
+                margin: 2rem;
+                color: var(--dark);
+                margin-bottom: 3.5rem;
+                text-align: center;
+                line-height: 1.5;
+            }
+        
+            /* 細節 */
+            .detial {
+                display: flex;
+                justify-content: space-between;
+
+                .contact {
                     display: flex;
-                    justify-content: space-between;
+                    margin-bottom: 4rem;
 
-                    .contact {
-                        display: flex;
-                        margin-bottom: 4rem;
-
-                        .fa-solid {
-                            margin-right: 1rem;
-                        }
-            
+                    .fa-solid {
+                        margin-right: 1rem;
                     }
+        
                 }
             }
         }
@@ -100,12 +100,48 @@
 .bref_video {
     .intruduce_video {
         width: 100%;
-        height: 100%;
+        height: 600px;
+        margin-bottom: 6rem;
         iframe {
             width: 100%;
-            height: 600px;
+            height: 100%;
             object-fit: cover;
             vertical-align: top;
+        }
+    }
+}
+
+@media screen and (max-width:425px){
+    .bref_video {
+        .intruduce_video {
+            height: 280px;
+            margin-bottom: 6rem;
+        }
+    }
+    .container_full .baffle{
+        .content {
+            .guide {
+                margin-bottom: 0.5rem;
+            }
+            p{
+                margin: 0.5rem 0.5rem 1.5rem;
+            }
+            .detial .contact {
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0.5rem 0.5rem;
+            
+                    i {
+                        margin-right: 0;
+                    }
+            
+                    .fa-solid {
+                        margin-right: 0;
+                    }
+                }
+            }
         }
     }
 }
