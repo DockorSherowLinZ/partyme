@@ -712,31 +712,6 @@ span.swiper-pagination-bullet {
                 }
             }
         }
-        /* 用 first-of-type 才能選到 card 的子層 */
-        .card:first-of-type .cover {
-            background: url(../image/taipei.webp);
-            background-size: cover;
-        }
-
-        .card:nth-of-type(2) .cover {
-            background: url(../image/Jiangsu.jpg);
-            background-size: cover;
-        }
-
-        .card:nth-of-type(3) .cover {
-            background: url(../image/Maldives.jpg);
-            background-size: cover;
-        }
-
-        .card:nth-of-type(4) .cover {
-            background: url(../image/Xian.jpg);
-            background-size: cover;
-        }
-
-        .card:nth-of-type(5) .cover {
-            background: url(../image/Manhattan.jpg);
-            background-size: cover;
-        }
 
         /* 圖片 */
         .cover {
@@ -759,10 +734,10 @@ span.swiper-pagination-bullet {
 
             /* 標題 */
             .caption {
+                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
-                height: 100%;
                 position: relative;
 
                 /* 名稱 */

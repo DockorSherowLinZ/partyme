@@ -1,7 +1,6 @@
-const container = document.querySelector('.container');
+const container = document.querySelector('.container-sign');
 const toggleBtns = document.querySelectorAll('.toggle-btn');
 
-// console.log(container.classList.contains('sign_in'))
 function toggle() {
     if (container.classList.contains('sign_in')) {
         container.classList.remove('sign_in');

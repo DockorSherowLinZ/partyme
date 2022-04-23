@@ -1,62 +1,37 @@
-* {
-    box-sizing: border-box;
-}
-
-// 色彩規範
-:root {
-    --primary: #1363BF;
-    --hover: #3392FF;
-    --active: #0E4A8F;
-    --second: #18ACEF;
-    --second_hover: #008DCC;
-    --second_actice: #00A5EF;
-    --info: #F2A418;
-    --success: #23AE5E;
-    --warning: #F2CA00;
-    --error: #F24030;
-    --light: #eee;
-    --dark: #092C4C;
-    --shadow: rgba(2, 32, 56, 0.24);
-    --muted: #b3b3b3;
-    --black_1: #000;
-    --black_2: #1d1d1d;
-    --black_3: #282828;
-    --white: #fff;
-    --gray_1: #333;
-    --gray_2: #4f4f4f;
-    --gray_3: #828282;
-    --gray_4: #bdbdbd;
-    --gray_5: #e0e0e0;
-}
-
 // 共用元素
-@for $i from 1 through 5 {
-    .m-#{$i} {
-        margin: calc(.25rem * #{$i});
-    }
-
-    .mt-#{$i} {
-        margin-top: calc(.25rem * #{$i});
-    }
-
-    .mb-#{$i} {
-        margin-bottom: calc(.25rem * #{$i});
-    }
-
-    .ms-#{$i} {
-        margin-left: calc(.25rem * #{$i});
-    }
-
-    .me-#{$i} {
-        margin-right: calc(.25rem * #{$i});
-    }
-}
-
 @mixin flex($dr:row, $jc:center, $ai:center) {
     display: flex;
     justify-content: $jc;
     align-items: $ai;
     flex-direction: $dr;
+}
+
+@mixin pad {
+    @for $i from 1 through 5 {
+        .m-#{$i} {
+            margin: calc(.25rem * #{$i});
+        }
+
+        .mt-#{$i} {
+            margin-top: calc(.25rem * #{$i});
+        }
+
+        .mb-#{$i} {
+            margin-bottom: calc(.25rem * #{$i});
+        }
+
+        .ms-#{$i} {
+            margin-left: calc(.25rem * #{$i});
+        }
+
+        .me-#{$i} {
+            margin-right: calc(.25rem * #{$i});
+        }
+    }
+
+    @media (max-width:720px) {
+        @content;
+    }
 }
 
 .text-white {
@@ -68,29 +43,43 @@
 }
 
 .text-left {
-    display: inline-block;
     width: 100%;
+    display: inline-block;
     text-align: left;
     text-align: left;
 }
 
 .btn {
-    border-radius: .75rem;
-    cursor: pointer;
-    border: 0;
     background: transparent;
-    padding: 0.55rem 1.75rem;
     color: inherit;
+    border: 0;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    padding: 0.75rem 2.25rem;
+    cursor: pointer;
 }
 
-.container {
-    position: relative;
-    margin: auto;
-    padding: 10px;
-    border-radius: 25px;
-    overflow: hidden;
+.w-100 {
+    width: 100%;
+}
+
+small {
+    color: var(--dark);
+}
+
+.container-sign {
+    min-height: 420px;
+    max-width: 960px;
+    border-radius: 1.5rem;
     box-shadow: 2px 2px 5px 2px var(--shadow);
-    min-height: 480px;
+    margin: 4rem auto;
+    padding: 0.5rem;
+    position: relative;
+    overflow: hidden;
+
+    @include pad {
+        min-height: 750px;
+    }
 
     // ⬇️控制方向相關 開始
     &.sign_in .wrap {
@@ -106,14 +95,30 @@
 
         &.form-wrap {
             left: 0;
+
+            @include pad {
+                top: 0;
+            }
         }
 
         &.overlay-wrap {
             left: 50%;
 
+            @include pad {
+                left: 0;
+                top: 50%;
+            }
+
             .overlay {
                 left: -50%;
+
+                @include pad {
+                    left: 0;
+                    top: -50%;
+                }
             }
+
+            // overlay
         }
     }
 
@@ -130,13 +135,27 @@
 
         &.form-wrap {
             left: 50%;
+
+            @include pad {
+                left: 0;
+                top: 50%;
+            }
         }
 
         &.overlay-wrap {
             left: 0;
 
+            @include pad {
+                top: 0;
+            }
+
             .overlay {
                 left: 50%;
+
+                @include pad {
+                    left: 0;
+                    top: 50%;
+                }
             }
         }
     }
@@ -147,18 +166,30 @@
     // 樣式主控台
     .wrap {
         @include flex(column);
-        position: absolute;
         width: 50%;
         height: 100%;
-        top: 0;
         text-align: center;
-        transition: .3s;
+        position: absolute;
+        top: 0;
+        transition: 0.3s;
+
+        @include pad {
+            width: 100%;
+            height: 50%;
+            top: initial;
+        }
+
+        ;
 
         &.form-wrap {
             form {
                 @include flex(column);
-                padding: 1.75rem;
                 width: 100%;
+                padding: 1.75rem;
+            }
+            .forget_password{
+                margin-top: 1rem;
+                margin-left: auto;
             }
 
             .btn {
@@ -174,16 +205,21 @@
             }
 
             input:not([type=checkbox]) {
-                outline: 0;
-                background: var(--gray_5);
                 width: 100%;
                 border: none;
-                padding: .75rem;
+                border-bottom: 1px solid var(--gray_5);
+                outline: 0;
+                padding: 0.5rem;
+
+                &::placeholder {
+                    color: var(--gray_4);
+                }
             }
         }
 
         &.overlay-wrap {
             overflow: hidden;
+            background: yellow;
             z-index: 5;
 
             .btn {
@@ -191,33 +227,54 @@
             }
 
             .overlay {
-                background: linear-gradient(-45deg, var(--primary), var(--hover));
-                position: relative;
                 width: 200%;
                 height: 100%;
-                transition: .3s;
+                background: linear-gradient(-45deg, var(--primary), var(--second));
+                position: relative;
+                transition: 0.3s;
+
+                p {
+                    padding: 1rem;
+                }
+
+                @include pad {
+                    width: 100%;
+                    min-height: 200%;
+                    height: initial;
+                }
 
                 .panel {
-                    position: absolute;
+                    @include flex(column);
                     width: 50%;
                     height: 100%;
-                    top: 0;
                     padding: 1.25rem;
-                    @include flex(column);
+                    position: absolute;
+                    top: 0;
 
-                    &.overlay-left {
+                    @include pad {
+                        width: 100%;
+                        height: 50%;
                         left: 0;
                     }
 
+                    &.overlay-left {
+                        left: 0;
+
+                        @include pad {
+                            top: 0;
+                        }
+                    }
+
                     &.overlay-right {
-                        left: 50%;
+                        left: 50%;                        
+
+                        @include pad {
+                            left: 0;
+                            top: 50%;
+                        }
                     }
                 }
             }
         }
-
-
     }
-
-
 }
