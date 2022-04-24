@@ -1,18 +1,26 @@
-const wrap  = document.querySelector(".carousel_item");
-const items = document.querySelectorAll('.card');
-const itemTotal = items.length;     // 卡片總張數(這邊是9)
+let pagePosition = 1;
+let wrap = document.querySelector(`[data-page="${pagePosition}"] .carousel_item`);
+let items = document.querySelectorAll(`[data-page="${pagePosition}"] .card`);
+let slideContainer = document.querySelector(`[data-page="${pagePosition}"] .recommend`);
+
+function pageSwitcher() {
+    wrap = document.querySelector(`[data-page="${pagePosition}"] .carousel_item`);
+    items = document.querySelectorAll(`[data-page="${pagePosition}"] .card`);
+    slideContainer = document.querySelector(`[data-page="${pagePosition}"] .recommend`);
+};
+
+let itemTotal = items.length;     // 卡片總張數(這邊是7)
 let itemNum   = 3;                // 一屏要幾張
-itemNum = window.innerWidth <= 570  ?  2  : 3;
+itemNum = slideContainer.offsetWidth <= 960  ?  2  : 4; // 畫面小於等於 570px 時，秀出 2 張，大於 570px 時，秀出 3 張。
 let curIndex = 0;                   
-let windowW = window.innerWidth;    // 螢幕目前寬度
-let itemW   = windowW >= 960        // 卡片寬度
-        ? 960     / itemNum
-        : windowW / itemNum;
+let windowW = slideContainer.offsetWidth;    // 螢幕目前寬度
+let itemW   = windowW / itemNum;
 let wrapW   = itemW * itemTotal;    // .wrap 的寬度
 
 function $id(id){  
     return document.getElementById(id);
 }
+console.log(windowW, wrapW, itemTotal, itemW)
 
 function wrapResize(){
     wrap.style.left = -itemW * curIndex   +"px";
@@ -24,10 +32,8 @@ function wrapResize(){
 }
 
 function widthChange(){
-    windowW = window.innerWidth; // 螢幕目前寬度
-    itemW   = windowW >= 960     // 卡片寬度
-        ? 960     / itemNum
-        : windowW / itemNum;
+    windowW = slideContainer.offsetWidth; // 螢幕目前寬度
+    itemW   = windowW / itemNum;
     wrapW   = itemW * itemTotal; // .wrap 的寬度
     
     wrap.style.width = wrapW + 'px';   // .wrap 的寬度
@@ -49,7 +55,7 @@ $id("carousel_button_next")
 
 
 window.addEventListener('resize', function() {
-    itemNum = window.innerWidth <= 570  ?  2  : 3;
+    itemNum = slideContainer.offsetWidth <= 960  ?  2  : 3;
     curIndex = 
         curIndex > itemTotal - itemNum
         ? itemTotal - itemNum

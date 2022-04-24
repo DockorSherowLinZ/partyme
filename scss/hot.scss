@@ -201,7 +201,7 @@ aside {
 .fa-solid {
     font-size: 1rem;
 }
-
+/* 推薦話題 */
 .recommend {
     margin: auto;
 
@@ -224,31 +224,48 @@ aside {
             transition: left .3s;
 
 
-            .card {
+            .card {                
                 &:hover, &.extend {
-                    width: 25%;
-                }
-                &::after {
-                    content: "";
-                    background: linear-gradient(transparent 60%,
-                            rgba(2, 32, 56, 0.761) 80%,
-                            rgba(2, 32, 56, 0.98) 100%);
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: 2;
-                }
-                
+                    width: 33.333333%;
+                } 
                 .cover {
                     width: 100%;
                     height: 100%;
                     border-radius: 0.25rem;
+                    outline: 0;
+                    
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(transparent 60%,
+                                rgba(2, 32, 56, 0.761) 80%,
+                                rgba(2, 32, 56, 0.98) 100%);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 2;
+                    }
+                    
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 3;
+                    }
 
                     &:hover {
                         background-color: #fff;
                         cursor: pointer;
-                    }
 
+                        &::after{
+                            background-color: transparent;
+                        }
+                    }
                     .caption {
                         padding: 0.5rem;
                         color: white;
@@ -257,6 +274,10 @@ aside {
                         justify-content: flex-start;
                         align-items: flex-end;
                         position: relative;
+                        z-index: 4;
+                        h3{
+                            margin: 0 0 0.2rem;
+                        }
                     }
                     
                 }
@@ -269,26 +290,32 @@ aside {
             .card:nth-of-type(2) .cover {
                 background: url(../image/recommend_hot_air_balloons.webp);
                 background-size: cover;
+                background-position: top center;
             }            
             .card:nth-of-type(3) .cover {
                 background: url(../image/recommend_underwater-scuba-diving.webp);
                 background-size: cover;
+                background-position: top center;
             }            
             .card:nth-of-type(4) .cover {
                 background: url(../image/recommend_professional-surfer-wears.webp);
                 background-size: cover;
+                background-position: top center;                
             }            
             .card:nth-of-type(5) .cover {
                 background: url(../image/recommend_cruise.webp);
                 background-size: cover;
+                background-position: top center;                
             }
             .card:nth-of-type(6) .cover {
                 background: url(../image/recommend_portrait-young-beautiful-female-tourist.webp);
                 background-size: cover;
+                background-position: top center;                
             }
             .card:nth-of-type(7) .cover {
                 background: url(../image/recommend_photographer-with-photo-camera.webp);
                 background-size: cover;
+                background-position: top center;                
             }
         }
     }
@@ -308,83 +335,6 @@ aside {
     z-index: 20;
 }
 
-
-// .recommend .carousel .carousel_item .card {
-//     // width: 186px;
-//     box-sizing: border-box;
-//     position: relative;
-//     transition: 0.3s all ease-in-out;
-
-//     /* 選取到的卡片 */
-//     &:hover, &.extend {    
-//         // width: 33.333333%;
-//         /* hover 後內框線 */
-//         .cover {
-//             outline: 0.25rem solid var(--hover);
-
-//             .caption .tag h4 {
-//                 display: inline-block;
-//             }
-//         }
-//     }
-
-//     /* 圖片 */
-//     .cover {
-//         height: 320px;
-//         border-radius: 1.25rem;
-//         vertical-align: top;
-//         background-position: 50%;
-//         background-size: cover;
-//         overflow: hidden;
-//         position: relative;
-
-//         /* 漸層覆蓋 */
-//         .overlap {
-//             background: linear-gradient(transparent 60%, rgba(2, 32, 56, 0.761) 80%, rgba(2, 32, 56, 0.98) 100%);
-//             position: absolute;
-//             width: 100%;
-//             height: 100%;
-//             top: 0;
-
-//             img {
-//                 width: 100%;
-//                 vertical-align: top;
-//                 object-fit: cover;
-//             }
-//         }
-
-//         /* 標題 */
-//         .caption {
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: flex-end;
-//             height: 100%;
-//             position: relative;
-
-//             /* 名稱 */
-//             h3 {
-//                 color: var(--white);
-//                 text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
-//                 margin: 0 0 0.75rem 0.6rem;
-//                 z-index: 2;
-//             }
-
-//             /* 次標 */
-//             .tag {
-//                 h4 {
-//                     color: var(--white);
-//                     padding: 0.25rem 0.75rem;
-//                     border: 1px solid #fff;
-//                     border-radius: 1rem;
-//                     box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.16);
-//                     margin: 0 0 0.75rem 0.6rem;
-//                     z-index: 2;
-//                     display: none;
-//                 }
-//             }
-//         }
-//     }
-// }
 @media screen and (max-width:992px) { 
 }
 @media screen and (max-width:768px) {

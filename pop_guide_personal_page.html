@@ -66,40 +66,64 @@
     </div>
 </section>
 <!-- 個人簡介 -->
+<div id="lightBox">
+    <!-- 視訊畫面 -->
+    <div class="video-calls-container">
+        <div class="video-calls-content">
+            <div class="video-calls-function">
+                <!-- 靜音 -->
+                <button id="toggle-btn" class="btn volume-xmark">
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </button>
+                <!-- 關閉鏡頭 -->
+                <button id="toggle-btn" class="btn video-slash">
+                    <i class="fa-solid fa-video-slash"></i></i>
+                </button>
+                <!-- 關閉麥克風 -->
+                <button id="toggle-btn" class="btn microphone-slash">
+                    <i class="fa-solid fa-microphone-slash"></i>
+                </i></button>
+                <!-- 關閉通訊 -->
+                <button class="closeBtn x-btn phone-slash">
+                    <i class="fa-solid fa-phone-slash"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 <section class="bref">
     <div class="container_full">
         <div class="baffle">
             <div class="cover">
-                <img src="./image/pop_guide01.webp"/>
+                <img src="./image/pop_guide00.webp"/>
             </div>
             <div class="content">
                 <div class="guide">
-                    <h2 class="h1_b_ch name">David</h2>
-                    <h3 class="t1_r_ch category">美食探索．戶外露營</h3>
-                    <div class="score"><i class="fa-solid fa-star"></i><span>4.9</span>
+                    <h2 class="h1_b_ch name">戴佳馨</h2>
+                    <h3 class="t1_r_ch category">藝術及文化導覽</h3>
+                    <div class="score"><i class="fa-solid fa-star"></i><span>4.8</span>
                     </div>
-                    <span class="t1_r_ch">訂閱人數 209,634,090 人</span>
-                    <span class="t1_r_ch">出團次數 2,206 次</span>
+                    <span class="t1_r_ch">訂閱人數：19,624 人</span>
+                    <span class="t1_r_ch">出團次數 1,668 次</span>
                 </div>
-                <p>"世事洞明皆學問,人情練達即文章" , "行萬里路勝讀萬卷書" 是我人生最喜愛的座右銘。
-                    在職場工作 20 年後,很幸運地考上外語導遊及外語領隊. 這讓我開始真正有機會認識台灣.透過帶團的
-                    機會也讓我行銷台灣給國際旅遊人士,同時也有機會帶領國人到世界各走走,開拓視野.這樣的工作讓我有使命感與榮譽感.我熱愛這份工作,更砥礪自己隨時要充實自我以提供更好的專業服務給客人。
+                <p>在成為導遊之前服務於電腦業約有 15 經驗，專精於行銷及產品管理；擅長帶英語
+                系國家的專家學者團、各類參訪團、學生團等。
                 </p>
                 <div class="detial">
                     <div class="contact">
-                        <div class="item rectangle">
+                        <div class="item rectangle message">
                             <i class="fa-solid fa-message"></i>
                             <span class="t1_r_ch">私聊</span>
                         </div>
-                        <div class="item rectangle">
+                        <div class="item rectangle video">
                             <i class="fa-solid fa-video"></i>
                             <span class="t1_r_ch">視訊</span>
                         </div>
-                        <div class="item rectangle">
+                        <div class="item rectangle clipboard">
                             <i class="fa-solid fa-clipboard"></i>
                             <span class="t1_r_ch">筆記</span>
                         </div>
-                        <div class="item rectangle">
+                        <div class="item rectangle images">
                             <i class="fa-solid fa-images"></i>
                             <span class="t1_r_ch">相簿</span>
                         </div>
@@ -111,8 +135,7 @@
 </section>
 <!-- 個人簡介影片 -->
 <section class="bref_video">
-    <div class="container">
-        <div id="lightBox"></div>
+    <div class="container">        
         <div class="intruduce_video">
             <iframe src="https://www.youtube.com/embed/NhVhwLU45FI?start=7" title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -166,46 +189,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous">
 </script>
-<!-- 輪播套件script -->
-<script src="./script/swiper-bundle.min.js"></script>
-<!-- 人氣嚮導輪播 -->
-<script>
-    /* const swiper_pop_guide 宣告變數；new Swiper 不可以更改；可以使用 class 或 id 來命名物件 "#pop_guide_carousel" */
-    const swiper_pop_guide = new Swiper("#pop_guide_carousel", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        loop: true,  // 循環播放：https://swiperjs.com/swiper-api#param-loop
-
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 80,
-            depth: 60,
-            modifier: 1,
-            scale: 0.86,
-            slideShadows: true,
-        },
-        roundLengths: true,         //模糊特效
-        disableOnInteraction: true, //滑鼠事件設定
-        autoplay: {
-            delay: 99999,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-    const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
-
-    pop_guide_autoplay.addEventListener('mouseenter', function () {
-        swiper_pop_guide.autoplay.stop();
-        console.log('slider stopped');
-    })
-    pop_guide_autoplay.addEventListener('mouseleave', function () {
-        swiper_pop_guide.autoplay.start();
-        console.log('slider start again');
-    })
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./script/pop_guide_personal_page.js"></script>
 </body>
 </html>

@@ -1,4 +1,8 @@
 /* 【人氣嚮導】 */
+a:hover {
+    color: var(--dark);
+}
+
 /* Banner */
 .Banner{
     margin-bottom: 5rem;
@@ -59,7 +63,67 @@
     }
 }
 
+/* 名人牆 */
+.pop_guide {
+    .col {
+        padding: 1rem;
+        position: relative;
+        .card {
+            overflow: hidden;
+            color: var(--white);
+            text-shadow: 0 2px 2px var(--shadow);
+            height: 400px;
+            border: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            transition: 1s all linear;
 
+            &::before {
+                content: '';
+                background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.8) 100%);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+            }
+            .guide {
+                position: relative;
+                z-index: 2;
+            }
+            .score {
+                color: var(--white);
+            }
+            .contact {
+                button {
+                    .fa-solid {
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+        @for $i from 1 through 9 {
+            &:nth-of-type(#{$i}) .card{
+                background: url('../image/guide_card_0#{$i}.webp') no-repeat center / cover,
+                rgba(0, 0, 0, 0.8);
+                background-blend-mode: luminosity;
+            }
+            &:hover .card {  
+                background-blend-mode: normal;
+            }
+        }
+        @for $i from 10 through 24 {
+            &:nth-of-type(#{$i}) .card{
+                background: url('../image/guide_card_#{$i}.webp') no-repeat center / cover,
+                rgba(0, 0, 0, 0.8);
+                background-blend-mode: luminosity;
+            }
+            &:hover .card {
+                background-blend-mode: normal;
+            }
+        }
+    }
+}
 .detial {
     .score {
         color: var(--info);
@@ -71,4 +135,7 @@
             color: var(--second);
         }
     }
+}
+
+@media (max-width:425px) {
 }
