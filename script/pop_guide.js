@@ -1,6 +1,6 @@
 const dom = document.querySelector(`.guides .row`);
 
-/* 建立資料 */
+/* 要建立出來的資料 */
 const guidesData = [
     {
         title: 'Jolin',
@@ -292,7 +292,7 @@ const guidesData = [
     }, //23
 ]
 
-/* 作物件 */
+/* 在 wallOfFame 裡面建立HTML物件 */
 let wallOfFame = '';
 
 guidesData.forEach(guideData => {
@@ -315,4 +315,5 @@ guidesData.forEach(guideData => {
                 </div>`
 });
 
-dom.innerHTML = wallOfFame;
+
+dom.innerHTML = wallOfFame; // 建立 HTML 物件

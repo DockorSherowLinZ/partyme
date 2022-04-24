@@ -45,6 +45,29 @@ button,.button {
         }
     }
 }
+/* 回到上一頁按鈕 */
+.prev-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 6.5rem 0;
+
+    button {
+        padding: 1rem 2rem;
+        border-radius: 0.65rem;
+        border: 2px solid var(--second);
+        background-color: var(--white);
+        color: var(--second);
+        font-size: 1rem;
+        font-family: sans-serif;
+        transition: 0.15s ease-in-out;
+    
+        &:hover {
+            border: 2px solid var(--second_hover);
+            color: var(--second_hover);
+        }
+    }
+}
 
 /* 影片播放按鈕icon */
 .playerButton{
