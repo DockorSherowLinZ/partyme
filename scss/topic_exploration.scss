@@ -1,4 +1,5 @@
 /* 【主題探索】 */
+
 /* Banner */
 .Banner {
     margin-bottom: 5rem;
@@ -19,121 +20,149 @@
     }
 }
 
+.theme {
+    .menu {
+        // box-shadow: 0 0 1rem var(--shadow);
+    }
+    h2{
+        text-align-last: left;
+    }
+    .card{
+        background-color: #fff;
+        border: 0;
+        .card-body {
+            .score {
+                color: var(--info);
+            }
+        }
+    }
+}
 
-.row {
-    position: relative;
-    margin-bottom: 0;
+/* 推薦話題 */
+.recommend {
+    margin: auto;
+    padding: 1rem;
+    overflow: hidden;
+    
+    .carousel {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
 
-    /* aside */
-    aside {
-        padding-right: 1rem;
-        margin-right: 3rem;
-        margin-right: auto;
-        background-color: var(--white);
-        position: sticky;
-        top: 94px;
-        left: 1rem;
-        overflow: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
-        .slider {
-            margin-right: 1rem;
+        .carousel_item {
+            width: 100%;
+            height: 320px;
+            padding: 0.25rem;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            transition: left .3s;
+            
+            .card {
 
-            /* 清單 */
-            ul {
-                width: 100%;
+                .cover {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0.25rem;
+                    outline: 0;
 
-                position: relative;
-
-                li {
-
-                    /* 清單列按鈕 */
-                    a.button {
+                    &::before {
+                        content: "";
                         width: 100%;
-                        margin: 0.5rem 0;
-                        border-radius: 0.5rem;
-                        text-align-last: left;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
+                        height: 100%;
+                        background: linear-gradient(transparent 80%,
+                                rgba(2, 32, 56, 0.761) 90%,
+                                rgba(2, 32, 56, 0.98) 100%);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 2;
+                    }
 
-                        &:hover {
-                            color: var(--second_hover);
-                        }
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 3;
+                    }
 
-                        &:active {
-                            color: var(--white);
-                            background-color: var(--second);
-                            text-shadow: 0 0 0 var(--white);
+                    &:hover {
+                        background-color: #fff;
+                        cursor: pointer;
+
+                        &::after {
+                            background-color: transparent;
                         }
                     }
+
+                    .caption {
+                        padding: 0.5rem;
+                        color: white;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        position: relative;
+                        z-index: 4;
+
+                        h3 {
+                            margin: 0 0 0.2rem;
+                        }
+                    }
+
                 }
+            }
+
+            .card:first-of-type .cover {
+                background: url(../image/recommend_two_skiers_standing_together.webp);
+                background-size: cover;
+                background-position: top center;
+            }
+
+            .card:nth-of-type(2) .cover {
+                background: url(../image/recommend_hot_air_balloons.webp);
+                background-size: cover;
+                background-position: top center;
+            }
+
+            .card:nth-of-type(3) .cover {
+                background: url(../image/recommend_underwater-scuba-diving.webp);
+                background-size: cover;
+                background-position: top center;
+            }
+
+            .card:nth-of-type(4) .cover {
+                background: url(../image/recommend_professional-surfer-wears.webp);
+                background-size: cover;
+                background-position: top center;
+            }
+
+            .card:nth-of-type(5) .cover {
+                background: url(../image/recommend_cruise.webp);
+                background-size: cover;
+                background-position: top center;
+            }
+
+            .card:nth-of-type(6) .cover {
+                background: url(../image/recommend_portrait-young-beautiful-female-tourist.webp);
+                background-size: cover;
+                background-position: top center;
+            }
+
+            .card:nth-of-type(7) .cover {
+                background: url(../image/recommend_photographer-with-photo-camera.webp);
+                background-size: cover;
+                background-position: top center;
             }
         }
     }
 }
-.page {
-    display: none;
-}
 
-.main {
-    .tabs {
-        list-style-type: none;
-
-        // display: flex;
-        // justify-content: flex-end;
-        .tab {
-            display: block;
-
-            a[data-switcher] {
-                display: block;
-                padding: 15px 30px;
-                text-decoration: none;
-                color: var(--second);
-                background-color: var(--white);
-                cursor: pointer;
-            }
-
-            &:hover {
-                a[data-switcher] {
-                    color: var(--second_hover);
-                }
-            }
-        }
-
-        .tab.is-active {
-            a[data-switcher] {
-                color: var(--white);
-                background-color: var(--second);
-                font-weight: 700;
-
-                &:hover {
-                    color: var(--white);
-                }
-            }
-        }
-    }
-}
-
-.page.is-active {
-    display: block;
-}
-
-/* 滾軸樣式 */
-aside {
-    ul::-webkit-scrollbar {
-        width: 0.25rem;
-    }
-
-    ul::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    ul::-webkit-scrollbar-thumb {
-        background: var(--second);
-        border-radius: 5px;
-    }
-
-    ul:hover::-webkit-scrollbar-thumb {
-        background: var(--second);
-    }
-}

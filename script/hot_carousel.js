@@ -10,7 +10,7 @@ const hot_swiper = new Swiper("#hot_carousel", {
 
     disableOnInteraction: true,//滑鼠事件設定
     autoplay: {
-        delay: 999999,
+        delay: 5000,
     },
     mousewheel: true,
     keyboard: true,

@@ -274,27 +274,25 @@ const guidesData = [
         score: 4.1,
         category: '藝術與深度文化',
         frequency: '5,327',
-        contact: `<button><i class="fa-solid fa-message"></i></button>
-                            <button><i class="fa-solid fa-video"></i></button>
-                            <button class="item">
-                                <i class="fa-solid fa-list-ul"></i>
-                                <div class="list-ul">
-                                    <div class="record note-books">
-                                        <i class="fa-solid fa-clipboard"></i>
-                                        <span>筆記本</span>
-                                    </div>
-                                    <div class="record photo-books">
-                                        <i class="fa-solid fa-images"></i>
-                                        <span>相簿</span>
-                                    </div>
-                                </div>
-                            </button>`
+        contact: `  <button><i class="fa-solid fa-message"></i></button>
+                    <button><i class="fa-solid fa-video"></i></button>
+                    <button class="item">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <div class="list-ul">
+                            <div class="record note-books">
+                                <i class="fa-solid fa-clipboard"></i>
+                                <span>筆記本</span>
+                            </div>
+                            <div class="record photo-books">
+                                <i class="fa-solid fa-images"></i>
+                                <span>相簿</span>
+                            </div>
+                        </div>
+                    </button>`
     }, //23
 ]
-
 /* 在 wallOfFame 裡面建立HTML物件 */
 let wallOfFame = '';
-
 guidesData.forEach(guideData => {
     wallOfFame += `<div class="col">
                     <a href="./pop_guide_personal_page.html" class="card">
@@ -314,6 +312,5 @@ guidesData.forEach(guideData => {
                     </a>
                 </div>`
 });
-
 
 dom.innerHTML = wallOfFame; // 建立 HTML 物件

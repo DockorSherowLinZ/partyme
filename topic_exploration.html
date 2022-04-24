@@ -74,29 +74,357 @@
     <!-- 主體 -->
     <section class="theme">
         <div class="container_full">
-            <div class="back_to_top col">
-                <div>
-                    <a class="side_function" href="#">
-                        <i class="fa-solid fa-caret-up"></i>
-                    </a>
+            <div class="row">
+                <div class="menu col-12 col-xl-3">
+                    <ul class="accordion accordion-flush" id="accordionFlushExample">
+                        <!-- 知名景點 -->
+                        <li class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    知名景點
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingOne"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        全部
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        歷史景點
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        熱門景點
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        博物館&美術館
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        主題樂園
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 夯翻美食 -->
+                        <li class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    夯翻美食
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingTwo"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        全部
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        餐廳美食
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        甜點飲品
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 親子旅遊 -->
+                        <li class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    親子旅遊
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingThree"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        全部
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        半日 & 一日遊
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        多日遊
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        線上旅遊
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        單車旅遊
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        遊船觀光
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        郵輪旅遊
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 派對聚會 -->
+                        <li class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    派對聚會
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingFour"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        全部
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        餐廳美食
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        甜點飲品
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 手作DIY工坊 -->
+                        <li class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    手作DIY工坊
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingFive"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        全部
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        工作坊&課程
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        文化體驗
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        手作材料包
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 戶外活動 -->
+                        <li class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                    戶外活動
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingSix"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        全部
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        露營
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        攀岩
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        雪地活動
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        冒險&極限運動
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        遠足&登山
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        觀光農場
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        水上活動
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-list col-12 col-xl-9">
+                    <div class="card mb-3">
+                        <div class="row g-5">
+                        </div>
+                    </div>
+                </div>
+                <!-- 回到頂端 -->
+                <div class="back_to_top col">
+                    <div>
+                        <a class="side_function" href="#">
+                            <i class="fa-solid fa-caret-up"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </section>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+    <!-- 主題輪播 -->
+    <!-- <section class="recommend">
+        <h2 class="h2_b_ch">知名景觀</h2>
+        <div id="carousel" class="carousel">
+            <div id="carousel_item" class="carousel_item carousel_item-visible">
+                <div class="card extend">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                    </div>
+                    <div class="caption">
+                        <h3 class="h4_b_ch">日本京都世界遺產｜元離宮二條城</h3>
+                        <p>元離宮二條城（日語：もとりきゅうにじょうじょう）是一座位於日本京都府京都市中京區二條城町的城堡，始建於江戶時代初期慶長八年（1603年）。是江戶幕府第一代征夷大將軍德川家康作為守護京都御所以及到京都拜見天皇住宿的地方。現在看到的規模是寬永元年（1624年）三代將軍德川家光對二條城進行擴建，才有現今的規模。二條城是一座位於京都市街的一座平城。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">高空熱氣球</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">潛水</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">衝浪</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">渡輪</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">露營</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h5_b_ch">攝影</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_actions">
+                <button id="carousel_button_prev" class="swiper-button-prev" aria-label="Previouse slide">
+                </button>
+                <button id="carousel_button_next" class="swiper-button-next" aria-label="Next slide">
+                </button>
+            </div>
+        </div>
+    </section> -->
 
     <!-- 手機板 Tabbar 按鈕 -->
     <section class="main_tabbar">
@@ -130,50 +458,16 @@
             </div>
         </div>
     </section>
+
+    <!-- bootstrap@5.1.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
-    <!-- 輪播套件script -->
-    <script src="./script/swiper-bundle.min.js"></script>
-    <!-- 人氣嚮導輪播 -->
-    <script>
-        /* const swiper_pop_guide 宣告變數；new Swiper 不可以更改；可以使用 class 或 id 來命名物件 "#pop_guide_carousel" */
-        const swiper_pop_guide = new Swiper("#pop_guide_carousel", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            loop: true,  // 循環播放：https://swiperjs.com/swiper-api#param-loop
+        
+    <script src="./script/topic_exploration.js"></script>
 
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 80,
-                depth: 60,
-                modifier: 1,
-                scale: 0.86,
-                slideShadows: true,
-            },
-            roundLengths: true,         //模糊特效
-            disableOnInteraction: true, //滑鼠事件設定
-            autoplay: {
-                delay: 99999,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-        const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
+    <!-- 推薦話題 -->
+    <!-- <script src="./script/recommend_slider.js"></script> -->
 
-        pop_guide_autoplay.addEventListener('mouseenter', function () {
-            swiper_pop_guide.autoplay.stop();
-            console.log('slider stopped');
-        })
-        pop_guide_autoplay.addEventListener('mouseleave', function () {
-            swiper_pop_guide.autoplay.start();
-            console.log('slider start again');
-        })
-    </script>
-    <script src="./script/hot.js"></script>
 </body>
-
 </html>
