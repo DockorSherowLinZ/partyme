@@ -1483,84 +1483,27 @@
             </div>
         </section> -->
 
+
+
     <!-- 輪播套件script -->
-<script src="./script/swiper-bundle.min.js"></script>
+    <script src="./script/swiper-bundle.min.js"></script>
 
     <!-- 熱門話題輪播 -->
-<script>
-        const hot_swiper = new Swiper("#hot_carousel", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            pagination: {
-                el: ".swiper-pagination"
-            },
-            loop: true, // 循環播放：https://swiperjs.com/swiper-api#param-loop
-
-            disableOnInteraction: true,//滑鼠事件設定
-            autoplay: {
-                delay: 999999,
-            },
-            mousewheel: true,
-            keyboard: true,
-        
-    });
-    const hot_autoplay = document.getElementById('hot_carousel');
-
-        hot_autoplay.addEventListener('mouseenter', function () {
-            hot_swiper.autoplay.stop();
-            console.log('slider stopped');
-        })
-        hot_autoplay.addEventListener('mouseleave', function () {
-            hot_swiper.autoplay.start();
-            console.log('slider start again');
-        })
-</script>
+    <script src="./script/hot_carousel.js"></script>
 
     <!-- 人氣嚮導輪播 -->
-<script>
-    /* const swiper_pop_guide 宣告變數；new Swiper 不可以更改；可以使用 class 或 id 來命名物件 "#pop_guide_carousel" */
-    const swiper_pop_guide = new Swiper("#pop_guide_carousel", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        loop: true,  // 循環播放：https://swiperjs.com/swiper-api#param-loop
-        
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 80,
-            depth: 60,
-            modifier: 1,
-            scale: 0.86,
-            slideShadows: true,
-        },
-        roundLengths: true,         //模糊特效
-        disableOnInteraction: true, //滑鼠事件設定
-        autoplay: {
-            delay: 5000,
-        },        
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-    const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
+    <script src="./script/pop_guide_carousel.js"></script>
 
-    pop_guide_autoplay.addEventListener('mouseenter',function(){
-        swiper_pop_guide.autoplay.stop();
-        console.log('slider stopped');
-    })
-    pop_guide_autoplay.addEventListener('mouseleave',function(){
-        swiper_pop_guide.autoplay.start();
-        console.log('slider start again');
-    })
-    
-</script>
-<script src="./script/jquery-3.6.0.js"></script>
-<script src="./script/jquery-ui.js"></script>
-<script src="./script/bottom-sheet.js"></script>
-<!-- <script src="./script/popular_cities_mobile.js"></script> -->
-<script src="./script/index.js"></script>
+    <!-- jquery -->
+    <script src="./script/jquery-3.6.0.js"></script>
+    <script src="./script/jquery-ui.js"></script>
+
+    <!-- bottom-sheet -->
+    <script src="./script/bottom-sheet.js"></script>
+
+    <!-- <script src="./script/popular_cities_mobile.js"></script> -->
+
+    <!-- 主體 -->    
+    <script src="./script/index.js"></script>
 </body>
 </html>
