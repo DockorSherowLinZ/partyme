@@ -739,7 +739,7 @@ button:hover .fa-solid {
 
         .discuss_related_content {
             .related_content {
-                margin-right: -15px;
+                // margin-right: -15px;
 
                 .hot {
                     width: 100%;
@@ -882,6 +882,15 @@ button:hover .fa-solid {
                         height: 100%;
                     }
                 }
+            }
+        }
+    }
+}
+.main_tabbar{
+    .container_full{
+        .row{
+            .col{
+                margin-bottom: 0;
             }
         }
     }
