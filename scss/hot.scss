@@ -95,7 +95,7 @@
                     .tag_slider {
                         background: var(--white);
                         display: flex;
-                        justify-content: center;
+                        justify-content: flex-start;
                         position: relative;
                         transition: 0.3s all;
 
@@ -332,7 +332,7 @@ aside {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    z-index: 20;
+    z-index: 3;
 }
 
 @media screen and (max-width:992px) { 
@@ -342,12 +342,14 @@ aside {
         .container_full {
             .row {
                 position: relative;    
-                aside.col {    
-                    display: none;
+                aside {
+                    width: 25%;
+                    height: auto;
+                    // display: none;
                 }
                 .hot {
                     margin: auto;
-                    width: 90%;
+                    width: 70%;
                     .tag_name_header {
                         top: 25px;
                     }
@@ -374,5 +376,128 @@ aside {
         // }
     }
 }
-@media screen and (max-width:425px) { 
+@media screen and (max-width:425px) {
+    .main{
+        .container_full {
+            .row {
+                position: relative;
+                margin-bottom: 0;
+        
+                /* aside */
+                aside {
+                    width: 100%;
+                    padding-right: 0;
+                    margin-right: 0;
+                    margin-top: auto;
+                    height: auto;
+                    text-align: center;
+                    background-color: var(--white);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: sticky;
+                    top: 94px;
+                    left: 0;
+                    overflow: auto;
+        
+                    .slider {
+                        width: 100%;
+                        margin-right: auto;
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+        
+                        /* 清單 */
+                        ul {
+                            display: flex;
+                            position: relative;                            
+        
+                            li {
+        
+                                /* 清單列按鈕 */
+                                a.button {
+                                    width: 100%;
+                                    margin: 0.5rem 0;
+                                    border-radius: 0.5rem;
+                                    text-align-last: left;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+        
+                                    &:hover {
+                                        color: var(--second_hover);
+                                    }
+        
+                                    &:active {
+                                        color: var(--white);
+                                        background-color: var(--second);
+                                        text-shadow: 0 0 0 var(--white);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        
+                .hot {
+                    width: 75%;
+                    position: relative;
+        
+                    .overflow_hidden {
+                        overflow: hidden;
+                        padding: 0.5rem;
+                    }
+        
+                    h2 {
+                        text-align-last: left;
+                        margin-bottom: 2rem;
+                    }
+        
+                    .tag_name_header {
+                        margin: 0 -1rem;
+                        padding-top: 3.5rem;
+                        background-color: var(--white);
+                        position: sticky;
+                        top: 32px;
+                        z-index: 11;
+        
+                        .tag_slider {
+                            background: var(--white);
+                            display: flex;
+                            justify-content: center;
+                            position: relative;
+                            transition: 0.3s all;
+        
+                            .arrow {
+                                position: absolute;
+                                top: 36%;
+                                right: 3%;
+                                z-index: 4;
+                            }
+        
+                            ul {
+                                overflow: auto;
+                                li {
+                                    .tag {
+                                        padding: 0.5rem 1rem;
+                                    }
+                                }
+        
+                            }
+                        }
+                    }
+                }
+        
+                .recommend {
+                    padding: 1rem;
+                    overflow: hidden;
+                }
+        
+                .back_to_top {
+                    width: 5%;
+                }
+        
+            }
+        }
+    }
 }

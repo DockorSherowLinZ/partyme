@@ -1,0 +1,509 @@
+/* 區塊 */
+section {
+  margin: 0 auto;
+}
+/* h2 標題 */
+section h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* a連結 */
+.link{
+  text-decoration: none;
+  color: var(--white);
+}
+/* 所有的按鈕類別 */
+  /* 按鈕 mouse-in */
+  button,.button{
+      cursor: pointer;
+      border-width: 0;
+      background: transparent;
+  }
+
+  /* MORE按鈕 */
+  .container .more{        
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem 0 6.5rem 0;
+  }
+  .container .more button{
+      padding: 1rem 2rem;
+      border-radius: 0.65rem;
+      background-color: var(--second);
+      color: var(--white);
+      font-size: 1rem;
+      font-family:sans-serif;
+      transition: 0.15s ease-in-out;
+  }
+  .container .more button:hover{
+      background-color: var(--second_hover);
+  }
+
+  /* 首頁輪播按鈕父層 */
+  .carousel{
+      position: relative;
+  }
+  /* 首頁輪播按鈕 */
+  .carousel .arrow{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border-width: 0;
+      background-color: var(--white);
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.16);
+      color: var(--primary);
+      position: absolute;
+      top: calc( 50% - 1.5rem );
+      z-index: 2;
+  }
+      /* 調整按鈕位置 */
+      .carousel .arrow.left {
+          left: -3rem;
+      }
+      
+      .carousel .arrow.right {
+          right: -3rem;
+      }
+      .carousel .arrow:hover{
+          color: var(--hover);
+      }
+      /* 調整 icon 大小    */
+      .carousel .arrow .fa-solid {
+          transform: scale(1.6);
+      }
+
+  /* 內頁的 more */
+  .container .more_second_floor{
+      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 2px solid var(--gray_5);
+      box-sizing: border-box;
+      margin-bottom: 2rem;
+  }
+  .container .more_second_floor button{
+      width: 40px;
+      height: 40px;
+      color: var(--second);
+      padding: 0.25rem;
+  }
+  .container .more_second_floor button:hover{
+      color: var(--second_hover);
+  }
+  .container .more_second_floor .fa-solid{
+      transform: scale(1.6);
+  }
+
+  /* 回到頂端 */
+  .side_function {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      margin: auto;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: var(--white);
+      font-size: 1rem;
+      color: var(--primary);
+      text-align: center;
+      box-shadow: 0 0 0.25rem var(--shadow);
+  }
+  .side_function .fa-solid{
+      transform: scale(1.6);
+      line-height: 0.5;
+      color: var(--primary);
+  }
+
+
+
+/* 首頁搜尋欄 input */
+  /* 首頁搜尋欄 */
+  .search_bar input{
+      width: calc(100% - 5rem);
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
+      border-radius: 0.5rem 0 0 0.5rem;
+      border-width: 0;
+      background-color: var(--white);
+      box-shadow: 0 0 0.5rem rgba(0,0,0,0.16);
+  }
+  .search_bar input::placeholder{
+      width: 100%;
+      color: var(--gray_4);
+  }
+  .search_bar input:focus{
+      outline: 0;
+  }
+
+  /* 首頁搜尋欄按鈕 */
+  .search_bar{
+      display: flex;
+  }
+  .search_bar button{
+      background-color: var(--primary);
+      color: var(--white);
+      width: 96px;
+      border-width: 0;
+      border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .search_bar button:hover{
+      background-color: var(--hover);
+  }
+  .search_bar button:active{
+      background-color: var(--active);
+  }
+      /* 首頁搜尋欄按鈕調整 icon 大小 */
+      .search_bar button i.fa-solid{
+          transform: scale(1.6);
+      }
+
+  /* 首頁人氣嚮導聯繫按鈕 */
+  .item.item.rectangle {
+      border-width: 0;
+      background-color: var(--white);
+      color: var(--primary);
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+      padding: 0.75rem 1.5rem;
+      margin-left: 0.5rem;
+  }    
+      /* 首頁人氣嚮導聯繫按鈕調整 icon 大小 */
+      .item.rectangle .fa-solid {
+          transform: scale(1.3);
+      }    
+
+/* 首頁嚮導欄按鈕父層 */
+.pop_guide .guides .card .cover{
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+.pop_guide .guides .card .cover::after{
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: .3s all;
+}
+.pop_guide .guides .card:hover .cover::after{
+  opacity: 0.6;
+}
+.pop_guide .guides .card .contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+  /* 首頁嚮導欄按鈕照片 */
+  .pop_guide .guides .card .cover img{
+      transition: .3s all;
+      transform: scale(1);
+  }
+  .pop_guide .guides .card .cover:hover img{
+      transform: scale(1.15);
+  }
+  /* 首頁嚮導欄按鈕 */
+  .pop_guide .guides .card .contact button {
+      width: 2rem;
+      height: 2rem;
+      background-color: var(--white);
+      color: var(--primary);
+      border-width: 0;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+      margin-bottom: 2rem;
+  }
+  .pop_guide .guides .card .contact button:hover {
+      color: var(--hover);
+  }
+      /* 首頁嚮導欄按鈕調整 icon 大小 */
+      .pop_guide .guides .card .contact button .fa-solid {
+          transform: scale(1.3);
+      }
+
+
+/* 所有卡片類型 */
+  /* 首頁熱門話題影片卡片 */
+  .hot .row {
+      margin-bottom: 2rem;
+  }    
+  .hot .row .col .video {
+      overflow: hidden;
+      border-radius: 0.5rem;
+      position: relative;
+  }    
+  .hot .row .col .video iframe {
+      vertical-align: top;
+  }
+      /* 文字 */
+      .hot .container .row .col .content h3 {
+          margin: 0.5rem 0;
+      }    
+      .hot .row .col .content p {
+          margin-bottom: 0.5rem;
+          letter-spacing: 1.2px;
+      }
+      /* 首頁熱門話題影片時間長度顯示框 */
+      .hot .row .col .video .video_length {
+          background-color: rgba(0, 0, 0, 0.7);
+          display: inline-block;
+          padding: 0.375rem 0.5rem;
+          color: #fff;
+          border-radius: 0.5rem;
+          position: absolute;
+          bottom: 0.25rem;
+          right: 0.25rem;
+      }
+      
+  /* 首頁嚮導卡片 */
+  .pop_guide .carousel .card{
+      background-color: rgb(255, 255, 255);
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.16);
+      position: relative;
+  }
+  .pop_guide .carousel .card:nth-child(2){
+      z-index: 2;
+      position: relative;
+  }
+      /* 首頁嚮導照片父層 */
+      .pop_guide .carousel .card .cover{
+          overflow: hidden;
+      }
+          /* 嚮導照片 */
+          .pop_guide .cover img{
+              vertical-align: top;
+              object-fit: cover;
+              width: 100%;
+              transform: scale(1.01);
+              transition: .3s all;
+          }
+          .pop_guide .carousel .card .cover:hover img {
+              transform: scale(1.3);
+          }
+  /* 首頁嚮導簡介 */
+  .pop_guide .card .content{
+      padding: 1rem;
+  }
+  .pop_guide .content .guide{
+      margin-bottom: 1rem;
+  }
+  .pop_guide .content p{
+      margin-bottom: 1rem;
+  }
+      /* 名字 */
+      .pop_guide .content .guide .name{
+          margin-right: 1rem;
+      }
+      /* 細節 */
+      .pop_guide .detial{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      /* 按鈕 */
+      .pop_guide .detial .contact{
+          display: flex;
+      }
+      .contact .item{
+          position: relative;
+      }
+      .contact .item:hover{
+          color: var(--hover);
+      }
+      .contact .item:hover .list-ul {
+          transform: scale(1);
+          transform-origin: top left;
+          color: var(--primary);
+      }
+          /* 按鈕清單 */
+          .contact .item .list-ul{
+              width: 12rem;
+              background-color: var(--white);
+              border-radius: 0.5rem;
+              box-shadow: 0 0.25rem 0.5rem var(--shadow);
+              display: flex;
+              padding: 1rem 0.5rem;
+              margin: 0.5rem;
+              position: absolute;
+              z-index: 2;
+              top: 30%;
+              left: 30%;
+              transform: scale(0);
+              transition: 0.3s all;
+          }
+              /* 按鈕 */
+              .contact .item .list-ul .item{
+                  display: flex;
+                  align-items: center;
+                  margin: 0 auto;
+              }
+              .contact .item .list-ul .item:hover{
+                  color: var(--hover);
+              }
+              .contact .item .list-ul .item .fa-solid{
+                  margin-right: 0.5rem;
+              }
+
+  /* 首頁嚮導欄 */
+  .pop_guide .guides .cover{
+      margin-bottom: 1rem;
+  }
+      .pop_guide .guides .card .guide{
+          display: flex;
+          flex-direction: column;
+      }
+          .pop_guide .guides .card .score{
+              margin-bottom: 0.5rem;
+          }
+          .pop_guide .guides .card .score .fa-solid{
+              margin-right: 0.5rem;
+          }
+          
+          .pop_guide .guides .card h4{
+              margin-bottom: 0.5rem;
+          }
+          .pop_guide .guides .card p{
+              margin-bottom: 0.5rem;
+          }
+
+
+/* 卡片容器 */
+  /* 卡片容器 */
+  .recommend.row .card {
+      box-sizing: border-box;
+      position: relative;
+      transition: .3s;
+  }
+  /* 選取到的卡片 */
+  .recommend.row .card:hover{
+    //   flex: 1 0 0px;
+    width: calc(100% / 3);
+  }
+  /* hover 後內框線 */
+  .recommend.row .card:hover .cover {
+      outline: 0.25rem solid var(--hover);
+  }
+      /* 圖片 */
+      .recommend.row .card .cover{
+          height: 320px;
+          border-radius: 1.25rem;
+          vertical-align: top;        
+          background-position: 50%;
+          background-size: cover; 
+          overflow: hidden;
+          position: relative;
+      }
+          /* 漸層覆蓋 */
+          .recommend.row .card .cover .overlap {
+              background: linear-gradient(transparent 60%, rgba(2, 32, 56, 0.761) 80%, rgba(2, 32, 56, 0.98) 100%);
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+          }            
+          /* 標題 */
+          .recommend.row .card .cover .caption {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              height: 100%;
+              position: relative;
+          }            
+          /* 名稱 */
+          .recommend .card h3 {
+              color: var(--white);
+              text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
+              margin: 0 0 0.75rem 0.6rem;
+              z-index: 2;
+          }            
+          /* 次標 */
+          .recommend .card h4 {
+              color: var(--white);
+              padding: 0.25rem 0.75rem;
+              border: 1px solid #fff;
+              border-radius: 1rem;
+              box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.16);
+              margin: 0 0 0.75rem 0.6rem;
+              z-index: 2;
+              display: none;
+          }            
+          .recommend .card:hover h4 {
+              display: inline-block;
+          }
+  /* 用 first-of-type 才能選到 card 的子層 */
+  .recommend.row .card:first-of-type .cover{
+    //   background: url(../images/);
+      background-size: cover;
+  }
+  .recommend.row .card:nth-of-type(2) .cover{
+    //   background: url(../images/);
+      background-size: cover;
+  }
+  .recommend.row .card:nth-of-type(3) .cover{
+    //   background: url(../images/);
+      background-size: cover;
+  }
+  .recommend.row .card:nth-of-type(4) .cover{
+    //   background: url(../images/);
+      background-size: cover;
+  }
+  .recommend.row .card:nth-of-type(5) .cover{
+    //   background: url(../images/);
+      background-size: cover;
+  }
+
+
+/* 所有 tag slider */
+  /* tag_slider */
+  .tag_slider {
+      position: relative;
+  }
+  .tag_slider ul {
+      display: flex;
+      justify-content: center;
+      margin: 2rem auto;
+      align-items: center;
+  }
+  .tag_slider ul li{
+      margin: auto .5rem;
+  }
+  .tag_slider ul li button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: var(--gray_2);
+      border: 1px solid var(--gray_2);
+      border-radius: 1rem;
+  }
+  .tag_slider ul li button:hover {
+      color: var(--second_hover);
+      border: 1px solid var(--second_hover);
+  }
+  /* 漸層覆蓋 */
+  .tag_slider .overlap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      background-image: linear-gradient(270deg, rgba(255, 255, 255, 1) 4%, transparent 20%);
+      pointer-events: none;
+  }
+  /* more按鈕 */
+  .tag_slider ul .arrow {
+      position: relative;
+      z-index: 3;
+      color: var(--gray_2);
+  }
+  .tag_slider ul .arrow:hover {
+      color: var(--second_hover);
+  }

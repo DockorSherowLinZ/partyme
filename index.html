@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/Swiper.css">
     <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/pop_guide_personal_page.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>PARTYME</title>
 </head>
@@ -479,16 +480,50 @@
     
 
     <!-- 人氣嚮導 -->
+<!-- 視訊 -->
+<div id="lightBox">
+    <!-- 視訊畫面 -->
+    <div class="video-calls-container">
+        <div class="video-calls-content">
+            <div class="video-calls-function">
+                <!-- 靜音 -->
+                <button id="toggle-btn" class="btn volume-xmark">
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </button>
+                <!-- 關閉鏡頭 -->
+                <button id="toggle-btn" class="btn video-slash">
+                    <i class="fa-solid fa-video-slash"></i></i>
+                </button>
+                <!-- 關閉麥克風 -->
+                <button id="toggle-btn" class="btn microphone-slash">
+                    <i class="fa-solid fa-microphone-slash"></i>
+                    </i></button>
+                <!-- 關閉通訊 -->
+                <button class="closeBtn x-btn phone-slash">
+                    <i class="fa-solid fa-phone-slash"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- popupBox 彈窗 -->
+<div id="popupBox">
+    <p class="t1_r_ch">已發出交友邀請囉！</p>
+    <div class="popup-function">
+        <button id="confirmBtn" class="t2_r_ch">確認</button>
+        <!-- <button id="cancelBtn" class="t2_r_ch">取消</button> -->
+    </div>
+</div>
 <section class="pop_guide">
         <div class="container">
             <h2 class="h1_b_ch">人氣嚮導</h2>
             <div id="pop_guide_carousel" class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="./pop_guide_personal_page.html" class="baffle">
-                            <div class="cover">
+                        <div  class="baffle">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/pop_guide00.webp" />
-                            </div>
+                            </a>
                             <div class="content">
                                 <div class="guide">
                                     <h4 class="t1_r_ch">藝術及文化導覽</h4>
@@ -507,7 +542,7 @@
                                         <div class="item rectangle">
                                             <i class="fa-solid fa-message"></i>
                                         </div>
-                                        <div class="item rectangle">
+                                        <div class="item rectangle video">
                                             <i class="fa-solid fa-video"></i>
                                         </div>
                                         <div class="item rectangle">
@@ -519,11 +554,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./pop_guide_personal_page.html" class="baffle">
-                            <div class="cover"><img src="./image/pop_guide02.webp" /></div>
+                        <div  class="baffle">
+                            <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide02.webp" /></a>
                             <div class="content">
                                 <div class="guide">
                                     <h4 class="t1_r_ch">公路旅行</h4>
@@ -541,7 +576,7 @@
                                         <div class="item rectangle">
                                             <i class="fa-solid fa-message"></i>
                                         </div>
-                                        <div class="item rectangle">
+                                        <div class="item rectangle video">
                                             <i class="fa-solid fa-video"></i>
                                         </div>
                                         <div class="item rectangle">
@@ -553,11 +588,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./pop_guide_personal_page.html" class="baffle">
-                            <div class="cover"><img src="./image/pop_guide03.webp" /></div>
+                        <div class="baffle">
+                            <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide03.webp" /></a>
                             <div class="content">
                                 <div class="guide">
                                     <h4 class="t1_r_ch">戶外露營</h4>
@@ -577,7 +612,7 @@
                                         <div class="item rectangle">
                                             <i class="fa-solid fa-message"></i>
                                         </div>
-                                        <div class="item rectangle">
+                                        <div class="item rectangle video">
                                             <i class="fa-solid fa-video"></i>
                                         </div>
                                         <div class="item rectangle">
@@ -589,11 +624,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./pop_guide_personal_page.html" class="baffle">
-                            <div class="cover"><img src="./image/pop_guide04.webp" /></div>
+                        <div class="baffle">
+                            <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide04.webp" /></a>
                             <div class="content">
                                 <div class="guide">
                                     <h4 class="t1_r_ch">精緻化或客制旅遊</h4>
@@ -612,7 +647,7 @@
                                         <div class="item rectangle">
                                             <i class="fa-solid fa-message"></i>
                                         </div>
-                                        <div class="item rectangle">
+                                        <div class="item rectangle video">
                                             <i class="fa-solid fa-video"></i>
                                         </div>
                                         <div class="item rectangle">
@@ -624,11 +659,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./pop_guide_personal_page.html" class="baffle">
-                            <div class="cover"><img src="./image/pop_guide05.webp" /></div>
+                        <div class="baffle">
+                            <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide05.webp" /></a>
                             <div class="content">
                                 <div class="guide">
                                     <h4 class="t1_r_ch">歷史古蹟</h4>
@@ -647,7 +682,7 @@
                                         <div class="item rectangle">
                                             <i class="fa-solid fa-message"></i>
                                         </div>
-                                        <div class="item rectangle">
+                                        <div class="item rectangle video">
                                             <i class="fa-solid fa-video"></i>
                                         </div>
                                         <div class="item rectangle">
@@ -659,11 +694,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./pop_guide_personal_page.html" class="baffle">
-                            <div class="cover"><img src="./image/pop_guide06.webp" /></div>
+                        <div  class="baffle">
+                            <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide06.webp" /></a>
                             <div class="content">
                                 <div class="guide">
                                     <h4 class="t1_r_ch">Bike Tour</h4>
@@ -682,7 +717,7 @@
                                         <div class="item rectangle">
                                             <i class="fa-solid fa-message"></i>
                                         </div>
-                                        <div class="item rectangle">
+                                        <div class="item rectangle video">
                                             <i class="fa-solid fa-video"></i>
                                         </div>
                                         <div class="item rectangle">
@@ -694,11 +729,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./pop_guide_personal_page.html" class="baffle">
-                            <div class="cover"><img src="./image/pop_guide07.webp" /></div>
+                        <div  class="baffle">
+                            <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide07.webp" /></a>
                             <div class="content">
                                 <div class="guide">
                                     <h4 class="t1_r_ch">購物旅行</h4>
@@ -717,7 +752,7 @@
                                         <div class="item rectangle">
                                             <i class="fa-solid fa-message"></i>
                                         </div>
-                                        <div class="item rectangle">
+                                        <div class="item rectangle video">
                                             <i class="fa-solid fa-video"></i>
                                         </div>
                                         <div class="item rectangle">
@@ -729,11 +764,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./pop_guide_personal_page.html" class="baffle">
-                            <div class="cover"><img src="./image/pop_guide08.webp" /></div>
+                        <div class="baffle">
+                            <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide08.webp" /></a>
                             <div class="content">
                                 <div class="guide">
                                     <h4 class="t1_r_ch">熱帶地區旅行</h4>
@@ -754,7 +789,7 @@
                                         <div class="item rectangle">
                                             <i class="fa-solid fa-message"></i>
                                         </div>
-                                        <div class="item rectangle">
+                                        <div class="item rectangle video">
                                             <i class="fa-solid fa-video"></i>
                                         </div>
                                         <div class="item rectangle">
@@ -766,11 +801,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./pop_guide_personal_page.html" class="baffle">
-                            <div class="cover"><img src="./image/pop_guide09.webp" /></div>
+                        <div class="baffle">
+                            <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide09.webp" /></a>
                             <div class="content">
                                 <div class="guide">
                                     <h4 class="t1_r_ch">城市旅遊</h4>
@@ -789,7 +824,7 @@
                                         <div class="item rectangle">
                                             <i class="fa-solid fa-message"></i>
                                         </div>
-                                        <div class="item rectangle">
+                                        <div class="item rectangle video">
                                             <i class="fa-solid fa-video"></i>
                                         </div>
                                         <div class="item rectangle">
@@ -801,11 +836,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="./pop_guide_personal_page.html" class="baffle">
-                            <div class="cover"><img src="./image/pop_guide10.webp" /></div>
+                        <div class="baffle">
+                            <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide10.webp" /></a>
                             <div class="content">
                                 <div class="guide">
                                     <h4 class="t1_r_ch">花季景觀旅行</h4>
@@ -823,7 +858,7 @@
                                         <div class="item rectangle">
                                             <i class="fa-solid fa-message"></i>
                                         </div>
-                                        <div class="item rectangle">
+                                        <div class="item rectangle video">
                                             <i class="fa-solid fa-video"></i>
                                         </div>
                                         <div class="item rectangle">
@@ -835,7 +870,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -844,9 +879,9 @@
                 <div class="row row-cols-2 row-cols-xl-6 row-cols-lg-4 row-cols-md-3">
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide01.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Jolin</h3>
                                 <div class="detial">
@@ -858,7 +893,7 @@
                                 <p class="t1_r_ch">出團次數 1,621 次</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -866,9 +901,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide02.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Brandon</h3>
                                 <div class="detial">
@@ -881,7 +916,7 @@
                             </div>
                             <div class="contact">
                                 <button><i class="fa-solid fa-message"></i></button>
-                                <button><i class="fa-solid fa-video"></i></button>
+                                <button class="video"><i class="fa-solid fa-video"></i></button>
                                 <button class="item">
                                     <i class="fa-solid fa-list-ul"></i>
                                     <div class="list-ul">
@@ -900,9 +935,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide03.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Mindy</h3>
                                 <div class="detial">
@@ -914,7 +949,7 @@
                                 <p class="t1_r_ch">出團次數 2,206 次</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -922,9 +957,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide04.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Jarrett</h3>
                                 <div class="detial">
@@ -936,7 +971,7 @@
                                 <p class="t1_r_ch">出團次數 2,206人</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -944,9 +979,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide05.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Maria</h3>
                                 <div class="detial">
@@ -958,7 +993,7 @@
                                 <p class="t1_r_ch">出團次數 1,235 次</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -966,9 +1001,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide06.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Trent</h3>
                                 <div class="detial">
@@ -980,7 +1015,7 @@
                                 <p class="t1_r_ch">出團次數 736 次</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -988,9 +1023,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide07.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Nixon</h3>
                                 <div class="detial">
@@ -1002,7 +1037,7 @@
                                 <p class="t1_r_ch">出團次數 1,936 次</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -1010,9 +1045,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide08.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Paige</h3>
                                 <div class="detial">
@@ -1024,7 +1059,7 @@
                                 <p class="t1_r_ch">出團次數 4,317 次</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -1032,9 +1067,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide09.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Christopher</h3>
                                 <div class="detial">
@@ -1046,7 +1081,7 @@
                                 <p class="t1_r_ch">出團次數 883 次</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -1054,9 +1089,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide10.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Claire</h3>
                                 <div class="detial">
@@ -1068,7 +1103,7 @@
                                 <p class="t1_r_ch">出團次數 1,533 次</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -1076,9 +1111,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide11.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Frank</h3>
                                 <div class="detial">
@@ -1090,7 +1125,7 @@
                                 <p class="t1_r_ch">出團次數 5,327 次</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -1098,9 +1133,9 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <div class="cover">
+                            <a href="./pop_guide_personal_page.html" class="cover">
                                 <img src="./image/guide12.png" alt="">
-                            </div>
+                            </a>
                             <div class="guide">
                                 <h3 class="name h5_b_ch">Alexandra</h3>
                                 <div class="detial">
@@ -1112,7 +1147,7 @@
                                 <p class="t1_r_ch">出團次數 3,622 次</p>
                             </div>
                             <div class="contact">
-                                <button><i class="fa-solid fa-user-plus"></i></button>
+                                <button class="friendInvitation"><i class="fa-solid fa-user-plus"></i></button>
                                 <button><i class="fa-solid fa-bell"></i></button>
                                 <button><i class="fa-solid fa-bookmark"></i></button>
                             </div>
@@ -1495,7 +1530,8 @@
 
     <!-- <script src="./script/popular_cities_mobile.js"></script> -->
 
-    <!-- 主體 -->    
+    <!-- 主體 -->
+    <script src="./script/pop_guide_personal_page.js"></script>    
     <script src="./script/index.js"></script>
 </body>
 </html>

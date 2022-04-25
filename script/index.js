@@ -1,43 +1,22 @@
-//導覽列漢堡鍵
-$(function () {
-    
-})
+/* 人氣嚮導 */
+// 交友邀請
+const friendInvitation = document.querySelectorAll('.friendInvitation');
+const popupBox = document.getElementById('popupBox');
+const confirmBtn = document.getElementById('confirmBtn');
+// const cancelBtn = document.getElementById('cancelBtn');
 
-// 【熱門話題】
-//熱門話題燈箱
-const lightBox = document.getElementById(`lightBox`); //宣告 lightBox 是 #lightBox
-const colseBtns = document.getElementsByClassName(`closeBtn`); //宣告 colseBtns 是 closeBtn
-const videos = document.querySelectorAll('.video'); // 宣告 videos 是 .video
-const mySwiperSlides = document.querySelectorAll('.swiper-slide .card , .swiper-slide .card_mobile'); // 宣告 .swiper-slide .card , .swiper-slide .card_mobile 是 .video
-
-const closeLightbox = function () { //宣告 closeLightbox 函式
-    lightBox.style.display = 'none';
-    lightBox.innerHTML = ``;
-}
-
-for (let btn of colseBtns) {
-    btn.addEventListener("click", function () {
-        closeLightbox();
+friendInvitation.forEach(invitaionBtn => {
+    invitaionBtn.addEventListener('click', function () {
+        popupBox.style.display = 'flex';
     })
-}
+});
 
-const openLightBox = function (url) {  //宣告 openLightBox 函式，帶入 iframe 連結 url
-    lightBox.style.display = `flex`;    // lightBox 的 css 屬性的 display 是 `flex`。
-    lightBox.innerHTML = `<iframe src='${url}?rel=0&amp;autoplay=1'  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-    
-    <button class="closeBtn x-btn" onclick="closeLightbox()"> <i class="fa-solid fa-xmark"></i> </button>`    
-}
+confirmBtn.addEventListener('click', closePopupBox);
+// cancelBtn.addEventListener('click', closePopupBox);
+function closePopupBox() {
+    popupBox.style.display = 'none';
+};
 
-videos.forEach(function (video) {
-    video.addEventListener("click", function () {
-        openLightBox(video.dataset.url);
-    })
-})
-mySwiperSlides.forEach(function (video) {
-    video.addEventListener("click", function () {
-        openLightBox(video.dataset.url);
-    })
-})
 
 // 【熱門城市】
 // 地圖ICON

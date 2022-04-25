@@ -407,6 +407,9 @@ span.swiper-pagination-bullet {
             overflow: hidden;
             border-radius: 0.25rem;
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.16);
+            a{
+                display: block;
+            }
             .cover {
                 overflow: hidden;
                 /* 嚮導照片 */
@@ -630,6 +633,56 @@ span.swiper-pagination-bullet {
         vertical-align: top;
     }
 }
+/* popupBox 彈窗 */
+#popupBox {
+    width: 240px;
+    height: 140px;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.25rem var(--shadow) ;
+    // display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+
+    p{
+        margin-bottom: 0.5rem;
+    }
+    .popup-function {
+        display: flex;
+
+        button{
+            border-radius: 0.55rem;
+            padding: 0.45rem 1.65rem;
+            margin: 0.5rem;
+        }
+        #confirmBtn {
+            color: var(--white);
+            background-color: var(--primary);
+            transition: 0.3s all;
+            &:hover{
+                background-color: var(--hover);
+            }
+        }
+        #cancelBtn {
+            color: var(--dark);
+            border: 1px solid var(--dark);
+            background-color: #fff;
+            transition: 0.3s all;
+            &:hover{
+                color: var(--white);
+                border: 1px solid var(--error);
+                background-color: var(--error);
+            }
+        }
+    }
+}
 
 
 /* 所有卡片類型 */
@@ -807,15 +860,22 @@ span.swiper-pagination-bullet {
 
 /* 所有 tag slider */
 /* tag_slider */
+.tag_name_header{
+    display: flex;
+    justify-content: flex-start;
+}
 .tag_slider {
+    width: 100%;
     position: relative;
-
     ul {
         display: flex;
-        margin: 1rem auto;
+        margin: 1rem 0;
         align-items: center;
         overflow: hidden;
         white-space: nowrap;
+        &::-webkit-scrollbar{
+            display: none;
+        }
 
         li {
             margin: auto .5rem;

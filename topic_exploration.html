@@ -75,12 +75,12 @@
     <section class="theme">
         <div class="container_full">
             <div class="row">
-                <div class="menu col-12 col-xl-3">
+                <form id="myForm" class="menu col-12 col-xl-3">
                     <ul class="accordion accordion-flush" id="accordionFlushExample">
                         <!-- 知名景點 -->
-                        <li class="accordion-item">
+                        <li class="accordion-item  mb-1">
                             <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                     知名景點
                                 </button>
@@ -88,31 +88,31 @@
                             <div id="flush-collapseOne" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingOne"
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        全部
+                                    <input class="form-check-input" type="checkbox" name="attractions[]" value="景點門票" id="flexCheckAll">
+                                    <label class="form-check-label" for="flexCheckAll">
+                                        景點門票
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="attractions[]"  value="歷史景點" id="flexCheckHistory">
+                                    <label class="form-check-label" for="flexCheckHistory">
                                         歷史景點
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="attractions[]"  value="熱門景點" id="flexCheckHotpoint">
+                                    <label class="form-check-label" for="flexCheckHotpoint">
                                         熱門景點
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="attractions[]"  value="博物館&美術館" id="flexCheckmuseum">
+                                    <label class="form-check-label" for="flexCheckmuseum">
                                         博物館&美術館
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="attractions[]"  value="主題樂園" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
                                         主題樂園
                                     </label>
@@ -120,9 +120,9 @@
                             </div>
                         </li>
                         <!-- 夯翻美食 -->
-                        <li class="accordion-item">
+                        <li class="accordion-item mb-1">
                             <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                     夯翻美食
                                 </button>
@@ -130,29 +130,29 @@
                             <div id="flush-collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingTwo"
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        全部
+                                    <input class="form-check-input" type="checkbox" name="delicacy[]" value="生鮮雜貨" id="flexCheckFreshGroceries">
+                                    <label class="form-check-label" for="flexCheckFreshGroceries">
+                                        生鮮雜貨
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="delicacy[]" value="餐廳美食" id="flexCheckRestaurantFood">
+                                    <label class="form-check-label" for="flexCheckRestaurantFood">
                                         餐廳美食
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="delicacy[]" value="甜點飲品" id="flexCheckDessertDrink">
+                                    <label class="form-check-label" for="flexCheckDessertDrink">
                                         甜點飲品
                                     </label>
                                 </div>
                             </div>
                         </li>
                         <!-- 親子旅遊 -->
-                        <li class="accordion-item">
+                        <li class="accordion-item mb-1">
                             <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                     親子旅遊
                                 </button>
@@ -160,53 +160,47 @@
                             <div id="flush-collapseThree" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingThree"
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        全部
+                                    <input class="form-check-input" type="checkbox" name="parentChildTravel[]" value="一日遊" id="flexCheckDayTrip">
+                                    <label class="form-check-label" for="flexCheckDayTrip">
+                                        一日遊
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        半日 & 一日遊
-                                    </label>
-                                </div>
-                                <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="parentChildTravel[]" value="多日遊" id="flexCheckMultiDayTour">
+                                    <label class="form-check-label" for="flexCheckMultiDayTour">
                                         多日遊
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="parentChildTravel[]" value="線上旅遊" id="flexChecKonlineTravel">
+                                    <label class="form-check-label" for="flexChecKonlineTravel">
                                         線上旅遊
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="parentChildTravel[]" value="單車旅遊" id="flexCheckBikeTour">
+                                    <label class="form-check-label" for="flexCheckBikeTour">
                                         單車旅遊
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="parentChildTravel[]" value="遊船觀光" id="flexCheckBoatTour">
+                                    <label class="form-check-label" for="flexCheckBoatTour">
                                         遊船觀光
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="parentChildTravel[]" value="郵輪旅遊" id="flexCheckCruiseVacation">
+                                    <label class="form-check-label" for="flexCheckCruiseVacation">
                                         郵輪旅遊
                                     </label>
                                 </div>
                             </div>
                         </li>
                         <!-- 派對聚會 -->
-                        <li class="accordion-item">
+                        <li class="accordion-item mb-1">
                             <h2 class="accordion-header" id="flush-headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                     派對聚會
                                 </button>
@@ -214,29 +208,29 @@
                             <div id="flush-collapseFour" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingFour"
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        全部
+                                    <input class="form-check-input" type="checkbox" name="party[]" value="海灘派對" id="flexCheckBeachParty">
+                                    <label class="form-check-label" for="flexCheckBeachParty">
+                                        海灘派對
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        餐廳美食
+                                    <input class="form-check-input" type="checkbox" name="party[]" value="遊艇派對" id="flexCheckYachtParty">
+                                    <label class="form-check-label" for="flexCheckYachtParty">
+                                        遊艇派對
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        甜點飲品
+                                    <input class="form-check-input" type="checkbox" name="party[]" value="飯店派對" id="flexCheckHotelParty">
+                                    <label class="form-check-label" for="flexCheckHotelParty">
+                                        飯店派對
                                     </label>
                                 </div>
                             </div>
                         </li>
                         <!-- 手作DIY工坊 -->
-                        <li class="accordion-item">
+                        <li class="accordion-item mb-1">
                             <h2 class="accordion-header" id="flush-headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                                     手作DIY工坊
                                 </button>
@@ -244,35 +238,29 @@
                             <div id="flush-collapseFive" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingFive"
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        全部
-                                    </label>
-                                </div>
-                                <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="diyWorkShop[]" value="工作坊&課程" id="flexCheckWorkshopCourses">
+                                    <label class="form-check-label" for="flexCheckWorkshopCourses">
                                         工作坊&課程
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="diyWorkShop[]" value="文化體驗" id="flexCheckCulturalExperience">
+                                    <label class="form-check-label" for="flexCheckCulturalExperience">
                                         文化體驗
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="diyWorkShop[]" value="手作材料包" id="flexCheckHandmadeMaterialPackage">
+                                    <label class="form-check-label" for="flexCheckHandmadeMaterialPackage">
                                         手作材料包
                                     </label>
                                 </div>
                             </div>
                         </li>
                         <!-- 戶外活動 -->
-                        <li class="accordion-item">
+                        <li class="accordion-item  mb-3">
                             <h2 class="accordion-header" id="flush-headingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                                     戶外活動
                                 </button>
@@ -280,57 +268,51 @@
                             <div id="flush-collapseSix" class="accordion-collapse collapse mb-3" aria-labelledby="flush-headingSix"
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        全部
-                                    </label>
-                                </div>
-                                <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="OutdoorActivity[]" value="露營" id="flexCheckcamping">
+                                    <label class="form-check-label" for="flexCheckcamping">
                                         露營
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="OutdoorActivity[]" value="攀岩" id="flexCheckRockClimbing">
+                                    <label class="form-check-label" for="flexCheckRockClimbing">
                                         攀岩
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="OutdoorActivity[]" value="雪地活動" id="flexCheckSnowActivities">
+                                    <label class="form-check-label" for="flexCheckSnowActivities">
                                         雪地活動
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="OutdoorActivity[]" value="冒險&極限運動" id="flexCheckAdventureExtremeSports">
+                                    <label class="form-check-label" for="flexCheckAdventureExtremeSports">
                                         冒險&極限運動
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="OutdoorActivity[]" value="遠足&登山" id="flexCheckHikingMountaineering">
+                                    <label class="form-check-label" for="flexCheckHikingMountaineering">
                                         遠足&登山
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="OutdoorActivity[]" value="觀光農場" id="flexCheckTouristFarm">
+                                    <label class="form-check-label" for="flexCheckTouristFarm">
                                         觀光農場
                                     </label>
                                 </div>
                                 <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" name="OutdoorActivity[]" value="水上活動" id="flexCheckWaterActivities">
+                                    <label class="form-check-label" for="flexCheckWaterActivities">
                                         水上活動
                                     </label>
                                 </div>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </form>
                 <div class="product-list col-12 col-xl-9">
                     <div class="card mb-3">
                         <div class="row g-5">
