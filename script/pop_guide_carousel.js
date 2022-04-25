@@ -27,9 +27,9 @@ const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
 
 pop_guide_autoplay.addEventListener('mouseenter', function () {
     swiper_pop_guide.autoplay.stop();
-    console.log('slider stopped');
+
 })
 pop_guide_autoplay.addEventListener('mouseleave', function () {
     swiper_pop_guide.autoplay.start();
-    console.log('slider start again');
+
 })
