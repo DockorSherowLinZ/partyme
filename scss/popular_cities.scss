@@ -199,6 +199,10 @@
 }
 
 @media screen and (max-width:425px) {
+    .image-container {
+        width: 100%;
+        height: 140px;
+    }    
     /* 標題 */
     .caption {
         width: 100%;
@@ -208,6 +212,7 @@
         flex-direction: column;
         justify-content: flex-end;
         position: relative;
+        align-items: center;
     
         /* 名稱 */
         h3 {
@@ -222,7 +227,8 @@
         .tag {
             text-align-last: left;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: flex-start;
         }
     
         .tag h4 {

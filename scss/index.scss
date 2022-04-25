@@ -995,6 +995,7 @@ form{
         .container {                
             overflow: auto;
             position: relative;
+            margin-bottom: 2rem;
     
             &::-webkit-scrollbar {
                 display: none;
