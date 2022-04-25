@@ -9,15 +9,16 @@ function breakpoint(winSize) {
 
 /* 推薦主題輪播 */
 let pagePosition = 1;
-let wrap = document.querySelector(`.carousel_item`);
-let items = document.querySelectorAll(`.card`);
-let slideContainer = document.querySelector(`.recommend`);
+let wrap = document.querySelector(`[data-page="${pagePosition}"] .carousel_item`);
+let items = document.querySelectorAll(`[data-page="${pagePosition}"] .card`);
+let slideContainer = document.querySelector(`[data-page="${pagePosition}"] .recommend`);
 
 function pageSwitcher() {
-    wrap = document.querySelector(`.carousel_item`);
-    items = document.querySelectorAll(`.card`);
-    slideContainer = document.querySelector(`.recommend`);
+    wrap = document.querySelector(`[data-page="${pagePosition}"] .carousel_item`);
+    items = document.querySelectorAll(`[data-page="${pagePosition}"] .card`);
+    slideContainer = document.querySelector(`[data-page="${pagePosition}"] .recommend`);
 };
+
 
 let itemTotal = items.length;     // 卡片總張數(這邊是7)
 let itemNum = 3;                // 一屏要幾張

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <!-- 輪播套件script -->
     <link rel="stylesheet" href="./css/Swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- 自己的scss -->
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/popular_cities.css">
     <title>PARTYME</title>
@@ -65,7 +68,178 @@
         <h2 class="h1_b_ch">熱門城市</h2>
     </div>
 </section>
-
+<!-- 主體 -->
+<section class="popular_cities">
+    <div class="container_full">
+        <div class="wrap">
+            <h2 class="h2_b_ch">TOP 5 城市</h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="./image/pop_cities/pop_cities_01_taipei.webp" alt="">
+                        </div>
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">台北</h3>
+                            <div class="tag">
+                                <h4 class="t1_r_ch" >旅遊首選城市</h4>
+                                <h4 class="t1_r_ch" >優質移居城市</h4>
+                            </div>
+                            <p>臺北擁有濃厚的人文底蘊，鑽進大街小巷內翻索歷史留下的痕跡。走進大稻埕的百年茶坊，親手沖煮回甘可口的茗茶；搭乘高速電梯 37 秒內直達知名世界地標 101
+                            頂樓，站在台北市中心眺望街景。前往中山站，走訪文青小店，探索在地人文特色，品嚐台灣經典美食，蚵仔煎、滷肉飯、臭豆腐、麻辣鍋，在這座充滿多元文化的環境中，放鬆享受友善、溫暖的人文城市。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="./image/pop_cities/pop_cities_02_chinese_shanghai.webp" alt="">
+                        </div>
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">上海</h3>
+                            <div class="tag">
+                                <h4 class="t1_r_ch" >旅遊首選城市</h4>
+                                <h4 class="t1_r_ch" >優質移居城市</h4>
+                            </div>
+                            <p>上海富有東方明珠的美譽，繁華的都會讓人大開眼界。登上上海中心大廈觀景台、東方明珠塔，眺望繁榮的市景街道；前往上海迪士尼，憶起童年的回憶，與迪士尼卡通人物、漫威英雄，一起遊玩全球最大的奇幻童話城堡；搭乘黃浦江遊船，將外灘、陸家嘴、東方明珠、租界等建築美景一網打盡，輕鬆享受沿途的五光十色。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="./image/pop_cities/pop_cities_03_osaka-castle-cherry-blossom-spring-sakura-seasons-osaka-japan.webp" alt="">
+                        </div>
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">大阪</h3>
+                            <div class="tag">
+                                <h4 class="t1_r_ch" >旅遊首選城市</h4>
+                                <h4 class="t1_r_ch" >優質移居城市</h4>
+                            </div>
+                            <p>大阪貴為日本關西第一大都市，現代化建築揉和歷史悠久的神社寺廟，前往遊逛知名景點如心齋橋筋商店街，造訪人來人往的熱鬧商圈道頓崛、美國村，品嚐串燒、居酒屋等日式美食，登上梅田藍天大廈眺望大阪街景、夜景。春秋之際不妨選擇賞櫻、賞楓行程，悠閒享受大自然的美好景緻。喜歡好萊塢電影的粉絲，日本環球影城絕對不容錯過的必訪景點。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="./image/pop_cities/pop_cities_04_south-korea-seoul.webp" alt="">
+                        </div>
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">首爾</h3>
+                            <div class="tag">
+                                <h4 class="t1_r_ch" >旅遊首選城市</h4>
+                                <h4 class="t1_r_ch" >優質移居城市</h4>
+                            </div>
+                            <p>飛往購物美妝天堂—首爾，享受結合文化古蹟、購物、美食的城市自由行。前往活力四射的東大門、弘大商圈逛街購物，品嚐廣藏市場內的經典韓食，也可前往景福宮、光化門、北村屋等地欣賞韓國傳統文化建築。晚上前往南山公園搭乘南山纜車，登上首爾塔眺望首爾夜景，浪漫氛圍適合情侶、家庭、朋友一同造訪。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="./image/pop_cities/pop_cities_05_south-korea-seoul-tower.webp" alt="">
+                        </div>
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">仁川</h3>
+                            <div class="tag">
+                                <h4 class="t1_r_ch" >旅遊首選城市</h4>
+                                <h4 class="t1_r_ch" >優質移居城市</h4>
+                            </div>
+                            <p>仁川廣域市，簡稱仁川，為大韓民國西北部的一個廣域市，是一座面向黃海的港灣都市，人口位居於首爾和釜山之後，為韓國第三大城市。位於首爾西部約40km，為韓國第二大港口城市。仁川與首爾之間有首都圈電鐵聯繫。每日有大量乘客往來仁川與首爾兩地，由於此兩地距離太過接近，已經共同形成一個大的首都圈。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="wrap">
+            <h2 class="h2_b_ch">猜你喜歡的城市</h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">                   
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="./image/pop_cities/pop_cities_06_chinese-beijing.webp" alt="">
+                        </div>
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">北京</h3>
+                            <div class="tag">
+                                <h4 class="t1_r_ch" >旅遊首選城市</h4>
+                                <h4 class="t1_r_ch" >優質移居城市</h4>
+                            </div>
+                            <p>北京市，通稱北京，簡稱「京」，是中華人民共和國首都、直轄市和京津冀城市群的重要組成部分，是中國的政治、文化、科技和國際交往中心，是世界人口第三多的城市和人口最多的首都，具有重要的國際影響力。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="./image/pop_cities/pop_cities_07_malaysia.webp" alt="">
+                        </div>
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">吉隆坡</h3>
+                            <div class="tag">
+                                <h4 class="t1_r_ch" >旅遊首選城市</h4>
+                                <h4 class="t1_r_ch" >優質移居城市</h4>
+                            </div>
+                            <p>吉隆坡的主要旅遊景點包括國油雙峰塔（全球最高的雙子塔）、默迪卡（全球第二高摩天大樓）、交易塔、武吉免登商業區、吉隆坡塔、茨廠街（唐人街）、獨立廣場、吉隆坡火車總站、國會大廈、吉隆坡國家皇宮、國家博物館、皇家博物館、伊斯蘭藝術博物館、中央藝術坊、吉隆坡飛禽公園、吉隆坡城中城水族館、莎羅馬行人天橋、國家英雄紀念碑、占美清真寺、樂聖嶺天后宮、佛教大寺院等。吉隆坡舉辦了許多文化節，例如大寶森節遊行</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="./image/pop_cities/pop_cities_08_Singapore.webp" alt="">
+                        </div>
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">新加坡</h3>
+                            <div class="tag">
+                                <h4 class="t1_r_ch" >旅遊首選城市</h4>
+                                <h4 class="t1_r_ch" >優質移居城市</h4>
+                            </div>
+                            <p>位處東南亞經濟樞紐的新加坡國土雖窄小，卻擁有豐富的多元文化，中華文化、印度文化、阿拉伯文化等民俗風情，深深烙印在小印度區、牛車水唐人街、甘榜格南等地區，知名打卡景點如魚尾獅公園、濱海灣花園、新加坡夜間野生動物園，都是不容錯過的新加坡特色地標。搭乘聖淘沙空中纜車俯瞰新加坡全景，品嚐新加坡經典早餐－Kaya
+                            Toast 及半熟蛋，深入探索新加坡各式民族的生活樣貌。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="./image/pop_cities/pop_cities_09_hong kong.webp" alt="">
+                        </div>
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">香港</h3>
+                            <div class="tag">
+                                <h4 class="t1_r_ch" >旅遊首選城市</h4>
+                                <h4 class="t1_r_ch" >優質移居城市</h4>
+                            </div>
+                            <p>想好2022連假要去哪了嗎？買張機票，帶上輕便行李，飛行一個半小時即可抵達曾被英國殖民 26
+                            年，因而融合中西文化的國際城市——香港。享用特色美食及最新2020米其林餐廳，親眼欣賞英國殖民時期存留至今的西洋建築，當夜晚降臨，走進滿城燈火的絢爛街區，體驗香港行程必備的夜生活。Are
+                            you ready? 給自己一趟放鬆喘口氣的輕旅行吧！</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-container">
+                            <img src="./image/pop_cities/pop_cities_10_bangkok.webp" alt="">
+                        </div>
+                        <div class="overlap"></div>
+                        <div class="caption">
+                            <h3 class="h4_b_ch">曼谷</h3>
+                            <div class="tag">
+                                <h4 class="t1_r_ch" >旅遊首選城市</h4>
+                                <h4 class="t1_r_ch" >優質移居城市</h4>
+                            </div>
+                            <p>飛往享譽全球的度假勝地—曼谷，無論是逛街購物，或是古蹟巡禮，各型旅人都能在曼谷享受輕鬆自在的自由行，沈醉於東南亞的悠閒情懷。選擇包車或巴士一日遊，一次走訪多個景點，樹中廟、河濱夜市、安帕瓦水上市場等地，搭乘手搖船在丹能莎朵水上市場搖晃前行，體驗百年前水上人家的生活與交易；深入旅遊節目常見的美功鐵道市集，沿著鐵軌遊逛當地人採購生活雜貨的菜市場，看著兩側攤販不疾不徐的收拾攤販、再物歸原位，特殊景象令人歎為觀止。結束愉悅的旅程，再來一節放鬆身心的泰式按摩，紓解全身壓力。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- 回到頂端 -->
 <div>
     <a class="side_function" href="#">
@@ -104,48 +278,11 @@
         </div>
     </div>
 </section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+
 <!-- 輪播套件script -->
 <script src="./script/swiper-bundle.min.js"></script>
-<!-- 人氣嚮導輪播 -->
-<script>
-    /* const swiper_pop_guide 宣告變數；new Swiper 不可以更改；可以使用 class 或 id 來命名物件 "#pop_guide_carousel" */
-    const swiper_pop_guide = new Swiper("#pop_guide_carousel", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        loop: true,  // 循環播放：https://swiperjs.com/swiper-api#param-loop
-
-        coverflowEffect: {
-            rotate: 5,
-            stretch: 80,
-            depth: 60,
-            modifier: 1.05,
-            scale: 0.86,
-            slideShadows: true,
-        },
-        roundLengths: true,         //模糊特效
-        disableOnInteraction: true, //滑鼠事件設定
-        autoplay: {
-            delay: 99999,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-    const pop_guide_autoplay = document.getElementById('pop_guide_carousel');
-
-    pop_guide_autoplay.addEventListener('mouseenter', function () {
-        swiper_pop_guide.autoplay.stop();
-        console.log('slider stopped');
-    })
-    pop_guide_autoplay.addEventListener('mouseleave', function () {
-        swiper_pop_guide.autoplay.start();
-        console.log('slider start again');
-    })
-</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- 主體 -->
+<script src="./script/popular_cities.js"></script>
 </body>
 </html>

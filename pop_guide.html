@@ -73,6 +73,41 @@
     </div>
 </section>
 
+<!-- 視訊 -->
+<div id="lightBox">
+    <!-- 視訊畫面 -->
+    <div class="video-calls-container">
+        <div class="video-calls-content">
+            <div class="video-calls-function">
+                <!-- 靜音 -->
+                <button id="toggle-btn" class="btn volume-xmark">
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </button>
+                <!-- 關閉鏡頭 -->
+                <button id="toggle-btn" class="btn video-slash">
+                    <i class="fa-solid fa-video-slash"></i></i>
+                </button>
+                <!-- 關閉麥克風 -->
+                <button id="toggle-btn" class="btn microphone-slash">
+                    <i class="fa-solid fa-microphone-slash"></i>
+                    </i></button>
+                <!-- 關閉通訊 -->
+                <button class="closeBtn x-btn phone-slash">
+                    <i class="fa-solid fa-phone-slash"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- popupBox 彈窗 -->
+<div id="popupBox">
+    <p class="t1_r_ch">已發出交友邀請囉！</p>
+    <div class="popup-function">
+        <button id="confirmBtn" class="t2_r_ch">確認</button>
+        <!-- <button id="cancelBtn" class="t2_r_ch">取消</button> -->
+    </div>
+</div>
+
 <!-- 前10名 -->
 <!-- wall-of-frame 在 pop_guide.js 裡面 -->
 <section class="pop_guide">
@@ -80,15 +115,15 @@
         <div id="pop_guide_carousel" class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="./pop_guide_personal_page.html" class="baffle">
-                        <div class="cover">
+                    <div class="baffle">
+                        <a href="./pop_guide_personal_page.html" class="cover">
                             <img src="./image/pop_guide00.webp" />
-                        </div>
+                        </a>
                         <div class="content">
                             <div class="guide">
                                 <h4 class="t1_r_ch">藝術及文化導覽</h4>
                                 <div class="name">
-                                    <h3 class="h3_b_ch">戴佳馨</h3>
+                                    <h3 class="h5_b_ch">戴佳馨</h3>
                                     <div class="score"><i class="fa-solid fa-star"></i><span>4.8</span>
                                     </div>
                                 </div>
@@ -102,7 +137,7 @@
                                     <div class="item rectangle">
                                         <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="item rectangle">
+                                    <div class="item rectangle video">
                                         <i class="fa-solid fa-video"></i>
                                     </div>
                                     <div class="item rectangle">
@@ -114,16 +149,16 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./pop_guide_personal_page.html" class="baffle">
-                        <div class="cover"><img src="./image/pop_guide02.webp" /></div>
+                    <div class="baffle">
+                        <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide02.webp" /></a>
                         <div class="content">
                             <div class="guide">
                                 <h4 class="t1_r_ch">公路旅行</h4>
                                 <div class="name">
-                                    <h3 class="h3_b_ch">林文豪</h3>
+                                    <h3 class="h5_b_ch">林文豪</h3>
                                     <div class="score"><i class="fa-solid fa-star"></i><span>4.7</span>
                                     </div>
                                 </div>
@@ -137,7 +172,7 @@
                                     <div class="item rectangle">
                                         <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="item rectangle">
+                                    <div class="item rectangle video">
                                         <i class="fa-solid fa-video"></i>
                                     </div>
                                     <div class="item rectangle">
@@ -149,16 +184,16 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./pop_guide_personal_page.html" class="baffle">
-                        <div class="cover"><img src="./image/pop_guide03.webp" /></div>
+                    <div class="baffle">
+                        <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide03.webp" /></a>
                         <div class="content">
                             <div class="guide">
                                 <h4 class="t1_r_ch">戶外露營</h4>
                                 <div class="name">
-                                    <h3 class="h3_b_ch">尹嘉雯</h3>
+                                    <h3 class="h5_b_ch">尹嘉雯</h3>
                                     <div class="score"><i class="fa-solid fa-star"></i><span>4.7</span>
                                     </div>
                                 </div>
@@ -173,7 +208,7 @@
                                     <div class="item rectangle">
                                         <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="item rectangle">
+                                    <div class="item rectangle video">
                                         <i class="fa-solid fa-video"></i>
                                     </div>
                                     <div class="item rectangle">
@@ -185,16 +220,16 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./pop_guide_personal_page.html" class="baffle">
-                        <div class="cover"><img src="./image/pop_guide04.webp" /></div>
+                    <div class="baffle">
+                        <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide04.webp" /></a>
                         <div class="content">
                             <div class="guide">
                                 <h4 class="t1_r_ch">精緻化或客制旅遊</h4>
                                 <div class="name">
-                                    <h3 class="h3_b_ch">歐逸豪</h3>
+                                    <h3 class="h5_b_ch">歐逸豪</h3>
                                     <div class="score"><i class="fa-solid fa-star"></i><span>4.6</span>
                                     </div>
                                 </div>
@@ -208,7 +243,7 @@
                                     <div class="item rectangle">
                                         <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="item rectangle">
+                                    <div class="item rectangle video">
                                         <i class="fa-solid fa-video"></i>
                                     </div>
                                     <div class="item rectangle">
@@ -220,16 +255,16 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./pop_guide_personal_page.html" class="baffle">
-                        <div class="cover"><img src="./image/pop_guide05.webp" /></div>
+                    <div class="baffle">
+                        <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide05.webp" /></a>
                         <div class="content">
                             <div class="guide">
                                 <h4 class="t1_r_ch">歷史古蹟</h4>
                                 <div class="name">
-                                    <h3 class="h3_b_ch">黃琮楊</h3>
+                                    <h3 class="h5_b_ch">黃琮楊</h3>
                                     <div class="score"><i class="fa-solid fa-star"></i><span>4.6</span>
                                     </div>
                                 </div>
@@ -243,7 +278,7 @@
                                     <div class="item rectangle">
                                         <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="item rectangle">
+                                    <div class="item rectangle video">
                                         <i class="fa-solid fa-video"></i>
                                     </div>
                                     <div class="item rectangle">
@@ -255,16 +290,16 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./pop_guide_personal_page.html" class="baffle">
-                        <div class="cover"><img src="./image/pop_guide06.webp" /></div>
+                    <div class="baffle">
+                        <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide06.webp" /></a>
                         <div class="content">
                             <div class="guide">
                                 <h4 class="t1_r_ch">Bike Tour</h4>
                                 <div class="name">
-                                    <h3 class="h3_b_ch">Asinena</h3>
+                                    <h3 class="h5_b_ch">Asinena</h3>
                                     <div class="score"><i class="fa-solid fa-star"></i><span>4.5</span>
                                     </div>
                                 </div>
@@ -279,7 +314,7 @@
                                     <div class="item rectangle">
                                         <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="item rectangle">
+                                    <div class="item rectangle video">
                                         <i class="fa-solid fa-video"></i>
                                     </div>
                                     <div class="item rectangle">
@@ -291,16 +326,16 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./pop_guide_personal_page.html" class="baffle">
-                        <div class="cover"><img src="./image/pop_guide07.webp" /></div>
+                    <div class="baffle">
+                        <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide07.webp" /></a>
                         <div class="content">
                             <div class="guide">
                                 <h4 class="t1_r_ch">購物旅行</h4>
                                 <div class="name">
-                                    <h3 class="h3_b_ch">錢娜娜</h3>
+                                    <h3 class="h5_b_ch">錢娜娜</h3>
                                     <div class="score"><i class="fa-solid fa-star"></i><span>4.5</span>
                                     </div>
                                 </div>
@@ -314,7 +349,7 @@
                                     <div class="item rectangle">
                                         <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="item rectangle">
+                                    <div class="item rectangle video">
                                         <i class="fa-solid fa-video"></i>
                                     </div>
                                     <div class="item rectangle">
@@ -326,16 +361,16 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./pop_guide_personal_page.html" class="baffle">
-                        <div class="cover"><img src="./image/pop_guide08.webp" /></div>
+                    <div class="baffle">
+                        <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide08.webp" /></a>
                         <div class="content">
                             <div class="guide">
                                 <h4 class="t1_r_ch">熱帶地區旅行</h4>
                                 <div class="name">
-                                    <h3 class="h3_b_ch">Sandy</h3>
+                                    <h3 class="h5_b_ch">Sandy</h3>
                                     <div class="score"><i class="fa-solid fa-star"></i><span>4.5</span>
                                     </div>
                                 </div>
@@ -351,7 +386,7 @@
                                     <div class="item rectangle">
                                         <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="item rectangle">
+                                    <div class="item rectangle video">
                                         <i class="fa-solid fa-video"></i>
                                     </div>
                                     <div class="item rectangle">
@@ -363,16 +398,16 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./pop_guide_personal_page.html" class="baffle">
-                        <div class="cover"><img src="./image/pop_guide09.webp" /></div>
+                    <div class="baffle">
+                        <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide09.webp" /></a>
                         <div class="content">
                             <div class="guide">
                                 <h4 class="t1_r_ch">城市旅遊</h4>
                                 <div class="name">
-                                    <h3 class="h3_b_ch">Vincent</h3>
+                                    <h3 class="h5_b_ch">Vincent</h3>
                                     <div class="score"><i class="fa-solid fa-star"></i><span>4.5</span>
                                     </div>
                                 </div>
@@ -387,7 +422,7 @@
                                     <div class="item rectangle">
                                         <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="item rectangle">
+                                    <div class="item rectangle video">
                                         <i class="fa-solid fa-video"></i>
                                     </div>
                                     <div class="item rectangle">
@@ -399,16 +434,16 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="./pop_guide_personal_page.html" class="baffle">
-                        <div class="cover"><img src="./image/pop_guide10.webp" /></div>
+                    <div class="baffle">
+                        <a href="./pop_guide_personal_page.html" class="cover"><img src="./image/pop_guide10.webp" /></a>
                         <div class="content">
                             <div class="guide">
                                 <h4 class="t1_r_ch">花季景觀旅行</h4>
                                 <div class="name">
-                                    <h3 class="h3_b_ch">徐巧瑜</h3>
+                                    <h3 class="h5_b_ch">徐巧瑜</h3>
                                     <div class="score"><i class="fa-solid fa-star"></i><span>4.5</span>
                                     </div>
                                 </div>
@@ -421,7 +456,7 @@
                                     <div class="item rectangle">
                                         <i class="fa-solid fa-message"></i>
                                     </div>
-                                    <div class="item rectangle">
+                                    <div class="item rectangle video">
                                         <i class="fa-solid fa-video"></i>
                                     </div>
                                     <div class="item rectangle">
@@ -433,7 +468,7 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>

@@ -368,7 +368,7 @@ span.swiper-pagination-bullet {
 
             /* 首頁嚮導欄按鈕調整 icon 大小 */
             .fa-solid {
-                transform: scale(1.2);
+                transform: scale(1.05);
             }
         }
     }
@@ -649,7 +649,7 @@ span.swiper-pagination-bullet {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 2;
+    z-index: 20;
 
     p{
         margin-bottom: 0.5rem;
@@ -907,6 +907,7 @@ span.swiper-pagination-bullet {
     }
     /* 漸層覆蓋 */
     .overlap {
+        display: none;
         position: absolute;
         width: 100%;
         height: 100%;

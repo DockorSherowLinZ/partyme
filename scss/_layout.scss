@@ -569,7 +569,7 @@ footer {
 
             .main_menu {
                 width: 100%;
-                height: 12rem;
+                height: 8rem;
                 background: var(--white);
                 border-radius: 0 0 0.5rem 0.5rem;
                 border-top: 1px solid var(--gray_5);
@@ -724,6 +724,7 @@ footer {
             .row {
                 width: 100%;
                 text-align: center;
+                margin: auto;
                 .col {
                     a {
                         color: var(--gray_2);
