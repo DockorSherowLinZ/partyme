@@ -22,8 +22,8 @@ const productData = [
     },
     {
         img: './image/product/product-he famous roman colosseum',
-        title: '羅馬一日遊｜ 羅馬競技場',
-        content: '羅馬一日遊，一天之內走遍必去羅馬競技場！專業中日英語導覽，帶你從義大利出發！搭乘舒適專車，輕鬆遊覽羅馬熱門景點！',
+        title: 'Colosseum Roman Forum and Palatine Hill tour',
+        content: 'Book your experience the best of ancient Rome with skip-the-line tickets and an expert local guide to the Colosseum, Roman Form and Palatine Hill.',
         score: 4.3,
         count: '3K+已購買',
         category: [ '歷史景點'
@@ -31,9 +31,9 @@ const productData = [
         ],
     },
     {
-        img:'./image/product/product-topic-card_cherry-blossoms-spring-chureito-pagoda-fuji-mountain-japan',
-        title: '荷蘭一日遊｜ 嵐山＆清水寺＆伏見稻荷大社＆金閣寺',
-        content: '京都一日遊，一天之內走遍必去清水寺、金閣寺、嵐山、伏見稻荷大社！專業中日英語導覽，帶你從大阪梅田出發！搭乘舒適專車，輕鬆遊覽京都熱門景點！',
+        img:'./image/product/product-Mont Saint Michel Paris',
+        title: '巴黎聖米歇爾山一日遊',
+        content: '參加巴黎當地聖米歇爾山 Mont Saint-Michel 一日遊行程，帶你細細品味名列世界文化遺產的絕美修道院，不用煩惱巴黎到聖米歇爾山約 360 公里的交通規劃，行程包含修道院入場費，專業導覽人員將為你詳細解說，讓你輕鬆體驗深具文化歷史氣息的經典巴黎一日行。',
         score: 4.8,
         count: '5K+已購買',
         category: ['熱門景點','景點門票'
@@ -41,9 +41,9 @@ const productData = [
         ],
     },
     {
-        img: './image/product/product-taipei_101_towl',
-        title: '義大利一日遊｜ 101大樓&貓空纜車&淡水漁人碼頭',
-        content: '台北一日遊，一天之內走遍必去101大樓&貓空纜車&淡水漁人碼頭！專業中日英語導覽，帶你從台北車站出發！搭乘舒適專車，輕鬆遊覽台北熱門景點！',
+        img: './image/product/product-Venice Italy',
+        title: '義大利威尼斯｜經典徒步＋貢多拉之旅',
+        content: '來到威尼斯不知怎麼開始玩起嗎？此行程提供您經典的威尼斯徒步之旅加上貢多拉體驗，讓您的寶貴旅行時間有最超值的體驗。您將透過專業導遊的導覽下，走過威尼斯的經典景點並跟著導遊穿梭在如迷宮般的巷弄，走過一座座小巧可愛的橋，盡情體驗威尼斯的不同面貌！',
         score: 4.7,
         count: '4K+已購買',
         category: ['景點門票','博物館&美術館'
@@ -51,9 +51,9 @@ const productData = [
         ],
     },
     {
-        img: './image/product/product-he famous roman colosseum',
-        title: '法國一日遊｜ 羅馬競技場',
-        content: '羅馬一日遊，一天之內走遍必去羅馬競技場！專業中日英語導覽，帶你從義大利出發！搭乘舒適專車，輕鬆遊覽羅馬熱門景點！',
+        img: './image/product/product-Giethoorn Holland',
+        title: '荷蘭近郊一日遊｜羊角村',
+        content: '從交通便利的阿姆斯特丹中央車站出發，搭乘專車巴士前往有「荷蘭威尼斯」之稱的羊角村。由專業導遊帶您遊覽這座美麗的運河之城，更能乘船穿梭在羊角村大大小小的運河之中，一窺羊角村的獨特風貌和美景。',
         score: 4.3,
         count: '3K+已購買',
         category: ['主題樂園','熱門景點'

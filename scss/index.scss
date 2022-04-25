@@ -915,7 +915,7 @@ form{
     .popular_cities {
         .container {
             .carousel {
-                max-height: 240px;
+                max-height: auto;
                 .carousel_item 
                     .card {
                         width: 140px;
