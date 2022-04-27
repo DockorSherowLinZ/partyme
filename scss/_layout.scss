@@ -295,7 +295,7 @@ footer {
     .main_header {
         .main_nav {
             .search_bar {
-                flex: 0 0 360px;
+                flex: 0 0 auto;
             }
         }
     }
@@ -306,9 +306,8 @@ footer {
         .main_nav {
             padding: 0.75rem 2.5rem;
             .search_bar {
-                flex: 0 0 320px;
-            }
-                
+                flex: 0 0 auto;
+            }                
             .main_menu {
                 span{
                     padding: 0 0.25rem;
@@ -363,9 +362,8 @@ footer {
 
             /* 搜尋欄 */
             .search_bar {
-                flex: 0 0 240px;
-            }
-            
+                flex: 0 0 auto;
+            }            
             .main_menu {
                 padding-top: 0.75rem;
                 padding-bottom: 0.5rem;
@@ -454,8 +452,7 @@ footer {
             /* 搜尋欄 */
             .search_bar {
                 font-size: 0.85rem;
-                flex: 0 0 220px;
-
+                flex: 0 0 auto;
                 input {
                     padding: 0.4rem 0.75rem;
                 }
@@ -486,8 +483,8 @@ footer {
             /* 搜尋欄 */
             .search_bar {
                 font-size: 0.8rem;
-                flex: 1 0 100px;
                 margin: 0 1rem;
+                flex: 0 0 auto;
 
                 input {
                     padding: 0.4rem 0.5rem;

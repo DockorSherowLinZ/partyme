@@ -628,10 +628,11 @@ form{
             /* 搜尋板塊 */
             .banner {
                 height: 575px;
-                
+                position: relative;
                 .col{
-                    
-
+                    position: absolute;
+                    top: 30%;
+                    left: 10%;
                     /* 主標題文字 */
                     .h2_b_ch {
                         font-size: 2.4rem;
