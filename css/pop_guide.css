@@ -1,1 +1,494 @@
-a:hover{color:var(--dark)}.Banner{margin-bottom:5rem}.Banner .container_full{width:100%;height:595px;background-image:url(../image/couple-sitting-resting-beach-summer-day-near-river.webp);background-size:cover;background-position:center;background-attachment:fixed;display:flex;justify-content:center;align-items:center}.Banner .container_full h2{color:var(--white);text-shadow:0 .2rem .3rem rgba(0,0,0,.8)}.pop_guide .swiper{width:100%;padding-top:50px;padding-bottom:50px}.pop_guide .swiper .swiper-slide{max-width:400px;background-position:center;background-size:cover;border-radius:.5rem;box-shadow:0 .25rem 1rem var(--shadow)}.pop_guide .swiper .swiper-slide img{display:inline-block;width:100%;object-fit:cover;vertical-align:top}.pop_guide .swiper .swiper-slide .content{padding:1.5rem}.pop_guide .swiper .swiper-slide-active{position:relative}.pop_guide .swiper .swiper-slide-active::before,.pop_guide .swiper .swiper-slide-active::after{width:200%;right:-200%}.pop_guide .swiper .swiper-slide-active::after{left:-200%}.col{padding:1rem;position:relative}.col .card{overflow:hidden;color:var(--white);text-shadow:0 1px 2px var(--shadow);height:400px;border:0;display:flex;justify-content:flex-end;align-items:center;transition:1s all linear}.col .card::before{content:"";background:linear-gradient(transparent 60%, rgba(0, 0, 0, 0.8) 100%);position:absolute;width:100%;height:100%;top:0}.col .card .guide{position:relative;z-index:2}.col .card .guide h3{color:var(--white)}.col .card .guide h4{color:var(--white)}.col .card .guide p{color:var(--white)}.col .card .guide .detial .score{color:var(--white)}.col .card .guide .detial .score span{font-size:1rem}.col .card .contact{position:relative;z-index:5}.col .card .contact button .list-ul{right:-3rem;bottom:40%}.col:nth-of-type(1) .card{background:url("../image/guide_card_01.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:hover .card .guide .detial .score{color:var(--info);text-shadow:1px 1px 0 var(--shadow)}.col:nth-of-type(2) .card{background:url("../image/guide_card_02.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:hover .card .guide .detial .score{color:var(--info);text-shadow:1px 1px 0 var(--shadow)}.col:nth-of-type(3) .card{background:url("../image/guide_card_03.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:hover .card .guide .detial .score{color:var(--info);text-shadow:1px 1px 0 var(--shadow)}.col:nth-of-type(4) .card{background:url("../image/guide_card_04.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:hover .card .guide .detial .score{color:var(--info);text-shadow:1px 1px 0 var(--shadow)}.col:nth-of-type(5) .card{background:url("../image/guide_card_05.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:hover .card .guide .detial .score{color:var(--info);text-shadow:1px 1px 0 var(--shadow)}.col:nth-of-type(6) .card{background:url("../image/guide_card_06.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:hover .card .guide .detial .score{color:var(--info);text-shadow:1px 1px 0 var(--shadow)}.col:nth-of-type(7) .card{background:url("../image/guide_card_07.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:hover .card .guide .detial .score{color:var(--info);text-shadow:1px 1px 0 var(--shadow)}.col:nth-of-type(8) .card{background:url("../image/guide_card_08.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:hover .card .guide .detial .score{color:var(--info);text-shadow:1px 1px 0 var(--shadow)}.col:nth-of-type(9) .card{background:url("../image/guide_card_09.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:hover .card .guide .detial .score{color:var(--info);text-shadow:1px 1px 0 var(--shadow)}.col:nth-of-type(10) .card{background:url("../image/guide_card_10.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(11) .card{background:url("../image/guide_card_11.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(12) .card{background:url("../image/guide_card_12.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(13) .card{background:url("../image/guide_card_13.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(14) .card{background:url("../image/guide_card_14.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(15) .card{background:url("../image/guide_card_15.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(16) .card{background:url("../image/guide_card_16.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(17) .card{background:url("../image/guide_card_17.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(18) .card{background:url("../image/guide_card_18.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(19) .card{background:url("../image/guide_card_19.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(20) .card{background:url("../image/guide_card_20.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(21) .card{background:url("../image/guide_card_21.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(22) .card{background:url("../image/guide_card_22.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(23) .card{background:url("../image/guide_card_23.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.col:nth-of-type(24) .card{background:url("../image/guide_card_24.webp") no-repeat center/cover,rgba(0,0,0,.8);background-blend-mode:luminosity}.col:hover .card{background-blend-mode:normal}.detial .score{color:var(--info)}.detial a{color:var(--dark)}.detial a:hover{color:var(--second)}.main_tabbar .container_full .row .col{padding:0}#lightBox{width:100%;height:100%;background-color:rgba(0,0,0,.6);display:none;position:fixed;top:0;left:0;z-index:50}#lightBox .video-calls-container{width:100%;height:100%;background:url(../image/lightBox_video_communicate\ in\ camera.webp) no-repeat center center/cover;position:absolute;top:0}#lightBox .video-calls-container .video-calls-content{background-color:var(--primary);width:100%;display:flex;justify-content:space-evenly;position:fixed;bottom:0}#lightBox .video-calls-container .video-calls-content .video-calls-function{display:flex;justify-content:center}#lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn,#lightBox .video-calls-container .video-calls-content .video-calls-function .btn{width:3rem;height:3rem;margin:1.5rem;border-radius:50%;background-color:var(--gray_5);position:static;transition:.1s all ease-in-out}#lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn:hover,#lightBox .video-calls-container .video-calls-content .video-calls-function .btn:hover{background-color:var(--error);color:var(--white)}#lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn .fa-solid,#lightBox .video-calls-container .video-calls-content .video-calls-function .btn .fa-solid{transform:scale(1.2)}#lightBox .video-calls-container .video-calls-content .video-calls-function .active{background-color:var(--info)}@media(max-width: 425px){#lightBox .video-calls-container .video-calls-content .video-calls-function{display:flex;justify-content:center}#lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn,#lightBox .video-calls-container .video-calls-content .video-calls-function .btn{width:2.25rem;height:2.25rem;margin:1rem;display:flex;justify-content:center;align-items:center}#lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn:hover,#lightBox .video-calls-container .video-calls-content .video-calls-function .btn:hover{background-color:var(--error);color:var(--white)}#lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn .fa-solid,#lightBox .video-calls-container .video-calls-content .video-calls-function .btn .fa-solid{transform:scale(1.2)}#lightBox .video-calls-container .video-calls-content .video-calls-function .active{background-color:var(--info)}}/*# sourceMappingURL=pop_guide.css.map */
+@charset "UTF-8";
+/* 【人氣嚮導】 */
+a:hover {
+  color: var(--dark);
+}
+
+/* Banner */
+.Banner {
+  margin-bottom: 5rem;
+}
+
+.Banner .container_full {
+  width: 100%;
+  height: 595px;
+  background-image: url(../image/couple-sitting-resting-beach-summer-day-near-river.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Banner .container_full h2 {
+  color: var(--white);
+  text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.8);
+}
+
+/* 人氣嚮導輪播 */
+.pop_guide .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pop_guide .swiper .swiper-slide {
+  max-width: 400px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 1rem var(--shadow);
+}
+
+.pop_guide .swiper .swiper-slide img {
+  display: inline-block;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+.pop_guide .swiper .swiper-slide .content {
+  padding: 1.5rem;
+}
+
+.pop_guide .swiper .swiper-slide-active {
+  position: relative;
+}
+
+.pop_guide .swiper .swiper-slide-active::before, .pop_guide .swiper .swiper-slide-active::after {
+  width: 200%;
+  right: -200%;
+}
+
+.pop_guide .swiper .swiper-slide-active::after {
+  left: -200%;
+}
+
+/* 名人牆 */
+.col {
+  padding: 1rem;
+  position: relative;
+}
+
+.col .card {
+  overflow: hidden;
+  color: var(--white);
+  text-shadow: 0 1px 2px var(--shadow);
+  height: 400px;
+  border: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: 1s all linear;
+}
+
+.col .card::before {
+  content: '';
+  background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.8) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.col .card .guide {
+  position: relative;
+  z-index: 2;
+}
+
+.col .card .guide h3 {
+  color: var(--white);
+}
+
+.col .card .guide h4 {
+  color: var(--white);
+}
+
+.col .card .guide p {
+  color: var(--white);
+}
+
+.col .card .guide .detial .score {
+  color: var(--white);
+}
+
+.col .card .guide .detial .score span {
+  font-size: 1rem;
+}
+
+.col .card .contact {
+  position: relative;
+  z-index: 5;
+}
+
+.col .card .contact button .list-ul {
+  right: -3rem;
+  bottom: 40%;
+}
+
+.col:nth-of-type(1) .card {
+  background: url("../image/guide_card_01.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:hover .card .guide .detial .score {
+  color: var(--info);
+  text-shadow: 1px 1px 0 var(--shadow);
+}
+
+.col:nth-of-type(2) .card {
+  background: url("../image/guide_card_02.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:hover .card .guide .detial .score {
+  color: var(--info);
+  text-shadow: 1px 1px 0 var(--shadow);
+}
+
+.col:nth-of-type(3) .card {
+  background: url("../image/guide_card_03.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:hover .card .guide .detial .score {
+  color: var(--info);
+  text-shadow: 1px 1px 0 var(--shadow);
+}
+
+.col:nth-of-type(4) .card {
+  background: url("../image/guide_card_04.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:hover .card .guide .detial .score {
+  color: var(--info);
+  text-shadow: 1px 1px 0 var(--shadow);
+}
+
+.col:nth-of-type(5) .card {
+  background: url("../image/guide_card_05.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:hover .card .guide .detial .score {
+  color: var(--info);
+  text-shadow: 1px 1px 0 var(--shadow);
+}
+
+.col:nth-of-type(6) .card {
+  background: url("../image/guide_card_06.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:hover .card .guide .detial .score {
+  color: var(--info);
+  text-shadow: 1px 1px 0 var(--shadow);
+}
+
+.col:nth-of-type(7) .card {
+  background: url("../image/guide_card_07.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:hover .card .guide .detial .score {
+  color: var(--info);
+  text-shadow: 1px 1px 0 var(--shadow);
+}
+
+.col:nth-of-type(8) .card {
+  background: url("../image/guide_card_08.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:hover .card .guide .detial .score {
+  color: var(--info);
+  text-shadow: 1px 1px 0 var(--shadow);
+}
+
+.col:nth-of-type(9) .card {
+  background: url("../image/guide_card_09.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:hover .card .guide .detial .score {
+  color: var(--info);
+  text-shadow: 1px 1px 0 var(--shadow);
+}
+
+.col:nth-of-type(10) .card {
+  background: url("../image/guide_card_10.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(11) .card {
+  background: url("../image/guide_card_11.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(12) .card {
+  background: url("../image/guide_card_12.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(13) .card {
+  background: url("../image/guide_card_13.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(14) .card {
+  background: url("../image/guide_card_14.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(15) .card {
+  background: url("../image/guide_card_15.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(16) .card {
+  background: url("../image/guide_card_16.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(17) .card {
+  background: url("../image/guide_card_17.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(18) .card {
+  background: url("../image/guide_card_18.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(19) .card {
+  background: url("../image/guide_card_19.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(20) .card {
+  background: url("../image/guide_card_20.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(21) .card {
+  background: url("../image/guide_card_21.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(22) .card {
+  background: url("../image/guide_card_22.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(23) .card {
+  background: url("../image/guide_card_23.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.col:nth-of-type(24) .card {
+  background: url("../image/guide_card_24.webp") no-repeat center/cover, rgba(0, 0, 0, 0.8);
+  background-blend-mode: luminosity;
+}
+
+.col:hover .card {
+  background-blend-mode: normal;
+}
+
+.detial .score {
+  color: var(--info);
+}
+
+.detial a {
+  color: var(--dark);
+}
+
+.detial a:hover {
+  color: var(--second);
+}
+
+.main_tabbar .container_full .row .col {
+  padding: 0;
+}
+
+/* 視訊燈箱 */
+#lightBox {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+#lightBox .video-calls-container {
+  width: 100%;
+  height: 100%;
+  background: url(../image/lightBox_video_communicate_in_camera.webp) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+}
+
+#lightBox .video-calls-container .video-calls-content {
+  background-color: var(--primary);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+}
+
+#lightBox .video-calls-container .video-calls-content .video-calls-function {
+  display: flex;
+  justify-content: center;
+}
+
+#lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn,
+#lightBox .video-calls-container .video-calls-content .video-calls-function .btn {
+  width: 3rem;
+  height: 3rem;
+  margin: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--gray_5);
+  position: static;
+  transition: 0.1s all ease-in-out;
+}
+
+#lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn:hover,
+#lightBox .video-calls-container .video-calls-content .video-calls-function .btn:hover {
+  background-color: var(--error);
+  color: var(--white);
+}
+
+#lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn .fa-solid,
+#lightBox .video-calls-container .video-calls-content .video-calls-function .btn .fa-solid {
+  transform: scale(1.2);
+}
+
+#lightBox .video-calls-container .video-calls-content .video-calls-function .active {
+  background-color: var(--info);
+}
+
+@media (max-width: 425px) {
+  #lightBox .video-calls-container .video-calls-content .video-calls-function {
+    display: flex;
+    justify-content: center;
+  }
+  #lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn,
+  #lightBox .video-calls-container .video-calls-content .video-calls-function .btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn:hover,
+  #lightBox .video-calls-container .video-calls-content .video-calls-function .btn:hover {
+    background-color: var(--error);
+    color: var(--white);
+  }
+  #lightBox .video-calls-container .video-calls-content .video-calls-function .x-btn .fa-solid,
+  #lightBox .video-calls-container .video-calls-content .video-calls-function .btn .fa-solid {
+    transform: scale(1.2);
+  }
+  #lightBox .video-calls-container .video-calls-content .video-calls-function .active {
+    background-color: var(--info);
+  }
+}
+/*# sourceMappingURL=pop_guide.css.map */

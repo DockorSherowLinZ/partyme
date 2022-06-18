@@ -661,6 +661,11 @@ img {
   --step-4: clamp(1.50rem, calc(1.46rem + 0.20vw), 1.60rem);
   --step-5: clamp(1.69rem, calc(1.65rem + 0.22vw), 1.80rem);
   --step-6: clamp(1.90rem, calc(1.48rem + 2.12vw), 2.5rem);
+  --step-7: clamp(2.1rem, calc(1.48rem + 2.12vw), 4.5rem);
+}
+
+.playfont {
+  font-size: var(--step-7);
 }
 
 .h1_b_ch {
