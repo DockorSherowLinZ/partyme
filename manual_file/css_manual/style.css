@@ -4,7 +4,7 @@ html {
 
 /* 主視覺版塊 */
 .master_vision {
-    background: url(../image/asian_blogger_travel.jpg) no-repeat top 0 center;
+    background: url(../image/asian_blogger_travel.webp) no-repeat top 0 center;
     width: 100%;
     object-fit: contain;
 }
@@ -52,11 +52,11 @@ html {
     vertical-align: top;
 }
 
-.hot .row .col .video{
+.hot .row .col .video {
     width: 100%;
 }
 
-.hot .row .col .video iframe{
+.hot .row .col .video iframe {
     width: 100%;
 }
 
@@ -312,6 +312,7 @@ html {
     width: 47%;
     right: 40px;
 }
+
 .topic_exploration .container .row .attractions h3 {
     right: 40px;
 }
@@ -329,6 +330,7 @@ html {
     right: 53px;
     top: 30px;
 }
+
 .topic_exploration .container .row .meals h3 {
     right: 53px;
     top: 30px;
@@ -340,6 +342,7 @@ html {
     width: 52%;
     left: 130px;
 }
+
 .topic_exploration .container .row .diy h3 {
     left: 130px;
 }
@@ -351,6 +354,7 @@ html {
     top: 30px;
     right: 80px;
 }
+
 .topic_exploration .container .row .pctravel h3 {
     top: 30px;
     right: 80px;
@@ -363,6 +367,7 @@ html {
     left: 75px;
     top: 20px;
 }
+
 .topic_exploration .container .row .camping h3 {
     left: 75px;
     top: 20px;
@@ -394,27 +399,27 @@ html {
 
 /* 用 first-of-type 才能選到 card 的子層 */
 .popular_cities .recommend.row .card:first-of-type .cover {
-    background: url(../image/Taipei.jpg);
+    background: url(../image/taipei.webp);
     background-size: cover;
 }
 
 .popular_cities .recommend.row .card:nth-of-type(2) .cover {
-    background: url(../image/Jiangsu.jpg);
+    background: url(../image/Jiangsu.webp);
     background-size: cover;
 }
 
 .popular_cities .recommend.row .card:nth-of-type(3) .cover {
-    background: url(../image/Maldives.jpg);
+    background: url(../image/Maldives.webp);
     background-size: cover;
 }
 
 .popular_cities .recommend.row .card:nth-of-type(4) .cover {
-    background: url(../image/Xian.jpg);
+    background: url(../image/Xian.webp);
     background-size: cover;
 }
 
 .popular_cities .recommend.row .card:nth-of-type(5) .cover {
-    background: url(../image/Manhattan.jpg);
+    background: url(../image/Manhattan.webp);
     background-size: cover;
 }
 
@@ -456,14 +461,14 @@ html {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    
+
 }
 
 .hot .swiper-slide img {
     display: inline-block;
     width: 100%;
     height: 100%;
-    object-fit: cover;    
+    object-fit: cover;
 }
 
 .hot .swiper .video_length {
@@ -500,12 +505,12 @@ html {
     vertical-align: top;
 }
 
-.pop_guide .swiper-slide .content{
+.pop_guide .swiper-slide .content {
     padding: 1.5rem;
 }
 
 @media screen and (max-width:1200px) {
-    .container{
+    .container {
         max-width: 1140px;
     }
 
@@ -516,20 +521,24 @@ html {
         color: var(--hover);
         transform: scale(1);
     }
-    .topic_exploration .container .col .topic{
+
+    .topic_exploration .container .col .topic {
         overflow: hidden;
     }
-    .topic_exploration .container .col .topic img{
+
+    .topic_exploration .container .col .topic img {
         transition: 0.3s all;
     }
-    .topic_exploration .container .col .topic:hover img{
+
+    .topic_exploration .container .col .topic:hover img {
         transform: scale(1.2);
     }
+
     .topic_exploration .container .background .row .col {
         margin: auto;
         justify-content: center;
     }
-    
+
     .topic_exploration .container .background .row .col h3 {
         font-size: 2.25rem;
     }
@@ -541,6 +550,7 @@ html {
         width: 47%;
         right: 2.5rem;
     }
+
     /* 派對聚會 */
     .topic_exploration .container .row .party .topic {
         padding-top: 63%;
@@ -554,18 +564,20 @@ html {
         width: 70%;
         right: 3.125rem;
         top: 1.875rem;
-    }    
+    }
+
     .topic_exploration .container .row .meals h3 {
         right: 3.125rem;
         top: 1.875rem;
     }
-    
+
     /* 手作DIY工坊 */
     .topic_exploration .container .row .diy .topic {
         padding-top: 52%;
         width: 52%;
         left: 3.5rem;
-    }    
+    }
+
     .topic_exploration .container .row .diy h3 {
         left: 3.5rem;
     }
@@ -576,41 +588,45 @@ html {
         width: 45%;
         top: 1.875rem;
         right: 5rem;
-    }    
+    }
+
     .topic_exploration .container .row .pctravel h3 {
         top: 1.875rem;
         right: 5rem;
     }
-    
+
     /* 戶外露營 */
     .topic_exploration .container .row .camping .topic {
         padding-top: 72%;
         width: 72%;
         left: 2.75rem;
         top: 1.25rem;
-    }    
+    }
+
     .topic_exploration .container .row .camping h3 {
         left: 2.75rem;
         top: 1.25rem;
     }
 
 }
+
 @media screen and (max-width:992px) {
     section .container h2 {
         font-size: 3rem;
     }
-    .container{
+
+    .container {
         max-width: 960px;
         margin: auto;
     }
 
     /* 回到頂端 */
-    .side_function{
+    .side_function {
         right: 1rem;
     }
 
 
-/* 主題探索 */
+    /* 主題探索 */
     .topic_exploration .container .background .row .col h3 {
         font-size: 2.25rem;
         margin-top: 0.5rem;
@@ -633,10 +649,12 @@ html {
         padding-top: 57%;
         width: 57%;
         right: 2.5rem;
-    }    
+    }
+
     .topic_exploration .container .row .attractions h3 {
         right: 2.5rem;
     }
+
     /* 派對聚會 */
     .topic_exploration .container .row .party .topic {
         padding-top: 63%;
@@ -649,18 +667,20 @@ html {
         width: 72%;
         top: 30px;
         right: 1.5rem;
-    }    
+    }
+
     .topic_exploration .container .row .meals h3 {
         top: 30px;
         right: 1.5rem;
     }
-    
+
     /* 手作DIY工坊 */
     .topic_exploration .container .row .diy .topic {
         padding-top: 52%;
         width: 52%;
         left: 3.75rem;
-    }    
+    }
+
     .topic_exploration .container .row .diy h3 {
         left: 3.75rem;
     }
@@ -671,42 +691,46 @@ html {
         width: 45%;
         top: 30px;
         right: 5rem;
-    }    
+    }
+
     .topic_exploration .container .row .pctravel h3 {
         top: 30px;
         right: 5rem;
     }
-    
+
     /* 戶外露營 */
     .topic_exploration .container .row .camping .topic {
         padding-top: 62%;
         width: 62%;
         top: 20px;
         left: 2.5rem;
-    }    
+    }
+
     .topic_exploration .container .row .camping h3 {
         top: 20px;
         left: 2.5rem;
     }
 
-    
+
 
 }
+
 @media screen and (max-width:768px) {
-    section .container h2{
+    section .container h2 {
         font-size: 2.25rem;
     }
-    .container{
+
+    .container {
         max-width: 720px;
     }
-    
-/* 熱門話題 */
+
+    /* 熱門話題 */
     /* 熱門話題的影片 */
-    .hot .container .row .col{
+    .hot .container .row .col {
         margin-bottom: 1rem;
     }
 
-/* 主題探索 */  
+    /* 主題探索 */
     /* 主題探索飛機背景圖 */
     .topic_exploration .background .scoll_effect {
         left: 0;
@@ -716,24 +740,24 @@ html {
         margin: auto;
         justify-content: center;
     }
-    
+
     .topic_exploration .container .background .row .col h3 {
         font-size: 1.5rem;
         margin-top: 0.5rem;
         margin-bottom: 3rem;
     }
-    
+
     /* 圖形圖片、文字間距與文字尺寸 */
     .topic_exploration .container .row .topic {
         margin-bottom: 0.5rem;
     }
-    
+
     /* 圖片hover效果 */
     .topic_exploration .container .col:hover {
         transform: scale(1);
     }
-    
-    
+
+
     /* 圓形圖片移動位置 */
     /* 知名景點 */
     .topic_exploration .container .row .attractions .topic {
@@ -741,33 +765,33 @@ html {
         width: 68%;
         left: 1.875rem;
     }
-    
+
     .topic_exploration .container .row .attractions h3 {
         left: 1.875rem;
     }
-    
+
     /* 派對聚會 */
     .topic_exploration .container .row .party .topic {
         padding-top: 57%;
         width: 57%;
         left: 3.125rem;
     }
-    
+
     .topic_exploration .container .row .party h3 {
         left: 3.125rem;
     }
-    
+
     /* 夯翻美食 */
     .topic_exploration .container .row .meals .topic {
         padding-top: 47%;
         width: 47%;
         left: 5.3125rem;
     }
-    
+
     .topic_exploration .container .row .meals h3 {
         left: 5.3125rem;
     }
-    
+
     /* 手作DIY工坊 */
     .topic_exploration .container .row .diy .topic {
         padding-top: 49%;
@@ -775,46 +799,49 @@ html {
         left: 0;
         top: 1.875rem;
     }
-    
+
     .topic_exploration .container .row .diy h3 {
         left: 0;
         top: 1.875rem;
     }
-    
+
     /* 親子旅遊 */
     .topic_exploration .container .row .pctravel .topic {
         padding-top: 58%;
         width: 58%;
         right: 25px;
     }
-    
+
     .topic_exploration .container .row .pctravel h3 {
         right: 25px;
     }
-    
+
     /* 戶外露營 */
     .topic_exploration .container .row .camping .topic {
         padding-top: 62%;
         width: 62%;
         left: 4.375rem;
     }
-    
+
     .topic_exploration .container .row .camping h3 {
         left: 4.375rem;
     }
 
     /* 熱門城市卡片 */
-    .popular_cities .container .map{
+    .popular_cities .container .map {
         display: none;
     }
-    .recommend.row .card .cover{
+
+    .recommend.row .card .cover {
         height: 180px;
         border-radius: 0.25rem;
     }
-    .recommend.row .card .cover h3{
+
+    .recommend.row .card .cover h3 {
         font-size: 1.1rem;
     }
-    .recommend.row .card .cover h4{
+
+    .recommend.row .card .cover h4 {
         font-size: 0.85rem;
     }
 }
